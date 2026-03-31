@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LafataCorp — Cam Lafata</title>
+<meta name="description" content="LafataCorp — The professional portfolio of Cam Lafata. Sports media, broadcast journalism, and predictive market intelligence.">
+<meta name="keywords" content="Cam Lafata, LafataCorp, sports media, radio, television, predictive markets, Dallas">
+<meta property="og:title" content="LafataCorp — Cam Lafata">
+<meta property="og:description" content="Sports media, broadcast journalism, and predictive market intelligence.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lafataproductions.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --black: #050505;
+    --dark: #0a0a0a;
+    --dark-2: #111111;
+    --dark-3: #1a1a1a;
+    --dark-4: #222222;
+    --gold: #c9a84c;
+    --gold-dim: #8a7434;
+    --gold-bright: #e6c65a;
+    --white: #f0ece4;
+    --white-dim: #8a8680;
+    --green: #4ade80;
+    --green-dim: rgba(74,222,128,0.12);
+    --red: #f87171;
+    --red-dim: rgba(248,113,113,0.12);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Outfit', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--black);
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.4s, backdrop-filter 0.4s;
+  }
+
+  nav.scrolled {
+    background: rgba(5,5,5,0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--white-dim);
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,168,76,0.04) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,168,76,0.02) 0%, transparent 60%);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 20%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 20%, transparent 70%);
+  }
+
+  .hero-content {
+    text-align: center;
+    z-index: 1;
+    animation: fadeUp 1.2s ease-out;
+  }
+
+  .logo-placeholder {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: fadeUp 1s ease-out 0.2s both;
+  }
+
+  .logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 1s ease-out 0.4s both;
+  }
+
+  .hero h1 span {
+    color: var(--gold);
+  }
+
+  .hero-tagline {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--white-dim);
+    animation: fadeUp 1s ease-out 0.6s both;
+  }
+
+  .hero-line {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, var(--gold-dim), transparent);
+    margin: 4rem auto 0;
+    animation: fadeUp 1s ease-out 0.8s both;
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: 8rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: var(--gold-dim);
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+  }
+
+  /* ── ABOUT ── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .headshot-container {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+  }
+
+  .headshot-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .headshot-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, var(--black), transparent);
+    pointer-events: none;
+  }
+
+  .about-text {
+    padding-top: 1rem;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--white-dim);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--dark-3);
+  }
+
+  .stat-item {
+    text-align: left;
+  }
+
+  .stat-value {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--gold);
+  }
+
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--white-dim);
+    margin-top: 0.3rem;
+  }
+
+  .about-interests {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--dark-3);
+  }
+
+  .interests-label {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 1.25rem;
+  }
+
+  .interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .interest-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--dark-4);
+    color: var(--white-dim);
+    transition: border-color 0.3s, color 0.3s;
+    cursor: default;
+  }
+
+  .interest-tag:hover {
+    border-color: var(--gold-dim);
+    color: var(--gold);
+  }
+
+  /* ── MEDIA SECTIONS ── */
+  .media-section {
+    border-top: 1px solid var(--dark-3);
+  }
+
+  .radio-station-logo {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .radio-station-logo img {
+    height: 80px;
+    width: auto;
+    opacity: 0.85;
+    transition: opacity 0.3s;
+  }
+
+  .radio-station-logo img:hover {
+    opacity: 1;
+  }
+
+  .smu-logo-stat img {
+    height: 40px;
+    width: auto;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+  }
+
+  .media-card {
+    background: var(--dark-2);
+    border: 1px solid var(--dark-3);
+    padding: 2rem;
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: default;
+  }
+
+  .media-card:hover {
+    border-color: var(--gold-dim);
+    transform: translateY(-2px);
+  }
+
+  .card-type {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.02em;
+  }
+
+  .card-desc {
+    font-size: 0.85rem;
+    color: var(--white-dim);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .card-placeholder {
+    width: 100%;
+    height: 180px;
+    background: var(--dark-3);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dark-4);
+    border: 1px solid var(--dark-4);
+  }
+
+  /* ── PREDICTIVE MARKETS ── */
+  .markets-header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    align-items: center;
+  }
+
+  .markets-text p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--white-dim);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+
+  .markets-visual {
+    position: relative;
+    height: 300px;
+    background: var(--dark-2);
+    border: 1px solid var(--dark-3);
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+  .chart-container { width: 100%; height: 100%; position: relative; }
+
+  .chart-label-top {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 0.75rem;
+  }
+
+  .chart-wrap-svg { position: relative; width: 100%; height: calc(100% - 20px); }
+
+  .primary-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--dark-3);
+    border: 1px solid var(--dark-3);
+    margin-bottom: 4rem;
+  }
+
+  .pm-card {
+    background: var(--dark-2);
+    padding: 2.25rem 1.75rem;
+    transition: background 0.3s;
+  }
+
+  .pm-card:hover { background: var(--dark); }
+
+  .pm-value {
+    font-family: var(--serif);
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+    line-height: 1;
+  }
+
+  .pm-label {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--white-dim);
+    margin-bottom: 0.75rem;
+  }
+
+  .pm-sub {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--dark-4);
+    letter-spacing: 0.05em;
+  }
+
+  .pm-bar {
+    width: 100%; height: 2px; background: var(--dark-4);
+    margin-top: 1.5rem; position: relative; overflow: hidden;
+  }
+
+  .pm-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--gold-dim), var(--gold));
+    width: 0%;
+    transition: width 1.5s ease-out;
+  }
+
+  .charts-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .chart-card {
+    background: var(--dark-2);
+    border: 1px solid var(--dark-3);
+    padding: 1.75rem;
+    transition: border-color 0.3s;
+  }
+
+  .chart-card:hover { border-color: var(--gold-dim); }
+
+  .chart-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .chart-card-title {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+  }
+
+  .chart-card-legend {
+    display: flex; gap: 1rem;
+    font-family: var(--mono); font-size: 0.55rem;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--dark-4);
+  }
+
+  .chart-card-legend span { display: flex; align-items: center; gap: 0.35rem; }
+  .chart-card-legend .sw { width: 7px; height: 7px; border-radius: 1px; }
+  .chart-canvas-wrap { position: relative; width: 100%; height: 220px; }
+
+  .secondary-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--dark-3);
+    border: 1px solid var(--dark-3);
+    margin-bottom: 3rem;
+  }
+
+  .sm-card {
+    background: var(--dark-2);
+    padding: 2.25rem 1.75rem;
+    display: flex; flex-direction: column; gap: 0.4rem;
+    transition: background 0.3s;
+  }
+
+  .sm-card:hover { background: var(--dark); }
+
+  .sm-label {
+    font-family: var(--mono); font-size: 0.55rem;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--dark-4);
+  }
+
+  .sm-value {
+    font-family: var(--serif); font-size: 2.5rem; font-weight: 300;
+    color: var(--gold); line-height: 1;
+  }
+
+  .sm-bar {
+    height: 2px; background: var(--dark-4); margin-top: auto;
+    position: relative; overflow: hidden;
+  }
+
+  .sm-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--gold-dim), var(--gold));
+    width: 0%; transition: width 1.5s ease-out;
+  }
+
+  .markets-footer {
+    text-align: center;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--dark-3);
+  }
+
+  .markets-footer p {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    color: var(--dark-4);
+    line-height: 2;
+  }
+
+  .section-subtitle {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--white-dim);
+    margin-bottom: 3rem;
+  }
+
+  .subsection-divider {
+    border: none;
+    border-top: 1px solid var(--dark-3);
+    margin: 5rem 0;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 2rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--gold-dim);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 2s infinite;
+  }
+
+  .media-coming-soon {
+    border: 1px solid var(--dark-3);
+    padding: 4rem 3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .media-coming-soon p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--white-dim);
+    line-height: 2.2;
+  }
+
+  .media-coming-soon a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .media-coming-soon a:hover { color: var(--gold-bright); }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 4rem 3rem;
+    border-top: 1px solid var(--dark-3);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: var(--white-dim);
+  }
+
+  .footer-contact {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--white-dim);
+  }
+
+  .footer-contact a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-contact a:hover { color: var(--gold-bright); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── MOBILE ── */
+  .mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 101;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+
+  .mobile-toggle span {
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 1.2rem 1.5rem; }
+
+    .mobile-toggle { display: flex; }
+
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background: var(--dark);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      transition: right 0.4s ease;
+      border-left: 1px solid var(--dark-3);
+    }
+
+    .nav-links.open { right: 0; }
+
+    section { padding: 5rem 1.5rem; }
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .markets-header { grid-template-columns: 1fr; }
+    .primary-metrics { grid-template-columns: 1fr; }
+    .charts-row { grid-template-columns: 1fr; }
+    .secondary-metrics { grid-template-columns: 1fr; }
+    .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .media-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+
+    .hero h1 { letter-spacing: 0.12em; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">LafataCorp</a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#markets">Markets</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#media">Media</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="logo-placeholder"><img src="logo.png" alt="LafataCorp Logo"></div>
+    <h1>Lafata<span>Corp</span></h1>
+    <p class="hero-tagline">Media &nbsp;&bull;&nbsp; Markets &nbsp;&bull;&nbsp; Intelligence</p>
+    <div class="hero-line"></div>
+  </div>
+</section>
+
+<!-- PREDICTIVE MARKETS -->
+<section id="markets" class="media-section fade-in">
+  <div class="section-label">001 — Predictive Markets</div>
+  <h2 class="section-title">Quantitative Strategy</h2>
+
+  <div class="markets-header">
+    <div class="markets-text">
+      <p>
+        LafataCorp's predictive markets division deploys proprietary algorithmic models
+        across event-driven markets. Our systems identify edge through statistical modeling,
+        sentiment analysis, and real-time data ingestion — converting volatility into
+        consistent, risk-managed returns.
+      </p>
+      <p>
+        We operate at the intersection of sports analytics, behavioral finance, and
+        automated execution. Performance data below reflects live track record
+        across seven months of active operation.
+      </p>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Systems Active
+      </div>
+    </div>
+    <div class="markets-visual">
+      <div class="chart-container">
+        <div class="chart-label-top">Cumulative ROI — Inception to Date</div>
+        <div class="chart-wrap-svg">
+          <canvas id="heroChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="primary-metrics">
+    <div class="pm-card">
+      <div class="pm-value">+164.6%</div>
+      <div class="pm-label">Total ROI</div>
+      <div class="pm-sub">return on capital deposited</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="82"></div></div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-value">+12.7%</div>
+      <div class="pm-label">Return on Risk</div>
+      <div class="pm-sub">net / total capital risked</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="64"></div></div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-value">1.87x</div>
+      <div class="pm-label">Win / Loss Ratio</div>
+      <div class="pm-sub">avg win vs avg loss size</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="75"></div></div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Cumulative ROI on Deposits</div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="cumChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Monthly Return on Capital Risked</div>
+        <div class="chart-card-legend">
+          <span><span class="sw" style="background:var(--green)"></span>Profit</span>
+          <span><span class="sw" style="background:var(--red)"></span>Loss</span>
+        </div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="monthlyChart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="secondary-metrics">
+    <div class="sm-card">
+      <div class="sm-label">Profitable Months</div>
+      <div class="sm-value">5 / 7</div>
+      <div class="sm-bar"><div class="sm-bar-fill" data-width="71"></div></div>
+    </div>
+    <div class="sm-card">
+      <div class="sm-label">Avg Monthly ROI</div>
+      <div class="sm-value">+12.3%</div>
+      <div class="sm-bar"><div class="sm-bar-fill" data-width="62"></div></div>
+    </div>
+  </div>
+
+  <div class="markets-footer">
+    <p>All figures reflect event contract performance across sports prediction markets.</p>
+    <p>ROI calculated on capital deposited and capital risked respectively. Updated through March 2026.</p>
+    <p>Detailed performance data shared exclusively with qualified partners.</p>
+  </div>
+
+  <!-- KALSHI SUBSECTION -->
+  <hr class="subsection-divider">
+
+  <div class="section-label">Kalshi — Event Contracts</div>
+  <h2 class="section-title">Systematic Strategy</h2>
+  <div class="section-subtitle">March 17 – March 30, 2026 &nbsp;|&nbsp; 10 trading sessions &nbsp;|&nbsp; 90 contracts</div>
+
+  <div class="markets-header">
+    <div class="markets-text">
+      <p>
+        After over a year of development and training, our flagship algorithmic
+        model is now fully deployed and executing live across Kalshi event contract
+        markets. Early results have exceeded expectations. Performance below
+        reflects the initial deployment window. Strategy details are confidential.
+        The early investment period is now closed.
+      </p>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Systems Active
+      </div>
+    </div>
+    <div class="markets-visual">
+      <div class="chart-container">
+        <div class="chart-label-top">Cumulative ROI — Session by Session</div>
+        <div class="chart-wrap-svg">
+          <canvas id="kalshiHeroChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="primary-metrics">
+    <div class="pm-card">
+      <div class="pm-value">+98.0%</div>
+      <div class="pm-label">Return on Starting Bankroll</div>
+      <div class="pm-sub">return on initial deposit</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="90"></div></div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-value">+30.1%</div>
+      <div class="pm-label">ROI on Total Deposited</div>
+      <div class="pm-sub">return on all capital contributed</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="68"></div></div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-value">+13.2%</div>
+      <div class="pm-label">Edge Per Dollar</div>
+      <div class="pm-sub">return per dollar wagered</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="55"></div></div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Cumulative ROI</div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="kalshiCumChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Session Returns</div>
+        <div class="chart-card-legend">
+          <span><span class="sw" style="background:var(--green)"></span>Profit</span>
+          <span><span class="sw" style="background:var(--red)"></span>Loss</span>
+        </div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="kalshiDailyChart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="secondary-metrics">
+    <div class="sm-card">
+      <div class="sm-label">Profitable Sessions</div>
+      <div class="sm-value">8 / 10</div>
+      <div class="sm-bar"><div class="sm-bar-fill" data-width="80"></div></div>
+    </div>
+    <div class="sm-card">
+      <div class="sm-label">Contract Record</div>
+      <div class="sm-value">76–14</div>
+      <div class="sm-bar"><div class="sm-bar-fill" data-width="84"></div></div>
+    </div>
+  </div>
+
+  <div class="markets-footer">
+    <p>Performance reflects live trading across Kalshi event contract markets.</p>
+    <p>March 17 – March 30, 2026. 90 contracts across 10 trading sessions.</p>
+    <p>Strategy details and execution parameters shared exclusively with qualified partners.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <div class="section-label">002 — About</div>
+  <h2 class="section-title">Cam Lafata</h2>
+  <div class="about-grid">
+    <div class="headshot-container">
+      <img class="headshot-placeholder" src="headshot.jpg" alt="Cam Lafata">
+    </div>
+    <div class="about-text">
+      <p>
+        Cam Lafata is a sports media professional and entrepreneur based in Dallas-Fort Worth. The only member of his family who's an actual Texas native, Cam was born in Dallas and spent his early childhood in Frisco before moving to Boston, Massachusetts at the age of ten. He spent most of his formative years in New England, where his family is from, before making the decision to return to his hometown. The move would eventually lead him to Southern Methodist University, where he studies Sport Management through the Simmons School of Education and Human Development alongside business at the Cox School of Business, with concentrated work in sports law and ethics, sports data analytics, organizational leadership, and communications.
+      </p>
+      <p>
+        Lafata currently serves as an on-air personality at KTCK 96.7/1310 The Ticket — one of the most listened-to sports radio stations in the country and a cornerstone of DFW's sports media landscape — where he contributes live broadcast coverage, editorial commentary, and sports analysis across the NFL, NBA, MLB, and NCAA, with a particular focus on the NHL. That focus is intentional: Lafata has a long-term ambition to work in hockey operations at the professional level, bringing an analytical, communication-driven approach to the front office side of the game he knows best.
+      </p>
+      <p>
+        A senior at SMU, Lafata has built a career at the intersection of media, analytics, and emerging markets. His academic research explores the behavioral and financial impact of legalized sports betting on young adults, alongside the growing role of prediction markets as alternative investment vehicles and specifically, the opportunity this asset class presents to a younger generation of investors. It is work that bridges behavioral finance theory with real-world market dynamics.
+      </p>
+      <p>
+        Beyond the microphone, Lafata is the founder of LafataCorp, a venture focused on predictive market intelligence. The company develops proprietary algorithmic systems that identify edge across event-driven markets through statistical modeling, sentiment analysis, and automated execution. What began as an independent research project has evolved into an operational trading infrastructure with a disciplined, data-first approach to risk-managed returns.
+      </p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-value">DFW</div>
+          <div class="stat-label">Based in</div>
+        </div>
+        <div class="stat-item smu-logo-stat">
+          <img src="smu-logo.png" alt="SMU Mustangs">
+          <div class="stat-label">Southern Methodist University</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">'26</div>
+          <div class="stat-label">Class Year</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="media-section fade-in">
+  <div class="section-label">003 — Media</div>
+  <h2 class="section-title">On-Air &amp; On-Screen</h2>
+  <div class="radio-station-logo">
+    <img src="ticket-logo.png" alt="KTCK 96.7/1310 The Ticket">
+  </div>
+  <div class="media-coming-soon">
+    <p>Catch Cam live on 96.7/1310 The Ticket and SMUTV every week.</p>
+    <p><a href="mailto:Lafatacorp@gmail.com">Lafatacorp@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">LafataCorp &copy; 2026</div>
+  <div class="footer-contact">
+    <a href="mailto:Lafatacorp@gmail.com">Lafatacorp@gmail.com</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  // ── Nav scroll effect
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── Mobile menu
+  const toggle = document.getElementById('mobileToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => links.classList.remove('open'));
+  });
+
+  // ── Chart.js Setup
+  Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+  Chart.defaults.font.size = 10;
+  Chart.defaults.color = '#333';
+
+  const gold = '#c9a84c';
+  const goldDim = '#8a7434';
+  const green = '#4ade80';
+  const red = '#f87171';
+  const gridColor = 'rgba(255,255,255,0.03)';
+  const tickColor = '#333';
+  const months = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26'];
+  const cumROI = [-34.3, -44.6, 50.5, 73.5, 143.2, 182.6, 164.6];
+  const monthlyROI = [-27.7, -11.1, 50.1, 8.0, 15.6, 68.0, -18.9];
+
+  const tooltipStyle = {
+    backgroundColor: '#111111',
+    borderColor: 'rgba(201,168,76,0.2)',
+    borderWidth: 1,
+    titleColor: '#8a8680',
+    bodyColor: '#f0ece4',
+    padding: 10,
+    cornerRadius: 0,
+    titleFont: { family: "'IBM Plex Mono', monospace", size: 10 },
+    bodyFont: { family: "'IBM Plex Mono', monospace", size: 11 }
+  };
+
+  const baseScales = {
+    x: { grid: { display: false }, border: { display: false }, ticks: { padding: 8, color: tickColor, autoSkip: false } },
+    y: { grid: { color: gridColor }, border: { display: false }, ticks: { padding: 10, color: tickColor, callback: v => (v>=0?'+':'') + v + '%' } }
+  };
+
+  function lineGradient(ctx, alpha1, alpha2) {
+    const g = ctx.chart.ctx.createLinearGradient(0, 0, 0, ctx.chart.height);
+    g.addColorStop(0, 'rgba(201,168,76,' + alpha1 + ')');
+    g.addColorStop(1, 'rgba(201,168,76,' + alpha2 + ')');
+    return g;
+  }
+
+  new Chart(document.getElementById('heroChart'), {
+    type: 'line',
+    data: { labels: months, datasets: [{
+      data: cumROI, borderColor: gold, borderWidth: 2,
+      backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
+      fill: true, tension: 0.35,
+      pointRadius: 3, pointBackgroundColor: gold,
+      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
+      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
+    }
+  });
+
+  new Chart(document.getElementById('cumChart'), {
+    type: 'line',
+    data: { labels: months, datasets: [{
+      data: cumROI, borderColor: gold, borderWidth: 2,
+      backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
+      fill: true, tension: 0.35,
+      pointRadius: 3, pointBackgroundColor: gold,
+      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
+      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
+    }
+  });
+
+  new Chart(document.getElementById('monthlyChart'), {
+    type: 'bar',
+    data: { labels: months, datasets: [{
+      data: monthlyROI,
+      backgroundColor: monthlyROI.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
+      hoverBackgroundColor: monthlyROI.map(n => n >= 0 ? green : red),
+      borderRadius: 2, borderSkipped: false, barPercentage: 0.6
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
+      scales: baseScales
+    }
+  });
+
+  // ── Kalshi Charts
+  const kDates = ['3/17','3/18','3/19','3/20','3/23','3/24','3/25','3/26','3/27','3/30'];
+  const kDaily = [2.6, -6.0, 5.3, 6.2, 3.3, -3.3, 3.3, 1.3, 8.0, 9.4];
+  const kCum = [2.6, -3.4, 1.9, 8.2, 11.5, 8.2, 11.5, 12.7, 20.7, 30.1];
+
+  new Chart(document.getElementById('kalshiHeroChart'), {
+    type: 'line',
+    data: { labels: kDates, datasets: [{
+      data: kCum, borderColor: gold, borderWidth: 2,
+      backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
+      fill: true, tension: 0.3,
+      pointRadius: 3, pointBackgroundColor: gold,
+      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
+      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
+    }
+  });
+
+  new Chart(document.getElementById('kalshiCumChart'), {
+    type: 'line',
+    data: { labels: kDates, datasets: [{
+      data: kCum, borderColor: gold, borderWidth: 2,
+      backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
+      fill: true, tension: 0.3,
+      pointRadius: 3, pointBackgroundColor: gold,
+      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
+      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
+    }
+  });
+
+  new Chart(document.getElementById('kalshiDailyChart'), {
+    type: 'bar',
+    data: { labels: kDates, datasets: [{
+      data: kDaily,
+      backgroundColor: kDaily.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
+      hoverBackgroundColor: kDaily.map(n => n >= 0 ? green : red),
+      borderRadius: 2, borderSkipped: false, barPercentage: 0.6
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
+      scales: baseScales
+    }
+  });
+
+  // ── Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+
+        // Animate metric bars
+        entry.target.querySelectorAll('.pm-bar-fill, .sm-bar-fill').forEach((bar, i) => {
+          setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 200 + i * 150);
+        });
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
