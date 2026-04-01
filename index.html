@@ -36,7 +36,11 @@
     --mono: 'IBM Plex Mono', monospace;
   }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
 
   body {
     font-family: var(--sans);
@@ -116,6 +120,7 @@
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -766,6 +771,7 @@
       right: -100%;
       width: 70%;
       height: 100vh;
+      height: 100dvh;
       background: var(--dark);
       flex-direction: column;
       justify-content: center;
@@ -777,17 +783,61 @@
 
     .nav-links.open { right: 0; }
 
-    section { padding: 5rem 1.5rem; }
+    section { padding: 4rem 1.25rem; }
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .markets-header { grid-template-columns: 1fr; }
+    .markets-header { grid-template-columns: 1fr; gap: 2rem; }
     .primary-metrics { grid-template-columns: 1fr; }
     .charts-row { grid-template-columns: 1fr; }
     .secondary-metrics { grid-template-columns: 1fr; }
-    .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .about-stats { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
     .media-grid { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 1.5rem; text-align: center; }
 
-    .hero h1 { letter-spacing: 0.12em; }
+    .hero h1 {
+      letter-spacing: 0.08em;
+      font-size: clamp(2.2rem, 10vw, 4rem);
+    }
+
+    .hero-tagline {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+    }
+
+    .logo-placeholder {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-line { height: 50px; margin-top: 2.5rem; }
+
+    .section-title { font-size: clamp(1.6rem, 5vw, 2.5rem); }
+
+    .markets-visual { height: 220px; padding: 1.25rem; }
+    .chart-canvas-wrap { height: 180px; }
+
+    .pm-card { padding: 1.5rem 1.25rem; }
+    .pm-value { font-size: 2.2rem; }
+    .sm-card { padding: 1.5rem 1.25rem; }
+    .sm-value { font-size: 2rem; }
+
+    .stat-value { font-size: 1.5rem; }
+    .stat-label { font-size: 0.5rem; }
+
+    .smu-logo-stat img { height: 30px; }
+
+    .headshot-container { max-height: 400px; }
+
+    .about-text p { font-size: 0.95rem; line-height: 1.8; }
+
+    .radio-station-logo img { height: 60px; }
+
+    .subsection-divider { margin: 3.5rem 0; }
+
+    .section-subtitle { font-size: 0.6rem; margin-bottom: 2rem; }
+
+    .media-coming-soon { padding: 3rem 1.5rem; }
+    .media-coming-soon p { font-size: 0.6rem; }
   }
 </style>
 </head>
@@ -1049,7 +1099,7 @@
   </div>
   <div class="media-coming-soon">
     <p>Catch Cam live on 96.7/1310 The Ticket and SMUTV every week.</p>
-    <p><a href="mailto:Lafatacorp@gmail.com">Lafatacorp@gmail.com</a></p>
+    <p><a href="/cdn-cgi/l/email-protection#d894b9beb9acb9bbb7aaa898bfb5b9b1b4f6bbb7b5"><span class="__cf_email__" data-cfemail="1955787f786d787a766b69597e74787075377a7674">[email&#160;protected]</span></a></p>
   </div>
 </section>
 
@@ -1057,12 +1107,26 @@
 <footer>
   <div class="footer-brand">LafataCorp &copy; 2026</div>
   <div class="footer-contact">
-    <a href="mailto:Lafatacorp@gmail.com">Lafatacorp@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#662a07000712070509141626010b070f0a4805090b"><span class="__cf_email__" data-cfemail="d39fb2b5b2a7b2b0bca1a393b4beb2babffdb0bcbe">[email&#160;protected]</span></a>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
+  // ── Scroll reveal (runs first so sections are always visible)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.querySelectorAll('.pm-bar-fill, .sm-bar-fill').forEach((bar, i) => {
+          setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 200 + i * 150);
+        });
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
   // ── Nav scroll effect
   const nav = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -1077,159 +1141,147 @@
     a.addEventListener('click', () => links.classList.remove('open'));
   });
 
-  // ── Chart.js Setup
-  Chart.defaults.font.family = "'IBM Plex Mono', monospace";
-  Chart.defaults.font.size = 10;
-  Chart.defaults.color = '#333';
+  // ── Charts (wrapped so a failure doesn't break the page)
+  try {
+    Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+    Chart.defaults.font.size = 10;
+    Chart.defaults.color = '#333';
 
-  const gold = '#c9a84c';
-  const goldDim = '#8a7434';
-  const green = '#4ade80';
-  const red = '#f87171';
-  const gridColor = 'rgba(255,255,255,0.03)';
-  const tickColor = '#333';
-  const months = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26'];
-  const cumROI = [-34.3, -44.6, 50.5, 73.5, 143.2, 182.6, 164.6];
-  const monthlyROI = [-27.7, -11.1, 50.1, 8.0, 15.6, 68.0, -18.9];
+    const gold = '#c9a84c';
+    const goldDim = '#8a7434';
+    const green = '#4ade80';
+    const red = '#f87171';
+    const gridColor = 'rgba(255,255,255,0.03)';
+    const tickColor = '#333';
+    const months = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26'];
+    const cumROI = [-34.3, -44.6, 50.5, 73.5, 143.2, 182.6, 164.6];
+    const monthlyROI = [-27.7, -11.1, 50.1, 8.0, 15.6, 68.0, -18.9];
 
-  const tooltipStyle = {
-    backgroundColor: '#111111',
-    borderColor: 'rgba(201,168,76,0.2)',
-    borderWidth: 1,
-    titleColor: '#8a8680',
-    bodyColor: '#f0ece4',
-    padding: 10,
-    cornerRadius: 0,
-    titleFont: { family: "'IBM Plex Mono', monospace", size: 10 },
-    bodyFont: { family: "'IBM Plex Mono', monospace", size: 11 }
-  };
+    const tooltipStyle = {
+      backgroundColor: '#111111',
+      borderColor: 'rgba(201,168,76,0.2)',
+      borderWidth: 1,
+      titleColor: '#8a8680',
+      bodyColor: '#f0ece4',
+      padding: 10,
+      cornerRadius: 0,
+      titleFont: { family: "'IBM Plex Mono', monospace", size: 10 },
+      bodyFont: { family: "'IBM Plex Mono', monospace", size: 11 }
+    };
 
-  const baseScales = {
-    x: { grid: { display: false }, border: { display: false }, ticks: { padding: 8, color: tickColor, autoSkip: false } },
-    y: { grid: { color: gridColor }, border: { display: false }, ticks: { padding: 10, color: tickColor, callback: v => (v>=0?'+':'') + v + '%' } }
-  };
+    const baseScales = {
+      x: { grid: { display: false }, border: { display: false }, ticks: { padding: 8, color: tickColor, autoSkip: false } },
+      y: { grid: { color: gridColor }, border: { display: false }, ticks: { padding: 10, color: tickColor, callback: v => (v>=0?'+':'') + v + '%' } }
+    };
 
-  function lineGradient(ctx, alpha1, alpha2) {
-    const g = ctx.chart.ctx.createLinearGradient(0, 0, 0, ctx.chart.height);
-    g.addColorStop(0, 'rgba(201,168,76,' + alpha1 + ')');
-    g.addColorStop(1, 'rgba(201,168,76,' + alpha2 + ')');
-    return g;
-  }
-
-  new Chart(document.getElementById('heroChart'), {
-    type: 'line',
-    data: { labels: months, datasets: [{
-      data: cumROI, borderColor: gold, borderWidth: 2,
-      backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
-      fill: true, tension: 0.35,
-      pointRadius: 3, pointBackgroundColor: gold,
-      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
-      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
+    function lineGradient(ctx, alpha1, alpha2) {
+      const g = ctx.chart.ctx.createLinearGradient(0, 0, 0, ctx.chart.height);
+      g.addColorStop(0, 'rgba(201,168,76,' + alpha1 + ')');
+      g.addColorStop(1, 'rgba(201,168,76,' + alpha2 + ')');
+      return g;
     }
-  });
 
-  new Chart(document.getElementById('cumChart'), {
-    type: 'line',
-    data: { labels: months, datasets: [{
-      data: cumROI, borderColor: gold, borderWidth: 2,
-      backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
-      fill: true, tension: 0.35,
-      pointRadius: 3, pointBackgroundColor: gold,
-      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
-      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
-    }
-  });
-
-  new Chart(document.getElementById('monthlyChart'), {
-    type: 'bar',
-    data: { labels: months, datasets: [{
-      data: monthlyROI,
-      backgroundColor: monthlyROI.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
-      hoverBackgroundColor: monthlyROI.map(n => n >= 0 ? green : red),
-      borderRadius: 2, borderSkipped: false, barPercentage: 0.6
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
-      scales: baseScales
-    }
-  });
-
-  // ── Kalshi Charts
-  const kDates = ['3/17','3/18','3/19','3/20','3/23','3/24','3/25','3/26','3/27','3/30'];
-  const kDaily = [2.6, -6.0, 5.3, 6.2, 3.3, -3.3, 3.3, 1.3, 8.0, 9.4];
-  const kCum = [2.6, -3.4, 1.9, 8.2, 11.5, 8.2, 11.5, 12.7, 20.7, 30.1];
-
-  new Chart(document.getElementById('kalshiHeroChart'), {
-    type: 'line',
-    data: { labels: kDates, datasets: [{
-      data: kCum, borderColor: gold, borderWidth: 2,
-      backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
-      fill: true, tension: 0.3,
-      pointRadius: 3, pointBackgroundColor: gold,
-      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
-      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
-    }
-  });
-
-  new Chart(document.getElementById('kalshiCumChart'), {
-    type: 'line',
-    data: { labels: kDates, datasets: [{
-      data: kCum, borderColor: gold, borderWidth: 2,
-      backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
-      fill: true, tension: 0.3,
-      pointRadius: 3, pointBackgroundColor: gold,
-      pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
-      scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
-    }
-  });
-
-  new Chart(document.getElementById('kalshiDailyChart'), {
-    type: 'bar',
-    data: { labels: kDates, datasets: [{
-      data: kDaily,
-      backgroundColor: kDaily.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
-      hoverBackgroundColor: kDaily.map(n => n >= 0 ? green : red),
-      borderRadius: 2, borderSkipped: false, barPercentage: 0.6
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
-      scales: baseScales
-    }
-  });
-
-  // ── Scroll reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-
-        // Animate metric bars
-        entry.target.querySelectorAll('.pm-bar-fill, .sm-bar-fill').forEach((bar, i) => {
-          setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 200 + i * 150);
-        });
+    new Chart(document.getElementById('heroChart'), {
+      type: 'line',
+      data: { labels: months, datasets: [{
+        data: cumROI, borderColor: gold, borderWidth: 2,
+        backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
+        fill: true, tension: 0.35,
+        pointRadius: 3, pointBackgroundColor: gold,
+        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+      }]},
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
+        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
       }
     });
-  }, { threshold: 0.15 });
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    new Chart(document.getElementById('cumChart'), {
+      type: 'line',
+      data: { labels: months, datasets: [{
+        data: cumROI, borderColor: gold, borderWidth: 2,
+        backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
+        fill: true, tension: 0.35,
+        pointRadius: 3, pointBackgroundColor: gold,
+        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+      }]},
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
+        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
+      }
+    });
+
+    new Chart(document.getElementById('monthlyChart'), {
+      type: 'bar',
+      data: { labels: months, datasets: [{
+        data: monthlyROI,
+        backgroundColor: monthlyROI.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
+        hoverBackgroundColor: monthlyROI.map(n => n >= 0 ? green : red),
+        borderRadius: 2, borderSkipped: false, barPercentage: 0.6
+      }]},
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
+        scales: baseScales
+      }
+    });
+
+    // ── Kalshi Charts
+    const kDates = ['3/17','3/18','3/19','3/20','3/23','3/24','3/25','3/26','3/27','3/30'];
+    const kDaily = [2.6, -6.0, 5.3, 6.2, 3.3, -3.3, 3.3, 1.3, 8.0, 9.4];
+    const kCum = [2.6, -3.4, 1.9, 8.2, 11.5, 8.2, 11.5, 12.7, 20.7, 30.1];
+
+    new Chart(document.getElementById('kalshiHeroChart'), {
+      type: 'line',
+      data: { labels: kDates, datasets: [{
+        data: kCum, borderColor: gold, borderWidth: 2,
+        backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
+        fill: true, tension: 0.3,
+        pointRadius: 3, pointBackgroundColor: gold,
+        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+      }]},
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
+        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
+      }
+    });
+
+    new Chart(document.getElementById('kalshiCumChart'), {
+      type: 'line',
+      data: { labels: kDates, datasets: [{
+        data: kCum, borderColor: gold, borderWidth: 2,
+        backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
+        fill: true, tension: 0.3,
+        pointRadius: 3, pointBackgroundColor: gold,
+        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+      }]},
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
+        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
+      }
+    });
+
+    new Chart(document.getElementById('kalshiDailyChart'), {
+      type: 'bar',
+      data: { labels: kDates, datasets: [{
+        data: kDaily,
+        backgroundColor: kDaily.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
+        hoverBackgroundColor: kDaily.map(n => n >= 0 ? green : red),
+        borderRadius: 2, borderSkipped: false, barPercentage: 0.6
+      }]},
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
+        scales: baseScales
+      }
+    });
+  } catch(e) {
+    console.log('Chart initialization error:', e);
+  }
 </script>
 
 </body>
