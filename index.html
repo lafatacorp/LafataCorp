@@ -7,9 +7,16 @@
 <meta name="description" content="LafataCorp — The professional portfolio of Cam Lafata. Sports media, broadcast journalism, and predictive market intelligence.">
 <meta name="keywords" content="Cam Lafata, LafataCorp, sports media, radio, television, predictive markets, Dallas">
 <meta property="og:title" content="LafataCorp — Cam Lafata">
-<meta property="og:description" content="Sports media, broadcast journalism, and predictive market intelligence.">
+<meta property="og:description" content="A media and markets venture for the convergence era.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://lafataproductions.com">
+<meta property="og:url" content="https://lafatacorp.com">
+<meta property="og:image" content="https://lafatacorp.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LafataCorp — Cam Lafata">
+<meta name="twitter:description" content="A media and markets venture for the convergence era.">
+<meta name="twitter:image" content="https://lafatacorp.com/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -685,6 +692,87 @@
 
   .media-coming-soon a:hover { color: var(--gold-bright); }
 
+  /* ── INTRO BANNER ── */
+  .intro-banner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 7rem 3rem 5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--dark-3);
+  }
+
+  .intro-banner-lead {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-banner-sub {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    line-height: 2;
+    color: var(--white-dim);
+    text-transform: uppercase;
+  }
+
+  .intro-banner-sub span { color: var(--gold); }
+
+  /* ── SOCIAL MEDIA ── */
+  .social-divider {
+    margin: 3.5rem 0 2.5rem;
+    border: none;
+    border-top: 1px solid var(--gold-dim);
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--dark-4);
+    color: var(--white-dim);
+    transition: border-color 0.3s, color 0.3s, transform 0.3s;
+    text-decoration: none;
+  }
+
+  .social-link:hover {
+    border-color: var(--gold-dim);
+    color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
   /* ── FOOTER ── */
   footer {
     padding: 4rem 3rem;
@@ -868,10 +956,17 @@
   </div>
 </section>
 
+<!-- INTRO BANNER -->
+<section class="intro-banner fade-in">
+  <p class="intro-banner-lead">A media and markets venture for the convergence era.</p>
+  <p class="intro-banner-sub">Built around systematic strategies, behavioral data, and the next generation of event-driven markets.</p>
+</section>
+
 <!-- PREDICTIVE MARKETS -->
 <section id="markets" class="media-section fade-in">
   <div class="section-label">001 — Predictive Markets</div>
   <h2 class="section-title">Quantitative Strategy</h2>
+  <div class="section-subtitle">Live track record &nbsp;|&nbsp; 25 trading sessions &nbsp;|&nbsp; 164 contracts</div>
 
   <div class="markets-header">
     <div class="markets-text">
@@ -882,98 +977,11 @@
         consistent, risk-managed returns.
       </p>
       <p>
-        We operate at the intersection of sports analytics, behavioral finance, and
-        automated execution. Performance data below reflects live track record
-        across seven months of active operation.
+        After over a year of development and training, our flagship algorithmic model is
+        now fully deployed and executing live across Kalshi event contract markets. Early
+        results have exceeded expectations.
       </p>
-      <div class="status-badge">
-        <span class="status-dot"></span>
-        Systems Active
-      </div>
-    </div>
-    <div class="markets-visual">
-      <div class="chart-container">
-        <div class="chart-label-top">Cumulative ROI — Inception to Date</div>
-        <div class="chart-wrap-svg">
-          <canvas id="heroChart"></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="primary-metrics">
-    <div class="pm-card">
-      <div class="pm-value">+164.6%</div>
-      <div class="pm-label">Total ROI</div>
-      <div class="pm-sub">return on capital deposited</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="82"></div></div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-value">+12.7%</div>
-      <div class="pm-label">Return on Risk</div>
-      <div class="pm-sub">net / total capital risked</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="64"></div></div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-value">1.87x</div>
-      <div class="pm-label">Win / Loss Ratio</div>
-      <div class="pm-sub">avg win vs avg loss size</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="75"></div></div>
-    </div>
-  </div>
-
-  <div class="charts-row">
-    <div class="chart-card">
-      <div class="chart-card-header">
-        <div class="chart-card-title">Cumulative ROI on Deposits</div>
-      </div>
-      <div class="chart-canvas-wrap"><canvas id="cumChart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-card-header">
-        <div class="chart-card-title">Monthly Return on Capital Risked</div>
-        <div class="chart-card-legend">
-          <span><span class="sw" style="background:var(--green)"></span>Profit</span>
-          <span><span class="sw" style="background:var(--red)"></span>Loss</span>
-        </div>
-      </div>
-      <div class="chart-canvas-wrap"><canvas id="monthlyChart"></canvas></div>
-    </div>
-  </div>
-
-  <div class="secondary-metrics">
-    <div class="sm-card">
-      <div class="sm-label">Profitable Months</div>
-      <div class="sm-value">5 / 7</div>
-      <div class="sm-bar"><div class="sm-bar-fill" data-width="71"></div></div>
-    </div>
-    <div class="sm-card">
-      <div class="sm-label">Avg Monthly ROI</div>
-      <div class="sm-value">+12.3%</div>
-      <div class="sm-bar"><div class="sm-bar-fill" data-width="62"></div></div>
-    </div>
-  </div>
-
-  <div class="markets-footer">
-    <p>All figures reflect event contract performance across sports prediction markets.</p>
-    <p>ROI calculated on capital deposited and capital risked respectively. Updated through March 2026.</p>
-    <p>Detailed performance data shared exclusively with qualified partners.</p>
-  </div>
-
-  <!-- KALSHI SUBSECTION -->
-  <hr class="subsection-divider">
-
-  <div class="section-label">Kalshi — Event Contracts</div>
-  <h2 class="section-title">Systematic Strategy</h2>
-  <div class="section-subtitle">March 17 – March 30, 2026 &nbsp;|&nbsp; 10 trading sessions &nbsp;|&nbsp; 90 contracts</div>
-
-  <div class="markets-header">
-    <div class="markets-text">
       <p>
-        After over a year of development and training, our flagship algorithmic
-        model is now fully deployed and executing live across Kalshi event contract
-        markets. Early results have exceeded expectations. Performance below
-        reflects the initial deployment window. Strategy details are confidential.
         The early investment period is now closed.
       </p>
       <div class="status-badge">
@@ -983,9 +991,9 @@
     </div>
     <div class="markets-visual">
       <div class="chart-container">
-        <div class="chart-label-top">Cumulative ROI — Session by Session</div>
+        <div class="chart-label-top">Cumulative Strategy Growth</div>
         <div class="chart-wrap-svg">
-          <canvas id="kalshiHeroChart"></canvas>
+          <canvas id="heroChart"></canvas>
         </div>
       </div>
     </div>
@@ -993,60 +1001,41 @@
 
   <div class="primary-metrics">
     <div class="pm-card">
-      <div class="pm-value">+98.0%</div>
-      <div class="pm-label">Return on Starting Bankroll</div>
-      <div class="pm-sub">return on initial deposit</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="90"></div></div>
+      <div class="pm-value">+142.7%</div>
+      <div class="pm-label">Total ROI</div>
+      <div class="pm-sub">return on capital risked</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="92"></div></div>
     </div>
     <div class="pm-card">
-      <div class="pm-value">+30.1%</div>
-      <div class="pm-label">ROI on Total Deposited</div>
-      <div class="pm-sub">return on all capital contributed</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="68"></div></div>
+      <div class="pm-value">78.0%</div>
+      <div class="pm-label">Win Rate</div>
+      <div class="pm-sub">contracts won vs traded</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="78"></div></div>
     </div>
     <div class="pm-card">
-      <div class="pm-value">+13.2%</div>
-      <div class="pm-label">Edge Per Dollar</div>
-      <div class="pm-sub">return per dollar wagered</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="55"></div></div>
+      <div class="pm-value">84%</div>
+      <div class="pm-label">Profitable Sessions</div>
+      <div class="pm-sub">winning days vs total</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="84"></div></div>
     </div>
   </div>
 
-  <div class="charts-row">
+  <div class="charts-row" style="grid-template-columns: 1fr;">
     <div class="chart-card">
       <div class="chart-card-header">
-        <div class="chart-card-title">Cumulative ROI</div>
-      </div>
-      <div class="chart-canvas-wrap"><canvas id="kalshiCumChart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-card-header">
-        <div class="chart-card-title">Session Returns</div>
+        <div class="chart-card-title">Session Contribution</div>
         <div class="chart-card-legend">
           <span><span class="sw" style="background:var(--green)"></span>Profit</span>
           <span><span class="sw" style="background:var(--red)"></span>Loss</span>
         </div>
       </div>
-      <div class="chart-canvas-wrap"><canvas id="kalshiDailyChart"></canvas></div>
-    </div>
-  </div>
-
-  <div class="secondary-metrics">
-    <div class="sm-card">
-      <div class="sm-label">Profitable Sessions</div>
-      <div class="sm-value">8 / 10</div>
-      <div class="sm-bar"><div class="sm-bar-fill" data-width="80"></div></div>
-    </div>
-    <div class="sm-card">
-      <div class="sm-label">Contract Record</div>
-      <div class="sm-value">76–14</div>
-      <div class="sm-bar"><div class="sm-bar-fill" data-width="84"></div></div>
+      <div class="chart-canvas-wrap"><canvas id="dailyChart"></canvas></div>
     </div>
   </div>
 
   <div class="markets-footer">
     <p>Performance reflects live trading across Kalshi event contract markets.</p>
-    <p>March 17 – March 30, 2026. 90 contracts across 10 trading sessions.</p>
+    <p>March 17 – April 13, 2026. All metrics derived from settled positions.</p>
     <p>Strategy details and execution parameters shared exclusively with qualified partners.</p>
   </div>
 </section>
@@ -1102,6 +1091,17 @@
     <p>Catch Cam live on 96.7/1310 The Ticket and SMUTV every week.</p>
     <p><a href="mailto:Lafatacorp@gmail.com">Lafatacorp@gmail.com</a></p>
   </div>
+
+  <hr class="social-divider">
+  <div class="social-label">Social Media</div>
+  <div class="social-links">
+    <a href="https://x.com/LafataSports" target="_blank" rel="noopener" class="social-link" aria-label="X (Twitter)">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/camlafata" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- FOOTER -->
@@ -1149,14 +1149,17 @@
     Chart.defaults.color = '#333';
 
     const gold = '#c9a84c';
-    const goldDim = '#8a7434';
     const green = '#4ade80';
     const red = '#f87171';
     const gridColor = 'rgba(255,255,255,0.03)';
     const tickColor = '#333';
-    const months = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26'];
-    const cumROI = [-34.3, -44.6, 50.5, 73.5, 143.2, 182.6, 164.6];
-    const monthlyROI = [-27.7, -11.1, 50.1, 8.0, 15.6, 68.0, -18.9];
+
+    // Real Kalshi data, normalized to percentages (no dollar figures)
+    const dates = ['3/17','3/18','3/19','3/20','3/21','3/22','3/23','3/24','3/25','3/26','3/27','3/30','3/31','4/1','4/2','4/3','4/4','4/5','4/6','4/7','4/8','4/9','4/10','4/12','4/13'];
+    // Cumulative growth as % of total strategy gain (0 to 100)
+    const cumGrowth = [0.9, 1.7, 2.5, 4.9, 4.7, 4.0, 5.7, 6.2, 8.0, 9.6, 16.0, 23.2, 36.3, 43.1, 45.7, 48.2, 45.7, 45.6, 45.8, 53.6, 60.3, 71.5, 83.9, 82.3, 100.0];
+    // Each session's contribution as % of total strategy gain
+    const sessionPct = [0.9, 0.8, 0.8, 2.4, -0.2, -0.7, 1.6, 0.6, 1.8, 1.6, 6.4, 7.2, 13.1, 6.8, 2.6, 2.5, -2.5, -0.1, 0.2, 7.8, 6.7, 11.2, 12.4, -1.6, 17.7];
 
     const tooltipStyle = {
       backgroundColor: '#111111',
@@ -1171,7 +1174,7 @@
     };
 
     const baseScales = {
-      x: { grid: { display: false }, border: { display: false }, ticks: { padding: 8, color: tickColor, autoSkip: false } },
+      x: { grid: { display: false }, border: { display: false }, ticks: { padding: 8, color: tickColor, autoSkip: true, maxTicksLimit: 8 } },
       y: { grid: { color: gridColor }, border: { display: false }, ticks: { padding: 10, color: tickColor, callback: v => (v>=0?'+':'') + v + '%' } }
     };
 
@@ -1182,45 +1185,31 @@
       return g;
     }
 
+    // Hero chart - cumulative growth curve in markets header
     new Chart(document.getElementById('heroChart'), {
       type: 'line',
-      data: { labels: months, datasets: [{
-        data: cumROI, borderColor: gold, borderWidth: 2,
+      data: { labels: dates, datasets: [{
+        data: cumGrowth, borderColor: gold, borderWidth: 2,
         backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
-        fill: true, tension: 0.35,
-        pointRadius: 3, pointBackgroundColor: gold,
-        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
+        fill: true, tension: 0.3,
+        pointRadius: 0, pointHoverRadius: 5,
+        pointBackgroundColor: gold, pointBorderColor: '#111111', pointBorderWidth: 2
       }]},
       options: {
         responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
-        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
+        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => 'Growth: +' + ctx.raw.toFixed(1) + '%' } } },
+        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: 0, suggestedMax: 110 } }
       }
     });
 
-    new Chart(document.getElementById('cumChart'), {
-      type: 'line',
-      data: { labels: months, datasets: [{
-        data: cumROI, borderColor: gold, borderWidth: 2,
-        backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
-        fill: true, tension: 0.35,
-        pointRadius: 3, pointBackgroundColor: gold,
-        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-      }]},
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
-        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -60, suggestedMax: 200 } }
-      }
-    });
-
-    new Chart(document.getElementById('monthlyChart'), {
+    // Daily session contribution
+    new Chart(document.getElementById('dailyChart'), {
       type: 'bar',
-      data: { labels: months, datasets: [{
-        data: monthlyROI,
-        backgroundColor: monthlyROI.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
-        hoverBackgroundColor: monthlyROI.map(n => n >= 0 ? green : red),
-        borderRadius: 2, borderSkipped: false, barPercentage: 0.6
+      data: { labels: dates, datasets: [{
+        data: sessionPct,
+        backgroundColor: sessionPct.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
+        hoverBackgroundColor: sessionPct.map(n => n >= 0 ? green : red),
+        borderRadius: 1, borderSkipped: false, barPercentage: 0.7
       }]},
       options: {
         responsive: true, maintainAspectRatio: false,
@@ -1229,57 +1218,6 @@
       }
     });
 
-    // ── Kalshi Charts
-    const kDates = ['3/17','3/18','3/19','3/20','3/23','3/24','3/25','3/26','3/27','3/30'];
-    const kDaily = [2.6, -6.0, 5.3, 6.2, 3.3, -3.3, 3.3, 1.3, 8.0, 9.4];
-    const kCum = [2.6, -3.4, 1.9, 8.2, 11.5, 8.2, 11.5, 12.7, 20.7, 30.1];
-
-    new Chart(document.getElementById('kalshiHeroChart'), {
-      type: 'line',
-      data: { labels: kDates, datasets: [{
-        data: kCum, borderColor: gold, borderWidth: 2,
-        backgroundColor: ctx => lineGradient(ctx, 0.2, 0),
-        fill: true, tension: 0.3,
-        pointRadius: 3, pointBackgroundColor: gold,
-        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-      }]},
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '% ROI' } } },
-        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
-      }
-    });
-
-    new Chart(document.getElementById('kalshiCumChart'), {
-      type: 'line',
-      data: { labels: kDates, datasets: [{
-        data: kCum, borderColor: gold, borderWidth: 2,
-        backgroundColor: ctx => lineGradient(ctx, 0.12, 0),
-        fill: true, tension: 0.3,
-        pointRadius: 3, pointBackgroundColor: gold,
-        pointBorderColor: '#111111', pointBorderWidth: 2, pointHoverRadius: 6
-      }]},
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
-        scales: { ...baseScales, y: { ...baseScales.y, suggestedMin: -10, suggestedMax: 35 } }
-      }
-    });
-
-    new Chart(document.getElementById('kalshiDailyChart'), {
-      type: 'bar',
-      data: { labels: kDates, datasets: [{
-        data: kDaily,
-        backgroundColor: kDaily.map(n => n >= 0 ? 'rgba(74,222,128,0.6)' : 'rgba(248,113,113,0.6)'),
-        hoverBackgroundColor: kDaily.map(n => n >= 0 ? green : red),
-        borderRadius: 2, borderSkipped: false, barPercentage: 0.6
-      }]},
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { ...tooltipStyle, borderColor: 'rgba(255,255,255,0.06)', callbacks: { label: ctx => (ctx.raw>=0?'+':'') + ctx.raw.toFixed(1) + '%' } } },
-        scales: baseScales
-      }
-    });
   } catch(e) {
     console.log('Chart initialization error:', e);
   }
