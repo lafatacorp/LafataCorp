@@ -966,7 +966,7 @@
 <section id="markets" class="media-section fade-in">
   <div class="section-label">001 — Predictive Markets</div>
   <h2 class="section-title">Quantitative Strategy</h2>
-  <div class="section-subtitle"><!-- SUBTITLE -->Live track record &nbsp;|&nbsp; 42 trading sessions &nbsp;|&nbsp; 289 contracts<!-- /SUBTITLE --></div>
+  <div class="section-subtitle"><!-- SUBTITLE -->Live track record &nbsp;|&nbsp; 43 trading sessions &nbsp;|&nbsp; 294 contracts<!-- /SUBTITLE --></div>
 
   <div class="markets-header">
     <div class="markets-text">
@@ -1001,22 +1001,22 @@
 
   <div class="primary-metrics">
     <div class="pm-card">
-      <div class="pm-value"><!-- ROI -->+127.8%<!-- /ROI --></div>
+      <div class="pm-value"><!-- ROI -->+113.6%<!-- /ROI --></div>
       <div class="pm-label">Total ROI</div>
       <div class="pm-sub">return on deposited capital</div>
       <div class="pm-bar"><div class="pm-bar-fill" data-width="<!-- ROIBAR -->99<!-- /ROIBAR -->"></div></div>
     </div>
     <div class="pm-card">
-      <div class="pm-value"><!-- WINRATE -->78.2%<!-- /WINRATE --></div>
+      <div class="pm-value"><!-- WINRATE -->77.9%<!-- /WINRATE --></div>
       <div class="pm-label">Win Rate</div>
       <div class="pm-sub">contracts won vs traded</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="<!-- WINRATEBAR -->78<!-- /WINRATEBAR -->"></div></div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="<!-- WINRATEBAR -->77<!-- /WINRATEBAR -->"></div></div>
     </div>
     <div class="pm-card">
-      <div class="pm-value"><!-- PROFITABLE -->71%<!-- /PROFITABLE --></div>
+      <div class="pm-value"><!-- PROFITABLE -->67%<!-- /PROFITABLE --></div>
       <div class="pm-label">Profitable Sessions</div>
       <div class="pm-sub">winning days vs total</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="<!-- PROFITABLEBAR -->71<!-- /PROFITABLEBAR -->"></div></div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="<!-- PROFITABLEBAR -->67<!-- /PROFITABLEBAR -->"></div></div>
     </div>
   </div>
 
@@ -1035,7 +1035,7 @@
 
   <div class="markets-footer">
     <p>Performance reflects live trading across Kalshi event contract markets.</p>
-    <p><!-- DATERANGE -->March 17 – May 7, 2026<!-- /DATERANGE -->. All metrics derived from settled positions.</p>
+    <p><!-- DATERANGE -->March 17 – May 8, 2026<!-- /DATERANGE -->. All metrics derived from settled positions.</p>
     <p>Strategy details and execution parameters shared exclusively with qualified partners.</p>
   </div>
 </section>
@@ -1155,10 +1155,10 @@
     const tickColor = '#333';
 
     // Real Kalshi data, normalized to percentages (no dollar figures)
-                                                                                                    /* BEGIN_CHART_DATA */
-    const dates = ['3/17', '3/18', '3/19', '3/20', '3/23', '3/24', '3/25', '3/26', '3/27', '3/30', '3/31', '4/1', '4/2', '4/3', '4/4', '4/5', '4/6', '4/7', '4/8', '4/9', '4/10', '4/12', '4/13', '4/14', '4/15', '4/16', '4/17', '4/19', '4/20', '4/21', '4/22', '4/23', '4/24', '4/27', '4/28', '4/29', '4/30', '5/1', '5/4', '5/5', '5/6', '5/7'];
-    const cumGrowth = [1.5, -1.9, 1.2, 4.8, 6.7, 4.8, 6.7, 7.4, 12.0, 17.4, 27.7, 15.6, 5.4, 14.8, 21.7, 22.1, 5.0, 14.8, 15.8, 23.6, 26.0, 31.8, 48.3, 64.0, 70.9, 80.5, 79.6, 102.1, 90.8, 102.2, 90.0, 97.1, 107.1, 92.9, 81.8, 73.3, 84.1, 90.3, 99.5, 84.6, 87.8, 100.2];
-    const sessionPct = [1.5, -3.4, 3.1, 3.6, 1.9, -1.9, 1.9, 0.7, 4.6, 5.4, 10.3, -12.1, -10.2, 9.4, 6.9, 0.4, -17.1, 9.8, 1.0, 7.8, 2.4, 5.8, 16.5, 15.7, 6.9, 9.6, -0.9, 22.5, -11.3, 11.4, -12.2, 7.1, 10.0, -14.2, -11.1, -8.5, 10.8, 6.2, 9.2, -14.9, 3.2, 12.4];
+                                                                                                        /* BEGIN_CHART_DATA */
+    const dates = ['3/17', '3/18', '3/19', '3/20', '3/23', '3/24', '3/25', '3/26', '3/27', '3/30', '3/31', '4/1', '4/2', '4/3', '4/4', '4/5', '4/6', '4/7', '4/8', '4/9', '4/10', '4/12', '4/13', '4/14', '4/15', '4/16', '4/17', '4/19', '4/20', '4/21', '4/22', '4/23', '4/24', '4/27', '4/28', '4/29', '4/30', '5/1', '5/4', '5/5', '5/6', '5/7', '5/8'];
+    const cumGrowth = [1.7, -2.2, 1.3, 5.3, 7.5, 5.3, 7.4, 8.2, 13.4, 19.5, 31.1, 17.5, 6.0, 16.5, 24.3, 24.7, 5.4, 16.4, 17.5, 26.3, 29.0, 35.5, 54.0, 71.7, 79.5, 90.3, 89.3, 114.6, 101.9, 114.7, 101.0, 109.0, 120.3, 104.3, 91.9, 82.3, 94.4, 101.4, 111.7, 94.9, 91.6, 107.0, 100.0];
+    const sessionPct = [1.7, -3.9, 3.5, 4.0, 2.2, -2.2, 2.1, 0.8, 5.2, 6.1, 11.6, -13.6, -11.5, 10.5, 7.8, 0.4, -19.3, 11.0, 1.1, 8.8, 2.7, 6.5, 18.5, 17.7, 7.8, 10.8, -1.0, 25.3, -12.7, 12.8, -13.7, 8.0, 11.3, -16.0, -12.4, -9.6, 12.1, 7.0, 10.3, -16.8, -3.3, 15.4, -7.0];
     /* END_CHART_DATA */
 
     const tooltipStyle = {
