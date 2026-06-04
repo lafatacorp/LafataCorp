@@ -180,7 +180,7 @@
 
   .hero h1 {
     font-family: var(--serif);
-    font-size: clamp(3rem, 8vw, 7rem);
+    font-size: clamp(2.6rem, 8vw, 7rem);
     font-weight: 300;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -919,6 +919,9 @@
 
     footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 3rem 1.25rem; }
     .polaris-placeholder { padding: 3rem 1.5rem; }
+
+    .hero h1 { font-size: clamp(2rem, 11vw, 3.5rem); letter-spacing: 0.12em; }
+    .hero-tagline { font-size: 0.65rem; letter-spacing: 0.25em; }
   }
 </style>
 </head>
@@ -1328,18 +1331,24 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
   // 1. SCROLL REVEAL (runs first -- section visibility never depends on charts)
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        entry.target.querySelectorAll('.pm-bar-fill').forEach((bar, i) => {
-          setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 200 + i * 150);
-        });
-      }
+  function revealEl(el) {
+    if (el.classList.contains('visible')) return;
+    el.classList.add('visible');
+    el.querySelectorAll('.pm-bar-fill').forEach((bar, i) => {
+      setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 200 + i * 150);
     });
-  }, { threshold: 0.1 });
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) revealEl(entry.target); });
+  }, { threshold: 0, rootMargin: '0px 0px 60px 0px' });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // iOS Safari fallback: force-reveal anything still hidden after 900ms
+  setTimeout(() => {
+    document.querySelectorAll('.fade-in:not(.visible)').forEach(el => revealEl(el));
+  }, 900);
 
   // 2. NAV + MOBILE MENU
   const nav = document.getElementById('navbar');
