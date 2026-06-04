@@ -1202,6 +1202,57 @@
     <p>Personal trading on Robinhood event contracts. Sep 2025 -- May 2026. Updated monthly.</p>
   </div>
 
+  <hr class="subsection-divider">
+
+  <!-- 4E: INVESTMENT PIPELINE -->
+  <div class="subsection-label">Investment Pipeline</div>
+  <div class="subsection-title">From Edge to Equity</div>
+
+  <div class="subsection-copy-block">
+    <p class="subsection-copy">
+      Profits from event contract trading are swept into a long-term investment portfolio on a bi-weekly schedule. The portfolio is diversified across index ETFs, tech positions, and speculative plays. 65% of total portfolio funding has been sourced directly from prediction market returns, with the remaining 35% from direct deposits. Individual holdings are not disclosed.
+    </p>
+  </div>
+
+  <div class="primary-metrics" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="pm-card">
+      <div class="pm-value">65%</div>
+      <div class="pm-label">Funded by Markets</div>
+      <div class="pm-sub">sourced from prediction market profits</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="65"></div></div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-value">35%</div>
+      <div class="pm-label">Direct Deposits</div>
+      <div class="pm-sub">additional capital contributed</div>
+      <div class="pm-bar"><div class="pm-bar-fill" data-width="35"></div></div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-value">3</div>
+      <div class="pm-label">Categories</div>
+      <div class="pm-sub">index ETFs, tech, speculative</div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Portfolio Allocation</div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="portfolioAllocChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">Funding Source</div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="fundingSourceChart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="subsection-footer">
+    <p>Portfolio allocation as of May 2026. Individual positions not disclosed. Updated monthly.</p>
+  </div>
+
 </section>
 
 <!-- 002 -- POLARIS PROJECT -->
@@ -1240,7 +1291,7 @@
         A senior at SMU, Lafata has built a career at the intersection of media, analytics, and emerging markets. His academic research explores the behavioral and financial impact of legalized sports betting on young adults, alongside the growing role of prediction markets as alternative investment vehicles and specifically, the opportunity this asset class presents to a younger generation of investors. It is work that bridges behavioral finance theory with real-world market dynamics.
       </p>
       <p>
-        Beyond the microphone, Lafata is the founder of LafataCorp, a venture focused on predictive market intelligence. The company develops proprietary algorithmic systems that identify edge across event-driven markets through statistical modeling, sentiment analysis, and automated execution. What began as an independent research project has evolved into an operational trading infrastructure with a disciplined, data-first approach to risk-managed returns.
+        Beyond the microphone, Lafata is the founder of LafataCorp, a personal venture focused on predictive markets and sports analytics. What started as an academic research interest in prediction markets has grown into a portfolio of trading systems, automated bots, and analytical tools, all built, tested, and documented transparently at lafatacorp.com.
       </p>
       <div class="about-stats">
         <div class="stat-item">
@@ -1545,6 +1596,63 @@
           x: { grid: { display: false }, border: { display: false }, ticks: { color: tickColor, maxRotation: 45 } },
           y: { grid: { color: gridColor }, border: { display: false }, min: 0, max: 60, ticks: { color: tickColor, callback: v => v + '%' } }
         }
+      }
+    });
+
+    // ---- INVESTMENT PIPELINE DATA - static, updated monthly
+    const portfolioCategories = ['Index ETFs', 'Tech', 'Speculative'];
+    const portfolioAllocation = [35, 40, 25];
+    const fundingSources = ['Prediction Market Profits', 'Direct Deposits'];
+    const fundingSplit = [65, 35];
+
+    const doughnutTooltip = {
+      ...tooltipStyle,
+      callbacks: { label: ctx => ' ' + ctx.label + ': ' + ctx.raw + '%' }
+    };
+
+    // Investment Pipeline -- portfolio allocation doughnut
+    new Chart(document.getElementById('portfolioAllocChart'), {
+      type: 'doughnut',
+      data: {
+        labels: portfolioCategories,
+        datasets: [{
+          data: portfolioAllocation,
+          backgroundColor: ['rgba(201,168,76,0.7)', 'rgba(201,168,76,0.4)', 'rgba(201,168,76,0.2)'],
+          borderColor: '#111111',
+          borderWidth: 2,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: whiteDim, font: { family: "'IBM Plex Mono', monospace", size: 10 }, padding: 16, boxWidth: 10 } },
+          tooltip: doughnutTooltip
+        },
+        cutout: '65%'
+      }
+    });
+
+    // Investment Pipeline -- funding source doughnut
+    new Chart(document.getElementById('fundingSourceChart'), {
+      type: 'doughnut',
+      data: {
+        labels: fundingSources,
+        datasets: [{
+          data: fundingSplit,
+          backgroundColor: ['rgba(74,222,128,0.6)', 'rgba(138,134,128,0.3)'],
+          borderColor: '#111111',
+          borderWidth: 2,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: whiteDim, font: { family: "'IBM Plex Mono', monospace", size: 10 }, padding: 16, boxWidth: 10 } },
+          tooltip: doughnutTooltip
+        },
+        cutout: '65%'
       }
     });
 
