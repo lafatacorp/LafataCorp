@@ -970,7 +970,7 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      An experimental automated trading agent deployed on Kalshi event contract markets. The system uses a Fractional Kelly position-sizing model with sentiment-driven entry criteria across index and currency brackets. Performance is tracked live and this section updates nightly.
+      An automated trading agent deployed on Kalshi event contract markets. The system runs a proprietary model with data-driven entry criteria and systematic position sizing across multiple market categories. Performance is tracked live and this section updates nightly.
     </p>
     <div class="status-badge">
       <span class="status-dot"></span>
@@ -1049,10 +1049,7 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      The Fade Bot monitors live NHL games and identifies situations where a leading team has sustained structural dominance mid-game. It enters Kalshi "team holds lead" markets only when both the statistical model and market pricing confirm the edge. Period 3 entries (82% win rate) outperform Period 2 (74%), validating the core thesis: less time for comebacks means higher probability of lead preservation.
-    </p>
-    <p class="subsection-copy">
-      The system includes a safety mechanism that pauses trading when the 14-day win rate drops below threshold, and a team-specific filter that avoids fading strong comeback teams (VGK, CAR, PIT). Paper traded for the full 2025-26 NHL season.
+      A live in-game trading system built on a proprietary model trained extensively on historical NHL data. The system identifies high-confidence situations during games and executes only when both model output and market conditions meet a defined threshold. Paper traded across the full 2025-26 NHL regular season.
     </p>
   </div>
 
@@ -1091,21 +1088,8 @@
     </div>
   </div>
 
-  <div class="period-breakdown">
-    <div class="period-card">
-      <div class="period-label">Period 2</div>
-      <div class="period-value">73.7%</div>
-      <div class="period-sub">76 trades</div>
-    </div>
-    <div class="period-card">
-      <div class="period-label">Period 3</div>
-      <div class="period-value">82.2%</div>
-      <div class="period-sub">45 trades</div>
-    </div>
-  </div>
-
   <div class="subsection-footer">
-    <p>Paper traded on Kalshi lead-held markets. Full 2025-26 NHL regular season. Jan 9 -- Apr 14, 2026.</p>
+    <p>Paper traded. Full 2025-26 NHL regular season. Jan 9 -- Apr 14, 2026.</p>
   </div>
 
   <hr class="subsection-divider">
@@ -1116,10 +1100,7 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      The Daily Analyzer builds pre-game edge predictions using expected goals (xG), high-danger scoring chances, score-adjusted corsi, rest factors, and head-to-head records. It was highly profitable through February (62.5% win rate, strong returns) before suffering a significant drawdown in March during the post-Olympic playoff push.
-    </p>
-    <p class="subsection-copy">
-      Root cause analysis revealed that the March collapse was calendar-driven, not model-driven. Heavy favorites began resting stars for playoffs, head-to-head records became stale, and Kelly sizing compounded losses as stakes grew with the bankroll peak. The model recovered to 68% in April once teams re-engaged for final playoff seeding. Trading was not paused during March, providing valuable data on regime failure that informed improvements for next season.
+      A pre-game model that builds edge predictions from a proprietary combination of advanced hockey metrics, scheduling context, and historical matchup data. Strong performance through February was followed by a drawdown in March coinciding with the post-Olympic schedule break -- a regime shift that informed targeted improvements heading into next season.
     </p>
   </div>
 
@@ -1169,14 +1150,8 @@
     </div>
   </div>
 
-  <ul class="improvements-list">
-    <li>Flat stake cap after February 15 (no more Kelly scaling)</li>
-    <li>H2H record decay (current season only after Feb 1)</li>
-    <li>Playoff-contention filter for clinched/eliminated teams</li>
-  </ul>
-
   <div class="subsection-footer">
-    <p>Paper traded on Kalshi pre-game markets. 2025-26 NHL season. Model improvements implemented for 2026-27.</p>
+    <p>Paper traded. 2025-26 NHL season. Model improvements implemented for 2026-27.</p>
   </div>
 
   <hr class="subsection-divider">
@@ -1187,17 +1162,11 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      Alongside the automated systems, this section tracks Cam's personal event contract trading on Robinhood. Updated monthly, it serves as a benchmark comparing human intuition against algorithmic execution, and highlights Cam's particular edge in hockey markets. The strategy is underdog-focused: low win rate, high payout ratio. NHL represents the vast majority of volume and nearly all of the portfolio's positive performance.
+      Alongside the automated systems, this section tracks Cam's personal event contract trading on Robinhood. Updated monthly, it serves as a benchmark comparing human intuition against algorithmic execution, and highlights Cam's particular edge in hockey markets. NHL represents the vast majority of volume and nearly all of the portfolio's positive performance.
     </p>
   </div>
 
-  <div class="primary-metrics">
-    <div class="pm-card">
-      <div class="pm-value">37.6%</div>
-      <div class="pm-label">Win Rate</div>
-      <div class="pm-sub">92 of 245 bets</div>
-      <div class="pm-bar"><div class="pm-bar-fill" data-width="37"></div></div>
-    </div>
+  <div class="primary-metrics" style="grid-template-columns: repeat(2, 1fr);">
     <div class="pm-card">
       <div class="pm-value">245</div>
       <div class="pm-label">Total Bets</div>
@@ -1206,7 +1175,7 @@
     <div class="pm-card">
       <div class="pm-value">NHL</div>
       <div class="pm-label">Top Performer</div>
-      <div class="pm-sub">44% WR, carries portfolio</div>
+      <div class="pm-sub">carries portfolio</div>
     </div>
   </div>
 
