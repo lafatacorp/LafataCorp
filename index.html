@@ -678,6 +678,51 @@
     animation: pulse 2s infinite;
   }
 
+  /* Paused / static status variants (no pulse) */
+  .status-dot.static {
+    animation: none;
+  }
+
+  .status-badge.paused {
+    color: var(--gold-dim);
+    border-color: var(--gold-dim);
+  }
+
+  .status-badge.paused .status-dot {
+    background: var(--gold-dim);
+  }
+
+  .status-badge.neutral {
+    color: var(--white-dim);
+    border-color: var(--dark-4);
+    margin-top: 0;
+  }
+
+  .status-badge.neutral .status-dot {
+    background: var(--white-dim);
+  }
+
+  /* Readable multi-paragraph copy inside the Polaris box */
+  .polaris-copy {
+    position: relative;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .polaris-copy p {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    color: var(--white);
+    max-width: none;
+    margin: 0 auto 1.4rem;
+    font-weight: 300;
+  }
+
+  .polaris-copy p:last-child {
+    margin-bottom: 0;
+  }
+
   .improvements-list {
     list-style: none;
     margin-bottom: 2rem;
@@ -975,11 +1020,11 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      An automated trading agent deployed on Kalshi event contract markets. The system runs a proprietary model with data-driven entry criteria and systematic position sizing across multiple market categories. Performance is tracked live and this section updates nightly.
+      An automated trading agent deployed on Kalshi event contract markets. The system uses a proprietary position-sizing model with data-driven entry criteria across multiple market categories. The agent was live from March 17 through June 22, 2026 before being paused for retooling.
     </p>
-    <div class="status-badge">
-      <span class="status-dot"></span>
-      Systems Active
+    <div class="status-badge paused">
+      <span class="status-dot static"></span>
+      Systems Paused
     </div>
   </div>
 
@@ -1022,9 +1067,25 @@
     </div>
   </div>
 
+  <div class="subsection-copy-block" style="margin-top: 1rem;">
+    <div class="subsection-label">Why the system was paused</div>
+    <p class="subsection-copy">
+      The agent's early performance was driven by two factors: a high-conviction currency strategy (93.8% win rate) and disciplined position sizing. Both eroded over time. Currency trades stopped executing in late April due to a configuration issue, removing the strategy's highest-edge category entirely. Without currency exposure, the remaining index trades were unable to sustain profitability on their own.
+    </p>
+    <p class="subsection-copy">
+      The index strategy underperformed during a period of sustained directional momentum in equity markets -- a regime where the system's core assumptions were consistently violated. What had been reliable setups in range-bound conditions broke down as the market trended strongly in one direction for weeks.
+    </p>
+    <p class="subsection-copy">
+      Position sizing compounded the damage. Average position size grew well beyond the original parameters, and since every losing trade settled at a total loss, a single oversized position could erase the gains from 8-10 winning trades.
+    </p>
+    <p class="subsection-copy">
+      The system is now paused while three improvements are implemented: restoring currency trade execution, adding a market-regime filter to reduce exposure during trending conditions, and enforcing hard position-size caps. The core model remains sound -- the failures were operational and environmental, not structural.
+    </p>
+  </div>
+
   <div class="subsection-footer">
-    <p>Performance reflects live trading on Kalshi. All metrics from settled positions. Updated nightly.</p>
-    <p><!-- DATERANGE -->March 17 -- June 26, 2026<!-- /DATERANGE --></p>
+    <p>Performance reflects live trading on Kalshi. All metrics from settled positions.</p>
+    <p><!-- DATERANGE -->March 17 -- June 22, 2026. System paused for parameter optimization.<!-- /DATERANGE --></p>
     <p>All figures reflect personal trading activity. Results are unaudited and presented for informational purposes. Detailed trade logs available upon request.</p>
   </div>
 
@@ -1077,6 +1138,7 @@
 
   <div class="subsection-footer">
     <p>Paper traded. Full 2025-26 NHL regular season. Jan 9 -- Apr 14, 2026.</p>
+    <p>Season complete. Fade Bot V3 in development for the 2026-27 season with expanded entry criteria and team-specific filters.</p>
     <p>All figures reflect paper trading activity. Results are unaudited and presented for informational purposes. Detailed trade logs available upon request.</p>
   </div>
 
@@ -1088,7 +1150,13 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      A pre-game model that builds edge predictions from a proprietary combination of advanced hockey metrics, scheduling context, and historical matchup data. Strong performance through February was followed by a drawdown in March coinciding with the post-Olympic schedule break -- a regime shift that informed targeted improvements heading into next season.
+      A pre-game model that builds edge predictions from a proprietary combination of advanced hockey metrics, scheduling context, and historical matchup data. The system was profitable in three of its four active months during the 2025-26 season. January, February, and April all produced positive returns, with February posting a 73% win rate -- the highest of any month across all LafataCorp systems.
+    </p>
+    <p class="subsection-copy">
+      March was the sole losing month, and the cause was specific and well-understood. The NHL's mid-season Olympic break created a regime shift: teams returning from the break rested key players, managed workloads ahead of the playoff push, and disrupted the head-to-head matchup patterns the model relied on. The model's H2H factor went from 83% accuracy pre-break to 42% post-break. Critically, the position-sizing model compounded the damage by increasing stake sizes as the bankroll had peaked entering March.
+    </p>
+    <p class="subsection-copy">
+      Trading was not paused during this period. The decision to continue tracking through the downturn was intentional -- documenting how the model fails under regime change produced the data needed to fix it.
     </p>
   </div>
 
@@ -1138,8 +1206,15 @@
     </div>
   </div>
 
+  <div class="subsection-copy-block" style="margin-top: 2rem;">
+    <div class="subsection-label">2026-27 Season Approach</div>
+    <p class="subsection-copy">
+      Three targeted improvements are being implemented for the upcoming season based on lessons from the March drawdown. First, stake sizing will be capped at a flat amount after February 15 regardless of bankroll -- eliminating the compounding effect that amplified March losses. Second, head-to-head records will decay after February 1, using only current-season data to avoid stale matchup signals. Third, a playoff-contention filter will skip picks involving teams that have already clinched or been eliminated, removing the low-effort games that degraded model accuracy. The system resumes with the 2026-27 NHL season in October.
+    </p>
+  </div>
+
   <div class="subsection-footer">
-    <p>Paper traded. 2025-26 NHL season. Model improvements implemented for 2026-27.</p>
+    <p>Paper traded. Full 2025-26 NHL regular season. 3 of 4 months profitable. Model improvements implemented for 2026-27.</p>
     <p>All figures reflect paper trading activity. Results are unaudited and presented for informational purposes. Detailed trade logs available upon request.</p>
   </div>
 
@@ -1151,8 +1226,18 @@
 
   <div class="subsection-copy-block">
     <p class="subsection-copy">
-      Alongside the automated systems, this section tracks Cam's personal event contract trading on Robinhood. Updated monthly, it serves as a benchmark comparing human intuition against algorithmic execution, and highlights Cam's particular edge in hockey markets. NHL represents the vast majority of volume and nearly all of the portfolio's positive performance.
+      This section tracks Cam's personal event contract trading on Robinhood, benchmarking manual trading intuition against the automated systems. Over 10 months and 245+ bets, the portfolio doubled its deposited capital, with 7 of 9 active months producing positive returns.
     </p>
+    <p class="subsection-copy">
+      The data tells a clear story about where the edge lives: NHL. Hockey contracts represent the vast majority of trading volume and nearly all of the portfolio's net positive performance. Every other sport -- NFL, NBA, MLB, NCAA -- was either breakeven or net negative. This isn't surprising given Cam's deep background in hockey analytics, but it's a useful signal: the manual trading edge is sport-specific, not generalizable.
+    </p>
+    <p class="subsection-copy">
+      Trading is paused until the 2026-27 NHL season begins in October. The offseason offers no hockey markets to trade, and the data strongly suggests that non-hockey event contracts are not worth the capital risk. When trading resumes, the focus will be exclusively on NHL markets.
+    </p>
+    <div class="status-badge neutral">
+      <span class="status-dot static"></span>
+      Paused -- Resumes Oct 2026
+    </div>
   </div>
 
   <!-- Account overview -->
@@ -1237,7 +1322,7 @@
   </div>
 
   <div class="subsection-footer">
-    <p>Personal trading on Robinhood event contracts. Sep 2025 -- May 2026. Updated monthly.</p>
+    <p>Personal trading on Robinhood event contracts. Sep 2025 -- May 2026. Paused for NHL offseason.</p>
     <p>All figures reflect personal trading activity. Results are unaudited and presented for informational purposes. Detailed trade logs available upon request.</p>
   </div>
 
@@ -1307,9 +1392,17 @@
       In Development
     </div>
     <h3>A proprietary NHL analytics system</h3>
-    <p>
-      Polaris is being built with hockey operations decision-making in mind, combining the analytical foundation developed through prediction market research with a front-office perspective. The system integrates play-by-play data, player tracking metrics, and situational modeling to surface insights that translate to real roster and strategy decisions. More details coming soon.
-    </p>
+    <div class="polaris-copy">
+      <p>
+        Named after the North Star -- the fixed point navigators have relied on for centuries -- Polaris is LafataCorp's long-term NHL analytics platform. Polaris has been in active development for over a year, building on the analytical foundation established through LafataCorp's prediction market research and Cam's deep study of NHL front office operations. The platform integrates play-by-play data, player tracking metrics, and situational modeling with the goal of generating highly accurate probability estimates for NHL outcomes at every level -- from individual games to season-long projections. These probabilities are designed to serve multiple applications: informing prediction market strategies, supporting front office decision-making on trades and contract valuations, and eventually powering a standalone analytics product.
+      </p>
+      <p>
+        The project's scope spans player evaluation frameworks, contract valuation models, roster construction analysis, and in-game tactical assessment. The goal is not to replace the eye test but to sharpen it: giving hockey operations professionals a structured, data-informed layer on top of the instincts and relationships that drive front office work.
+      </p>
+      <p>
+        Development continues through the 2026 offseason. Detailed methodology and initial outputs will be published as modules are completed.
+      </p>
+    </div>
   </div>
 </section>
 
