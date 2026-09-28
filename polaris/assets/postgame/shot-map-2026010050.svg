@@ -1,147 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1900" viewBox="0 0 1600 1900" role="img" aria-label="Polaris Shot Map proof">
-<rect width="1600" height="1900" fill="#071421"/>
-<rect x="40" y="40" width="1520" height="1820" rx="32" fill="#0b1b2b" stroke="#1b4058" stroke-width="3"/>
-<text x="86.0" y="125.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#13b9d6" text-anchor="start">POLARIS POSTGAME</text>
-<text x="86.0" y="190.0" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900" fill="#f7fbff" text-anchor="start">DAL 2 - MIN 1</text>
-<text x="86.0" y="238.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#a7bdc9" text-anchor="start">2026-09-25 at Grand Casino Arena</text>
-<text x="1514.0" y="137.0" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900" fill="#f6c945" text-anchor="end">Shot Map</text>
-<text x="1514.0" y="182.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#a7bdc9" text-anchor="end">shot origins &amp; chance quality</text>
-<line x1="86" y1="284" x2="1514" y2="284" stroke="#1f4962" stroke-width="2"/>
-<g id="panel-dal">
-<rect x="86" y="330" width="690" height="820" rx="18" fill="#102235" stroke="#28506a" stroke-width="2"/>
-<text x="112.0" y="376.0" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#f7fbff" text-anchor="start">DAL Created</text>
-<text x="750.0" y="376.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#89b7c9" text-anchor="end">DAL vs MIN</text>
-<rect x="112" y="408" width="638" height="624" rx="16" fill="#f7fbff" stroke="#94aebd" stroke-width="2"/>
-<line x1="300.9" y1="408" x2="300.9" y2="1032" stroke="#2a86b7" stroke-width="3" opacity="0.75"/>
-<line x1="697.4" y1="423" x2="697.4" y2="1017" stroke="#e15d5d" stroke-width="3" opacity="0.85"/>
-<line x1="130" y1="720.0" x2="732" y2="720.0" stroke="#cbd8df" stroke-width="1"/>
-<circle cx="573.5" cy="867.5" r="58" fill="none" stroke="#d5e2e8" stroke-width="2"/>
-<circle cx="573.5" cy="867.5" r="4" fill="#e15d5d"/>
-<circle cx="573.5" cy="572.5" r="58" fill="none" stroke="#d5e2e8" stroke-width="2"/>
-<circle cx="573.5" cy="572.5" r="4" fill="#e15d5d"/>
-<rect x="697.4" y="700.0" width="18" height="40" rx="3" fill="#f2d15c" stroke="#6e5130" stroke-width="2"/>
-<path d="M 652.4 690.0 Q 689.4 720.0 652.4 750.0" fill="none" stroke="#7fc6de" stroke-width="3" opacity="0.75"/>
-<circle cx="666.4" cy="659.6" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="647.8" cy="880.9" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="381.4" cy="565.8" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="585.9" cy="780.4" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="523.9" cy="626.1" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="424.8" cy="787.1" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="598.3" cy="592.6" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="629.3" cy="760.2" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="554.9" cy="652.9" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="517.7" cy="894.4" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="654.0" cy="773.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="523.9" cy="720.0" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="635.5" cy="880.9" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="517.7" cy="874.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="623.1" cy="787.1" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="592.1" cy="713.3" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="486.8" cy="518.8" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="480.6" cy="518.8" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="387.6" cy="686.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="493.0" cy="760.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="517.7" cy="592.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="616.9" cy="773.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="561.1" cy="867.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="319.5" cy="760.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="685.0" cy="867.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="431.0" cy="646.2" r="9" fill="#f6c945" stroke="#442e07" stroke-width="2"/>
-<circle cx="431.0" cy="646.2" r="14" fill="none" stroke="#f6c945" stroke-width="2" opacity="0.35"/>
-<circle cx="406.2" cy="632.8" r="9" fill="#f6c945" stroke="#442e07" stroke-width="2"/>
-<circle cx="406.2" cy="632.8" r="14" fill="none" stroke="#f6c945" stroke-width="2" opacity="0.35"/>
-<rect x="112" y="1058" width="638" height="54" rx="12" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<text x="132.0" y="1092.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#d8e7ef" text-anchor="start">Blocked context: 18</text>
-<text x="730.0" y="1092.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#89b7c9" text-anchor="end">counted separately, not origin dots</text>
-<text x="112.0" y="402.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#89b7c9" text-anchor="start">Shots 18  Goals 2  Missed 9  Inside 20 ft 6</text>
-</g>
-<g id="panel-min">
-<rect x="824" y="330" width="690" height="820" rx="18" fill="#102235" stroke="#28506a" stroke-width="2"/>
-<text x="850.0" y="376.0" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#f7fbff" text-anchor="start">MIN Created</text>
-<text x="1488.0" y="376.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#89b7c9" text-anchor="end">MIN vs DAL</text>
-<rect x="850" y="408" width="638" height="624" rx="16" fill="#f7fbff" stroke="#94aebd" stroke-width="2"/>
-<line x1="1038.9" y1="408" x2="1038.9" y2="1032" stroke="#2a86b7" stroke-width="3" opacity="0.75"/>
-<line x1="1435.4" y1="423" x2="1435.4" y2="1017" stroke="#e15d5d" stroke-width="3" opacity="0.85"/>
-<line x1="868" y1="720.0" x2="1470" y2="720.0" stroke="#cbd8df" stroke-width="1"/>
-<circle cx="1311.5" cy="867.5" r="58" fill="none" stroke="#d5e2e8" stroke-width="2"/>
-<circle cx="1311.5" cy="867.5" r="4" fill="#e15d5d"/>
-<circle cx="1311.5" cy="572.5" r="58" fill="none" stroke="#d5e2e8" stroke-width="2"/>
-<circle cx="1311.5" cy="572.5" r="4" fill="#e15d5d"/>
-<rect x="1435.4" y="700.0" width="18" height="40" rx="3" fill="#f2d15c" stroke="#6e5130" stroke-width="2"/>
-<path d="M 1390.4 690.0 Q 1427.4 720.0 1390.4 750.0" fill="none" stroke="#7fc6de" stroke-width="3" opacity="0.75"/>
-<circle cx="1113.2" cy="907.8" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1336.3" cy="639.5" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1429.2" cy="766.9" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1392.0" cy="760.2" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1193.8" cy="948.0" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1342.5" cy="813.9" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1144.2" cy="720.0" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1367.3" cy="706.6" r="5.5" fill="#ffffff" stroke="#7b8994" stroke-width="2" opacity="0.9"/>
-<circle cx="1404.4" cy="746.8" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1299.1" cy="840.7" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1323.9" cy="760.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1336.3" cy="867.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1131.8" cy="834.0" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1354.9" cy="693.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1373.5" cy="753.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1131.8" cy="679.8" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1385.8" cy="659.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1423.0" cy="760.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1181.4" cy="612.7" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1336.3" cy="619.4" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1311.5" cy="706.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1274.3" cy="525.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1187.6" cy="961.4" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1218.6" cy="961.4" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1138.0" cy="465.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1429.2" cy="538.9" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1274.3" cy="753.5" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1243.3" cy="478.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1323.9" cy="887.6" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1311.5" cy="813.9" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1354.9" cy="874.2" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1342.5" cy="880.9" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1231.0" cy="834.0" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1342.5" cy="606.0" r="6" fill="#13b9d6" stroke="#083548" stroke-width="1.5" opacity="0.92"/>
-<circle cx="1410.6" cy="720.0" r="9" fill="#f6c945" stroke="#442e07" stroke-width="2"/>
-<circle cx="1410.6" cy="720.0" r="14" fill="none" stroke="#f6c945" stroke-width="2" opacity="0.35"/>
-<rect x="850" y="1058" width="638" height="54" rx="12" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<text x="870.0" y="1092.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#d8e7ef" text-anchor="start">Blocked context: 14</text>
-<text x="1468.0" y="1092.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#89b7c9" text-anchor="end">counted separately, not origin dots</text>
-<text x="850.0" y="402.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#89b7c9" text-anchor="start">Shots 27  Goals 1  Missed 8  Inside 20 ft 11</text>
-</g>
-<rect x="86" y="1192" width="690" height="244" rx="18" fill="#102235" stroke="#28506a" stroke-width="2"/>
-<text x="112.0" y="1236.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#f7fbff" text-anchor="start">DAL Shot Mix</text>
-<text x="112.0" y="1292.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Wrist</text>
-<rect x="276" y="1270" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1270" width="346.1" height="26" rx="7" fill="#13b9d6" opacity="0.9"/>
-<text x="735.0" y="1291.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">14</text>
-<text x="112.0" y="1326.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Snap</text>
-<rect x="276" y="1304" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1304" width="74.2" height="26" rx="7" fill="#f6c945" opacity="0.9"/>
-<text x="735.0" y="1325.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">3</text>
-<text x="112.0" y="1360.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Deflected</text>
-<rect x="276" y="1338" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1338" width="24.7" height="26" rx="7" fill="#7dd4a3" opacity="0.9"/>
-<text x="735.0" y="1359.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">1</text>
-<rect x="824" y="1192" width="690" height="244" rx="18" fill="#102235" stroke="#28506a" stroke-width="2"/>
-<text x="850.0" y="1236.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#f7fbff" text-anchor="start">Legend</text>
-<circle cx="868" cy="1272" r="8" fill="#f6c945" stroke="#083548" stroke-width="2"/>
-<text x="890.0" y="1278.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#d8e7ef" text-anchor="start">Goal</text>
-<text x="1488.0" y="1278.0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#89b7c9" text-anchor="end">filled gold</text>
-<circle cx="868" cy="1310" r="8" fill="#13b9d6" stroke="#083548" stroke-width="2"/>
-<text x="890.0" y="1316.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#d8e7ef" text-anchor="start">Saved</text>
-<text x="1488.0" y="1316.0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#89b7c9" text-anchor="end">filled blue</text>
-<circle cx="868" cy="1348" r="8" fill="#ffffff" stroke="#7b8994" stroke-width="2"/>
-<text x="890.0" y="1354.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#d8e7ef" text-anchor="start">Missed</text>
-<text x="1488.0" y="1354.0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#89b7c9" text-anchor="end">white ring</text>
-<text x="850.0" y="1402.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#89b7c9" text-anchor="start">Uniform dots in this proof; xG sizing remains gated.</text>
-<rect x="86" y="1480" width="1428" height="184" rx="18" fill="#102235" stroke="#28506a" stroke-width="2"/>
-<text x="122.0" y="1532.0" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" fill="#f7fbff" text-anchor="start">Reconciliation Gate</text>
-<text x="122.0" y="1584.0" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#d8e7ef" text-anchor="start">DAL SOG 18/18 | goals 2/2 | attempts 45</text>
-<text x="122.0" y="1627.0" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#d8e7ef" text-anchor="start">MIN SOG 27/27 | goals 1/1 | attempts 49</text>
-<text x="1514.0" y="1532.0" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900" fill="#7dd4a3" text-anchor="end">PASS</text>
-<rect x="86" y="1706" width="1428" height="86" rx="18" fill="#071421" stroke="#1f4962" stroke-width="2"/>
-<text x="122.0" y="1758.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#d8e7ef" text-anchor="start">Derived from NHL public play-by-play. Chance quality: Polaris in-house xG.</text>
-<text x="1514.0" y="1758.0" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#89b7c9" text-anchor="end">Proof: xG dot sizing gated</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1220" viewBox="0 0 1600 1220" role="img" aria-label="Polaris single-rink shot map for DAL and MIN">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f1d30"/><stop offset=".48" stop-color="#0a1320"/><stop offset="1" stop-color="#05080f"/></linearGradient><linearGradient id="dal-zone" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2fbe83" stop-opacity=".16"/><stop offset="1" stop-color="#2fbe83" stop-opacity="0"/></linearGradient><linearGradient id="opp-zone" x1="1" y1="0" x2="0" y2="0"><stop stop-color="#8ab4ff" stop-opacity=".16"/><stop offset="1" stop-color="#8ab4ff" stop-opacity="0"/></linearGradient><clipPath id="rink"><rect x="100" y="410" width="1400" height="595" rx="118"/></clipPath></defs>
+<rect width="1600" height="1220" fill="#05080f"/><rect x="30" y="30" width="1540" height="1160" fill="url(#bg)" stroke="#214155" stroke-width="2"/>
+<rect x="30" y="30" width="1540" height="4" fill="#2fbe83"/><path d="M30 58V30H58 M1542 30H1570V58 M30 1162V1190H58 M1542 1190H1570V1162" fill="none" stroke="#5fe6da" stroke-width="3"/>
+<text x="72.0" y="93.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#5fe6da" text-anchor="start">✦ POLARIS POSTGAME</text>
+<text x="72.0" y="174.0" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900" fill="#2fbe83" text-anchor="start">DAL</text>
+<text x="202.0" y="174.0" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900" fill="#f4f9ff" text-anchor="start">2</text>
+<text x="284.0" y="174.0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="500" fill="#33465f" text-anchor="start">—</text>
+<text x="350.0" y="174.0" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900" fill="#6f86a8" text-anchor="start">1</text>
+<text x="430.0" y="174.0" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900" fill="#8ab4ff" text-anchor="start">MIN</text>
+<rect x="566" y="125" width="92" height="42" fill="none" stroke="#5fe6da" stroke-opacity=".4"/>
+<text x="612.0" y="153.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#9fb1cd" text-anchor="middle">FINAL</text>
+<text x="72.0" y="218.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#8aa0c0" text-anchor="start">2026-09-25 / GRAND CASINO ARENA</text>
+<text x="1528.0" y="138.0" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900" fill="#f4f9ff" text-anchor="end">Shot Map</text>
+<text x="1528.0" y="180.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#8aa0c0" text-anchor="end">shot origins &amp; chance quality</text>
+<rect x="72" y="252" width="692" height="122" fill="#0c1727" stroke="#1d3447"/>
+<rect x="92" y="275" width="10" height="10" fill="#2fbe83"/>
+<text x="116.0" y="287.0" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#f4f9ff" text-anchor="start">DAL CREATED</text>
+<text x="738.0" y="287.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#6f86a8" text-anchor="end">ATTACKS LEFT</text>
+<text x="94.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">SOG</text>
+<text x="94.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#f4f9ff" text-anchor="start">18</text>
+<text x="254.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">GOALS</text>
+<text x="254.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#2fbe83" text-anchor="start">2</text>
+<text x="414.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">INSIDE 20 FT</text>
+<text x="414.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#f4f9ff" text-anchor="start">6</text>
+<text x="574.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">ATTEMPTS</text>
+<text x="574.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#f4f9ff" text-anchor="start">45</text>
+<rect x="836" y="252" width="692" height="122" fill="#0c1727" stroke="#1d3447"/>
+<rect x="856" y="275" width="10" height="10" fill="#8ab4ff"/>
+<text x="880.0" y="287.0" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#f4f9ff" text-anchor="start">MIN CREATED</text>
+<text x="1502.0" y="287.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#6f86a8" text-anchor="end">ATTACKS RIGHT</text>
+<text x="858.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">SOG</text>
+<text x="858.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#f4f9ff" text-anchor="start">27</text>
+<text x="1018.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">GOALS</text>
+<text x="1018.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#8ab4ff" text-anchor="start">1</text>
+<text x="1178.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">INSIDE 20 FT</text>
+<text x="1178.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#f4f9ff" text-anchor="start">11</text>
+<text x="1338.0" y="321.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6f86a8" text-anchor="start">ATTEMPTS</text>
+<text x="1338.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#f4f9ff" text-anchor="start">49</text>
+<g clip-path="url(#rink)"><rect x="100" y="410" width="1400" height="595" fill="#0a1524"/><rect x="100" y="410" width="525" height="595" fill="url(#dal-zone)"/><rect x="975" y="410" width="525" height="595" fill="url(#opp-zone)"/></g>
+<rect x="100" y="410" width="1400" height="595" rx="118" fill="none" stroke="#5fe6da" stroke-opacity=".42" stroke-width="3"/>
+<line x1="177.0" y1="410" x2="177.0" y2="1005" stroke="#ee5a5a" stroke-opacity=".5" stroke-width="2"/>
+<line x1="625.0" y1="410" x2="625.0" y2="1005" stroke="#8ab4ff" stroke-opacity=".5" stroke-width="4"/>
+<line x1="800.0" y1="410" x2="800.0" y2="1005" stroke="#ee5a5a" stroke-opacity=".5" stroke-width="3"/>
+<line x1="975.0" y1="410" x2="975.0" y2="1005" stroke="#8ab4ff" stroke-opacity=".5" stroke-width="4"/>
+<line x1="1423.0" y1="410" x2="1423.0" y2="1005" stroke="#ee5a5a" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="800.0" cy="707.5" r="105" fill="none" stroke="#dce7f7" stroke-opacity=".13" stroke-width="2"/>
+<circle cx="317.0" cy="553.5" r="86" fill="none" stroke="#dce7f7" stroke-opacity=".13" stroke-width="2"/>
+<circle cx="317.0" cy="553.5" r="5" fill="#ee5a5a" fill-opacity=".55"/>
+<circle cx="317.0" cy="861.5" r="86" fill="none" stroke="#dce7f7" stroke-opacity=".13" stroke-width="2"/>
+<circle cx="317.0" cy="861.5" r="5" fill="#ee5a5a" fill-opacity=".55"/>
+<circle cx="1283.0" cy="553.5" r="86" fill="none" stroke="#dce7f7" stroke-opacity=".13" stroke-width="2"/>
+<circle cx="1283.0" cy="553.5" r="5" fill="#ee5a5a" fill-opacity=".55"/>
+<circle cx="1283.0" cy="861.5" r="86" fill="none" stroke="#dce7f7" stroke-opacity=".13" stroke-width="2"/>
+<circle cx="1283.0" cy="861.5" r="5" fill="#ee5a5a" fill-opacity=".55"/>
+<path d="M177.0 567.5 A140 140 0 0 1 177.0 847.5" fill="none" stroke="#5fe6da" stroke-opacity=".45" stroke-width="3" stroke-dasharray="10 10"/>
+<rect x="153.0" y="683.5" width="24" height="48" fill="none" stroke="#dce7f7" stroke-opacity=".75" stroke-width="3"/>
+<path d="M1423.0 567.5 A140 140 0 0 0 1423.0 847.5" fill="none" stroke="#5fe6da" stroke-opacity=".45" stroke-width="3" stroke-dasharray="10 10"/>
+<rect x="1423.0" y="683.5" width="24" height="48" fill="none" stroke="#dce7f7" stroke-opacity=".75" stroke-width="3"/>
+<circle cx="380.0" cy="889.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="226.0" cy="763.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="373.0" cy="707.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="247.0" cy="875.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="212.0" cy="644.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<polygon points="478.0,616.5 481.5,627.0 492.0,630.5 481.5,634.0 478.0,644.5 474.5,634.0 464.0,630.5 474.5,627.0" fill="#f4f9ff" stroke="#2fbe83" stroke-width="3"/>
+<circle cx="233.0" cy="875.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="380.0" cy="868.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="261.0" cy="777.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="296.0" cy="700.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="534.0" cy="546.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="415.0" cy="497.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="422.0" cy="497.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="527.0" cy="672.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="408.0" cy="749.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="303.0" cy="770.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="373.0" cy="609.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="380.0" cy="574.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="485.0" cy="777.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="268.0" cy="763.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="331.0" cy="861.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<polygon points="506.0,602.5 509.5,613.0 520.0,616.5 509.5,620.0 506.0,630.5 502.5,620.0 492.0,616.5 502.5,613.0" fill="#f4f9ff" stroke="#2fbe83" stroke-width="3"/>
+<circle cx="289.0" cy="574.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="254.0" cy="749.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="604.0" cy="749.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="191.0" cy="861.5" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<circle cx="338.0" cy="637.5" r="7" fill="none" stroke="#2fbe83" stroke-width="3" opacity=".85"/>
+<circle cx="1388.0" cy="679.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1059.0" cy="511.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<circle cx="1269.0" cy="581.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1297.0" cy="665.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1311.0" cy="553.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1080.0" cy="588.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1311.0" cy="791.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<circle cx="1332.0" cy="735.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1353.0" cy="672.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1416.0" cy="658.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<polygon points="1395.0,693.5 1398.5,704.0 1409.0,707.5 1398.5,711.0 1395.0,721.5 1391.5,711.0 1381.0,707.5 1391.5,704.0" fill="#f4f9ff" stroke="#8ab4ff" stroke-width="3"/>
+<circle cx="1080.0" cy="749.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1367.0" cy="770.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1409.0" cy="665.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1374.0" cy="665.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<circle cx="1136.0" cy="819.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1311.0" cy="812.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1150.0" cy="469.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<circle cx="1283.0" cy="721.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1241.0" cy="910.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1318.0" cy="609.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<circle cx="1143.0" cy="455.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1178.0" cy="455.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1087.0" cy="973.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1416.0" cy="896.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1241.0" cy="672.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1206.0" cy="959.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1297.0" cy="532.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1283.0" cy="609.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1332.0" cy="546.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1318.0" cy="539.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1192.0" cy="588.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1094.0" cy="707.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<circle cx="1318.0" cy="826.5" r="7" fill="#8ab4ff" stroke="#060b14" stroke-width="2"/>
+<circle cx="1346.0" cy="721.5" r="7" fill="none" stroke="#8ab4ff" stroke-width="3" opacity=".85"/>
+<rect x="72" y="1038" width="670" height="112" fill="#0c1727" stroke="#1d3447"/>
+<text x="94.0" y="1070.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#cfdcef" text-anchor="start">✦ DAL SHOT MIX · SOG ONLY</text>
+<text x="94.0" y="1102.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#9fb1cd" text-anchor="start">WRIST</text>
+<rect x="220" y="1092" width="340.0" height="9" fill="#2fbe83"/>
+<text x="578.0" y="1102.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#f4f9ff" text-anchor="start">14</text>
+<text x="94.0" y="1120.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#9fb1cd" text-anchor="start">SNAP</text>
+<rect x="220" y="1110" width="72.9" height="9" fill="#2fbe83"/>
+<text x="578.0" y="1120.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#f4f9ff" text-anchor="start">3</text>
+<text x="94.0" y="1138.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#9fb1cd" text-anchor="start">DEFLECTED</text>
+<rect x="220" y="1128" width="24.3" height="9" fill="#2fbe83"/>
+<text x="578.0" y="1138.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#f4f9ff" text-anchor="start">1</text>
+<rect x="758" y="1038" width="350" height="112" fill="#0c1727" stroke="#1d3447"/>
+<text x="780.0" y="1070.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#cfdcef" text-anchor="start">LEGEND</text>
+<polygon points="792.0,1094.0 794.0,1100.0 800.0,1102.0 794.0,1104.0 792.0,1110.0 790.0,1104.0 784.0,1102.0 790.0,1100.0" fill="#f4f9ff" stroke="#2fbe83" stroke-width="3"/>
+<text x="812.0" y="1108.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#f4f9ff" text-anchor="start">GOAL</text>
+<circle cx="895" cy="1102" r="7" fill="#2fbe83" stroke="#060b14" stroke-width="2"/>
+<text x="913.0" y="1108.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#f4f9ff" text-anchor="start">SAVED</text>
+<circle cx="1000" cy="1102" r="7" fill="none" stroke="#2fbe83" stroke-width="3"/>
+<text x="1018.0" y="1108.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#f4f9ff" text-anchor="start">MISSED</text>
+<text x="780.0" y="1132.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#6f86a8" text-anchor="start">BLOCKED ATTEMPTS COUNTED, NOT PLOTTED</text>
+<rect x="1124" y="1038" width="404" height="112" fill="#0c1727" stroke="#1d3447"/>
+<text x="1146.0" y="1070.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#cfdcef" text-anchor="start">RECONCILIATION GATE</text>
+<text x="1504.0" y="1070.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" fill="#3ad07a" text-anchor="end">✓ PASS</text>
+<text x="1146.0" y="1108.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#dce7f7" text-anchor="start">DAL  SOG 18/18   GOALS 2/2   ATT 45</text>
+<text x="1146.0" y="1133.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#dce7f7" text-anchor="start">MIN  SOG 27/27   GOALS 1/1   ATT 49</text>
+<text x="72.0" y="1178.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#6f86a8" text-anchor="start">Derived from NHL public play-by-play. Chance quality: Polaris in-house xG.</text>
+<text x="800.0" y="1178.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#5fe6da" text-anchor="middle">✦ POLARIS</text>
+<text x="1528.0" y="1178.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#6f86a8" text-anchor="end">UNIFORM DOTS · XG SIZING GATED</text>
 </svg>
