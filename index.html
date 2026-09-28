@@ -802,6 +802,29 @@
     font-weight: 300;
   }
 
+  .polaris-cta {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid var(--gold);
+    color: var(--black);
+    background: var(--gold);
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  .polaris-cta:hover {
+    background: transparent;
+    color: var(--gold);
+  }
+
   /* -- SOCIAL MEDIA -- */
   .social-divider {
     margin: 3.5rem auto 2.5rem;
@@ -981,6 +1004,7 @@
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="#markets">Markets</a></li>
+    <li><a href="/polaris/">Polaris</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#media">Media</a></li>
   </ul>
@@ -1389,7 +1413,7 @@
   <div class="polaris-placeholder">
     <div class="polaris-badge">
       <span class="polaris-dev-dot"></span>
-      In Development
+      Season Hub Live
     </div>
     <h3>A proprietary NHL analytics system</h3>
     <div class="polaris-copy">
@@ -1400,9 +1424,10 @@
         The project's scope spans player evaluation frameworks, contract valuation models, roster construction analysis, and in-game tactical assessment. The goal is not to replace the eye test but to sharpen it: giving hockey operations professionals a structured, data-informed layer on top of the instincts and relationships that drive front office work.
       </p>
       <p>
-        Development continues through the 2026 offseason. Detailed methodology and initial outputs will be published as modules are completed.
+        The first public release is now focused on Dallas. The season hub includes governed 2025-26 player cards, the 2026-27 analytical outlook, and a preseason postgame rehearsal built from public play-by-play. Next-morning Stars reports begin with the regular season.
       </p>
     </div>
+    <a class="polaris-cta" href="/polaris/">Open the Polaris season hub</a>
   </div>
 </section>
 
