@@ -115,23 +115,15 @@
 <text x="112.0" y="1292.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Wrist</text>
 <rect x="276" y="1270" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
 <rect x="276" y="1270" width="346.1" height="26" rx="7" fill="#13b9d6" opacity="0.9"/>
-<text x="735.0" y="1291.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">21</text>
+<text x="735.0" y="1291.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">14</text>
 <text x="112.0" y="1326.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Snap</text>
 <rect x="276" y="1304" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1304" width="49.4" height="26" rx="7" fill="#f6c945" opacity="0.9"/>
+<rect x="276" y="1304" width="74.2" height="26" rx="7" fill="#f6c945" opacity="0.9"/>
 <text x="735.0" y="1325.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">3</text>
 <text x="112.0" y="1360.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Deflected</text>
 <rect x="276" y="1338" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1338" width="16.5" height="26" rx="7" fill="#7dd4a3" opacity="0.9"/>
+<rect x="276" y="1338" width="24.7" height="26" rx="7" fill="#7dd4a3" opacity="0.9"/>
 <text x="735.0" y="1359.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">1</text>
-<text x="112.0" y="1394.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Slap</text>
-<rect x="276" y="1372" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1372" width="16.5" height="26" rx="7" fill="#b89cff" opacity="0.9"/>
-<text x="735.0" y="1393.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">1</text>
-<text x="112.0" y="1428.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#d8e7ef" text-anchor="start">Tip-In</text>
-<rect x="276" y="1406" width="445" height="26" rx="7" fill="#0b1b2b" stroke="#24455e" stroke-width="1"/>
-<rect x="276" y="1406" width="16.5" height="26" rx="7" fill="#ec6f81" opacity="0.9"/>
-<text x="735.0" y="1427.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#d8e7ef" text-anchor="start">1</text>
 <rect x="824" y="1192" width="690" height="244" rx="18" fill="#102235" stroke="#28506a" stroke-width="2"/>
 <text x="850.0" y="1236.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#f7fbff" text-anchor="start">Legend</text>
 <circle cx="868" cy="1272" r="8" fill="#f6c945" stroke="#083548" stroke-width="2"/>
