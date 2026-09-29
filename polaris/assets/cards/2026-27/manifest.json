@@ -1,0 +1,8 @@
+{
+  "artifact": "Polaris_2026_27_Live_Season_Cards",
+  "status": "WAITING_FOR_QUALIFYING_CURRENT_SEASON_EXPORT",
+  "season": "20262027",
+  "players_rendered": 0,
+  "source_policy": "The live updater requires season_players.json metadata.season to equal 20262027 and will not consume the frozen 2025-26 archive export.",
+  "public_model_status": "HOLD_PENDING_FULL_20262027_FORWARD_VALIDATION"
+}
