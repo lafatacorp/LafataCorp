@@ -16,11 +16,25 @@
 <script defer src="/_vercel/speed-insights/script.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--black:#050505;--panel:#0e0e0e;--strip:#0c0c0c;--line:#1f1f1f;--hair:#1a1a1a;--gold:#c9a44c;--gold-hover:#e6c877;--white:#f2efe8;--soft:#e6e2d9;--body:#9c9a94;--muted:#6b6964;--faint:#4a4843;--cyan:#5fe6da;--up:#5fbf8a;--down:#d08a7a;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Outfit',sans-serif;--mono:'IBM Plex Mono',monospace}
+:root{
+  --black:#050505;--panel:#0e0e0e;--strip:#0c0c0c;--line:#1f1f1f;--hair:#1a1a1a;
+  --gold:#c9a44c;--gold-hover:#e6c877;--teal:#3fb8a9;
+  --white:#f2efe8;--soft:#e6e2d9;--body:#9c9a94;--muted:#6b6964;--faint:#4a4843;
+  --win:#5cc28a;--loss:#e06a5f;--push:#8a8883;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Outfit',sans-serif;--mono:'IBM Plex Mono',monospace;
+}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:var(--black);color:var(--white);font:300 16px/1.8 var(--sans);overflow-x:hidden}
-a{color:inherit}button{font:inherit}.mono{font-family:var(--mono)}
-.up{color:var(--up)}.down{color:var(--down)}
+a{color:inherit}button{font:inherit}
+.mono{font-family:var(--mono)}
+
+/* ── READABILITY FIX 1 ───────────────────────────────────────────────────────
+   Every data number is Outfit with tabular figures. Cormorant ships old-style
+   figures, which render 0 like a lowercase o and 1 like a capital I — fine for
+   a headline, unreadable in a stat. Cormorant is for headings only from here. */
+.num{font-family:var(--sans);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1,"lnum" 1;font-weight:500;letter-spacing:.01em}
+.num-400{font-weight:400}
+.up{color:var(--win)}.down{color:var(--loss)}.flat{color:var(--push)}
 
 nav{height:72px;position:fixed;inset:0 0 auto;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 clamp(1.25rem,4vw,3rem);background:rgba(5,5,5,.95);border-bottom:1px solid var(--hair)}
 .brand{display:flex;align-items:center;gap:18px;font:600 1.12rem var(--serif);letter-spacing:.18em;color:var(--gold);text-decoration:none;text-transform:uppercase}
@@ -37,92 +51,149 @@ nav{height:72px;position:fixed;inset:0 0 auto;z-index:50;display:grid;grid-templ
 .eyebrow:before,.section-label:before{content:'';width:34px;height:1px;background:var(--gold);flex:none}
 h1{font:300 clamp(3rem,7.6vw,6.4rem)/.88 var(--serif);letter-spacing:.05em;margin:2rem 0 2.2rem}
 .hero-dek{font:300 clamp(1.08rem,1.6vw,1.3rem)/1.7 var(--sans);color:var(--body);max-width:44rem}
-.opener{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--strip);border:1px solid var(--line);border-bottom:0;margin-top:3.5rem}
-.opener div{padding:1.45rem 1.6rem;border-right:1px solid var(--line)}
-.opener div:last-child{border-right:0}
-.opener span{display:block;font:500 .62rem var(--mono);letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
-.opener div:first-child span{color:var(--gold)}
-.opener strong{display:block;margin-top:.42rem;font:400 1.85rem var(--serif);color:var(--white)}
-.opener .sm strong{font-size:1.15rem;letter-spacing:.02em}
 
-section.content{max-width:1240px;margin:auto;padding:7.5rem 2rem}
+/* ── 5. hero strip ── */
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--strip);border:1px solid var(--line);border-bottom:0;margin-top:3.5rem}
+.strip-cell{padding:1.45rem 1.6rem;border-right:1px solid var(--line);min-width:0}
+.strip-cell:last-child{border-right:0}
+.strip-label{display:flex;align-items:center;gap:.5rem;font:500 .62rem var(--mono);letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
+.strip-label i{width:8px;height:8px;flex:none}
+.strip-val{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin-top:.5rem}
+.strip-val .v{font-size:2.05rem;line-height:1.05;color:var(--white)}
+.strip-val .v.sm{font-size:1.12rem;line-height:1.3}
+.strip-val .s{font-size:.9rem}
+.strip-val .s.meta{color:var(--muted);font-size:.8rem}
+
+section.content{max-width:1240px;margin:auto;padding:6.5rem 2rem}
 .band{border-bottom:1px solid var(--hair)}
 .section-title{font:300 clamp(2.6rem,5.2vw,4.15rem)/1.05 var(--serif);letter-spacing:.03em;margin-top:1.35rem}
 .section-head{display:flex;justify-content:space-between;align-items:end;gap:3rem;flex-wrap:wrap}
 .section-note{color:var(--body);max-width:34rem;line-height:1.85;font-size:.95rem}
 
-/* picks */
-.picks-grid{display:grid;gap:1.25rem;margin-top:3.5rem}
-.pick{background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--gold);padding:1.9rem 2rem}
-.pick header{display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;flex-wrap:wrap}
-.pick-matchup{font:500 .6rem var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
-.pick h3{font:400 2rem var(--serif);margin-top:.45rem;letter-spacing:.02em;color:var(--white)}
-.pick h3 em{font:500 .62rem var(--mono);font-style:normal;color:var(--gold);letter-spacing:.18em;vertical-align:middle;margin-left:.6rem}
-.pick-meta{display:flex;align-items:center;gap:.7rem;flex-shrink:0;padding-top:.4rem}
-.tier{font:500 .56rem var(--mono);letter-spacing:.18em;text-transform:uppercase;padding:.45rem .65rem;border:1px solid var(--line);color:var(--body)}
-.tier-elite{color:var(--gold);border-color:rgba(201,164,76,.5)}
-.tier-high{color:var(--cyan);border-color:rgba(95,230,218,.35)}
-.edge{font:500 .58rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.pick-writeup{margin-top:1.3rem;color:var(--soft);line-height:1.85;max-width:62rem;font-weight:300}
-.pick-factors{list-style:none;display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.5rem}
-.pick-factors li{font:500 .55rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:.42rem .6rem;background:var(--strip)}
-.pick-factors li.era{color:var(--gold);border-color:rgba(201,164,76,.32)}
-.no-picks{border:1px solid var(--line);background:var(--panel);padding:3.25rem 2rem;text-align:center;margin-top:3.5rem}
-.no-picks span{display:block;font:500 .62rem var(--mono);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
-.no-picks p{color:var(--body);max-width:40rem;margin:0 auto;line-height:1.85}
-.provenance{margin-top:2rem;border:1px solid var(--line);background:var(--strip);padding:1.2rem 1.5rem;color:var(--muted);font:400 .78rem/1.75 var(--sans)}
-.provenance strong{color:var(--gold);font:500 .6rem var(--mono);letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:.5rem}
+/* ── 2. team logos ── */
+.tl{object-fit:contain;flex:none;display:block}
+.tl-fallback{display:inline-flex;align-items:center;justify-content:center;border:1px solid #2a2824;font:500 .58rem var(--mono);color:var(--body);flex:none}
 
-/* watch list */
+/* ── 3. plays as tickets ── */
+.plays{display:grid;gap:1.25rem;margin-top:3.5rem}
+.ticket{display:grid;grid-template-columns:minmax(260px,.95fr) minmax(240px,1fr) minmax(260px,1.2fr);background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--gold)}
+.tk{padding:1.5rem 1.6rem;border-right:1px solid var(--line);min-width:0}
+.tk:last-child{border-right:0}
+.tk-head{display:flex;justify-content:space-between;gap:1rem;font:500 .6rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.tk-label{font:500 .6rem var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.team-row{display:flex;align-items:center;gap:.9rem;padding:.7rem .8rem;border:1px solid var(--hair);margin-top:.7rem}
+.team-row + .team-row{margin-top:.5rem}
+.team-row .tl,.team-row .tl-fallback{width:40px;height:40px}
+.team-row .tn{min-width:0;flex:1}
+.team-row .tn b{display:block;font:400 1.02rem var(--sans);letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.team-row .tn span{display:block;font:500 .55rem var(--mono);letter-spacing:.2em;color:var(--muted);margin-top:.1rem}
+.pick-tag{font:600 .55rem var(--mono);letter-spacing:.18em;color:#0a0a0a;background:var(--gold);padding:.32rem .55rem;flex:none}
+.position{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin-top:.9rem}
+.position .side{font:500 1.7rem var(--sans);letter-spacing:.01em;color:var(--white)}
+.position .odds{font-size:1.35rem;color:var(--gold)}
+.probbar{height:8px;background:#161616;border:1px solid var(--hair);margin-top:1.1rem;display:flex;overflow:hidden}
+.probbar .mkt{background:#3a3834;height:100%}
+.probbar .edge{background:var(--gold);height:100%}
+.probnums{display:flex;gap:1.6rem;margin-top:.85rem;flex-wrap:wrap}
+.probnums div span{display:block;font:500 .55rem var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.probnums div b{display:block;font-size:1.12rem;margin-top:.2rem;color:var(--white)}
+.probnums div b.edge{color:var(--gold)}
+.why{margin-top:.9rem;color:var(--soft);font:300 .92rem/1.8 var(--sans)}
+
+.no-picks{display:flex;align-items:center;gap:1.6rem;border:1px solid var(--line);background:var(--panel);padding:1.9rem 2rem;margin-top:3.5rem;flex-wrap:wrap}
+.no-picks .zero{width:64px;height:64px;flex:none;display:grid;place-items:center;border:1px solid rgba(201,164,76,.4);color:var(--gold);font-size:1.9rem}
+.no-picks .cp{min-width:14rem;flex:1}
+.no-picks .cp span{display:block;font:500 .62rem var(--mono);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.no-picks .cp p{color:var(--body);line-height:1.85}
+.provenance{margin-top:1.25rem;display:flex;gap:1.5rem;border:1px solid var(--line);background:var(--strip);padding:1.2rem 1.5rem;flex-wrap:wrap}
+.provenance strong{flex:none;color:var(--gold);font:500 .6rem var(--mono);letter-spacing:.2em;text-transform:uppercase;padding-top:.25rem}
+.provenance p{flex:1;min-width:16rem;color:var(--muted);font:400 .78rem/1.75 var(--sans)}
+
+/* ── 4. radar cards with gap meter ── */
 .watch-head{margin-top:4.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap;border-top:1px solid var(--hair);padding-top:3rem}
 .watch-head .section-label{padding-top:.35rem}
+.watch-head>div{flex:1 1 22rem;min-width:0}
+.watch-head .section-title{font-size:clamp(2rem,3.4vw,2.7rem)}
 .watch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:1.25rem;margin-top:2.25rem}
-.watch{background:var(--strip);border:1px solid var(--line);padding:1.5rem 1.6rem}
-.watch header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
-.watch-matchup{font:500 .62rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
-.watch-lean{font:500 .56rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.watch-nums{display:flex;flex-wrap:wrap;gap:1.1rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--hair)}
-.watch-nums span{font:400 .58rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.watch-nums b{display:block;font:400 1.15rem var(--serif);color:var(--white);letter-spacing:.02em;margin-top:.2rem}
+.watch{background:var(--panel);border:1px solid var(--line);padding:1.5rem 1.6rem}
+.watch header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.matchup{display:flex;align-items:center;gap:.55rem;min-width:0}
+.matchup .tl,.matchup .tl-fallback{width:34px;height:34px}
+.matchup .code{font:500 .95rem var(--sans);letter-spacing:.06em}
+.matchup .at{font:400 .7rem var(--mono);color:var(--faint)}
+.leans{font:500 .56rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);flex:none}
+.leans b{color:var(--gold);font-weight:500}
+.wnums{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--hair)}
+.wnums div span{display:block;font:500 .55rem var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.wnums div b{display:block;font-size:1.12rem;margin-top:.2rem;color:var(--white)}
+.gapmeter{position:relative;height:6px;background:#161616;border:1px solid var(--hair);margin-top:1.1rem}
+.gapmeter .fill{height:100%}
+.gapmeter .tick{position:absolute;top:-3px;bottom:-3px;width:1px;background:#5a564c}
+.gapstatus{display:flex;justify-content:space-between;gap:1rem;margin-top:.5rem;font:500 .55rem var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.gapstatus .needs{color:var(--faint)}
 .watch-note{margin-top:1.1rem;color:var(--body);font:300 .9rem/1.8 var(--sans)}
 
-/* systems */
-.systems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:1.25rem;margin-top:3.5rem}
-.system{background:var(--panel);border:1px solid var(--line);padding:1.9rem 2rem}
-.system .swatch{display:inline-block;width:10px;height:10px;vertical-align:middle;margin-right:.7rem}
-.system h3{display:inline;font:400 1.6rem var(--serif);color:var(--soft);letter-spacing:.02em}
-.system-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem 1rem;margin-top:1.8rem;border-top:1px solid var(--hair);padding-top:1.7rem}
-.system-grid strong{display:block;font:400 2rem var(--serif);letter-spacing:.01em;color:var(--white)}
-.system-grid span{display:block;font:500 .58rem var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:.35rem}
-.system-empty{margin-top:1.8rem;border-top:1px solid var(--hair);padding-top:1.7rem}
-.system-empty strong{display:block;font:400 1.5rem var(--serif);color:var(--body)}
-.system-empty span{display:block;font:500 .58rem var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:.5rem}
+/* ── 6. system cards ── */
+.systems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:1.25rem;margin-top:3.5rem}
+.system{background:var(--panel);border:1px solid var(--line);border-top:0;padding:0}
+.system .topbar{height:3px}
+.system-inner{padding:1.7rem 1.9rem}
+.system-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.system-head h3{font:400 1.6rem var(--serif);color:var(--soft);letter-spacing:.02em}
+.system-head .kind{font:500 .56rem var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.rec-row{display:flex;align-items:flex-end;gap:2.2rem;flex-wrap:wrap;margin-top:1.5rem;padding-top:1.4rem;border-top:1px solid var(--hair)}
+.lab{display:block;font:500 .55rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.rec-big{font-size:2.85rem;line-height:1;color:var(--white)}
+.roc{font-size:1.75rem;line-height:1}
+.sys-sub{display:flex;gap:2.2rem;flex-wrap:wrap;margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--hair)}
+.sys-sub div b{display:block;font-size:1.05rem;margin-top:.2rem;color:var(--white)}
+.l10{margin-top:1.4rem}
+.l10 .lab{display:block;font:500 .55rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.55rem}
+.l10 .blocks{display:flex;gap:.3rem;flex-wrap:wrap}
+.l10 .blocks i{width:28px;height:22px;display:grid;place-items:center;font:600 .58rem var(--mono);font-style:normal}
+.system-empty{margin-top:1.5rem;padding-top:1.4rem;border-top:1px solid var(--hair);display:flex;align-items:baseline;gap:1.1rem;flex-wrap:wrap}
+.system-empty .z{font-size:2.85rem;line-height:1;color:var(--faint)}
+.system-empty .t{font:400 1.35rem var(--serif);color:var(--body)}
+.system-empty .sub{display:block;width:100%;font:500 .55rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:.6rem}
 .system-note{margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--hair);color:var(--muted);font:300 .85rem/1.75 var(--sans)}
-.chart-empty{display:grid;place-items:center;height:100%;text-align:center;border:1px dashed var(--line);color:var(--muted);font:300 .9rem/1.8 var(--sans);padding:2rem}
-.chart-empty b{display:block;font:500 .6rem var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
 
-/* chart */
+/* ── chart ── */
 .chart-wrap{margin-top:1.25rem;background:var(--panel);border:1px solid var(--line);padding:1.9rem 2rem 1.5rem}
 .chart-head{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;flex-wrap:wrap}
 .chart-head h3{font:400 1.45rem var(--serif);color:var(--soft);letter-spacing:.02em}
 .chart-legend{display:flex;gap:1.4rem;list-style:none;flex-wrap:wrap}
 .chart-legend li{display:flex;align-items:center;gap:.5rem;font:500 .58rem var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--body)}
 .chart-legend i{width:16px;height:2px;display:inline-block}
-.chart-canvas{position:relative;height:330px;margin-top:1.4rem}
+.chart-body{margin-top:1.4rem;position:relative}
+.chart-body svg{width:100%;height:auto;display:block;overflow:visible}
+.chart-xaxis{display:flex;justify-content:space-between;margin-top:.7rem;font:400 .58rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .chart-foot{color:var(--muted);font:400 .68rem/1.7 var(--mono);letter-spacing:.05em;margin-top:1.1rem}
-details.table-view{margin-top:1rem;border-top:1px solid var(--hair);padding-top:1rem}
-details.table-view summary{cursor:pointer;font:500 .58rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);list-style:none}
-details.table-view summary::-webkit-details-marker{display:none}
-details.table-view summary:before{content:'+ ';color:var(--gold)}
-details[open].table-view summary:before{content:'– '}
-details.table-view summary:hover{color:var(--gold-hover)}
-.tv-scroll{overflow-x:auto;margin-top:1.1rem;max-height:340px;overflow-y:auto}
-table{border-collapse:collapse;width:100%;font:400 .72rem var(--mono)}
-th,td{text-align:right;padding:.5rem .8rem;border-bottom:1px solid var(--hair);white-space:nowrap;color:var(--body)}
-th:first-child,td:first-child{text-align:left}
-th{color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:.18em;font-size:.58rem;position:sticky;top:0;background:var(--panel)}
+.chart-empty{display:grid;place-items:center;height:290px;text-align:center;border:1px dashed var(--line);color:var(--muted);font:300 .9rem/1.8 var(--sans);padding:2rem}
+.chart-empty b{display:block;font:500 .6rem var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
 
-/* method */
+/* ── 7. results log ── */
+.results-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap}
+.tabs{display:flex;border:1px solid var(--line)}
+.tabs button{border:0;background:transparent;color:var(--body);font:500 .6rem var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:.75rem 1rem;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--gold);color:#0a0a0a}
+.log-scroll{overflow-x:auto;margin-top:2.5rem}
+table.log{border-collapse:collapse;width:100%;min-width:720px}
+table.log th{text-align:left;font:500 .55rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:0 1rem .9rem;border-bottom:1px solid var(--line)}
+table.log th.r,table.log td.r{text-align:right}
+table.log td{padding:1rem;border-bottom:1px solid var(--hair);vertical-align:middle}
+.lg-date{font:500 .6rem var(--mono);letter-spacing:.14em;color:var(--muted);white-space:nowrap}
+.lg-game{display:flex;align-items:center;gap:.5rem;min-width:0}
+.lg-game .tl,.lg-game .tl-fallback{width:28px;height:28px}
+.lg-game .code{font:500 .85rem var(--sans);letter-spacing:.05em}
+.lg-game .at{font:400 .65rem var(--mono);color:var(--faint)}
+.lg-game .score{font:400 .8rem var(--mono);color:var(--muted);margin-left:.5rem}
+.lg-pos{font:400 .95rem var(--sans);color:var(--white)}
+.lg-sys{display:flex;align-items:center;gap:.45rem;font:500 .55rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:.25rem}
+.lg-sys i{width:7px;height:7px;flex:none}
+.chip{display:inline-grid;place-items:center;min-width:26px;height:22px;padding:0 .4rem;font:600 .58rem var(--mono)}
+.log-empty{color:var(--body);padding:1.5rem 0 0}
+
+/* ── method ── */
 .method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin-top:3.5rem;border:1px solid var(--line);background:var(--strip)}
 .method-grid article{padding:2.2rem;border-right:1px solid var(--line)}
 .method-grid article:last-child{border-right:0}
@@ -143,23 +214,26 @@ footer>a:last-child:hover{color:var(--gold-hover)}
   .nav-links{display:none;position:absolute;top:71px;left:0;right:0;background:#050505;padding:1.5rem;flex-direction:column;border-bottom:1px solid var(--hair)}
   .nav-links.open{display:flex}
   .hero{padding-top:8rem}
-  .opener{grid-template-columns:repeat(2,1fr)}
-  .opener div:nth-child(2){border-right:0}
-  .opener div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .strip-cell:nth-child(2){border-right:0}
+  .strip-cell:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .ticket{grid-template-columns:1fr}
+  .tk{border-right:0;border-bottom:1px solid var(--line)}
+  .tk:last-child{border-bottom:0}
   .method-grid article{border-right:0;border-bottom:1px solid var(--line)}
   .method-grid article:last-child{border-bottom:0}
 }
 @media(max-width:600px){
   nav{padding:0 1rem}.brand{font-size:1rem;gap:10px}.brand small{padding-left:10px;font-size:.5rem}
-  .hero{padding:7.5rem 1.25rem 0}h1{font-size:2.9rem}
-  .opener{grid-template-columns:1fr}
-  .opener div{border-right:0;border-bottom:1px solid var(--line)!important}
-  .opener div:last-child{border-bottom:0!important}
-  section.content{padding:6rem 1.25rem}
-  .pick{padding:1.4rem 1.25rem}.system{padding:1.4rem 1.25rem}.chart-wrap{padding:1.4rem 1.1rem}
-  .section-head{align-items:flex-start;flex-direction:column;gap:1.5rem}
+  .hero{padding:7.5rem 1.25rem 0}h1{font-size:3rem}
+  .strip{grid-template-columns:1fr}
+  .strip-cell{border-right:0;border-bottom:1px solid var(--line)!important}
+  .strip-cell:last-child{border-bottom:0!important}
+  section.content{padding:5rem 1.25rem}
+  .watch{padding:1.4rem 1.25rem}.system-inner{padding:1.4rem 1.25rem}.chart-wrap{padding:1.4rem 1.1rem}
+  .section-head,.results-head{align-items:flex-start;flex-direction:column;gap:1.5rem}
   .section-title{font-size:2.6rem}
-  .chart-canvas{height:260px}
+  .tabs{width:100%}.tabs button{flex:1}
   footer{grid-template-columns:1fr auto}footer span{display:none}
 }
 </style>
@@ -172,6 +246,7 @@ footer>a:last-child:hover{color:var(--gold-hover)}
   <ul class="nav-links" id="navLinks">
     <li><a href="#today">Today</a></li>
     <li><a href="#record">Record</a></li>
+    <li><a href="#results">Results</a></li>
     <li><a href="#method">Method</a></li>
     <li><a href="/">Portfolio</a></li>
   </ul>
@@ -183,11 +258,11 @@ footer>a:last-child:hover{color:var(--gold-hover)}
     <p class="eyebrow">2026-27 Season</p>
     <h1>NHL Trading Model</h1>
     <p class="hero-dek">Two independent NHL systems, tracked in public from opening night. A pre-game value model that prices every game against the market, and an in-game system that trades lead preservation. Every position is simulated &mdash; the record below is the whole record, wins and losses alike.</p>
-    <div class="opener">
-      <div><span>Plays Today</span><strong><!-- PICKS_COUNT -->0<!-- /PICKS_COUNT --></strong></div>
-      <div><span>Positions Settled</span><strong><!-- TOTAL_SETTLED -->0<!-- /TOTAL_SETTLED --></strong></div>
-      <div class="sm"><span>Tracking</span><strong><!-- DATERANGE -->2026-27 &middot; opens 2026-09-29<!-- /DATERANGE --></strong></div>
-      <div class="sm"><span>Updated</span><strong><!-- UPDATED -->Sep 28, 2026 at 1:14 PM<!-- /UPDATED --></strong></div>
+    <div class="strip">
+<!-- STRIP --><div class="strip-cell"><div class="strip-label" style="color:#c9a44c">PLAYS TODAY</div><div class="strip-val"><span class="v num">0</span></div></div>
+<div class="strip-cell"><div class="strip-label" style="color:#6b6964">POSITIONS SETTLED</div><div class="strip-val"><span class="v num">0</span></div></div>
+<div class="strip-cell"><div class="strip-label" style="color:#6b6964">TRACKING</div><div class="strip-val"><span class="v num sm">2026-27 &middot; opens Sep 29</span></div></div>
+<div class="strip-cell"><div class="strip-label" style="color:#6b6964">UPDATED</div><div class="strip-val"><span class="v num sm">Sep 28, 2026 at 11:58 PM</span></div></div><!-- /STRIP -->
     </div>
   </div>
 </header>
@@ -200,47 +275,90 @@ footer>a:last-child:hover{color:var(--gold-hover)}
     </div>
     <p class="section-note">Plays come from the pre-game value model. It posts a side only when its own win probability clears the market&rsquo;s implied probability by a set margin, so quiet days are normal and are recorded as such.</p>
   </div>
-  <div class="picks-grid">
-<!-- PICKS --><div class="no-picks"><span class="mono">No qualifying plays</span><p>No side on the September 29 card cleared the 5-point gap the model needs before it takes a position. Passing is a result too — every game screened is recorded, and the ones it was reading are below.</p></div><!-- /PICKS -->
-  </div>
-<!-- PROVENANCE --><div class="provenance"><strong>Reading these early-season notes</strong>No regular-season games have been played yet, so recent-form and expected-goals signals are drawn from preseason games, where the lineups are not the ones that will play; home, road and head-to-head records are from the 2025-26 season, not this one. Every signal on this page is tagged with the period it comes from.</div><!-- /PROVENANCE -->
-<!-- WATCHES --><div class="watch-head"><p class="section-label">On the Radar</p><p class="section-note">Games the model is reading but not playing. It needs a gap of at least 5 points between its own number and the market before it takes a position, and a high price can swallow a real edge on its own.</p></div><div class="watch-grid">
+<!-- PLAYS --><div class="no-picks"><div class="zero num">0</div><div class="cp"><span>No qualifying plays</span><p>No side on the September 29 card cleared the 5-point gap the model needs before it takes a position. Passing is a result too &mdash; every game screened is recorded, and the ones it was reading are below.</p></div></div><!-- /PLAYS -->
+<!-- PROVENANCE --><div class="provenance"><strong>Early-season note</strong><p>No regular-season games have been played yet, so recent-form and expected-goals signals are drawn from preseason games, where the lineups are not the ones that will play; home, road and head-to-head records are from the 2025-26 season, not this one. Every signal on this page is tagged with the period it comes from.</p></div><!-- /PROVENANCE -->
+<!-- WATCHES --><div class="watch-head"><div><p class="section-label">On the Radar</p><h2 class="section-title">Watching, not playing</h2></div><p class="section-note">Games the model is reading but not playing. It needs a gap of at least 5 points between its own number and the market before it takes a position, and a high price can swallow a real edge on its own.</p></div><div class="watch-grid">
       <article class="watch">
         <header>
-          <span class="watch-matchup mono">MTL @ TOR</span>
-          <span class="watch-lean mono">Leans MTL</span>
+          <span class="matchup"><img class="tl" src="/logos/nhl/MTL.svg" alt="MTL" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">MTL</span><span class="at">@</span><img class="tl" src="/logos/nhl/TOR.svg" alt="TOR" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">TOR</span></span>
+          <span class="leans">Leans <b>MTL</b></span>
         </header>
-        <div class="watch-nums mono">
-          <span>Model <b>56%</b></span>
-          <span>Market <b>51%</b></span>
-          <span>Gap <b>+5.0</b></span>
-          <span>Odds <b>-104</b></span>
+        <div class="wnums">
+          <div><span>Model</span><b class="num">56%</b></div>
+          <div><span>Market</span><b class="num">51%</b></div>
+          <div><span>Gap</span><b class="num" style="color:#d9a441">+5.0</b></div>
+          <div><span>Odds</span><b class="num">&minus;104</b></div>
+        </div>
+        <div class="gapmeter" role="img" aria-label="gap 5.0 of 5.0 points needed">
+          <span class="fill" style="width:62.5%;background:#d9a441"></span>
+          <span class="tick" style="left:62.5%"></span>
+        </div>
+        <div class="gapstatus">
+          <span style="color:#d9a441">Meets gap &middot; Passed on away pick</span>
+          <span class="needs">Needs 5.0</span>
         </div>
         <p class="watch-note">At 56% against a 51% market, the model leans MTL on Montreal&#x27;s 5-1-0 record against Toronto last season (2025-26), the division matchup, and Toronto&#x27;s 1-4 loss in their last meeting. The 5.0-point gap only just meets the minimum, and it passes because away picks have historically won just 40% of the time.</p>
       </article>
       <article class="watch">
         <header>
-          <span class="watch-matchup mono">FLA @ CAR</span>
-          <span class="watch-lean mono">Leans CAR</span>
+          <span class="matchup"><img class="tl" src="/logos/nhl/FLA.svg" alt="FLA" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">FLA</span><span class="at">@</span><img class="tl" src="/logos/nhl/CAR.svg" alt="CAR" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">CAR</span></span>
+          <span class="leans">Leans <b>CAR</b></span>
         </header>
-        <div class="watch-nums mono">
-          <span>Model <b>56%</b></span>
-          <span>Market <b>53%</b></span>
-          <span>Gap <b>+3.0</b></span>
-          <span>Odds <b>-112</b></span>
+        <div class="wnums">
+          <div><span>Model</span><b class="num">56%</b></div>
+          <div><span>Market</span><b class="num">53%</b></div>
+          <div><span>Gap</span><b class="num" style="color:#8a8883">+3.0</b></div>
+          <div><span>Odds</span><b class="num">&minus;112</b></div>
+        </div>
+        <div class="gapmeter" role="img" aria-label="gap 3.0 of 5.0 points needed">
+          <span class="fill" style="width:37.5%;background:#8a8883"></span>
+          <span class="tick" style="left:62.5%"></span>
+        </div>
+        <div class="gapstatus">
+          <span style="color:#8a8883">3.0 of 5.0 &middot; Watching</span>
+          <span class="needs">Needs 5.0</span>
         </div>
         <p class="watch-note">The model leans Carolina at 56% against a 53% market price, citing a 10-3-0 run (nine games last season, four in preseason) that expected goals rate as sustainable, while Florida&#x27;s +0.5 first-period differential comes only from preseason. The 3.0-point gap falls short of the 5-point threshold, so it stays on the watch list.</p>
       </article>
       <article class="watch">
         <header>
-          <span class="watch-matchup mono">VAN @ EDM</span>
-          <span class="watch-lean mono">Leans EDM</span>
+          <span class="matchup"><img class="tl" src="/logos/nhl/CHI.svg" alt="CHI" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">CHI</span><span class="at">@</span><img class="tl" src="/logos/nhl/VGK.svg" alt="VGK" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">VGK</span></span>
+          <span class="leans">Leans <b>VGK</b></span>
         </header>
-        <div class="watch-nums mono">
-          <span>Model <b>70%</b></span>
-          <span>Market <b>67%</b></span>
-          <span>Gap <b>+2.5</b></span>
-          <span>Odds <b>-203</b></span>
+        <div class="wnums">
+          <div><span>Model</span><b class="num">74%</b></div>
+          <div><span>Market</span><b class="num">71%</b></div>
+          <div><span>Gap</span><b class="num" style="color:#8a8883">+3.0</b></div>
+          <div><span>Odds</span><b class="num">&minus;244</b></div>
+        </div>
+        <div class="gapmeter" role="img" aria-label="gap 3.0 of 5.0 points needed">
+          <span class="fill" style="width:37.5%;background:#8a8883"></span>
+          <span class="tick" style="left:62.5%"></span>
+        </div>
+        <div class="gapstatus">
+          <span style="color:#8a8883">3.0 of 5.0 &middot; Watching</span>
+          <span class="needs">Needs 5.0</span>
+        </div>
+        <p class="watch-note">The model leans Vegas at 74% against a 71% market price, citing a 10-3-0 run (nine games last season, four preseason exhibitions) that expected goals suggest is sustainable, plus Chicago&#x27;s 0-4 loss in the last meeting. That 3.0-point gap falls short of the 5-point minimum needed to place a position.</p>
+      </article>
+      <article class="watch">
+        <header>
+          <span class="matchup"><img class="tl" src="/logos/nhl/VAN.svg" alt="VAN" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">VAN</span><span class="at">@</span><img class="tl" src="/logos/nhl/EDM.svg" alt="EDM" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">EDM</span></span>
+          <span class="leans">Leans <b>EDM</b></span>
+        </header>
+        <div class="wnums">
+          <div><span>Model</span><b class="num">70%</b></div>
+          <div><span>Market</span><b class="num">67%</b></div>
+          <div><span>Gap</span><b class="num" style="color:#8a8883">+2.5</b></div>
+          <div><span>Odds</span><b class="num">&minus;203</b></div>
+        </div>
+        <div class="gapmeter" role="img" aria-label="gap 2.5 of 5.0 points needed">
+          <span class="fill" style="width:31.2%;background:#8a8883"></span>
+          <span class="tick" style="left:62.5%"></span>
+        </div>
+        <div class="gapstatus">
+          <span style="color:#8a8883">2.5 of 5.0 &middot; Watching</span>
+          <span class="needs">Needs 5.0</span>
         </div>
         <p class="watch-note">The model leans Edmonton at 70% against a market-implied 67%, citing EDM&#x27;s 4-2-0 record against Vancouver last season (2025-26), the divisional matchup, and a +0.8 first-period differential in preseason exhibitions. That leaves a 2.5-point gap, short of the 5 points the model requires, so it is watching rather than taking a position.</p>
       </article></div><!-- /WATCHES -->
@@ -254,47 +372,36 @@ footer>a:last-child:hover{color:var(--gold-hover)}
     </div>
     <p class="section-note">Return on capital is stated as a percentage of each system&rsquo;s starting paper bankroll. ROI per stake is profit against total amount staked. No balances are published.</p>
   </div>
-
   <div class="systems-grid">
-<!-- SYSTEMS -->
-      <article class="system">
-        <span class="swatch" style="background:#ad8b38"></span>
-        <h3>Daily Analyzer V2</h3>
-        <div class="system-empty">
-          <strong>No settled positions yet</strong>
-          <span>2026-27 record begins with the first result</span>
-        </div>
-        
-      </article>
-      <article class="system">
-        <span class="swatch" style="background:#22a8a0"></span>
-        <h3>Fade Bot V3</h3>
-        <div class="system-empty">
-          <strong>No settled positions yet</strong>
-          <span>2026-27 record begins with the first result</span>
-        </div>
-        <p class="system-note">Entries are taken in-game, on a live clock, and the window they trade is minutes wide. A page refreshed once a day cannot carry them in time, so the alerts go to Discord as they fire and only the settled record lands here.</p>
-      </article><!-- /SYSTEMS -->
+<!-- SYSTEMS --><article class="system"><div class="topbar" style="background:#ad8b38"></div><div class="system-inner"><div class="system-head"><h3>Daily Analyzer V2</h3><span class="kind">Pre-game value</span></div><div class="system-empty"><span class="z num">0&ndash;0</span><span class="t">No settled positions yet</span><span class="sub">2026-27 record begins with the first result</span></div></div></article>
+<article class="system"><div class="topbar" style="background:#22a8a0"></div><div class="system-inner"><div class="system-head"><h3>Fade Bot V3</h3><span class="kind">In-game lead hold</span></div><div class="system-empty"><span class="z num">0&ndash;0</span><span class="t">No settled positions yet</span><span class="sub">2026-27 record begins with the first result</span></div><p class="system-note">Entries are taken in-game, on a live clock, and the window they trade is minutes wide. A page refreshed once a day cannot carry them in time, so the alerts go to Discord as they fire and only the settled record lands here.</p></div></article><!-- /SYSTEMS -->
   </div>
-
   <div class="chart-wrap">
     <div class="chart-head">
       <h3>Cumulative return on capital</h3>
       <ul class="chart-legend">
-        <li><i style="background:#ad8b38"></i> Daily Analyzer</li>
-        <li><i style="background:#22a8a0"></i> Fade Bot</li>
+        <li><i style="background:#c9a44c"></i> Daily Analyzer</li>
+        <li><i style="background:#3fb8a9"></i> Fade Bot</li>
       </ul>
     </div>
-    <div class="chart-canvas" id="chartCanvasWrap"><canvas id="growthChart"></canvas></div>
+<!-- CHART --><div class="chart-empty"><b>Season opens September 29</b>The curve starts at zero and is redrawn after each night of results.</div><!-- /CHART -->
     <p class="chart-foot">Percent of starting paper capital, cumulative by settlement date. Both series share one axis.</p>
-    <details class="table-view">
-      <summary>View as table</summary>
-      <div class="tv-scroll"><table id="growthTable">
-        <thead><tr><th>Date</th><th>Daily Analyzer</th><th>Fade Bot</th></tr></thead>
-        <tbody></tbody>
-      </table></div>
-    </details>
   </div>
+</section>
+
+<section class="content band" id="results">
+  <div class="results-head">
+    <div>
+      <p class="section-label">Results Log</p>
+      <h2 class="section-title">Every settled position</h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Filter results by system">
+      <button role="tab" aria-selected="true" data-sys="all">All</button>
+      <button role="tab" aria-selected="false" data-sys="DA">Daily Analyzer</button>
+      <button role="tab" aria-selected="false" data-sys="FB">Fade Bot</button>
+    </div>
+  </div>
+<!-- RESULTS --><p class="log-empty">Results post the morning after each slate, starting with opening night.</p><!-- /RESULTS -->
 </section>
 
 <section class="content" id="method">
@@ -317,7 +424,7 @@ footer>a:last-child:hover{color:var(--gold-hover)}
       <p>The paragraph under each play is generated from the exact signals the model recorded for that game &mdash; nothing else is fed in and nothing is added by hand. Each signal is labelled with the period it comes from, so a prior-season split or a preseason run is never passed off as current form.</p>
     </article>
   </div>
-  <p class="attribution"><b>All figures reflect paper trading.</b> No real capital is deployed and no positions are placed with any broker or exchange. Returns are stated as percentages of a notional starting bankroll; account balances are not published. Results are unaudited, self-reported, and presented for informational purposes only. Nothing here is betting or investment advice, and past simulated performance does not indicate future results.</p>
+  <p class="attribution"><b>All figures reflect paper trading.</b> No real capital is deployed and no positions are placed with any broker or exchange. Returns are stated as percentages of a notional starting bankroll; account balances are not published. Results are unaudited, self-reported, and presented for informational purposes only. Nothing here is betting or investment advice, and past simulated performance does not indicate future results. Team names and logos are trademarks of the NHL and its clubs; LafataCorp is not affiliated with, endorsed by, or sponsored by the NHL.</p>
 </section>
 
 <footer>
@@ -325,7 +432,6 @@ footer>a:last-child:hover{color:var(--gold-hover)}
   <a class="mono" href="/">Back to portfolio &rarr;</a>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
   document.getElementById('mobileToggle').addEventListener('click', function () {
     var links = document.getElementById('navLinks');
@@ -333,94 +439,32 @@ footer>a:last-child:hover{color:var(--gold-hover)}
     this.setAttribute('aria-expanded', links.classList.contains('open'));
   });
 
-                                      /* BEGIN_CHART_DATA */
-    const chartDates = [];
-    const analyzerGrowth = [];
-    const fadeGrowth = [];
-    const colorAnalyzer = '#ad8b38';
-    const colorFade = '#22a8a0';
-    /* END_CHART_DATA */
-
+  // Results log system filter. Rows carry data-sys; tabs just show/hide.
   (function () {
-    const tbody = document.querySelector('#growthTable tbody');
-    const fmt = v => (v === null || v === undefined) ? '—' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
-    tbody.innerHTML = chartDates.map((d, i) =>
-      `<tr><td>${d}</td><td>${fmt(analyzerGrowth[i])}</td><td>${fmt(fadeGrowth[i])}</td></tr>`
-    ).join('');
-
-    const el = document.getElementById('growthChart');
-    if (!chartDates.length) {
-      const wrap = document.getElementById('chartCanvasWrap');
-      if (wrap) wrap.innerHTML =
-        '<div class="chart-empty"><b>Season opens September 29</b>' +
-        'The curve starts at zero and is redrawn after each night of results.</div>';
-      const tv = document.querySelector('details.table-view');
-      if (tv) tv.hidden = true;
-      return;
-    }
-    if (!el || !window.Chart) return;
-
-    const ink = '#6b6964', grid = 'rgba(31,31,31,.9)';
-    const series = (label, data, color) => ({
-      label, data, borderColor: color, backgroundColor: color,
-      borderWidth: 2, pointRadius: 0, pointHoverRadius: 5,
-      pointHoverBorderColor: '#0e0e0e', pointHoverBorderWidth: 2,
-      tension: .25, spanGaps: true
-    });
-
-    new Chart(el, {
-      type: 'line',
-      data: {
-        labels: chartDates,
-        datasets: [
-          series('Daily Analyzer', analyzerGrowth, colorAnalyzer),
-          series('Fade Bot', fadeGrowth, colorFade)
-        ]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        interaction: { mode: 'index', intersect: false },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: '#0c0c0c', borderColor: '#1f1f1f', borderWidth: 1,
-            titleColor: '#f2efe8', bodyColor: '#e6e2d9', padding: 10,
-            displayColors: true, boxWidth: 8, boxHeight: 8,
-            titleFont: { family: "'IBM Plex Mono', monospace", size: 11 },
-            bodyFont: { family: "'IBM Plex Mono', monospace", size: 11 },
-            callbacks: {
-              title: items => items.length ? chartDates[items[0].dataIndex] : '',
-              label: c => ` ${c.dataset.label}: ${c.parsed.y >= 0 ? '+' : ''}${c.parsed.y.toFixed(2)}%`
-            }
-          }
-        },
-        scales: {
-          x: {
-            grid: { display: false }, border: { color: '#1f1f1f' },
-            ticks: {
-              color: ink, maxRotation: 0, autoSkipPadding: 42,
-              font: { family: "'IBM Plex Mono', monospace", size: 10 },
-              callback: function (v) {
-                const d = this.getLabelForValue(v);
-                if (!d) return '';
-                const parts = d.split('-');
-                const names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-                return names[parseInt(parts[1], 10) - 1] + ' ' + parseInt(parts[2], 10);
-              }
-            }
-          },
-          y: {
-            grid: { color: grid, drawTicks: false }, border: { display: false },
-            ticks: {
-              color: ink, padding: 10,
-              font: { family: "'IBM Plex Mono', monospace", size: 10 },
-              callback: v => (v >= 0 ? '+' : '') + v + '%'
-            }
-          }
-        }
-      }
+    var tabs = document.querySelectorAll('.tabs button');
+    if (!tabs.length) return;
+    tabs.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var sys = btn.dataset.sys;
+        tabs.forEach(function (b) { b.setAttribute('aria-selected', String(b === btn)); });
+        document.querySelectorAll('tr[data-sys]').forEach(function (tr) {
+          tr.hidden = !(sys === 'all' || tr.dataset.sys === sys);
+        });
+      });
     });
   })();
+
+  // A logo that 404s falls back to the 3-letter code in a bordered square.
+  document.querySelectorAll('img.tl').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var s = document.createElement('span');
+      s.className = 'tl-fallback';
+      s.textContent = img.alt || '';
+      s.style.width = img.style.width || getComputedStyle(img).width;
+      s.style.height = img.style.height || getComputedStyle(img).height;
+      img.replaceWith(s);
+    }, { once: true });
+  });
 </script>
 </body>
 </html>
