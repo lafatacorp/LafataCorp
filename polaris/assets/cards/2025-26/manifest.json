@@ -1,6 +1,6 @@
 {
   "artifact": "Polaris_Season_Card_Set",
-  "generated_at": "2026-09-29T20:01:22.205375+00:00",
+  "generated_at": "2026-09-30T04:22:18.143546+00:00",
   "mode": "archive",
   "team": "DAL",
   "season": "20252026",
@@ -17,6 +17,22 @@
   "selection_sha256": "b04c44e1eb4fcd51c5bb41730c48fd798d5cd6f14d7110041f8e5cd666f50a93",
   "players_requested": 22,
   "players_rendered": 22,
+  "official_skater_reconciliation": {
+    "source": "stored NHL regular-season boxscore JSON",
+    "fields": [
+      "games_played",
+      "goals",
+      "assists",
+      "points",
+      "shots",
+      "toi_seconds"
+    ],
+    "skaters_checked": 20,
+    "skaters_passed": 20,
+    "skaters_held": 0,
+    "export_rows_with_differences": 5,
+    "card_values_use_official_overlay": true
+  },
   "results": [
     {
       "player_id": 8480027,
@@ -25,8 +41,8 @@
       "games_played": 82,
       "status": "RENDERED",
       "file": "jason_robertson_social.png",
-      "sha256": "fd72a8578cc9952b17e3ef42ecd35fc1578fa0d0d32c66eeefc94742342da46a",
-      "bytes": 107177
+      "sha256": "e823c8d523a0567512afca4891747ecf9360dbbc60788f283cb4931a80fb5367",
+      "bytes": 106656
     },
     {
       "player_id": 8482740,
@@ -35,8 +51,8 @@
       "games_played": 82,
       "status": "RENDERED",
       "file": "wyatt_johnston_social.png",
-      "sha256": "b6afd1828e8b2987b7ce57424871f31ae60e8501938f3504a5f98bf584ecc408",
-      "bytes": 102410
+      "sha256": "fd7245e2ef8c885e06b5b4b75bae28155b843840d07d8e82a1e1f29410773c0d",
+      "bytes": 103979
     },
     {
       "player_id": 8478449,
@@ -45,8 +61,8 @@
       "games_played": 53,
       "status": "RENDERED",
       "file": "roope_hintz_social.png",
-      "sha256": "bd9b0abec5e61159fb989a712419fab6faa43fcd6e0b4ac30db674cd1d89d397",
-      "bytes": 98442
+      "sha256": "3007a2c3daa46c1ff437f2cc9c9764ca7a53c6415e27d8f9fe0e73841519d52f",
+      "bytes": 100038
     },
     {
       "player_id": 8478420,
@@ -55,8 +71,8 @@
       "games_played": 64,
       "status": "RENDERED",
       "file": "mikko_rantanen_social.png",
-      "sha256": "d9092f1b7263dd3e39e3fbb9ac94d62a134fa144b02788ee19b20fcdba9ee160",
-      "bytes": 99341
+      "sha256": "6082689178e1cfec7956ee63525bf215e32aa8e44e53ba327cfa3f22a4e9214a",
+      "bytes": 101184
     },
     {
       "player_id": 8479193,
@@ -75,8 +91,8 @@
       "games_played": 77,
       "status": "RENDERED",
       "file": "miro_heiskanen_social.png",
-      "sha256": "e62e805784d40f2bb4adbcb5208e05f3ff35680c1d24fab51df9cebe49c2a21c",
-      "bytes": 104606
+      "sha256": "23fe900fd70c95efb10c85e016ebc564518bb59344277500cd68418092ecc642",
+      "bytes": 105637
     },
     {
       "player_id": 8479979,
@@ -95,8 +111,8 @@
       "games_played": 57,
       "status": "RENDERED",
       "file": "matt_duchene_social.png",
-      "sha256": "c0a2a6acc4b2d84ebb803d452b45c7050d858e5d1dd564867ce7e0f5026c5e14",
-      "bytes": 102173
+      "sha256": "abe1db2ff1c503e3f60c48ab314b1f60f798b0110184f18af3ca9df4de55d716",
+      "bytes": 103673
     },
     {
       "player_id": 8481581,
@@ -105,8 +121,8 @@
       "games_played": 70,
       "status": "RENDERED",
       "file": "thomas_harley_social.png",
-      "sha256": "1bd504a5b09550a6b5a583bcca75e063b6f1ef8b0bf979bfdabf6f4b00074704",
-      "bytes": 97517
+      "sha256": "166f82fddb66a5802c7cd90b34e9960e5a7cf9dbedd12bd8ffb573899508af78",
+      "bytes": 98632
     },
     {
       "player_id": 8480878,
@@ -115,8 +131,8 @@
       "games_played": 52,
       "status": "RENDERED",
       "file": "nils_lundkvist_social.png",
-      "sha256": "7076474651cc6c6bac163d110f6ad4f610255539ce14a7e6437297c30fb57f39",
-      "bytes": 96491
+      "sha256": "5b4f21cd03f23d8b2b9b132e6abe350fe935e9b4978e48cd4fca31447842e460",
+      "bytes": 97594
     },
     {
       "player_id": 8475794,
@@ -125,8 +141,8 @@
       "games_played": 27,
       "status": "RENDERED",
       "file": "tyler_seguin_social.png",
-      "sha256": "4751a8859b7e1f4d830691fd7c64cfa97230da61bf9ee9972e9fe3be233c2922",
-      "bytes": 97946
+      "sha256": "8f00c381f1e4a4280522dc63a6655ebd492ce6d28ecbee54d011e73614fd2f14",
+      "bytes": 98880
     },
     {
       "player_id": 8476902,
@@ -135,8 +151,8 @@
       "games_played": 82,
       "status": "RENDERED",
       "file": "esa_lindell_social.png",
-      "sha256": "4334f54f51c64f092b28296f7c5c3f62fb5d347d9c301c42c29b3ce7df2132d8",
-      "bytes": 98820
+      "sha256": "3390f448eb5ef358fd5dd36ec240cc7828792952f35df6345ab7cccd35da1b96",
+      "bytes": 99893
     },
     {
       "player_id": 8473994,
@@ -145,8 +161,8 @@
       "games_played": 60,
       "status": "RENDERED",
       "file": "jamie_benn_social.png",
-      "sha256": "9ebe1469e606d242b723526bdc993d6ea30234c227c8244014df4c7a3aaaf055",
-      "bytes": 97787
+      "sha256": "2d57116fc26d50a494de188d4424994d75adb812e470d19af18c2ffb7b1a74f6",
+      "bytes": 98829
     },
     {
       "player_id": 8484829,
@@ -155,8 +171,8 @@
       "games_played": 81,
       "status": "RENDERED",
       "file": "justin_hryckowian_social.png",
-      "sha256": "cff489381838cd7a4213748045d4d5e507b0e8687c0f0070d392a0b94b2426c4",
-      "bytes": 102094
+      "sha256": "2592f2c411613db8994b50cd18d355973695ad7977f89a102c91e4d0cf0f215b",
+      "bytes": 103248
     },
     {
       "player_id": 8475755,
@@ -165,8 +181,8 @@
       "games_played": 54,
       "status": "RENDERED",
       "file": "alexander_petrovic_social.png",
-      "sha256": "78761d1ac0ffc5c57c7c967e02ab63afadb2888dee2f69f4a73667480afaf7ff",
-      "bytes": 97002
+      "sha256": "4cdccd5838258eab1883aee1da45e366459a7c8001041b57fad32e092989a954",
+      "bytes": 98133
     },
     {
       "player_id": 8483425,
@@ -175,8 +191,8 @@
       "games_played": 50,
       "status": "RENDERED",
       "file": "lian_bichsel_social.png",
-      "sha256": "c38278fe7e335a29b92deadc4886afa76b9d398061d832bed7057cdd7a44b6de",
-      "bytes": 97270
+      "sha256": "50c4ee5e8928caf9ba9e67c3350fe8067bcfdd28a9372516e4477a479a0d9fb4",
+      "bytes": 98419
     },
     {
       "player_id": 8477454,
@@ -185,8 +201,8 @@
       "games_played": 45,
       "status": "RENDERED",
       "file": "adam_erne_social.png",
-      "sha256": "6b8bd9a82a43d3b4f71d0dc7389a6f05b97c9633349942475b2a6ad847afe3f6",
-      "bytes": 97432
+      "sha256": "05604f3f60423de65e9d3b9f02730b231f2bc17dd4d8490e5bc44771e7148d95",
+      "bytes": 98601
     },
     {
       "player_id": 8479351,
@@ -195,8 +211,8 @@
       "games_played": 73,
       "status": "RENDERED",
       "file": "sam_steel_social.png",
-      "sha256": "670031806a0b80615ed3b2f8112f17490b9fb56a4dcf3676154d38e1682dd1e2",
-      "bytes": 96640
+      "sha256": "c12d900f0dda165ee043c72cab660612a285d43c237ddb1785c6985a49fbe840",
+      "bytes": 97830
     },
     {
       "player_id": 8476889,
@@ -205,8 +221,8 @@
       "games_played": 58,
       "status": "RENDERED",
       "file": "radek_faksa_social.png",
-      "sha256": "98b5a6c37c175cbd69dabce0547046dfe1aa254b2d9f0534028ccc222b9f8695",
-      "bytes": 97002
+      "sha256": "106b2b2be5ba6fd87e5866a6df8dabed4371c98777e7acce4fb985a2f45f5c35",
+      "bytes": 98156
     },
     {
       "player_id": 8480950,
@@ -215,8 +231,8 @@
       "games_played": 53,
       "status": "RENDERED",
       "file": "ilya_lyubushkin_social.png",
-      "sha256": "5d38fdac3dec488493055966e431a0d40344db45f20ba330347de5d610f00db1",
-      "bytes": 98687
+      "sha256": "fb9a9e105d171ce4182ee19556f72db13658aebf1798e5a9677e9b7e59af335a",
+      "bytes": 99839
     },
     {
       "player_id": 8476278,
@@ -225,8 +241,8 @@
       "games_played": 70,
       "status": "RENDERED",
       "file": "colin_blackwell_social.png",
-      "sha256": "b8b39c178db2d558d546783a309aed87cbb2b8857bbbb735c42c5dc95594a63a",
-      "bytes": 97674
+      "sha256": "53ea09d9abab0e9c5d13e5d8c8682bc06a1d0eb07cfb73f1ad88238cbb75f19e",
+      "bytes": 98972
     },
     {
       "player_id": 8480840,
@@ -235,8 +251,8 @@
       "games_played": 72,
       "status": "RENDERED",
       "file": "oskar_back_social.png",
-      "sha256": "ca4e4634f136f928f3658a84e4a73781a9c64ba16f1c3a6cf9a5c3d69f457c0f",
-      "bytes": 96898
+      "sha256": "e6a5a52f6a2830733ae3d0c5aabe08daa09b16ce2845a810daa51fa8d4848fa9",
+      "bytes": 98027
     }
   ]
 }
