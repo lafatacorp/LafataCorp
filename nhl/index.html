@@ -259,10 +259,9 @@ footer>a:last-child:hover{color:var(--gold-hover)}
     <h1>NHL Trading Model</h1>
     <p class="hero-dek">Two independent NHL systems, tracked in public from opening night. A pre-game value model that prices every game against the market, and an in-game system that trades lead preservation. Every position is simulated &mdash; the record below is the whole record, wins and losses alike.</p>
     <div class="strip">
-<!-- STRIP --><div class="strip-cell"><div class="strip-label" style="color:#c9a44c">PLAYS TODAY</div><div class="strip-val"><span class="v num">0</span></div></div>
-<div class="strip-cell"><div class="strip-label" style="color:#6b6964">POSITIONS SETTLED</div><div class="strip-val"><span class="v num">0</span></div></div>
-<div class="strip-cell"><div class="strip-label" style="color:#6b6964">TRACKING</div><div class="strip-val"><span class="v num sm">2026-27 &middot; opens Sep 29</span></div></div>
-<div class="strip-cell"><div class="strip-label" style="color:#6b6964">UPDATED</div><div class="strip-val"><span class="v num sm">Sep 29, 2026 at 9:45 AM</span></div></div><!-- /STRIP -->
+<!-- STRIP --><div class="strip-cell"><div class="strip-label" style="color:#6b6964"><i style="background:#22a8a0"></i>FADE BOT</div><div class="strip-val"><span class="v num">1&ndash;0</span><span class="s num up">+15.3%</span></div></div>
+<div class="strip-cell"><div class="strip-label" style="color:#6b6964">PLAYS TODAY</div><div class="strip-val"><span class="v num">1</span><span class="s num meta">3 games screened</span></div></div>
+<div class="strip-cell"><div class="strip-label" style="color:#6b6964">UPDATED</div><div class="strip-val"><span class="v num sm">Sep 30, 2026 at 9:45 AM</span></div></div><!-- /STRIP -->
     </div>
   </div>
 </header>
@@ -271,97 +270,39 @@ footer>a:last-child:hover{color:var(--gold-hover)}
   <div class="section-head">
     <div>
       <p class="section-label">Today&rsquo;s Card</p>
-      <h2 class="section-title"><!-- PICKS_DATE -->September 29, 2026<!-- /PICKS_DATE --></h2>
+      <h2 class="section-title"><!-- PICKS_DATE -->September 30, 2026<!-- /PICKS_DATE --></h2>
     </div>
     <p class="section-note">Plays come from the pre-game value model. It posts a side only when its own win probability clears the market&rsquo;s implied probability by a set margin, so quiet days are normal and are recorded as such.</p>
   </div>
-<!-- PLAYS --><div class="no-picks"><div class="zero num">0</div><div class="cp"><span>No qualifying plays</span><p>No side on the September 29 card cleared the 5-point gap the model needs before it takes a position. Passing is a result too &mdash; every game screened is recorded, and the ones it was reading are below.</p></div></div><!-- /PLAYS -->
-<!-- PROVENANCE --><div class="provenance"><strong>Early-season note</strong><p>No regular-season games have been played yet, so recent-form and expected-goals signals are drawn from preseason games, where the lineups are not the ones that will play; home, road and head-to-head records are from the 2025-26 season, not this one. Every signal on this page is tagged with the period it comes from.</p></div><!-- /PROVENANCE -->
-<!-- WATCHES --><div class="watch-head"><div><p class="section-label">On the Radar</p><h2 class="section-title">Watching, not playing</h2></div><p class="section-note">Games the model is reading but not playing. It needs a gap of at least 5 points between its own number and the market before it takes a position, and a high price can swallow a real edge on its own.</p></div><div class="watch-grid">
-      <article class="watch">
-        <header>
-          <span class="matchup"><img class="tl" src="/logos/nhl/MTL.svg" alt="MTL" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">MTL</span><span class="at">@</span><img class="tl" src="/logos/nhl/TOR.svg" alt="TOR" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">TOR</span></span>
-          <span class="leans">Leans <b>MTL</b></span>
-        </header>
-        <div class="wnums">
-          <div><span>Model</span><b class="num">56%</b></div>
-          <div><span>Market</span><b class="num">51%</b></div>
-          <div><span>Gap</span><b class="num" style="color:#d9a441">+5.0</b></div>
-          <div><span>Odds</span><b class="num">&minus;104</b></div>
+<!-- PLAYS --><div class="plays">
+      <article class="ticket">
+        <div class="tk">
+          <div class="tk-head"><span>10:00 PM ET</span><span>Daily Analyzer</span></div>
+          <div class="team-row" style="background:transparent;border-color:#1a1a1a"><img class="tl" src="/logos/nhl/LAK.svg" alt="LAK" width="40" height="40" loading="lazy" style="width:40px;height:40px;opacity:0.5"><span class="tn"><b style="color:#8a8883">Los Angeles Kings</b><span>AWAY</span></span></div><div class="team-row" style="background:rgba(201,164,76,.07);border-color:rgba(201,164,76,.35)"><img class="tl" src="/logos/nhl/COL.svg" alt="COL" width="40" height="40" loading="lazy" style="width:40px;height:40px"><span class="tn"><b style="color:#f2efe8">Colorado Avalanche</b><span>HOME</span></span><span class="pick-tag">PICK</span></div>
         </div>
-        <div class="gapmeter" role="img" aria-label="gap 5.0 of 5.0 points needed">
-          <span class="fill" style="width:62.5%;background:#d9a441"></span>
-          <span class="tick" style="left:62.5%"></span>
+        <div class="tk">
+          <div class="tk-label">The position</div>
+          <div class="position">
+            <span class="side">COL ML</span>
+            <span class="odds num">&minus;185</span>
+          </div>
+          <div class="probbar" role="img" aria-label="market 65%, model 72%">
+            <span class="mkt" style="width:65.0%"></span>
+            <span class="edge" style="width:7.5%"></span>
+          </div>
+          <div class="probnums">
+            <div><span>Market</span><b class="num">65%</b></div>
+            <div><span>Model</span><b class="num">72%</b></div>
+            <div><span>Edge</span><b class="num edge">+7.5 pts</b></div>
+          </div>
         </div>
-        <div class="gapstatus">
-          <span style="color:#d9a441">Meets gap &middot; Passed on away pick</span>
-          <span class="needs">Needs 5.0</span>
+        <div class="tk">
+          <div class="tk-label">Why</div>
+          <p class="why">The model&#x27;s lean toward Colorado rests mainly on head-to-head history: the Avalanche are 7-0-0 against Los Angeles this season, which suggests the matchup has consistently favored them. The Kings lost the most recent meeting between the clubs 5-1, and the model flags that as a possible revenge spot for Los Angeles, which can sharpen an opponent&#x27;s effort. Even with that factor included, the model rates Colorado&#x27;s chances about 7.5 percentage points above the market&#x27;s estimate, a medium-confidence view.</p>
         </div>
-        <p class="watch-note">At 56% against a 51% market, the model leans MTL on Montreal&#x27;s 5-1-0 record against Toronto last season (2025-26), the division matchup, and Toronto&#x27;s 1-4 loss in their last meeting. The 5.0-point gap only just meets the minimum, and it passes because away picks have historically won just 40% of the time.</p>
-      </article>
-      <article class="watch">
-        <header>
-          <span class="matchup"><img class="tl" src="/logos/nhl/FLA.svg" alt="FLA" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">FLA</span><span class="at">@</span><img class="tl" src="/logos/nhl/CAR.svg" alt="CAR" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">CAR</span></span>
-          <span class="leans">Leans <b>CAR</b></span>
-        </header>
-        <div class="wnums">
-          <div><span>Model</span><b class="num">57%</b></div>
-          <div><span>Market</span><b class="num">54%</b></div>
-          <div><span>Gap</span><b class="num" style="color:#8a8883">+3.0</b></div>
-          <div><span>Odds</span><b class="num">&minus;117</b></div>
-        </div>
-        <div class="gapmeter" role="img" aria-label="gap 3.0 of 5.0 points needed">
-          <span class="fill" style="width:37.5%;background:#8a8883"></span>
-          <span class="tick" style="left:62.5%"></span>
-        </div>
-        <div class="gapstatus">
-          <span style="color:#8a8883">3.0 of 5.0 &middot; Watching</span>
-          <span class="needs">Needs 5.0</span>
-        </div>
-        <p class="watch-note">The model leans Carolina at 56% against a 53% market price, citing a 10-3-0 run (nine games last season, four in preseason) that expected goals rate as sustainable, while Florida&#x27;s +0.5 first-period differential comes only from preseason. The 3.0-point gap falls short of the 5-point threshold, so it stays on the watch list.</p>
-      </article>
-      <article class="watch">
-        <header>
-          <span class="matchup"><img class="tl" src="/logos/nhl/CHI.svg" alt="CHI" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">CHI</span><span class="at">@</span><img class="tl" src="/logos/nhl/VGK.svg" alt="VGK" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">VGK</span></span>
-          <span class="leans">Leans <b>VGK</b></span>
-        </header>
-        <div class="wnums">
-          <div><span>Model</span><b class="num">73%</b></div>
-          <div><span>Market</span><b class="num">70%</b></div>
-          <div><span>Gap</span><b class="num" style="color:#8a8883">+3.0</b></div>
-          <div><span>Odds</span><b class="num">&minus;233</b></div>
-        </div>
-        <div class="gapmeter" role="img" aria-label="gap 3.0 of 5.0 points needed">
-          <span class="fill" style="width:37.5%;background:#8a8883"></span>
-          <span class="tick" style="left:62.5%"></span>
-        </div>
-        <div class="gapstatus">
-          <span style="color:#8a8883">3.0 of 5.0 &middot; Watching</span>
-          <span class="needs">Needs 5.0</span>
-        </div>
-        <p class="watch-note">The model leans Vegas at 74% against a 71% market price, citing a 10-3-0 run (nine games last season, four preseason exhibitions) that expected goals suggest is sustainable, plus Chicago&#x27;s 0-4 loss in the last meeting. That 3.0-point gap falls short of the 5-point minimum needed to place a position.</p>
-      </article>
-      <article class="watch">
-        <header>
-          <span class="matchup"><img class="tl" src="/logos/nhl/VAN.svg" alt="VAN" width="34" height="34" loading="lazy" style="width:34px;height:34px;opacity:0.45"><span class="code num-400" style="color:#6b6964">VAN</span><span class="at">@</span><img class="tl" src="/logos/nhl/EDM.svg" alt="EDM" width="34" height="34" loading="lazy" style="width:34px;height:34px"><span class="code num-400" style="color:#f2efe8">EDM</span></span>
-          <span class="leans">Leans <b>EDM</b></span>
-        </header>
-        <div class="wnums">
-          <div><span>Model</span><b class="num">70%</b></div>
-          <div><span>Market</span><b class="num">67%</b></div>
-          <div><span>Gap</span><b class="num" style="color:#8a8883">+2.5</b></div>
-          <div><span>Odds</span><b class="num">&minus;203</b></div>
-        </div>
-        <div class="gapmeter" role="img" aria-label="gap 2.5 of 5.0 points needed">
-          <span class="fill" style="width:31.2%;background:#8a8883"></span>
-          <span class="tick" style="left:62.5%"></span>
-        </div>
-        <div class="gapstatus">
-          <span style="color:#8a8883">2.5 of 5.0 &middot; Watching</span>
-          <span class="needs">Needs 5.0</span>
-        </div>
-        <p class="watch-note">The model leans Edmonton at 70% against a market-implied 67%, citing EDM&#x27;s 4-2-0 record against Vancouver last season (2025-26), the divisional matchup, and a +0.8 first-period differential in preseason exhibitions. That leaves a 2.5-point gap, short of the 5 points the model requires, so it is watching rather than taking a position.</p>
-      </article></div><!-- /WATCHES -->
+      </article></div><!-- /PLAYS -->
+<!-- PROVENANCE --><!-- /PROVENANCE -->
+<!-- WATCHES --><!-- /WATCHES -->
 </section>
 
 <section class="content band" id="record">
@@ -374,7 +315,20 @@ footer>a:last-child:hover{color:var(--gold-hover)}
   </div>
   <div class="systems-grid">
 <!-- SYSTEMS --><article class="system"><div class="topbar" style="background:#ad8b38"></div><div class="system-inner"><div class="system-head"><h3>Daily Analyzer V2</h3><span class="kind">Pre-game value</span></div><div class="system-empty"><span class="z num">0&ndash;0</span><span class="t">No settled positions yet</span><span class="sub">2026-27 record begins with the first result</span></div></div></article>
-<article class="system"><div class="topbar" style="background:#22a8a0"></div><div class="system-inner"><div class="system-head"><h3>Fade Bot V3</h3><span class="kind">In-game lead hold</span></div><div class="system-empty"><span class="z num">0&ndash;0</span><span class="t">No settled positions yet</span><span class="sub">2026-27 record begins with the first result</span></div><p class="system-note">Entries are taken in-game, on a live clock, and the window they trade is minutes wide. A page refreshed once a day cannot carry them in time, so the alerts go to Discord as they fire and only the settled record lands here.</p></div></article><!-- /SYSTEMS -->
+<article class="system"><div class="topbar" style="background:#22a8a0"></div><div class="system-inner"><div class="system-head"><h3>Fade Bot V3</h3><span class="kind">In-game lead hold</span></div>
+          <div class="rec-row">
+            <div><span class="lab">Record</span>
+              <span class="rec-big num">1&ndash;0</span></div>
+            <div><span class="lab">Return on capital</span>
+              <span class="roc num up">+15.3%</span></div>
+          </div>
+          <div class="sys-sub">
+            <div><span class="lab">Win rate</span><b class="num">100.0%</b></div>
+            <div><span class="lab">ROI per stake</span><b class="num up">+185.71%</b></div>
+            <div><span class="lab">Streak</span><b class="num" style="color:#5cc28a">W1</b></div>
+          </div>
+          <div class="l10"><span class="lab">Last 10 &middot; oldest &rarr; newest</span>
+            <div class="blocks"><i style="background:rgba(92,194,138,.16);color:#5cc28a">W</i></div></div><p class="system-note">Entries are taken in-game, on a live clock, and the window they trade is minutes wide. A page refreshed once a day cannot carry them in time, so the alerts go to Discord as they fire and only the settled record lands here.</p></div></article><!-- /SYSTEMS -->
   </div>
   <div class="chart-wrap">
     <div class="chart-head">
@@ -384,7 +338,7 @@ footer>a:last-child:hover{color:var(--gold-hover)}
         <li><i style="background:#3fb8a9"></i> Fade Bot</li>
       </ul>
     </div>
-<!-- CHART --><div class="chart-empty"><b>Season opens September 29</b>The curve starts at zero and is redrawn after each night of results.</div><!-- /CHART -->
+<!-- CHART --><div class="chart-body"><svg viewBox="-46 -14 1120 328" preserveAspectRatio="none" role="img" aria-label="Cumulative return on capital by system"><line x1="0" y1="265.4" x2="1000" y2="265.4" stroke="#3a3834" stroke-width="1" /><text x="-10" y="268.4" text-anchor="end" fill="#4a4843" font-family="IBM Plex Mono, monospace" font-size="11">0%</text><line x1="0" y1="189.9" x2="1000" y2="189.9" stroke="#1c1c1c" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="192.9" text-anchor="end" fill="#4a4843" font-family="IBM Plex Mono, monospace" font-size="11">+5%</text><line x1="0" y1="114.4" x2="1000" y2="114.4" stroke="#1c1c1c" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="117.4" text-anchor="end" fill="#4a4843" font-family="IBM Plex Mono, monospace" font-size="11">+10%</text><line x1="0" y1="38.8" x2="1000" y2="38.8" stroke="#1c1c1c" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="41.8" text-anchor="end" fill="#4a4843" font-family="IBM Plex Mono, monospace" font-size="11">+15%</text></svg></div><div class="chart-xaxis"><span>SEP 29</span><span>SEP 29</span><span>SEP 29</span></div><!-- /CHART -->
     <p class="chart-foot">Percent of starting paper capital, cumulative by settlement date. Both series share one axis.</p>
   </div>
 </section>
@@ -401,7 +355,21 @@ footer>a:last-child:hover{color:var(--gold-hover)}
       <button role="tab" aria-selected="false" data-sys="FB">Fade Bot</button>
     </div>
   </div>
-<!-- RESULTS --><p class="log-empty">Results post the morning after each slate, starting with opening night.</p><!-- /RESULTS -->
+<!-- RESULTS --><div class="log-scroll"><table class="log"><thead><tr><th>Date</th><th>Game</th><th>Position</th><th class="r">Odds</th><th>Result</th><th class="r">Return</th></tr></thead><tbody>
+      <tr data-sys="FB">
+        <td class="lg-date">SEP 29</td>
+        <td><span class="lg-game"><img class="tl" src="/logos/nhl/EDM.svg" alt="EDM" width="28" height="28" loading="lazy" style="width:28px;height:28px;opacity:0.55">
+          <span class="code num-400">EDM</span>
+          <span class="at">@</span><img class="tl" src="/logos/nhl/VAN.svg" alt="VAN" width="28" height="28" loading="lazy" style="width:28px;height:28px;opacity:0.55">
+          <span class="code num-400">VAN</span>
+          <span class="score num">VAN 6 &ndash; 5 EDM</span></span></td>
+        <td><span class="lg-pos">VAN hold, 3rd</span>
+          <span class="lg-sys"><i style="background:#3fb8a9"></i>
+          Fade Bot</span></td>
+        <td class="r num">+186</td>
+        <td><span class="chip" style="background:rgba(92,194,138,.16);color:#5cc28a">W</span></td>
+        <td class="r num up">+15.3%</td>
+      </tr></tbody></table></div><!-- /RESULTS -->
 </section>
 
 <section class="content" id="method">
