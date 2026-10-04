@@ -4,7 +4,7 @@
     "away": "DAL",
     "away_score": 1,
     "away_sog": 18,
-    "detail": "2nd \u00b7 06:37",
+    "detail": "2nd \u00b7 00:36",
     "game_id": "2026020030",
     "game_state": "LIVE",
     "home": "NSH",
@@ -30,6 +30,6 @@
     "start_label": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-04T01:53:39.948119+00:00",
+  "updated_at": "2026-10-04T01:59:53.148127+00:00",
   "version": 1
 }
