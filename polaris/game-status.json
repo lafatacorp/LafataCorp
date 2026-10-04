@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020030",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "NSH",
     "home_score": 2,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-04T02:37:52.963498+00:00",
+  "updated_at": "2026-10-04T03:12:16.121329+00:00",
   "version": 1
 }
