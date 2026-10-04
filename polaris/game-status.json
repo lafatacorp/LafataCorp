@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 1,
     "away_sog": 18,
-    "detail": "2nd \u00b7 00:36",
+    "detail": "3rd \u00b7 17:27",
     "game_id": "2026020030",
     "game_state": "LIVE",
     "home": "NSH",
     "home_score": 2,
-    "home_sog": 20,
+    "home_sog": 21,
     "matchup": "DAL at NSH",
     "score": "DAL 1 -- NSH 2",
     "start_label": "Sat \u00b7 Oct 3 \u00b7 7:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-04T01:59:53.148127+00:00",
+  "updated_at": "2026-10-04T02:06:07.387388+00:00",
   "version": 1
 }
