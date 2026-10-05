@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
     "game_id": "2026020043",
-    "game_state": "FUT",
+    "game_state": "PRE",
     "home": "DAL",
     "home_score": null,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-05T15:01:21.444864+00:00",
+  "updated_at": "2026-10-05T23:34:41.070481+00:00",
   "version": 1
 }
