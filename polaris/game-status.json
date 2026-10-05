@@ -1,21 +1,6 @@
 {
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
-    "away": "DAL",
-    "away_score": 1,
-    "away_sog": null,
-    "detail": "Final",
-    "game_id": "2026020030",
-    "game_state": "OFF",
-    "home": "NSH",
-    "home_score": 2,
-    "home_sog": null,
-    "matchup": "DAL at NSH",
-    "score": "DAL 1 -- NSH 2",
-    "start_label": "Sat \u00b7 Oct 3 \u00b7 7:00 PM CT",
-    "state_label": "Latest result"
-  },
-  "next": {
     "away": "SJS",
     "away_score": null,
     "away_sog": null,
@@ -28,8 +13,23 @@
     "matchup": "SJS at DAL",
     "score": "SJS at DAL",
     "start_label": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
+    "state_label": "Today's game"
+  },
+  "next": {
+    "away": "DAL",
+    "away_score": null,
+    "away_sog": null,
+    "detail": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
+    "game_id": "2026020057",
+    "game_state": "FUT",
+    "home": "BUF",
+    "home_score": null,
+    "home_sog": null,
+    "matchup": "DAL at BUF",
+    "score": "DAL at BUF",
+    "start_label": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-04T03:12:16.121329+00:00",
+  "updated_at": "2026-10-05T15:01:21.444864+00:00",
   "version": 1
 }
