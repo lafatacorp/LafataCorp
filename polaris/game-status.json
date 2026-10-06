@@ -4,12 +4,12 @@
     "away": "SJS",
     "away_score": 0,
     "away_sog": 7,
-    "detail": "2nd \u00b7 00:38",
+    "detail": "2nd \u00b7 11:34",
     "game_id": "2026020043",
     "game_state": "LIVE",
     "home": "DAL",
     "home_score": 4,
-    "home_sog": 19,
+    "home_sog": 20,
     "matchup": "SJS at DAL",
     "score": "SJS 0 -- DAL 4",
     "start_label": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-06T01:34:38.425178+00:00",
+  "updated_at": "2026-10-06T01:40:56.473299+00:00",
   "version": 1
 }
