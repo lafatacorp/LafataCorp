@@ -3,13 +3,13 @@
   "focus": {
     "away": "SJS",
     "away_score": 0,
-    "away_sog": 11,
-    "detail": "3rd \u00b7 12:23",
+    "away_sog": 12,
+    "detail": "3rd \u00b7 07:42",
     "game_id": "2026020043",
     "game_state": "LIVE",
     "home": "DAL",
     "home_score": 4,
-    "home_sog": 21,
+    "home_sog": 24,
     "matchup": "SJS at DAL",
     "score": "SJS 0 -- DAL 4",
     "start_label": "Mon \u00b7 Oct 5 \u00b7 7:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-06T02:07:10.375459+00:00",
+  "updated_at": "2026-10-06T02:13:22.616839+00:00",
   "version": 1
 }
