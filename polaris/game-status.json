@@ -4,7 +4,7 @@
     "away": "DAL",
     "away_score": 0,
     "away_sog": 0,
-    "detail": "1st \u00b7 20:00",
+    "detail": "1st \u00b7 17:40",
     "game_id": "2026020057",
     "game_state": "LIVE",
     "home": "BUF",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-08T23:05:24.053358+00:00",
+  "updated_at": "2026-10-08T23:11:42.571901+00:00",
   "version": 1
 }
