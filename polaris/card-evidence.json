@@ -1,10 +1,24 @@
 {
-  "artifact": "Polaris_Public_Dallas_Card_Evidence_v1",
+  "artifact": "Polaris_Public_Dallas_Card_Evidence_v2",
+  "card_surface_contract": {
+    "cleared_skater_metrics": [
+      "G/60",
+      "A/60",
+      "Shots/60",
+      "On-ice CF%",
+      "On-ice GF/60",
+      "On-ice GF%"
+    ],
+    "withheld_skater_metrics": [
+      "No-EN xGF%",
+      "in-house xG percentile"
+    ]
+  },
   "forward_evaluation": {
-    "adjudicated_holds": 1,
-    "held_games": 1,
-    "pass_games": 46,
-    "status": "HOLD_GAME_DATA_GATES"
+    "adjudicated_holds": 0,
+    "held_games": 0,
+    "pass_games": 47,
+    "status": "ACCUMULATING"
   },
   "gates": {
     "archive_final": true,
@@ -14,7 +28,7 @@
     "shot_generation_accumulation_integrity": true,
     "special_teams_accumulation_integrity": true
   },
-  "generated_at": "2026-10-08T00:12:17.538620+00:00",
+  "generated_at": "2026-10-08T03:59:14.054859+00:00",
   "model_evidence": {
     "finishing": "HOLD_ALL_POSITION_LANES",
     "shot_generation": "HOLD_PENDING_FINAL_PROSPECTIVE_ENDPOINT",
@@ -24,8 +38,8 @@
   "players": [
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Jason Robertson",
       "player_id": 8480027,
       "position": "F",
@@ -33,8 +47,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Wyatt Johnston",
       "player_id": 8482740,
       "position": "F",
@@ -42,8 +56,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Roope Hintz",
       "player_id": 8478449,
       "position": "F",
@@ -51,8 +65,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Mikko Rantanen",
       "player_id": 8478420,
       "position": "F",
@@ -60,8 +74,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Casey DeSmith",
       "player_id": 8479193,
       "position": "G",
@@ -69,8 +83,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Miro Heiskanen",
       "player_id": 8480036,
       "position": "D",
@@ -78,8 +92,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Jake Oettinger",
       "player_id": 8479979,
       "position": "G",
@@ -87,8 +101,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Matt Duchene",
       "player_id": 8475168,
       "position": "F",
@@ -96,8 +110,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Thomas Harley",
       "player_id": 8481581,
       "position": "D",
@@ -105,8 +119,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Nils Lundkvist",
       "player_id": 8480878,
       "position": "D",
@@ -114,8 +128,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Tyler Seguin",
       "player_id": 8475794,
       "position": "F",
@@ -123,8 +137,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Esa Lindell",
       "player_id": 8476902,
       "position": "D",
@@ -132,8 +146,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Jamie Benn",
       "player_id": 8473994,
       "position": "F",
@@ -141,8 +155,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Justin Hryckowian",
       "player_id": 8484829,
       "position": "F",
@@ -150,8 +164,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Alexander Petrovic",
       "player_id": 8475755,
       "position": "D",
@@ -159,8 +173,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Lian Bichsel",
       "player_id": 8483425,
       "position": "D",
@@ -168,8 +182,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Adam Erne",
       "player_id": 8477454,
       "position": "F",
@@ -177,8 +191,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Sam Steel",
       "player_id": 8479351,
       "position": "F",
@@ -186,8 +200,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Radek Faksa",
       "player_id": 8476889,
       "position": "F",
@@ -195,8 +209,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Ilya Lyubushkin",
       "player_id": 8480950,
       "position": "D",
@@ -204,8 +218,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Colin Blackwell",
       "player_id": 8476278,
       "position": "F",
@@ -213,8 +227,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official production verified",
-      "model_label": "Player value pending evidence",
+      "cleared_label": "Official box-score stats verified",
+      "model_label": "xGF% + player value pending validation",
       "player": "Oskar B\u00e4ck",
       "player_id": 8480840,
       "position": "F",
@@ -225,10 +239,11 @@
     "cleared": [
       "official season production",
       "official workload",
-      "descriptive mixed-strength on-ice results",
-      "peer percentiles for displayed descriptive measures"
+      "descriptive public-event mixed-strength on-ice results",
+      "peer percentiles for official and public-event descriptive measures"
     ],
     "pending": [
+      "in-house xG and xGF% percentiles",
       "adjusted shot-generation player value",
       "finishing value",
       "adjusted defensive player value",
@@ -237,14 +252,15 @@
     ]
   },
   "season": "20252026",
+  "source_hash_policy": "SHA-256 of canonical JSON with volatile timestamp keys removed recursively",
   "source_hashes": {
-    "archive": "b04c44e1eb4fcd51c5bb41730c48fd798d5cd6f14d7110041f8e5cd666f50a93",
-    "archive_receipt": "c0933379154abe39ddcbb301a509849a579a6f392403d40d69ff31842bd255aa",
-    "forward_accumulation": "2556feb726280deae15fa91853bd840aa887a668c4cd97be09a6b67ee40e1ee9",
-    "offense_chain": "f2f66d835264a71b3e0cca73218bf1e3793edf3807f22da2f0d1ace070ff5889",
-    "shot_generation_accumulation": "4c0375ab61b03458514eeeb5bbc549ecce137738147c83129c91372244d87c39",
-    "special_teams_accumulation": "21892710dacd214b18fa56615342e63a1e8dadc2c6452f2e2bef138be36b0224"
+    "archive": "2c707b160845c452d3921377adae731a8a7c9ed47a892e064186e6844516c1ea",
+    "archive_receipt": "2139453acb7f8bc2954cfef5f8da1de06ade3aab51e4028ec8c82c82164a18e2",
+    "forward_accumulation": "c2e2a254693f5d76ec9d3a6462f6efac826104b4fe03a1526ca2c2600c33e1e2",
+    "offense_chain": "c4d922d23ed34f09763cdebe22623b3a9c2a5e32ce3dc587b6722de48db7cd47",
+    "shot_generation_accumulation": "c030ed3ea0ae1a15021095bdc2f4382cab1e13a1b2499606cfb2106bbfbd7aa6",
+    "special_teams_accumulation": "85dfc71d7fa477ecedf30591bebd0278de90627d8762d6540f6414732187d505"
   },
   "status": "PUBLIC_DESCRIPTIVE_CARDS_READY_MODEL_COMPONENTS_PENDING",
-  "version": "public_dallas_card_evidence_v1_20261007"
+  "version": "public_dallas_card_evidence_v2_20261007"
 }
