@@ -1,0 +1,250 @@
+{
+  "artifact": "Polaris_Public_Dallas_Card_Evidence_v1",
+  "forward_evaluation": {
+    "adjudicated_holds": 1,
+    "held_games": 1,
+    "pass_games": 46,
+    "status": "HOLD_GAME_DATA_GATES"
+  },
+  "gates": {
+    "archive_final": true,
+    "forward_receipt_coverage_complete": true,
+    "no_public_player_value_fields": true,
+    "offense_chain_assembled": true,
+    "shot_generation_accumulation_integrity": true,
+    "special_teams_accumulation_integrity": true
+  },
+  "generated_at": "2026-10-08T00:12:17.538620+00:00",
+  "model_evidence": {
+    "finishing": "HOLD_ALL_POSITION_LANES",
+    "shot_generation": "HOLD_PENDING_FINAL_PROSPECTIVE_ENDPOINT",
+    "special_teams": "HOLD_PENDING_FINAL_PROSPECTIVE_ENDPOINT",
+    "total_value": "HOLD_COMPONENTS_INCOMPLETE"
+  },
+  "players": [
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Jason Robertson",
+      "player_id": 8480027,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Wyatt Johnston",
+      "player_id": 8482740,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Roope Hintz",
+      "player_id": 8478449,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Mikko Rantanen",
+      "player_id": 8478420,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Casey DeSmith",
+      "player_id": 8479193,
+      "position": "G",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Miro Heiskanen",
+      "player_id": 8480036,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Jake Oettinger",
+      "player_id": 8479979,
+      "position": "G",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Matt Duchene",
+      "player_id": 8475168,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Thomas Harley",
+      "player_id": 8481581,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Nils Lundkvist",
+      "player_id": 8480878,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Tyler Seguin",
+      "player_id": 8475794,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Esa Lindell",
+      "player_id": 8476902,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Jamie Benn",
+      "player_id": 8473994,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Justin Hryckowian",
+      "player_id": 8484829,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Alexander Petrovic",
+      "player_id": 8475755,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Lian Bichsel",
+      "player_id": 8483425,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Adam Erne",
+      "player_id": 8477454,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Sam Steel",
+      "player_id": 8479351,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Radek Faksa",
+      "player_id": 8476889,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Ilya Lyubushkin",
+      "player_id": 8480950,
+      "position": "D",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Colin Blackwell",
+      "player_id": 8476278,
+      "position": "F",
+      "season": "20252026"
+    },
+    {
+      "archive_status": "VERIFIED_FINAL_ARCHIVE",
+      "cleared_label": "Official production verified",
+      "model_label": "Player value pending evidence",
+      "player": "Oskar B\u00e4ck",
+      "player_id": 8480840,
+      "position": "F",
+      "season": "20252026"
+    }
+  ],
+  "public_scope": {
+    "cleared": [
+      "official season production",
+      "official workload",
+      "descriptive mixed-strength on-ice results",
+      "peer percentiles for displayed descriptive measures"
+    ],
+    "pending": [
+      "adjusted shot-generation player value",
+      "finishing value",
+      "adjusted defensive player value",
+      "power-play and penalty-kill player value",
+      "GAR, WAR, and composite Polaris score"
+    ]
+  },
+  "season": "20252026",
+  "source_hashes": {
+    "archive": "b04c44e1eb4fcd51c5bb41730c48fd798d5cd6f14d7110041f8e5cd666f50a93",
+    "archive_receipt": "c0933379154abe39ddcbb301a509849a579a6f392403d40d69ff31842bd255aa",
+    "forward_accumulation": "2556feb726280deae15fa91853bd840aa887a668c4cd97be09a6b67ee40e1ee9",
+    "offense_chain": "f2f66d835264a71b3e0cca73218bf1e3793edf3807f22da2f0d1ace070ff5889",
+    "shot_generation_accumulation": "4c0375ab61b03458514eeeb5bbc549ecce137738147c83129c91372244d87c39",
+    "special_teams_accumulation": "21892710dacd214b18fa56615342e63a1e8dadc2c6452f2e2bef138be36b0224"
+  },
+  "status": "PUBLIC_DESCRIPTIVE_CARDS_READY_MODEL_COMPONENTS_PENDING",
+  "version": "public_dallas_card_evidence_v1_20261007"
+}
