@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 4,
     "away_sog": 16,
-    "detail": "3rd \u00b7 14:47",
+    "detail": "3rd \u00b7 12:18",
     "game_id": "2026020057",
     "game_state": "LIVE",
     "home": "BUF",
     "home_score": 0,
-    "home_sog": 18,
+    "home_sog": 19,
     "matchup": "DAL at BUF",
     "score": "DAL 4 -- BUF 0",
     "start_label": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-09T01:10:24.929431+00:00",
+  "updated_at": "2026-10-09T01:16:39.857551+00:00",
   "version": 1
 }
