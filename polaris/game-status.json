@@ -3,8 +3,8 @@
   "focus": {
     "away": "DAL",
     "away_score": 2,
-    "away_sog": 12,
-    "detail": "2nd \u00b7 08:41",
+    "away_sog": 13,
+    "detail": "2nd \u00b7 06:12",
     "game_id": "2026020057",
     "game_state": "LIVE",
     "home": "BUF",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-09T00:20:23.464899+00:00",
+  "updated_at": "2026-10-09T00:26:37.153560+00:00",
   "version": 1
 }
