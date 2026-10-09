@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020057",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "BUF",
     "home_score": 0,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-09T01:42:21.378921+00:00",
+  "updated_at": "2026-10-09T02:19:46.230541+00:00",
   "version": 1
 }
