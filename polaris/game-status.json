@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 0,
     "away_sog": 0,
-    "detail": "1st \u00b7 19:52",
+    "detail": "1st \u00b7 15:47",
     "game_id": "2026020077",
     "game_state": "LIVE",
     "home": "PIT",
     "home_score": 0,
-    "home_sog": 0,
+    "home_sog": 1,
     "matchup": "DAL at PIT",
     "score": "DAL 0 -- PIT 0",
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-10T23:09:04.140062+00:00",
+  "updated_at": "2026-10-10T23:15:36.736937+00:00",
   "version": 1
 }
