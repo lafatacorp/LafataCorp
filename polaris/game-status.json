@@ -2,21 +2,6 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 4,
-    "away_sog": null,
-    "detail": "Final",
-    "game_id": "2026020057",
-    "game_state": "OFF",
-    "home": "BUF",
-    "home_score": 0,
-    "home_sog": null,
-    "matchup": "DAL at BUF",
-    "score": "DAL 4 -- BUF 0",
-    "start_label": "Thu \u00b7 Oct 8 \u00b7 6:00 PM CT",
-    "state_label": "Latest result"
-  },
-  "next": {
-    "away": "DAL",
     "away_score": null,
     "away_sog": null,
     "detail": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
@@ -28,8 +13,23 @@
     "matchup": "DAL at PIT",
     "score": "DAL at PIT",
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
+    "state_label": "Today's game"
+  },
+  "next": {
+    "away": "COL",
+    "away_score": null,
+    "away_sog": null,
+    "detail": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
+    "game_id": "2026020100",
+    "game_state": "FUT",
+    "home": "DAL",
+    "home_score": null,
+    "home_sog": null,
+    "matchup": "COL at DAL",
+    "score": "COL at DAL",
+    "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-09T02:19:46.230541+00:00",
+  "updated_at": "2026-10-10T15:02:14.685446+00:00",
   "version": 1
 }
