@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 1,
     "away_sog": 25,
-    "detail": "Overtime \u00b7 00:31",
+    "detail": "Shootout \u00b7 00:00",
     "game_id": "2026020077",
     "game_state": "CRIT",
     "home": "PIT",
     "home_score": 1,
-    "home_sog": 18,
+    "home_sog": 21,
     "matchup": "DAL at PIT",
     "score": "DAL 1 -- PIT 1",
     "start_label": "Sat \u00b7 Oct 10 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-11T01:46:59.939088+00:00",
+  "updated_at": "2026-10-11T01:53:47.559478+00:00",
   "version": 1
 }
