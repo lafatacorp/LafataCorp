@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020077",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "PIT",
     "home_score": 2,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-11T02:00:48.937209+00:00",
+  "updated_at": "2026-10-11T02:29:48.311779+00:00",
   "version": 1
 }
