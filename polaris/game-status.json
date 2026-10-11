@@ -3,8 +3,8 @@
   "focus": {
     "away": "DAL",
     "away_score": 1,
-    "away_sog": 22,
-    "detail": "3rd \u00b7 00:00",
+    "away_sog": 25,
+    "detail": "Overtime \u00b7 00:31",
     "game_id": "2026020077",
     "game_state": "CRIT",
     "home": "PIT",
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-11T01:40:17.353322+00:00",
+  "updated_at": "2026-10-11T01:46:59.939088+00:00",
   "version": 1
 }
