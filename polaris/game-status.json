@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "COL",
-    "away_score": 0,
-    "away_sog": 4,
-    "detail": "1st \u00b7 09:26",
+    "away_score": 1,
+    "away_sog": 5,
+    "detail": "1st \u00b7 06:40",
     "game_id": "2026020100",
     "game_state": "LIVE",
     "home": "DAL",
     "home_score": 0,
-    "home_sog": 6,
+    "home_sog": 7,
     "matchup": "COL at DAL",
-    "score": "COL 0 -- DAL 0",
+    "score": "COL 1 -- DAL 0",
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Wed \u00b7 Oct 14 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-14T01:06:19.179336+00:00",
+  "updated_at": "2026-10-14T01:12:51.606460+00:00",
   "version": 1
 }
