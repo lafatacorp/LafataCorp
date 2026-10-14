@@ -3,17 +3,17 @@
   "focus": {
     "away": "COL",
     "away_score": 3,
-    "away_sog": 25,
-    "detail": "3rd \u00b7 00:21",
+    "away_sog": null,
+    "detail": "Final",
     "game_id": "2026020100",
-    "game_state": "CRIT",
+    "game_state": "FINAL",
     "home": "DAL",
     "home_score": 2,
-    "home_sog": 26,
+    "home_sog": null,
     "matchup": "COL at DAL",
     "score": "COL 3 -- DAL 2",
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
-    "state_label": "Live now"
+    "state_label": "Latest result"
   },
   "next": {
     "away": "DAL",
@@ -30,6 +30,6 @@
     "start_label": "Wed \u00b7 Oct 14 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-14T03:20:41.258231+00:00",
+  "updated_at": "2026-10-14T03:27:45.580095+00:00",
   "version": 1
 }
