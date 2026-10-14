@@ -4,12 +4,12 @@
     "away": "COL",
     "away_score": 3,
     "away_sog": 25,
-    "detail": "3rd \u00b7 07:52",
+    "detail": "3rd \u00b7 03:37",
     "game_id": "2026020100",
-    "game_state": "LIVE",
+    "game_state": "CRIT",
     "home": "DAL",
     "home_score": 2,
-    "home_sog": 24,
+    "home_sog": 25,
     "matchup": "COL at DAL",
     "score": "COL 3 -- DAL 2",
     "start_label": "Tue \u00b7 Oct 13 \u00b7 7:30 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Wed \u00b7 Oct 14 \u00b7 7:30 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-14T03:07:30.811182+00:00",
+  "updated_at": "2026-10-14T03:14:04.178137+00:00",
   "version": 1
 }
