@@ -17,7 +17,7 @@
   "forward_evaluation": {
     "adjudicated_holds": 0,
     "held_games": 0,
-    "pass_games": 84,
+    "pass_games": 100,
     "status": "ACCUMULATING"
   },
   "gates": {
@@ -28,7 +28,7 @@
     "shot_generation_accumulation_integrity": true,
     "special_teams_accumulation_integrity": true
   },
-  "generated_at": "2026-10-13T15:03:10.879509+00:00",
+  "generated_at": "2026-10-14T15:02:46.687052+00:00",
   "model_evidence": {
     "finishing": "HOLD_ALL_POSITION_LANES",
     "shot_generation": "HOLD_PENDING_FINAL_PROSPECTIVE_ENDPOINT",
@@ -256,10 +256,10 @@
   "source_hashes": {
     "archive": "2c707b160845c452d3921377adae731a8a7c9ed47a892e064186e6844516c1ea",
     "archive_receipt": "2139453acb7f8bc2954cfef5f8da1de06ade3aab51e4028ec8c82c82164a18e2",
-    "forward_accumulation": "bf9d384a00996fd01da4cfa7d36f90e74fbc6b71010cae11d98281507059ace7",
+    "forward_accumulation": "7df312481affd3f884eca6088faee38c8dfcaf21e022f66477d94e66198a2ec5",
     "offense_chain": "c4d922d23ed34f09763cdebe22623b3a9c2a5e32ce3dc587b6722de48db7cd47",
-    "shot_generation_accumulation": "4b1126b7827a89e36b072fd87f4b14f220bb78be323ca0b09ece41341509ed01",
-    "special_teams_accumulation": "6047152ff134404d280446aca5dff0d41fdc8e99449a1432c8f9da3ad421bd36"
+    "shot_generation_accumulation": "d49ea50d5ab773389c2bd8e3964b1197712a9a92fcabf7a84abe545159f4c020",
+    "special_teams_accumulation": "e487914ecd1ce0315d59fc1a112c889a508c51178c15ced346fccbf632e54821"
   },
   "status": "PUBLIC_DESCRIPTIVE_CARDS_READY_MODEL_COMPONENTS_PENDING",
   "version": "public_dallas_card_evidence_v2_20261007"
