@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 0,
     "away_sog": 5,
-    "detail": "1st \u00b7 04:59",
+    "detail": "1st \u00b7 16:27",
     "game_id": "2026020107",
     "game_state": "LIVE",
     "home": "COL",
     "home_score": 0,
-    "home_sog": 7,
+    "home_sog": 9,
     "matchup": "DAL at COL",
     "score": "DAL 0 -- COL 0",
     "start_label": "Wed \u00b7 Oct 14 \u00b7 7:30 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Oct 17 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-15T01:16:12.565486+00:00",
+  "updated_at": "2026-10-15T01:22:57.120653+00:00",
   "version": 1
 }
