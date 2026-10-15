@@ -1,6 +1,20 @@
 {
   "artifact": "Polaris_Public_Dallas_Card_Evidence_v2",
   "card_surface_contract": {
+    "cleared_goalie_metrics": [
+      "games_played",
+      "starts",
+      "toi_seconds",
+      "shots_against",
+      "saves",
+      "goals_against",
+      "save_percentage",
+      "expected_goals_against",
+      "descriptive_pre_shot_gsax",
+      "sample_label",
+      "by_strength",
+      "by_danger"
+    ],
     "cleared_skater_metrics": [
       "G/60",
       "A/60",
@@ -9,6 +23,9 @@
       "On-ice GF/60",
       "On-ice GF%"
     ],
+    "goalie_surface_disclaimer": "Not a talent grade; public pre-shot data omits placement, screens, lateral movement, and goalie motion.",
+    "goalie_surface_status": "PASS_PUBLIC_DESCRIPTIVE_RESULTS",
+    "goalie_talent_fields_withheld": true,
     "withheld_skater_metrics": [
       "No-EN xGF%",
       "in-house xG percentile"
@@ -23,14 +40,17 @@
   "gates": {
     "archive_final": true,
     "forward_receipt_coverage_complete": true,
+    "goalie_descriptive_results_passed": true,
     "no_public_player_value_fields": true,
     "offense_chain_assembled": true,
     "shot_generation_accumulation_integrity": true,
     "special_teams_accumulation_integrity": true
   },
-  "generated_at": "2026-10-15T15:02:37.625137+00:00",
+  "generated_at": "2026-10-15T21:05:27.791851+00:00",
   "model_evidence": {
     "finishing": "HOLD_ALL_POSITION_LANES",
+    "goalie_results": "PASS_PUBLIC_DESCRIPTIVE_RESULTS",
+    "goalie_talent": "RETIRED_PUBLIC_FEED_GOALIE_TALENT_FOR_NOW",
     "shot_generation": "HOLD_PENDING_FINAL_PROSPECTIVE_ENDPOINT",
     "special_teams": "HOLD_PENDING_FINAL_PROSPECTIVE_ENDPOINT",
     "total_value": "HOLD_COMPONENTS_INCOMPLETE"
@@ -74,8 +94,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official box-score stats verified",
-      "model_label": "xGF% + player value pending validation",
+      "cleared_label": "Official workload + descriptive pre-shot results verified",
+      "model_label": "Goalie talent grade retired; descriptive results only",
       "player": "Casey DeSmith",
       "player_id": 8479193,
       "position": "G",
@@ -92,8 +112,8 @@
     },
     {
       "archive_status": "VERIFIED_FINAL_ARCHIVE",
-      "cleared_label": "Official box-score stats verified",
-      "model_label": "xGF% + player value pending validation",
+      "cleared_label": "Official workload + descriptive pre-shot results verified",
+      "model_label": "Goalie talent grade retired; descriptive results only",
       "player": "Jake Oettinger",
       "player_id": 8479979,
       "position": "G",
@@ -240,7 +260,8 @@
       "official season production",
       "official workload",
       "descriptive public-event mixed-strength on-ice results",
-      "peer percentiles for official and public-event descriptive measures"
+      "peer percentiles for official and public-event descriptive measures",
+      "goalie descriptive pre-shot GSAx with sample disclosure"
     ],
     "pending": [
       "in-house xG and xGF% percentiles",
@@ -256,11 +277,12 @@
   "source_hashes": {
     "archive": "2c707b160845c452d3921377adae731a8a7c9ed47a892e064186e6844516c1ea",
     "archive_receipt": "2139453acb7f8bc2954cfef5f8da1de06ade3aab51e4028ec8c82c82164a18e2",
-    "forward_accumulation": "ff42d8803cb86941ab53ffe796565488d17b1788cc53df64eda3accb9334e495",
+    "forward_accumulation": "098e1600ffa1e4b49f585b6e008b2a6e336af8ab4dd4aa57af5d272d75fe9e5e",
+    "goalie_descriptive_results": "0c316c0e511e1acd7d9426a5c35f5eaa542b9b640d56180c8f317a57335c87a6",
     "offense_chain": "c4d922d23ed34f09763cdebe22623b3a9c2a5e32ce3dc587b6722de48db7cd47",
-    "shot_generation_accumulation": "8dc6e7d9858c203c184b0a580c6dd72f9e95c8e27688f3293a1a1490e164fa9e",
-    "special_teams_accumulation": "de27a6c70a5f031a894e5613645329ffe4f6cb5ecc4b632cf8dd723188853937"
+    "shot_generation_accumulation": "c9e763579b244ac959a982f3a26c014817907a4b331d60c9afd3137e4adf5073",
+    "special_teams_accumulation": "3d4a0fbd78a367c6493f3155e58c861435a3713446c5a6e053c37870b1807391"
   },
   "status": "PUBLIC_DESCRIPTIVE_CARDS_READY_MODEL_COMPONENTS_PENDING",
-  "version": "public_dallas_card_evidence_v2_20261007"
+  "version": "public_dallas_card_evidence_v2_20261015"
 }
