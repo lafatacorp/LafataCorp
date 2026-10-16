@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cam Lafata -- LafataCorp</title>
-<meta name="description" content="Cam Lafata talks hockey on 96.7/1310 The Ticket, builds Polaris, and runs paper-trading models for NHL and event markets.">
+<meta name="description" content="LafataCorp is the business of Cam Lafata: hockey analyst on The Ticket Sportsradio, creator of The Polaris Project, and author of trading models for NHL and event markets.">
 <meta name="keywords" content="Cam Lafata, LafataCorp, hockey, sports media, prediction markets, NHL analytics, Dallas">
 <meta property="og:title" content="Cam Lafata -- LafataCorp">
-<meta property="og:description" content="Hockey on the radio, Polaris, and trading models for NHL and event markets.">
+<meta property="og:description" content="Hockey analysis on The Ticket Sportsradio, The Polaris Project, and trading models for NHL and event markets.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lafatacorp.com">
 <meta property="og:image" content="https://lafatacorp.com/og-image.png">
@@ -15,7 +15,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cam Lafata -- LafataCorp">
-<meta name="twitter:description" content="Hockey on the radio, Polaris, and trading models for NHL and event markets.">
+<meta name="twitter:description" content="Hockey analysis on The Ticket Sportsradio, The Polaris Project, and trading models for NHL and event markets.">
 <meta name="twitter:image" content="https://lafatacorp.com/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -26,26 +26,46 @@
 .hero{padding-top:clamp(32px,5vw,64px);padding-bottom:clamp(72px,9vw,120px)}
 .hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));
   gap:56px 96px;align-items:center}
-.hero-line{margin:0;font-size:clamp(30px,3.6vw,50px);font-weight:400;line-height:1.14;
-  letter-spacing:-.03em;max-width:17ch;text-wrap:pretty}
+/* A longer statement than the old one, so a step down in size and a wider
+   measure: the same block height, read at the same speed. */
+.hero-line{margin:0;font-size:clamp(24px,2.7vw,38px);font-weight:400;line-height:1.22;
+  letter-spacing:-.025em;max-width:25ch;text-wrap:pretty}
 .hero-eyebrow{margin:0 0 28px;font-size:15px;color:var(--muted)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
-.portrait{margin:0;position:relative;width:100%;max-width:520px;justify-self:end}
-/* The frame holds the 4:5 crop; the image fills it. Setting aspect-ratio on a
+/* The mark drifts, as if floating. The shadow tightens as it comes down, which
+   is what sells the height. Both are on one element so they stay in step. */
+.mark{display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,48px) 0}
+/* The mark is a tall monogram, so its height is what to constrain: cap the
+   height and let the width follow, or it towers over the statement beside it. */
+.mark img{display:block;width:auto;max-width:100%;height:auto;
+  max-height:clamp(240px,30vw,400px);
+  animation:float 6s ease-in-out infinite;will-change:transform}
+@keyframes float{
+  0%,100%{transform:translateY(-10px);filter:drop-shadow(0 36px 28px rgba(10,13,18,.10))}
+  50%{transform:translateY(10px);filter:drop-shadow(0 16px 18px rgba(10,13,18,.18))}
+}
+@media (prefers-reduced-motion:reduce){
+  .mark img{animation:none;filter:drop-shadow(0 24px 24px rgba(10,13,18,.14))}
+}
+
+/* The portrait and its broadcast lower-third, now in About.
+   The frame holds the 4:5 crop; the image fills it. Setting aspect-ratio on a
    replaced element directly is less predictable, so the box owns the shape. */
-.portrait .frame{position:relative;width:100%;aspect-ratio:4 / 5;border-radius:4px;
+.portrait{margin:0;position:relative;width:100%;max-width:420px}
+.portrait .frame{position:relative;width:100%;aspect-ratio:4 / 5;border-radius:6px;
   overflow:hidden;background:#C9D0D8}
 .portrait .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   object-position:50% 28%;display:block}
-.lt{position:absolute;left:0;bottom:36px;max-width:calc(100% - 24px);
+/* Flush with the photo's left edge, not bled past it: this is the page's left
+   column now, and anything past the edge crowds the window on narrow screens. */
+.lt{position:absolute;left:0;bottom:28px;max-width:100%;
   box-shadow:0 18px 40px -18px rgba(10,13,18,.45)}
-@media (min-width:900px){.lt{left:-56px}}
 .lt-name{display:flex;align-items:center;background:var(--ink);color:var(--white);
-  padding:16px 26px 16px 20px;border-left:6px solid var(--live);
-  font-size:clamp(30px,3.4vw,46px);font-weight:600;letter-spacing:-.025em;line-height:1;margin:0}
+  padding:14px 24px 14px 18px;border-left:6px solid var(--live);
+  font-size:clamp(26px,2.6vw,34px);font-weight:600;letter-spacing:-.025em;line-height:1;margin:0}
 .lt-sub{display:flex;flex-wrap:wrap;background:var(--white);color:var(--ink);
   font-size:15px;font-weight:500}
-.lt-sub span{padding:10px 18px;border-right:1px solid var(--rule);white-space:nowrap}
+.lt-sub span{padding:9px 16px;border-right:1px solid var(--rule);white-space:nowrap}
 .lt-sub span:last-child{border-right:0}
 
 /* ── ticker ──────────────────────────────────────────────────────────────── */
@@ -100,10 +120,6 @@
 .writing-list .t{font-size:19px;font-weight:500}
 .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));
   gap:40px 80px;align-items:start}
-.about-frame{position:relative;width:100%;max-width:420px;aspect-ratio:4 / 5;
-  border-radius:6px;overflow:hidden;background:#C9D0D8}
-.about-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  object-position:50% 28%;display:block}
 .about-lead{margin:0;font-size:clamp(22px,2.2vw,28px);line-height:1.4;letter-spacing:-.015em;
   max-width:34ch;text-wrap:pretty}
 .about-body{margin:22px 0 0;color:var(--muted);max-width:58ch}
@@ -146,25 +162,21 @@
   <div class="hero-grid">
     <div>
       <p class="hero-eyebrow">Dallas, Texas</p>
-      <p class="hero-line">I talk hockey on The Ticket, build Polaris, and run trading models for NHL and event markets.</p>
+      <h1 class="hero-line">LafataCorp is the business of Cam Lafata: Hockey analyst on The Ticket Sportsradio, Creator of The Polaris Project, and Author of trading models for NHL and event markets.</h1>
       <div class="hero-cta">
         <a href="#work" class="btn btn-dark">See the work</a>
         <a href="mailto:Lafatacorp@gmail.com" class="btn btn-line">Email me</a>
       </div>
     </div>
-    <figure class="portrait">
-      <div class="frame"><img src="/headshot.jpg" alt="Cam Lafata" width="1777" height="2000"></div>
-      <figcaption class="lt">
-        <h1 class="lt-name">Cam Lafata</h1>
-        <div class="lt-sub"><span>96.7/1310 The Ticket</span><span>Founder, LafataCorp</span></div>
-      </figcaption>
-    </figure>
+    <div class="mark">
+      <img src="/logo-mark.png" alt="LafataCorp" width="1024" height="1548">
+    </div>
   </div>
 </section>
 
 <div class="ticker" role="region" aria-label="Latest from LafataCorp">
   <div class="ticker-live"><i></i>LIVE</div>
-  <div class="tickrun"><!-- TICKER --><span class="tk"><b>NHL TRACKER</b>No qualifying plays Thursday. 11 games screened.</span><span class="tk"><b>ON THE RADAR</b>UTA at EDM: model 56.0%, market 53.0%. Passed.</span><span class="tk"><b>DAILY ANALYZER</b>2-0 this season, +1.2%</span><span class="tk"><b>FADE BOT</b>14-5 this season, -2.7%</span><span class="tk"><b>KALSHI</b>Paused for a rebuild. Beta to follow.</span><span class="tk"><b>POLARIS</b>Dallas season hub is live</span><span class="tk"><b>NHL TRACKER</b>No qualifying plays Thursday. 11 games screened.</span><span class="tk"><b>ON THE RADAR</b>UTA at EDM: model 56.0%, market 53.0%. Passed.</span><span class="tk"><b>DAILY ANALYZER</b>2-0 this season, +1.2%</span><span class="tk"><b>FADE BOT</b>14-5 this season, -2.7%</span><span class="tk"><b>KALSHI</b>Paused for a rebuild. Beta to follow.</span><span class="tk"><b>POLARIS</b>Dallas season hub is live</span><!-- /TICKER --></div>
+  <div class="tickrun"><!-- TICKER --><span class="tk"><b>NHL TRACKER</b>No qualifying plays Thursday. 11 games screened.</span><span class="tk"><b>ON THE RADAR</b>UTA at EDM: model 56.0%, market 53.0%. Passed.</span><span class="tk"><b>DAILY ANALYZER</b>2-0 this season, +1.2%</span><span class="tk"><b>FADE BOT</b>15-8 this season, -22.3%</span><span class="tk"><b>KALSHI</b>Paused for a rebuild. Beta to follow.</span><span class="tk"><b>POLARIS</b>Dallas season hub is live</span><span class="tk"><b>NHL TRACKER</b>No qualifying plays Thursday. 11 games screened.</span><span class="tk"><b>ON THE RADAR</b>UTA at EDM: model 56.0%, market 53.0%. Passed.</span><span class="tk"><b>DAILY ANALYZER</b>2-0 this season, +1.2%</span><span class="tk"><b>FADE BOT</b>15-8 this season, -22.3%</span><span class="tk"><b>KALSHI</b>Paused for a rebuild. Beta to follow.</span><span class="tk"><b>POLARIS</b>Dallas season hub is live</span><!-- /TICKER --></div>
 </div>
 
 <section id="work" class="wrap sec">
@@ -206,46 +218,6 @@
   </a>
 </section>
 
-<section id="record" class="wrap sec">
-  <div class="sec-split">
-    <h2 class="h-lg">Last season, on the record.</h2>
-    <p style="margin:0;font-size:17px;color:var(--muted);max-width:46ch">Both NHL systems, paper traded through 2025-26. Wins and losses, side by side.</p>
-  </div>
-
-  <article class="rec">
-    <div class="rec-top"><h3>Fade Bot V2</h3><span class="meta">NHL in-game, paper, 121 trades</span></div>
-    <div class="rec-main">
-      <div class="rec-big">93-28</div>
-      <div class="rec-side">
-        <div><b>77.0%</b><span>Win rate</span></div>
-        <div><b class="up">+83.4%</b><span>Return on capital</span></div>
-      </div>
-    </div>
-    <div class="split" role="img" aria-label="93 won, 28 lost"><span class="w" style="width:76.86%"></span><span class="l" style="flex:1"></span></div>
-    <div class="split-k"><span>93 won</span><span>28 lost</span></div>
-    <p>Backs the team protecting a one-goal lead, entering on a live clock in a window a few minutes wide. Picks are never published, only results. V3 is in development: it adds a two-minute cooldown after every goal, so an entry is never priced off a market still repricing the goal it just saw.</p>
-  </article>
-
-  <article class="rec">
-    <div class="rec-top"><h3>Daily Analyzer V2</h3><span class="meta">NHL pre-game, paper, 181 bets</span></div>
-    <div class="rec-main">
-      <div class="rec-big">107-74</div>
-      <div class="rec-side">
-        <div><b>59.1%</b><span>Win rate</span></div>
-      </div>
-    </div>
-    <div class="split" role="img" aria-label="107 won, 74 lost"><span class="w" style="width:59.12%"></span><span class="l" style="flex:1"></span></div>
-    <div class="split-k"><span>107 won</span><span>74 lost</span></div>
-    <div class="mini" role="img" aria-label="Win rate 62.5 percent before the Olympic break, 56.9 percent after. Matchup accuracy 83 percent before, 42 percent after.">
-      <span>Win rate, before break</span><span class="t"><i style="width:62.5%"></i></span><span class="v">62.5%</span>
-      <span>Win rate, after break</span><span class="t"><i style="width:56.9%"></i></span><span class="v">56.9%</span>
-      <span>Matchup accuracy, before</span><span class="t"><i style="width:83%"></i></span><span class="v">83%</span>
-      <span>Matchup accuracy, after</span><span class="t"><i style="width:42%;background:var(--live)"></i></span><span class="v">42%</span>
-    </div>
-    <p>The Olympic break was a regime shift. Matchup accuracy, the model's strongest input, was cut in half, and March carried the losses. This season adds flat stake caps after mid-February, decaying head-to-head records and a playoff-contention filter. <a href="/nhl/#archive">More on the tracker</a>.</p>
-  </article>
-</section>
-
 <section id="writing" class="wrap sec">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px 80px">
     <div>
@@ -262,7 +234,13 @@
 
 <section id="about" class="wrap sec">
   <div class="about-grid">
-    <div class="about-frame"><img src="/headshot.jpg" alt="Cam Lafata" width="1777" height="2000" loading="lazy"></div>
+    <figure class="portrait about-portrait">
+      <div class="frame"><img src="/headshot.jpg" alt="Cam Lafata" width="1777" height="2000" loading="lazy"></div>
+      <figcaption class="lt">
+        <p class="lt-name">Cam Lafata</p>
+        <div class="lt-sub"><span>96.7/1310 The Ticket</span><span>Founder, LafataCorp</span></div>
+      </figcaption>
+    </figure>
     <div>
       <h2 class="lbl" style="font-weight:500;margin-bottom:18px">About</h2>
       <p class="about-lead">I grew up in Dallas, and you can hear me talking hockey on KTCK 96.7/1310 The Ticket.</p>
