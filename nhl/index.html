@@ -138,6 +138,24 @@
 .log-empty{color:var(--muted);padding:24px 0;border-top:1px solid var(--rule)}
 .key-note{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 
+/* Below the width the eight columns need, the table stops being a table: each
+   result becomes its own block with the column name beside the value. Odds,
+   Final, Result and Return are the reason anyone opens this section, and in a
+   sideways-scrolling table they are the four that sit off-screen. */
+@media (max-width:860px){
+  .scroller{overflow-x:visible}
+  .tbl{min-width:0;display:block}
+  .tbl thead{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap}
+  .tbl tbody,.tbl tr,.tbl td{display:block}
+  .tbl tr{padding:16px 0;border-bottom:1px solid var(--rule)}
+  .tbl td{padding:3px 0;border:0;white-space:normal;display:flex;
+    justify-content:space-between;align-items:center;gap:16px}
+  .tbl td:before{content:attr(data-label);font-size:13px;color:var(--muted);flex:none}
+  .tbl td.r{text-align:left}
+  .tbl td[data-label="Matchup"],.tbl td[data-label="Position"]{padding:6px 0}
+}
+
 /* ── archive band ────────────────────────────────────────────────────────── */
 .archive{margin-top:128px;background:var(--ink);color:var(--muted-dark)}
 .archive .wrap{padding-top:96px;padding-bottom:72px}
@@ -166,7 +184,7 @@
   <div class="wrap">
     <div class="board-status">
       <p class="now">NHL Tracker <span class="beta">(Beta)</span><span class="sep">/</span><span class="date"><!-- PICKS_DATE -->October 15, 2026<!-- /PICKS_DATE --></span></p>
-      <p class="upd"><i></i>Updated <!-- UPDATED -->Oct 15, 2026 at 11:48 PM<!-- /UPDATED --> CT</p>
+      <p class="upd"><i></i>Updated <!-- UPDATED -->Oct 16, 2026 at 1:56 AM<!-- /UPDATED --> CT</p>
     </div>
     <div class="board-grid">
       <div><!-- HEADLINE --><h1>No play tonight.</h1>
@@ -300,7 +318,7 @@
     <h2>Return on capital</h2>
     <p class="lbl">2026-27 season to date, as a percentage of starting capital</p>
   </div>
-  <!-- CHART --><div class="chart-key"><span><i style="background:#0A0D12"></i>Daily Analyzer</span><span><i style="background:#8A939E"></i>Fade Bot</span></div><div class="chart-body"><svg viewBox="-52 -14 1148 330" role="img" aria-label="Cumulative return on capital by system, Sep 29 to Oct 15"><line x1="0" y1="287.1" x2="1000" y2="287.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="291.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">-25%</text><line x1="0" y1="247.4" x2="1000" y2="247.4" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="251.4" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">-20%</text><line x1="0" y1="207.7" x2="1000" y2="207.7" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="211.7" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">-15%</text><line x1="0" y1="168.0" x2="1000" y2="168.0" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="172.0" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">-10%</text><line x1="0" y1="128.3" x2="1000" y2="128.3" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="132.3" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">-5%</text><line x1="0" y1="88.6" x2="1000" y2="88.6" stroke="#3E4651" stroke-width="1" /><text x="-10" y="92.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">0%</text><line x1="0" y1="48.9" x2="1000" y2="48.9" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="52.9" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">+5%</text><line x1="0" y1="9.2" x2="1000" y2="9.2" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="13.2" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="12">+10%</text><polyline points="90.9,85.4 181.8,85.4 272.7,85.4 363.6,79.4 454.5,79.4 545.5,79.4 636.4,79.4 727.3,79.4 818.2,79.4 909.1,79.4 1000.0,79.4" fill="none" stroke="#0A0D12" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="79.4" r="3.5" fill="#0A0D12"/><polyline points="0.0,66.2 90.9,66.2 181.8,137.4 272.7,101.4 363.6,144.6 454.5,101.9 545.5,44.0 636.4,34.6 727.3,78.8 818.2,81.2 909.1,110.2 1000.0,265.4" fill="none" stroke="#8A939E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="265.4" r="3.5" fill="#8A939E"/><text x="1012.0" y="83.4" fill="#0A0D12" font-family="Host Grotesk, sans-serif" font-size="15" font-weight="600" style="font-variant-numeric:tabular-nums">+1.2%</text><text x="1012.0" y="269.4" fill="#8A939E" font-family="Host Grotesk, sans-serif" font-size="15" font-weight="600" style="font-variant-numeric:tabular-nums">-22.3%</text></svg></div><div class="chart-xaxis"><span>Sep 29</span><span>Oct 6</span><span>Oct 15</span></div><!-- /CHART -->
+  <!-- CHART --><div class="chart-key"><span><i style="background:#0A0D12"></i>Daily Analyzer</span><span><i style="background:#4A6B8A"></i>Fade Bot</span></div><div class="chart-body"><svg viewBox="-60 -18 1180 338" role="img" aria-label="Cumulative return on capital by system, Sep 29 to Oct 15"><line x1="0" y1="287.1" x2="1000" y2="287.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="292.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-25%</text><line x1="0" y1="247.4" x2="1000" y2="247.4" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="252.4" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-20%</text><line x1="0" y1="207.7" x2="1000" y2="207.7" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="212.7" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-15%</text><line x1="0" y1="168.0" x2="1000" y2="168.0" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="173.0" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-10%</text><line x1="0" y1="128.3" x2="1000" y2="128.3" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="133.3" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-5%</text><line x1="0" y1="88.6" x2="1000" y2="88.6" stroke="#3E4651" stroke-width="1" /><text x="-10" y="93.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">0%</text><line x1="0" y1="48.9" x2="1000" y2="48.9" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="53.9" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+5%</text><line x1="0" y1="9.2" x2="1000" y2="9.2" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="14.2" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+10%</text><polyline points="90.9,85.4 181.8,85.4 272.7,85.4 363.6,79.4 454.5,79.4 545.5,79.4 636.4,79.4 727.3,79.4 818.2,79.4 909.1,79.4 1000.0,79.4" fill="none" stroke="#0A0D12" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="79.4" r="4.5" fill="#0A0D12"/><polyline points="0.0,66.2 90.9,66.2 181.8,137.4 272.7,101.4 363.6,144.6 454.5,101.9 545.5,44.0 636.4,34.6 727.3,78.8 818.2,81.2 909.1,110.2 1000.0,265.4" fill="none" stroke="#4A6B8A" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="265.4" r="4.5" fill="#4A6B8A"/><text x="1014.0" y="85.4" fill="#12804A" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">+1.2%</text><text x="1014.0" y="271.4" fill="#C8261B" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">-22.3%</text></svg></div><div class="chart-xaxis"><span>Sep 29</span><span>Oct 6</span><span>Oct 15</span></div><!-- /CHART -->
 </section>
 
 <section class="wrap sec">
@@ -314,254 +332,254 @@
   </div>
   <!-- RESULTS --><div class="scroller"><table class="tbl"><thead><tr><th scope="col">Date</th><th scope="col">Matchup</th><th scope="col">System</th><th scope="col">Position</th><th scope="col" class="r">Odds</th><th scope="col" class="r">Final</th><th scope="col">Result</th><th scope="col" class="r">Return</th></tr></thead><tbody>
       <tr data-sys="FB">
-        <td>Oct 15</td>
-        <td><span class="pair"><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span>TOR hold, 3rd</span></td>
-        <td class="r">&minus;108</td>
-        <td class="r">4&ndash;5</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-10.0%</td>
+        <td data-label="Date">Oct 15</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span>TOR hold, 3rd</span></td>
+        <td data-label="Odds" class="r">&minus;108</td>
+        <td data-label="Final" class="r">5&ndash;4</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-10.0%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 15</td>
-        <td><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span>VAN hold, 3rd</span></td>
-        <td class="r">&minus;376</td>
-        <td class="r">2&ndash;3</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-3.4%</td>
+        <td data-label="Date">Oct 15</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span>VAN hold, 3rd</span></td>
+        <td data-label="Odds" class="r">&minus;376</td>
+        <td data-label="Final" class="r">2&ndash;3</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-3.4%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 15</td>
-        <td><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 2nd</span></td>
-        <td class="r">&minus;233</td>
-        <td class="r">4&ndash;3</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+1.1%</td>
+        <td data-label="Date">Oct 15</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;233</td>
+        <td data-label="Final" class="r">3&ndash;4</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+1.1%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 15</td>
-        <td><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
-        <td class="r">&minus;186</td>
-        <td class="r">1&ndash;2</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-7.2%</td>
+        <td data-label="Date">Oct 15</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;186</td>
+        <td data-label="Final" class="r">1&ndash;2</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-7.2%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 14</td>
-        <td><span class="pair"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL hold, 2nd</span></td>
-        <td class="r">&minus;317</td>
-        <td class="r">2&ndash;3</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-3.6%</td>
+        <td data-label="Date">Oct 14</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;317</td>
+        <td data-label="Final" class="r">3&ndash;2</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-3.6%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 13</td>
-        <td><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span>STL hold, 2nd</span></td>
-        <td class="r">&minus;285</td>
-        <td class="r">7&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+1.2%</td>
+        <td data-label="Date">Oct 13</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span>STL hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;285</td>
+        <td data-label="Final" class="r">7&ndash;2</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+1.2%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 13</td>
-        <td><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span>NYR hold, 2nd</span></td>
-        <td class="r">&minus;178</td>
-        <td class="r">4&ndash;1</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+4.0%</td>
+        <td data-label="Date">Oct 13</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span>NYR hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;178</td>
+        <td data-label="Final" class="r">1&ndash;4</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+4.0%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 13</td>
-        <td><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 2nd</span></td>
-        <td class="r">&minus;178</td>
-        <td class="r">2&ndash;4</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-5.5%</td>
+        <td data-label="Date">Oct 13</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;178</td>
+        <td data-label="Final" class="r">2&ndash;4</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-5.5%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 10</td>
-        <td><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
-        <td class="r">&minus;245</td>
-        <td class="r">4&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+1.1%</td>
+        <td data-label="Date">Oct 10</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;245</td>
+        <td data-label="Final" class="r">4&ndash;2</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+1.1%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 10</td>
-        <td><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span>TOR hold, 3rd</span></td>
-        <td class="r">&minus;300</td>
-        <td class="r">6&ndash;3</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.9%</td>
+        <td data-label="Date">Oct 10</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span>TOR hold, 3rd</span></td>
+        <td data-label="Odds" class="r">&minus;300</td>
+        <td data-label="Final" class="r">6&ndash;3</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.9%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 10</td>
-        <td><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span>NSH hold, 2nd</span></td>
-        <td class="r">&minus;170</td>
-        <td class="r">2&ndash;3</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-7.6%</td>
+        <td data-label="Date">Oct 10</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span>NSH hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;170</td>
+        <td data-label="Final" class="r">2&ndash;3</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-7.6%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 9</td>
-        <td><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 3rd</span></td>
-        <td class="r">&minus;733</td>
-        <td class="r">3&ndash;1</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.3%</td>
+        <td data-label="Date">Oct 9</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 3rd</span></td>
+        <td data-label="Odds" class="r">&minus;733</td>
+        <td data-label="Final" class="r">1&ndash;3</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.3%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 9</td>
-        <td><span class="pair"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span>CBJ hold, 2nd</span></td>
-        <td class="r">&minus;300</td>
-        <td class="r">3&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.9%</td>
+        <td data-label="Date">Oct 9</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span>CBJ hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;300</td>
+        <td data-label="Final" class="r">2&ndash;3</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.9%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 6</td>
-        <td><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 2nd</span></td>
-        <td class="r">&minus;213</td>
-        <td class="r">4&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+3.2%</td>
+        <td data-label="Date">Oct 6</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;213</td>
+        <td data-label="Final" class="r">2&ndash;4</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+3.2%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 6</td>
-        <td><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span>UTA hold, 2nd</span></td>
-        <td class="r">&minus;223</td>
-        <td class="r">3&ndash;5</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+4.1%</td>
+        <td data-label="Date">Oct 6</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span>UTA hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;223</td>
+        <td data-label="Final" class="r">3&ndash;5</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+4.1%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 4</td>
-        <td><span class="pair"><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
-        <td class="r">&minus;194</td>
-        <td class="r">3&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+3.6%</td>
+        <td data-label="Date">Oct 4</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;194</td>
+        <td data-label="Final" class="r">2&ndash;3</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+3.6%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 4</td>
-        <td><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span>NYR hold, 2nd</span></td>
-        <td class="r">&minus;245</td>
-        <td class="r">4&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+1.4%</td>
+        <td data-label="Date">Oct 4</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span>NYR hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;245</td>
+        <td data-label="Final" class="r">2&ndash;4</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+1.4%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 4</td>
-        <td><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span>WPG hold, 3rd</span></td>
-        <td class="r">&minus;525</td>
-        <td class="r">3&ndash;2</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.3%</td>
+        <td data-label="Date">Oct 4</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span>WPG hold, 3rd</span></td>
+        <td data-label="Odds" class="r">&minus;525</td>
+        <td data-label="Final" class="r">3&ndash;2</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.3%</td>
       </tr>
       <tr data-sys="DA">
-        <td>Oct 3</td>
-        <td><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td>Daily Analyzer</td>
-        <td><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL ML</span></td>
-        <td class="r">&minus;270</td>
-        <td class="r">1&ndash;6</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.7%</td>
+        <td data-label="Date">Oct 3</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Daily Analyzer</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL ML</span></td>
+        <td data-label="Odds" class="r">&minus;270</td>
+        <td data-label="Final" class="r">1&ndash;6</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.7%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 3</td>
-        <td><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span>PHI hold, 2nd</span></td>
-        <td class="r">&minus;178</td>
-        <td class="r">2&ndash;3</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-5.4%</td>
+        <td data-label="Date">Oct 3</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span>PHI hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;178</td>
+        <td data-label="Final" class="r">3&ndash;2</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-5.4%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 2</td>
-        <td><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span>STL hold, 2nd</span></td>
-        <td class="r">&minus;156</td>
-        <td class="r">4&ndash;0</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+4.5%</td>
+        <td data-label="Date">Oct 2</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span>STL hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;156</td>
+        <td data-label="Final" class="r">4&ndash;0</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+4.5%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 1</td>
-        <td><span class="pair"><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span>CBJ hold, 2nd</span></td>
-        <td class="r">&minus;525</td>
-        <td class="r">6&ndash;3</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.3%</td>
+        <td data-label="Date">Oct 1</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span>CBJ hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;525</td>
+        <td data-label="Final" class="r">3&ndash;6</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.3%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Oct 1</td>
-        <td><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span>PHI hold, 2nd</span></td>
-        <td class="r">&minus;186</td>
-        <td class="r">3&ndash;2</td>
-        <td><span class="wl l">L</span></td>
-        <td class="r dn" style="font-weight:600">-9.3%</td>
+        <td data-label="Date">Oct 1</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span>PHI hold, 2nd</span></td>
+        <td data-label="Odds" class="r">&minus;186</td>
+        <td data-label="Final" class="r">3&ndash;2</td>
+        <td data-label="Result"><span class="wl l">L</span></td>
+        <td data-label="Return" class="r dn" style="font-weight:600">-9.3%</td>
       </tr>
       <tr data-sys="DA">
-        <td>Sep 30</td>
-        <td><span class="pair"><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td>Daily Analyzer</td>
-        <td><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL ML</span></td>
-        <td class="r">&minus;185</td>
-        <td class="r">4&ndash;8</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+0.4%</td>
+        <td data-label="Date">Sep 30</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Daily Analyzer</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL ML</span></td>
+        <td data-label="Odds" class="r">&minus;185</td>
+        <td data-label="Final" class="r">4&ndash;8</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+0.4%</td>
       </tr>
       <tr data-sys="FB">
-        <td>Sep 29</td>
-        <td><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td>Fade Bot</td>
-        <td><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span>VAN hold, 3rd</span></td>
-        <td class="r">&minus;194</td>
-        <td class="r">6&ndash;5</td>
-        <td><span class="wl w">W</span></td>
-        <td class="r up" style="font-weight:600">+2.8%</td>
+        <td data-label="Date">Sep 29</td>
+        <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
+        <td data-label="System">Fade Bot</td>
+        <td data-label="Position"><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span>VAN hold, 3rd</span></td>
+        <td data-label="Odds" class="r">&minus;194</td>
+        <td data-label="Final" class="r">6&ndash;5</td>
+        <td data-label="Result"><span class="wl w">W</span></td>
+        <td data-label="Return" class="r up" style="font-weight:600">+2.8%</td>
       </tr></tbody></table></div><!-- /RESULTS -->
   <p class="lbl key-note">Wins and losses read the same way, in the same row: <span class="wl w">W</span> <span class="up" style="font-weight:600">+2.8%</span> <span class="wl l">L</span> <span class="dn" style="font-weight:600">-1.0%</span></p>
 </section>

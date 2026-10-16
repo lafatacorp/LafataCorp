@@ -48,6 +48,12 @@
 .mark img{display:block;width:auto;max-width:100%;height:auto;
   max-height:clamp(240px,30vw,400px);
   animation:float 6s ease-in-out infinite;will-change:transform}
+/* Once the hero stacks, the mark sits above the ticker rather than beside the
+   statement, so a 240px block pushes the whole page down. Shrink it there. */
+@media (max-width:975px){
+  .mark{padding:clamp(8px,3vw,24px) 0}
+  .mark img{max-height:clamp(132px,24vw,200px)}
+}
 @keyframes float{
   0%,100%{transform:translateY(-10px);filter:drop-shadow(0 36px 28px rgba(10,13,18,.08))}
   50%{transform:translateY(10px);filter:drop-shadow(0 16px 18px rgba(10,13,18,.15))}
@@ -117,6 +123,10 @@
 
 /* ── sections ────────────────────────────────────────────────────────────── */
 .sec{padding-top:128px}
+/* 128px of air reads as generous on a wide screen and as a dead gap on a
+   phone, where the sections are already stacked. */
+@media (max-width:860px){.sec{padding-top:72px}}
+@media (max-width:600px){.sec{padding-top:56px}}
 .sec-split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));
   gap:24px 80px;align-items:end;margin-bottom:40px}
 .h-lg{margin:0;font-size:clamp(32px,3.8vw,52px);font-weight:400;letter-spacing:-.03em;
@@ -203,21 +213,21 @@
   <a class="row" href="/polaris/">
     <span class="nm">Polaris <span class="beta">(Beta)</span></span>
     <span class="ds">Hockey intelligence. Game and season estimates from play-by-play, tracking and situational data, Dallas first.</span>
-    <span class="st">Beta</span>
+    <span class="st">Live</span>
     <span class="ar" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11h14M12 5l6 6-6 6"></path></svg></span>
   </a>
 
   <a class="row" href="/nhl/">
     <span class="nm">NHL Tracker <span class="beta">(Beta)</span></span>
     <span class="ds">Two paper-trading systems, posted every morning with the reasoning behind each position. Full 2025-26 archive.</span>
-    <span class="st">Beta</span>
+    <span class="st">Daily</span>
     <span class="ar" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11h14M12 5l6 6-6 6"></path></svg></span>
   </a>
 
   <a class="row" href="/kalshi/">
     <span class="nm">Kalshi system</span>
     <span class="ds">An automated event-market strategy. Up 79.7% on capital risked, then paused when the market changed under it.</span>
-    <span class="st">Beta</span>
+    <span class="st">Paused</span>
     <span class="ar" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11h14M12 5l6 6-6 6"></path></svg></span>
   </a>
 
