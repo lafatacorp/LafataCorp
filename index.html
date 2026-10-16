@@ -41,11 +41,11 @@
   max-height:clamp(240px,30vw,400px);
   animation:float 6s ease-in-out infinite;will-change:transform}
 @keyframes float{
-  0%,100%{transform:translateY(-10px);filter:drop-shadow(0 36px 28px rgba(10,13,18,.10))}
-  50%{transform:translateY(10px);filter:drop-shadow(0 16px 18px rgba(10,13,18,.18))}
+  0%,100%{transform:translateY(-10px);filter:drop-shadow(0 36px 28px rgba(10,13,18,.08))}
+  50%{transform:translateY(10px);filter:drop-shadow(0 16px 18px rgba(10,13,18,.15))}
 }
 @media (prefers-reduced-motion:reduce){
-  .mark img{animation:none;filter:drop-shadow(0 24px 24px rgba(10,13,18,.14))}
+  .mark img{animation:none;filter:drop-shadow(0 24px 24px rgba(10,13,18,.11))}
 }
 
 /* The portrait and its broadcast lower-third, now in About.
@@ -126,8 +126,13 @@
 .facts{margin:32px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   gap:0 32px}
 .facts div{padding:14px 0;border-top:1px solid var(--rule)}
-.facts dd{margin:4px 0 0;font-weight:500;display:flex;align-items:center;gap:10px}
-.facts dd img{height:22px;width:auto}
+.facts dd{margin:4px 0 0;font-weight:500;display:flex;flex-direction:column;
+  align-items:flex-start;gap:8px}
+.facts .credit{display:flex;align-items:center;gap:10px}
+/* A fixed box per mark, left aligned inside it, so the labels beside two
+   logos of different proportion still start on the same line. */
+.facts .credit img{height:22px;width:32px;object-fit:contain;
+  object-position:left center;flex:none}
 
 /* ── footer ──────────────────────────────────────────────────────────────── */
 .foot{margin-top:140px;background:var(--ink);color:var(--on-dark)}
@@ -222,7 +227,7 @@
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px 80px">
     <div>
       <h2 class="lbl" style="font-weight:500;margin-bottom:18px">Writing</h2>
-      <p style="margin:0;font-size:clamp(26px,2.6vw,34px);font-weight:400;letter-spacing:-.02em;line-height:1.2;max-width:22ch;text-wrap:pretty">Long-form is coming. First up, the stories behind the numbers.</p>
+      <p style="margin:0;font-size:clamp(26px,2.6vw,34px);font-weight:400;letter-spacing:-.02em;line-height:1.2;max-width:22ch;text-wrap:pretty">Articles coming soon.</p>
     </div>
     <ol class="writing-list">
       <li><span class="t">What the Olympic break did to my model</span><span class="lbl">Draft</span></li>
@@ -243,11 +248,14 @@
     </figure>
     <div>
       <h2 class="lbl" style="font-weight:500;margin-bottom:18px">About</h2>
-      <p class="about-lead">I grew up in Dallas, and you can hear me talking hockey on KTCK 96.7/1310 The Ticket.</p>
+      <p class="about-lead">Dallas born, Boston raised, and back home talking hockey on KTCK 96.7/1310 The Ticket.</p>
       <p class="about-body">I study Sport Management at SMU across the Simmons School and the Cox School of Business, and my research looks at legalized sports betting and prediction markets as investments. LafataCorp is where that turns into working systems. The plan is hockey operations.</p>
       <dl class="facts">
-        <div><dt class="lbl">On air</dt><dd><img src="/ticket-logo.png" alt="" width="2000" height="1406" loading="lazy">96.7/1310 The Ticket</dd></div>
-        <div><dt class="lbl">Video</dt><dd><img src="/smutv-logo.png" alt="" width="700" height="700" loading="lazy">SMUTV</dd></div>
+        <div><dt class="lbl">On air</dt><dd><span class="credit"><img src="/ticket-logo.png" alt="" width="2000" height="1406" loading="lazy">96.7/1310 The Ticket</span></dd></div>
+        <div><dt class="lbl">Video</dt><dd>
+          <span class="credit"><img src="/smutv-logo.png" alt="" width="700" height="700" loading="lazy">SMUTV</span>
+          <span class="credit"><img src="/ponyup-logo.png" alt="" width="400" height="283" loading="lazy">Pony Up Productions</span>
+        </dd></div>
         <div><dt class="lbl">School</dt><dd>SMU, Simmons + Cox</dd></div>
         <div><dt class="lbl">Based</dt><dd>Dallas-Fort Worth</dd></div>
       </dl>
