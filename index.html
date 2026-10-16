@@ -27,9 +27,14 @@
 .hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));
   gap:56px 96px;align-items:center}
 /* A longer statement than the old one, so a step down in size and a wider
-   measure: the same block height, read at the same speed. */
+   measure: the same block height, read at the same speed.
+   `balance` rather than `pretty`: pretty only protects the last line from a
+   single orphan word, which still left "event markets." stranded on its own
+   at some widths. balance evens every line, so the last one is never stubby.
+   The non-breaking space in the markup is the fallback for browsers without
+   balance, where it at least keeps those two words together. */
 .hero-line{margin:0;font-size:clamp(24px,2.7vw,38px);font-weight:400;line-height:1.22;
-  letter-spacing:-.025em;max-width:25ch;text-wrap:pretty}
+  letter-spacing:-.025em;max-width:25ch;text-wrap:balance}
 .hero-eyebrow{margin:0 0 28px;font-size:15px;color:var(--muted)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
 /* The mark drifts, as if floating. The shadow tightens as it comes down, which
@@ -167,7 +172,7 @@
   <div class="hero-grid">
     <div>
       <p class="hero-eyebrow">Dallas, Texas</p>
-      <h1 class="hero-line">LafataCorp is the business of Cam Lafata: Hockey analyst on The Ticket Sportsradio, Creator of The Polaris Project, and Author of trading models for NHL and event markets.</h1>
+      <h1 class="hero-line">LafataCorp is the business of Cam Lafata: Hockey analyst on The Ticket Sportsradio, Creator of The Polaris Project, and Author of trading models for NHL and event&nbsp;markets.</h1>
       <div class="hero-cta">
         <a href="#work" class="btn btn-dark">See the work</a>
         <a href="mailto:Lafatacorp@gmail.com" class="btn btn-line">Email me</a>
