@@ -134,7 +134,7 @@ h1{font-size:clamp(64px,10vw,132px);font-weight:500;line-height:.9;
 /* ── section shells ──────────────────────────────────────────────────────── */
 section.content,.brief-inner,.roster-inner{max-width:var(--wrap);margin:auto;
   padding:clamp(64px,8vw,112px) 32px}
-.brief,.roster,.cards-section,.postgame,.method{background:var(--ink);
+.brief,.roster,.cards-section,.postgame,.goalie-season-section,.method{background:var(--ink);
   border-top:1px solid var(--hair)}
 
 /* ── brief ───────────────────────────────────────────────────────────────── */
@@ -281,6 +281,22 @@ section.content,.brief-inner,.roster-inner{max-width:var(--wrap);margin:auto;
 .performance-empty-art span{padding:0;font-size:13px;font-weight:600;letter-spacing:.1em;
   color:var(--faint);text-transform:uppercase}
 
+/* ── current-season goalies ──────────────────────────────────────────────── */
+.goalie-season-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,34rem);
+  gap:32px;align-items:end}
+.goalie-season-head p:last-child{color:var(--body);line-height:1.65;max-width:62ch}
+.goalie-season-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:26px;margin-top:40px;max-width:930px}
+.goalie-season-card{min-width:0;color:var(--soft);text-decoration:none}
+.goalie-season-card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;
+  border:1px solid var(--line);border-radius:8px;background:#09111c}
+.goalie-season-card:hover img{border-color:var(--teal-dim)}
+.goalie-season-card span{display:block;padding-top:12px}
+.goalie-season-card strong,.goalie-season-card small{display:block}
+.goalie-season-card strong{font-size:18px;font-weight:500;color:var(--white)}
+.goalie-season-card small{margin-top:3px;font-size:12px;font-weight:500;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+
 /* ── method ──────────────────────────────────────────────────────────────── */
 .method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
   margin-top:40px;border:1px solid var(--line);border-radius:14px;overflow:hidden;
@@ -349,7 +365,8 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
   .filters{width:100%;overflow:auto}
   .filters button{flex:1;white-space:nowrap}
   .forward-line .deployment-cards,.defense-pair .deployment-cards,
-  .goalie-pair .deployment-cards{grid-template-columns:1fr;max-width:none}
+  .goalie-pair .deployment-cards,.goalie-season-grid{grid-template-columns:1fr;max-width:none}
+  .goalie-season-head{grid-template-columns:1fr;align-items:start}
 }
 </style>
 </head>
@@ -370,7 +387,7 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
     <div class="pn-sub-inner">
       <a class="brand" href="#top">Polaris <small>Dallas hockey intelligence</small></a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle sections" aria-expanded="false">Sections</button>
-      <ul class="nav-links" id="navLinks"><li><a href="#gameStatus">Live</a></li><li><a href="#postgame">Postgame</a></li><li><a href="#performance">Player cards</a></li><li><a href="#cards">Season archive</a></li><li><a href="#method">Method</a></li></ul>
+      <ul class="nav-links" id="navLinks"><li><a href="#gameStatus">Live</a></li><li><a href="#postgame">Postgame</a></li><li><a href="#performance">Player cards</a></li><li><a href="#goalieSeason">Goalie season</a></li><li><a href="#cards">Season archive</a></li><li><a href="#method">Method</a></li></ul>
       <div class="season">2026-27</div>
     </div>
   </div>
@@ -390,6 +407,18 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 <!-- POLARIS_LATEST_PLAYER_CARDS_START -->
 <section class="content performance-section" id="performance"><p class="section-label">Individual postgame cards · 2026-10-14</p><h2 class="section-title">Dallas player performance</h2><p class="performance-intro">Official production, shot types and origins, in-house iXG, and governed on-ice 5v5 results from the latest completed game. Players are arranged by their predominant 5v5 deployment from official shift overlap. Player-value grades remain withheld while registered season validation accumulates.</p><div class="performance-lines"><section class="deployment-row forward-line"><h3>Forward line 1</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8480027_jason_robertson.jpg"><img src="postgame/2026020107/cards/8480027_jason_robertson.jpg" alt="J. Robertson postgame performance card" loading="lazy"><span><strong>J. Robertson</strong><small>L · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8478449_roope_hintz.jpg"><img src="postgame/2026020107/cards/8478449_roope_hintz.jpg" alt="R. Hintz postgame performance card" loading="lazy"><span><strong>R. Hintz</strong><small>C · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8478420_mikko_rantanen.jpg"><img src="postgame/2026020107/cards/8478420_mikko_rantanen.jpg" alt="M. Rantanen postgame performance card" loading="lazy"><span><strong>M. Rantanen</strong><small>R · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row forward-line"><h3>Forward line 2</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8473994_jamie_benn.jpg"><img src="postgame/2026020107/cards/8473994_jamie_benn.jpg" alt="J. Benn postgame performance card" loading="lazy"><span><strong>J. Benn</strong><small>L · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8475794_tyler_seguin.jpg"><img src="postgame/2026020107/cards/8475794_tyler_seguin.jpg" alt="T. Seguin postgame performance card" loading="lazy"><span><strong>T. Seguin</strong><small>C · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8479351_sam_steel.jpg"><img src="postgame/2026020107/cards/8479351_sam_steel.jpg" alt="S. Steel postgame performance card" loading="lazy"><span><strong>S. Steel</strong><small>C · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row forward-line"><h3>Forward line 3</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8480840_oskar_back.jpg"><img src="postgame/2026020107/cards/8480840_oskar_back.jpg" alt="O. Bäck postgame performance card" loading="lazy"><span><strong>O. Bäck</strong><small>C · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8484829_justin_hryckowian.jpg"><img src="postgame/2026020107/cards/8484829_justin_hryckowian.jpg" alt="J. Hryckowian postgame performance card" loading="lazy"><span><strong>J. Hryckowian</strong><small>C · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8484938_arttu_hyry.jpg"><img src="postgame/2026020107/cards/8484938_arttu_hyry.jpg" alt="A. Hyry postgame performance card" loading="lazy"><span><strong>A. Hyry</strong><small>R · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row forward-line"><h3>Forward line 4</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8481641_joel_kiviranta.jpg"><img src="postgame/2026020107/cards/8481641_joel_kiviranta.jpg" alt="J. Kiviranta postgame performance card" loading="lazy"><span><strong>J. Kiviranta</strong><small>L · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8476278_colin_blackwell.jpg"><img src="postgame/2026020107/cards/8476278_colin_blackwell.jpg" alt="C. Blackwell postgame performance card" loading="lazy"><span><strong>C. Blackwell</strong><small>C · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8476889_radek_faksa.jpg"><img src="postgame/2026020107/cards/8476889_radek_faksa.jpg" alt="R. Faksa postgame performance card" loading="lazy"><span><strong>R. Faksa</strong><small>C · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row defense-pair"><h3>Defense pair 1</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8476902_esa_lindell.jpg"><img src="postgame/2026020107/cards/8476902_esa_lindell.jpg" alt="E. Lindell postgame performance card" loading="lazy"><span><strong>E. Lindell</strong><small>D · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8480036_miro_heiskanen.jpg"><img src="postgame/2026020107/cards/8480036_miro_heiskanen.jpg" alt="M. Heiskanen postgame performance card" loading="lazy"><span><strong>M. Heiskanen</strong><small>D · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row defense-pair"><h3>Defense pair 2</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8480878_nils_lundkvist.jpg"><img src="postgame/2026020107/cards/8480878_nils_lundkvist.jpg" alt="N. Lundkvist postgame performance card" loading="lazy"><span><strong>N. Lundkvist</strong><small>D · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8481581_thomas_harley.jpg"><img src="postgame/2026020107/cards/8481581_thomas_harley.jpg" alt="T. Harley postgame performance card" loading="lazy"><span><strong>T. Harley</strong><small>D · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row defense-pair"><h3>Defense pair 3</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8474574_tyler_myers.jpg"><img src="postgame/2026020107/cards/8474574_tyler_myers.jpg" alt="T. Myers postgame performance card" loading="lazy"><span><strong>T. Myers</strong><small>D · DAL 3 - COL 2</small></span></a><a class="performance-card" href="postgame/2026020107/cards/8483425_lian_bichsel.jpg"><img src="postgame/2026020107/cards/8483425_lian_bichsel.jpg" alt="L. Bichsel postgame performance card" loading="lazy"><span><strong>L. Bichsel</strong><small>D · DAL 3 - COL 2</small></span></a></div></section><section class="deployment-row goalie-pair"><h3>Goaltenders</h3><div class="deployment-cards"><a class="performance-card" href="postgame/2026020107/cards/8479193_casey_desmith.jpg"><img src="postgame/2026020107/cards/8479193_casey_desmith.jpg" alt="C. DeSmith postgame performance card" loading="lazy"><span><strong>C. DeSmith</strong><small>G · DAL 3 - COL 2</small></span></a><div class="performance-card performance-card-empty"><div class="performance-empty-art" aria-hidden="true"><span>DNP</span></div><span><strong>J. Oettinger</strong><small>Backup · Did not play</small></span></div></div></section></div><a class="postgame-link" href="postgame/2026020107/index.html">Open all cards and shot map</a></section>
 <!-- POLARIS_LATEST_PLAYER_CARDS_END -->
+
+<section class="content goalie-season-section" id="goalieSeason">
+  <div class="goalie-season-head">
+    <div><p class="section-label">Current-season goaltending · 2026-27</p><h2 class="section-title">Dallas goalie results</h2></div>
+    <p>Frozen pre-shot xG, descriptive goals saved above expected, and historically calibrated outcome-variance bands. These are season-to-date results, not talent grades or projections.</p>
+  </div>
+  <div class="goalie-season-grid">
+    <a class="goalie-season-card" href="assets/cards/2026-27/goalies/jake_oettinger_social.png"><img src="assets/cards/2026-27/goalies/jake_oettinger_social.png" alt="Jake Oettinger 2026-27 season-to-date descriptive goalie card" loading="lazy"><span><strong>Jake Oettinger</strong><small>2026-27 · Descriptive results</small></span></a>
+    <a class="goalie-season-card" href="assets/cards/2026-27/goalies/casey_desmith_social.png"><img src="assets/cards/2026-27/goalies/casey_desmith_social.png" alt="Casey DeSmith 2026-27 season-to-date descriptive goalie card" loading="lazy"><span><strong>Casey DeSmith</strong><small>2026-27 · Descriptive results</small></span></a>
+  </div>
+  <p class="note">The variance band describes plausible result noise at the recorded workload. Persistence remains below the registered threshold for a public goalie-talent claim.</p>
+</section>
 
 <section class="content cards-section" id="cards"><div class="cards-head"><div><p class="section-label">Final season archive</p><h2 class="section-title">2025-26 Dallas season profiles</h2><p>Official production, workload, and descriptive public-event on-ice results from the completed season. In-house xG, adjusted defensive ratings, WAR, player tiers, and the composite Polaris score remain withheld pending registered validation.</p></div><div class="filters" id="filters"><button class="active" data-filter="ALL">All 22</button><button data-filter="F">Forwards</button><button data-filter="D">Defense</button><button data-filter="G">Goalies</button></div></div><div class="evidence-summary" id="cardEvidenceSummary"><div class="pending"><strong id="evidenceClearedTitle">Evidence registry loading</strong><span id="evidenceClearedText">Card claims remain neutral until the governed registry is available.</span></div><div class="pending"><strong id="evidencePendingTitle">Model evidence withheld</strong><span id="evidencePendingText">In-house xG and adjusted player value are not cleared for these cards.</span><time id="evidenceUpdated"></time></div></div><div class="card-grid" id="cardGrid"></div></section>
 
