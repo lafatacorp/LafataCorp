@@ -26,17 +26,20 @@
 .hero{padding-top:clamp(32px,5vw,64px);padding-bottom:clamp(72px,9vw,120px)}
 .hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));
   gap:56px 96px;align-items:center}
-/* A longer statement than the old one, so a step down in size and a wider
-   measure: the same block height, read at the same speed.
-   `balance` rather than `pretty`: pretty only protects the last line from a
-   single orphan word, which still left "event markets." stranded on its own
-   at some widths. balance evens every line, so the last one is never stubby.
-   The non-breaking space in the markup is the fallback for browsers without
-   balance, where it at least keeps those two words together. */
-.hero-line{margin:0;font-size:clamp(24px,2.7vw,38px);font-weight:400;line-height:1.22;
-  letter-spacing:-.025em;max-width:25ch;text-wrap:balance}
+/* The statement is a lede and a list of three roles, and the colon in the copy
+   already says so, so it is set that way. Six lines of wrapped prose rag no
+   matter how they are balanced; three rows each ending where a role ends read
+   as deliberate, and they echo the hairline rows used further down the page.
+   `balance` keeps the short lede from breaking badly. */
+.hero-line{margin:0;font-size:clamp(28px,3.2vw,44px);font-weight:400;line-height:1.14;
+  letter-spacing:-.03em;max-width:16ch;text-wrap:balance}
+.hero-roles{list-style:none;margin:28px 0 0;padding:0;max-width:34em}
+.hero-roles li{padding:13px 0;border-top:1px solid var(--rule);font-size:18px;
+  line-height:1.4;color:var(--muted)}
+.hero-roles li:last-child{border-bottom:1px solid var(--rule)}
+.hero-roles b{font-weight:600;color:var(--ink)}
 .hero-eyebrow{margin:0 0 28px;font-size:15px;color:var(--muted)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 /* The mark drifts, as if floating. The shadow tightens as it comes down, which
    is what sells the height. Both are on one element so they stay in step. */
 .mark{display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,48px) 0}
@@ -172,7 +175,12 @@
   <div class="hero-grid">
     <div>
       <p class="hero-eyebrow">Dallas, Texas</p>
-      <h1 class="hero-line">LafataCorp is the business of Cam Lafata: Hockey analyst on The Ticket Sportsradio, Creator of The Polaris Project, and Author of trading models for NHL and event&nbsp;markets.</h1>
+      <h1 class="hero-line">LafataCorp is the business of Cam&nbsp;Lafata:</h1>
+      <ul class="hero-roles">
+        <li><b>Hockey analyst</b> on The Ticket Sportsradio</li>
+        <li><b>Creator</b> of The Polaris Project</li>
+        <li><b>Author</b> of trading models for NHL and event markets</li>
+      </ul>
       <div class="hero-cta">
         <a href="#work" class="btn btn-dark">See the work</a>
         <a href="mailto:Lafatacorp@gmail.com" class="btn btn-line">Email me</a>
