@@ -12,10 +12,10 @@
     "season_aggregate_passed": true,
     "source_package_did_not_publish": true
   },
-  "generated_at": "2026-10-15T03:53:20.157467+00:00",
-  "package_manifest_sha256": "3a093b41a51bbec4285e6a329ef0faacde2a0e0f8561810877d98e31c5b2a9e4",
+  "generated_at": "2026-10-16T05:20:39.399156+00:00",
+  "package_manifest_sha256": "dd2bed9a08aad64d763ac439f8778f2394c76cd2b2eb7b7a453234d8094faba3",
   "season_aggregate_sha256": "e814edfe35431c5d9e887339f84b8f476a66d85fb1c0e3557d6a0ee636e86b80",
-  "shot_map_sha256": "7ed70aed8608da045e81980b8ebb00b9e655e1b627d3fc39f00118dbb251a0df",
+  "shot_map_sha256": "008acac0d02eb53cf4f6732bfcabe9cb9fc2012d14fef14e8b5cb0e979549036",
   "status": "PASS_PUBLICATION_GATES",
   "version": 1
 }
