@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Sat \u00b7 Oct 17 \u00b7 6:00 PM CT",
     "game_id": "2026020130",
-    "game_state": "FUT",
+    "game_state": "PRE",
     "home": "CHI",
     "home_score": null,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 20 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-17T15:05:02.882425+00:00",
+  "updated_at": "2026-10-17T22:36:05.992273+00:00",
   "version": 1
 }
