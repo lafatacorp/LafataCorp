@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 1,
-    "away_sog": 20,
-    "detail": "2nd \u00b7 06:24",
+    "away_score": 2,
+    "away_sog": 21,
+    "detail": "2nd \u00b7 02:16",
     "game_id": "2026020130",
     "game_state": "LIVE",
     "home": "CHI",
     "home_score": 0,
-    "home_sog": 7,
+    "home_sog": 10,
     "matchup": "DAL at CHI",
-    "score": "DAL 1 - CHI 0",
+    "score": "DAL 2 - CHI 0",
     "start_label": "Sat \u00b7 Oct 17 \u00b7 6:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 20 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-18T00:33:19.979782+00:00",
+  "updated_at": "2026-10-18T00:42:25.909613+00:00",
   "version": 1
 }
