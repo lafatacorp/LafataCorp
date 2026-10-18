@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020130",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "CHI",
     "home_score": 0,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 20 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-18T01:46:48.219039+00:00",
+  "updated_at": "2026-10-18T02:05:34.374842+00:00",
   "version": 1
 }
