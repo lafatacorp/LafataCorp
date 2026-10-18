@@ -3,13 +3,13 @@
   "focus": {
     "away": "DAL",
     "away_score": 4,
-    "away_sog": 30,
-    "detail": "3rd \u00b7 07:41",
+    "away_sog": 32,
+    "detail": "3rd \u00b7 00:52",
     "game_id": "2026020130",
-    "game_state": "LIVE",
+    "game_state": "CRIT",
     "home": "CHI",
     "home_score": 0,
-    "home_sog": 15,
+    "home_sog": 19,
     "matchup": "DAL at CHI",
     "score": "DAL 4 - CHI 0",
     "start_label": "Sat \u00b7 Oct 17 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Tue \u00b7 Oct 20 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-10-18T01:28:14.161365+00:00",
+  "updated_at": "2026-10-18T01:37:25.749946+00:00",
   "version": 1
 }
