@@ -60,7 +60,9 @@
 .row{display:grid;grid-template-columns:200px minmax(90px,1fr) 58px minmax(0,1.5fr) 68px;
   gap:18px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
 .row.head{padding:0 0 8px;border-bottom:0;font-size:13px;color:var(--muted)}
-.row.head .sc,.row.head .avg{text-align:right}
+.row.head .sc,.row.head .avg{text-align:right;font-size:13px;font-weight:400;color:var(--muted)}
+/* the header's score cell is a label, not a track */
+.row.head .bar{height:auto;background:none;overflow:visible}
 .who{display:flex;align-items:center;gap:10px;min-width:0}
 .who .code{font-weight:700;font-size:15px;flex:none}
 .who .nm{color:var(--muted);font-size:15px;overflow:hidden;text-overflow:ellipsis;
