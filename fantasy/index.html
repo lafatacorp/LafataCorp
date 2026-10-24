@@ -179,14 +179,37 @@
 .prow .p-line small{display:block;font-size:11px;font-weight:400;color:var(--muted);
   margin-top:2px}
 .market{margin-top:8px}
-.mrow{display:grid;grid-template-columns:minmax(0,1fr) auto 64px;gap:16px;
-  align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.mrow{display:grid;
+  grid-template-columns:26px minmax(130px,1.2fr) 86px 48px 58px 52px 50px 52px 52px 68px;
+  gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
 .mrow.head{padding:0 0 8px;border-bottom:1px solid var(--ink);font-size:12px;
   color:var(--muted)}
-.mrow .m-nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.mrow .m-ln{color:var(--muted);font-size:15px;white-space:nowrap}
-.mrow .m-px{text-align:right;font-weight:700;font-size:17px}
-.mrow.head .m-px{font-weight:400;font-size:12px}
+.mrow .m-rk{color:var(--muted);font-size:13px}
+.m-who{display:flex;align-items:center;gap:9px;min-width:0}
+.m-who .m-pn{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis}
+.m-who .m-pm{font-size:12px;color:var(--muted);white-space:nowrap}
+.mrow .m-ln,.mrow .m-px,.mrow .m-ou,.mrow .m-ed,.mrow .m-h{text-align:right;
+  line-height:1.15}
+.mrow b{display:block;font-size:16px;font-weight:600}
+.mrow small{display:block;font-size:11px;font-weight:400;color:var(--muted);
+  margin-top:2px}
+.mrow .m-ed b{font-size:17px;font-weight:700}
+.mrow .up,.mrow .up b{color:var(--up)}
+.mrow .dn,.mrow .dn b{color:var(--down)}
+.mrow.head b,.mrow.head small{font-size:12px;font-weight:400;color:var(--muted)}
+@media (max-width:1060px){
+  .mrow{grid-template-columns:26px minmax(120px,1fr) 48px 58px 52px 50px;row-gap:10px}
+  .mrow .p-spark{grid-column:1/-1;order:5;height:26px}
+  .mrow .m-h{display:none}
+  .mrow.head .m-h{display:none}
+}
+@media (max-width:620px){
+  .mrow{grid-template-columns:1fr 48px 52px 50px}
+  .mrow .m-rk{display:none}
+  .mrow.head{display:none}
+  .mrow .m-who{grid-column:1/-1}
+}
 .p-spark{display:flex;align-items:flex-end;gap:2px;height:30px}
 /* a game over the line is green, under is red: the chart reads at a glance
    without anyone having to compare bar heights to the number beside it */
@@ -228,7 +251,7 @@
   <div class="wrap">
     <div class="board-status">
       <p class="now">NHL Fantasy <span class="beta">(Beta)</span><span class="sep">/</span><span class="wk"><!-- WEEK -->Week 4 &middot; Oct 19 to Oct 25<!-- /WEEK --></span></p>
-      <p class="upd"><i></i>Updated <!-- UPDATED -->Oct 23, 2026 at 11:30 AM<!-- /UPDATED --> CT</p>
+      <p class="upd"><i></i>Updated <!-- UPDATED -->Oct 23, 2026 at 11:43 PM<!-- /UPDATED --> CT</p>
     </div>
     <div class="board-grid">
       <div>
@@ -283,18 +306,18 @@
       <div class="row" data-games="4">
         <div class="who"><span class="club sm" data-code="COL" role="img" aria-label="Colorado"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span><span class="code">COL</span>
           <span class="nm">Colorado</span></div>
-        <div class="bar"><i style="width:91.0%"></i></div>
-        <div class="sc">3.72</div>
+        <div class="bar"><i style="width:91.3%"></i></div>
+        <div class="sc">3.73</div>
         <div class="opps"><span class="opp even">@PHI</span><span class="opp even">@NJD</span><span class="opp hard">TBL</span><span class="opp even">@NSH</span></div>
-        <div class="avg">0.571</div>
+        <div class="avg">0.567</div>
       </div>
       <div class="row" data-games="4">
         <div class="who"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="code">SJS</span>
           <span class="nm">San Jose</span></div>
-        <div class="bar"><i style="width:88.4%"></i></div>
-        <div class="sc">3.61</div>
+        <div class="bar"><i style="width:88.2%"></i></div>
+        <div class="sc">3.60</div>
         <div class="opps"><span class="opp even">@TOR</span><span class="opp hard">@MTL</span><span class="opp hard">@OTT</span><span class="opp hard">@BOS</span></div>
-        <div class="avg">0.598</div>
+        <div class="avg">0.600</div>
       </div><div class="grp"><h3>3 games</h3><span class="grp-n">22 clubs</span></div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="DET" role="img" aria-label="Detroit"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span><span class="code">DET</span>
@@ -307,10 +330,10 @@
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span><span class="code">MTL</span>
           <span class="nm">Montreal</span></div>
-        <div class="bar"><i style="width:74.2%"></i></div>
-        <div class="sc">3.03</div>
+        <div class="bar"><i style="width:74.4%"></i></div>
+        <div class="sc">3.04</div>
         <div class="opps"><span class="opp even">SJS</span><span class="opp soft">@CHI</span><span class="opp even">@WPG</span></div>
-        <div class="avg">0.490</div>
+        <div class="avg">0.487</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="code">CAR</span>
@@ -331,10 +354,10 @@
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="FLA" role="img" aria-label="Florida"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="code">FLA</span>
           <span class="nm">Florida</span></div>
-        <div class="bar"><i style="width:71.5%"></i></div>
-        <div class="sc">2.92</div>
+        <div class="bar"><i style="width:71.7%"></i></div>
+        <div class="sc">2.93</div>
         <div class="opps"><span class="opp hard">@OTT</span><span class="opp even">@PIT</span><span class="opp soft">@CHI</span></div>
-        <div class="avg">0.527</div>
+        <div class="avg">0.524</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="code">PIT</span>
@@ -361,20 +384,20 @@
         <div class="avg">0.562</div>
       </div>
       <div class="row" data-games="3">
+        <div class="who"><span class="club sm" data-code="VGK" role="img" aria-label="Vegas"><img src="/logos/nhl/VGK.svg" alt="" loading="lazy"></span><span class="code">VGK</span>
+          <span class="nm">Vegas</span></div>
+        <div class="bar"><i style="width:68.3%"></i></div>
+        <div class="sc">2.79</div>
+        <div class="opps"><span class="opp hard">TBL</span><span class="opp even">@STL</span><span class="opp even">@CBJ</span></div>
+        <div class="avg">0.570</div>
+      </div>
+      <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="NYI" role="img" aria-label="NY Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="code">NYI</span>
           <span class="nm">NY Islanders</span></div>
         <div class="bar"><i style="width:68.1%"></i></div>
         <div class="sc">2.78</div>
         <div class="opps"><span class="opp even">ANA</span><span class="opp even">LAK</span><span class="opp hard">@DAL</span></div>
         <div class="avg">0.573</div>
-      </div>
-      <div class="row" data-games="3">
-        <div class="who"><span class="club sm" data-code="VGK" role="img" aria-label="Vegas"><img src="/logos/nhl/VGK.svg" alt="" loading="lazy"></span><span class="code">VGK</span>
-          <span class="nm">Vegas</span></div>
-        <div class="bar"><i style="width:67.9%"></i></div>
-        <div class="sc">2.77</div>
-        <div class="opps"><span class="opp hard">TBL</span><span class="opp even">@STL</span><span class="opp even">@CBJ</span></div>
-        <div class="avg">0.575</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="code">DAL</span>
@@ -395,18 +418,18 @@
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="code">NJD</span>
           <span class="nm">New Jersey</span></div>
-        <div class="bar"><i style="width:67.7%"></i></div>
+        <div class="bar"><i style="width:67.5%"></i></div>
         <div class="sc">2.76</div>
         <div class="opps"><span class="opp hard">COL</span><span class="opp even">ANA</span><span class="opp even">LAK</span></div>
-        <div class="avg">0.579</div>
+        <div class="avg">0.581</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="UTA" role="img" aria-label="Utah"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="code">UTA</span>
           <span class="nm">Utah</span></div>
-        <div class="bar"><i style="width:67.1%"></i></div>
-        <div class="sc">2.74</div>
+        <div class="bar"><i style="width:67.5%"></i></div>
+        <div class="sc">2.76</div>
         <div class="opps"><span class="opp even">PIT</span><span class="opp even">@SEA</span><span class="opp hard">TBL</span></div>
-        <div class="avg">0.587</div>
+        <div class="avg">0.582</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="SEA" role="img" aria-label="Seattle"><img src="/logos/nhl/SEA.svg" alt="" loading="lazy"></span><span class="code">SEA</span>
@@ -427,10 +450,10 @@
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="code">WPG</span>
           <span class="nm">Winnipeg</span></div>
-        <div class="bar"><i style="width:65.4%"></i></div>
-        <div class="sc">2.67</div>
+        <div class="bar"><i style="width:65.2%"></i></div>
+        <div class="sc">2.66</div>
         <div class="opps"><span class="opp even">@STL</span><span class="opp hard">@DAL</span><span class="opp hard">MTL</span></div>
-        <div class="avg">0.610</div>
+        <div class="avg">0.612</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="code">EDM</span>
@@ -443,26 +466,18 @@
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span><span class="code">PHI</span>
           <span class="nm">Philadelphia</span></div>
-        <div class="bar"><i style="width:65.1%"></i></div>
-        <div class="sc">2.66</div>
+        <div class="bar"><i style="width:64.9%"></i></div>
+        <div class="sc">2.65</div>
         <div class="opps"><span class="opp hard">COL</span><span class="opp hard">@BUF</span><span class="opp even">ANA</span></div>
-        <div class="avg">0.614</div>
+        <div class="avg">0.616</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="code">TBL</span>
           <span class="nm">Tampa Bay</span></div>
-        <div class="bar"><i style="width:64.2%"></i></div>
-        <div class="sc">2.62</div>
-        <div class="opps"><span class="opp hard">@VGK</span><span class="opp hard">@COL</span><span class="opp hard">@UTA</span></div>
-        <div class="avg">0.626</div>
-      </div>
-      <div class="row" data-games="3">
-        <div class="who"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="code">NSH</span>
-          <span class="nm">Nashville</span></div>
-        <div class="bar"><i style="width:63.8%"></i></div>
+        <div class="bar"><i style="width:64.0%"></i></div>
         <div class="sc">2.61</div>
-        <div class="opps"><span class="opp hard">@BOS</span><span class="opp even">@PIT</span><span class="opp hard">COL</span></div>
-        <div class="avg">0.632</div>
+        <div class="opps"><span class="opp hard">@VGK</span><span class="opp hard">@COL</span><span class="opp hard">@UTA</span></div>
+        <div class="avg">0.629</div>
       </div>
       <div class="row" data-games="3">
         <div class="who"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="code">VAN</span>
@@ -471,6 +486,14 @@
         <div class="sc">2.60</div>
         <div class="opps"><span class="opp hard">CAR</span><span class="opp even">DET</span><span class="opp hard">MIN</span></div>
         <div class="avg">0.633</div>
+      </div>
+      <div class="row" data-games="3">
+        <div class="who"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="code">NSH</span>
+          <span class="nm">Nashville</span></div>
+        <div class="bar"><i style="width:63.6%"></i></div>
+        <div class="sc">2.60</div>
+        <div class="opps"><span class="opp hard">@BOS</span><span class="opp even">@PIT</span><span class="opp hard">COL</span></div>
+        <div class="avg">0.634</div>
       </div><div class="grp"><h3>2 games</h3><span class="grp-n">5 clubs</span></div>
       <div class="row" data-games="2">
         <div class="who"><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span><span class="code">CBJ</span>
@@ -489,20 +512,20 @@
         <div class="avg">0.558</div>
       </div>
       <div class="row" data-games="2">
-        <div class="who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="code">CHI</span>
-          <span class="nm">Chicago</span></div>
-        <div class="bar"><i style="width:45.4%"></i></div>
-        <div class="sc">1.85</div>
-        <div class="opps"><span class="opp hard">MTL</span><span class="opp even">FLA</span></div>
-        <div class="avg">0.574</div>
-      </div>
-      <div class="row" data-games="2">
         <div class="who"><span class="club sm" data-code="WSH" role="img" aria-label="Washington"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="code">WSH</span>
           <span class="nm">Washington</span></div>
         <div class="bar"><i style="width:45.3%"></i></div>
         <div class="sc">1.85</div>
         <div class="opps"><span class="opp even">LAK</span><span class="opp hard">BUF</span></div>
         <div class="avg">0.575</div>
+      </div>
+      <div class="row" data-games="2">
+        <div class="who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="code">CHI</span>
+          <span class="nm">Chicago</span></div>
+        <div class="bar"><i style="width:45.1%"></i></div>
+        <div class="sc">1.84</div>
+        <div class="opps"><span class="opp hard">MTL</span><span class="opp even">FLA</span></div>
+        <div class="avg">0.578</div>
       </div>
       <div class="row" data-games="2">
         <div class="who"><span class="club sm" data-code="CGY" role="img" aria-label="Calgary"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="code">CGY</span>
@@ -519,7 +542,7 @@
     <h2>League board</h2>
     <p class="lbl">Every division, ordered as the standings order them</p>
   </div>
-  <!-- DIVISIONS --><div class="divgrid"><section class="div"><h3>Atlantic</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="d-code">BOS</span><span class="d-rec">8-2-1</span><span class="d-pts">17</span><span class="d-dif">+20</span><span class="d-l10 up">7-2-1</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="d-code">TBL</span><span class="d-rec">7-2-0</span><span class="d-pts">14</span><span class="d-dif">+8</span><span class="d-l10 up">7-2-0</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span><span class="d-code">OTT</span><span class="d-rec">7-4-0</span><span class="d-pts">14</span><span class="d-dif">+1</span><span class="d-l10 ">6-4-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span><span class="d-code">TOR</span><span class="d-rec">6-4-2</span><span class="d-pts">14</span><span class="d-dif">+4</span><span class="d-l10 ">5-3-2</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="d-code">FLA</span><span class="d-rec">5-4-2</span><span class="d-pts">12</span><span class="d-dif">-3</span><span class="d-l10 ">4-4-2</span><span class="d-stk">L2</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span><span class="d-code">DET</span><span class="d-rec">4-3-3</span><span class="d-pts">11</span><span class="d-dif">-2</span><span class="d-l10 ">4-3-3</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span><span class="d-code">MTL</span><span class="d-rec">4-3-2</span><span class="d-pts">10</span><span class="d-dif">-4</span><span class="d-l10 ">4-3-2</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="d-code">BUF</span><span class="d-rec">4-4-2</span><span class="d-pts">10</span><span class="d-dif">-9</span><span class="d-l10 ">4-4-2</span><span class="d-stk">L1</span></div></section><section class="div"><h3>Metropolitan</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="d-code">CAR</span><span class="d-rec">8-2-2</span><span class="d-pts">18</span><span class="d-dif">+14</span><span class="d-l10 up">8-1-1</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="NYR" role="img" aria-label="NY Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span><span class="d-code">NYR</span><span class="d-rec">7-4-1</span><span class="d-pts">15</span><span class="d-dif">+8</span><span class="d-l10 up">6-3-1</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="NYI" role="img" aria-label="NY Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="d-code">NYI</span><span class="d-rec">5-3-2</span><span class="d-pts">12</span><span class="d-dif">+6</span><span class="d-l10 ">5-3-2</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="d-code">NJD</span><span class="d-rec">6-4-0</span><span class="d-pts">12</span><span class="d-dif">+2</span><span class="d-l10 ">6-4-0</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="WSH" role="img" aria-label="Washington"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="d-code">WSH</span><span class="d-rec">5-4-0</span><span class="d-pts">10</span><span class="d-dif">+1</span><span class="d-l10 ">5-4-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="d-code">PIT</span><span class="d-rec">4-6-1</span><span class="d-pts">9</span><span class="d-dif">-1</span><span class="d-l10 dn">3-6-1</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span><span class="d-code">PHI</span><span class="d-rec">3-6-3</span><span class="d-pts">9</span><span class="d-dif">-17</span><span class="d-l10 ">3-5-2</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span><span class="d-code">CBJ</span><span class="d-rec">3-5-0</span><span class="d-pts">6</span><span class="d-dif">-9</span><span class="d-l10 ">3-5-0</span><span class="d-stk">L2</span></div></section><section class="div"><h3>Central</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="UTA" role="img" aria-label="Utah"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="d-code">UTA</span><span class="d-rec">7-4-0</span><span class="d-pts">14</span><span class="d-dif">+5</span><span class="d-l10 ">6-4-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span><span class="d-code">MIN</span><span class="d-rec">6-3-2</span><span class="d-pts">14</span><span class="d-dif">+5</span><span class="d-l10 ">5-3-2</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="d-code">DAL</span><span class="d-rec">6-3-1</span><span class="d-pts">13</span><span class="d-dif">+9</span><span class="d-l10 up">6-3-1</span><span class="d-stk">W4</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span><span class="d-code">COL</span><span class="d-rec">5-4-1</span><span class="d-pts">11</span><span class="d-dif">+10</span><span class="d-l10 ">5-4-1</span><span class="d-stk">L2</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="STL" role="img" aria-label="St. Louis"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="d-code">STL</span><span class="d-rec">5-4-1</span><span class="d-pts">11</span><span class="d-dif">+4</span><span class="d-l10 ">5-4-1</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="d-code">WPG</span><span class="d-rec">4-3-3</span><span class="d-pts">11</span><span class="d-dif">-3</span><span class="d-l10 ">4-3-3</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="NSH" role="img" aria-label="Nashville"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="d-code">NSH</span><span class="d-rec">3-3-3</span><span class="d-pts">9</span><span class="d-dif">-7</span><span class="d-l10 ">3-3-3</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="d-code">CHI</span><span class="d-rec">3-6-0</span><span class="d-pts">6</span><span class="d-dif">-15</span><span class="d-l10 dn">3-6-0</span><span class="d-stk">L1</span></div></section><section class="div"><h3>Pacific</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="d-code">EDM</span><span class="d-rec">8-1-1</span><span class="d-pts">17</span><span class="d-dif">+15</span><span class="d-l10 up">8-1-1</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="VGK" role="img" aria-label="Vegas"><img src="/logos/nhl/VGK.svg" alt="" loading="lazy"></span><span class="d-code">VGK</span><span class="d-rec">8-4-0</span><span class="d-pts">16</span><span class="d-dif">+10</span><span class="d-l10 up">7-3-0</span><span class="d-stk">L2</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="SEA" role="img" aria-label="Seattle"><img src="/logos/nhl/SEA.svg" alt="" loading="lazy"></span><span class="d-code">SEA</span><span class="d-rec">7-3-1</span><span class="d-pts">15</span><span class="d-dif">+7</span><span class="d-l10 up">6-3-1</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="SJS" role="img" aria-label="San Jose"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="d-code">SJS</span><span class="d-rec">6-4-1</span><span class="d-pts">13</span><span class="d-dif">-4</span><span class="d-l10 ">5-4-1</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="d-code">ANA</span><span class="d-rec">4-6-0</span><span class="d-pts">8</span><span class="d-dif">-6</span><span class="d-l10 ">4-6-0</span><span class="d-stk">L5</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span><span class="d-code">LAK</span><span class="d-rec">2-4-2</span><span class="d-pts">6</span><span class="d-dif">-9</span><span class="d-l10 ">2-4-2</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="d-code">CGY</span><span class="d-rec">3-6-0</span><span class="d-pts">6</span><span class="d-dif">-19</span><span class="d-l10 dn">3-6-0</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="d-code">VAN</span><span class="d-rec">2-9-1</span><span class="d-pts">5</span><span class="d-dif">-21</span><span class="d-l10 dn">1-8-1</span><span class="d-stk">L3</span></div></section></div><!-- /DIVISIONS -->
+  <!-- DIVISIONS --><div class="divgrid"><section class="div"><h3>Atlantic</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="d-code">BOS</span><span class="d-rec">8-2-1</span><span class="d-pts">17</span><span class="d-dif">+20</span><span class="d-l10 up">7-2-1</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="d-code">TBL</span><span class="d-rec">7-3-0</span><span class="d-pts">14</span><span class="d-dif">+5</span><span class="d-l10 up">7-3-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span><span class="d-code">OTT</span><span class="d-rec">7-4-0</span><span class="d-pts">14</span><span class="d-dif">+1</span><span class="d-l10 ">6-4-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span><span class="d-code">TOR</span><span class="d-rec">6-4-2</span><span class="d-pts">14</span><span class="d-dif">+4</span><span class="d-l10 ">5-3-2</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span><span class="d-code">MTL</span><span class="d-rec">5-3-2</span><span class="d-pts">12</span><span class="d-dif">-1</span><span class="d-l10 ">5-3-2</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="d-code">FLA</span><span class="d-rec">5-4-2</span><span class="d-pts">12</span><span class="d-dif">-3</span><span class="d-l10 ">4-4-2</span><span class="d-stk">L2</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span><span class="d-code">DET</span><span class="d-rec">4-3-3</span><span class="d-pts">11</span><span class="d-dif">-2</span><span class="d-l10 ">4-3-3</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="d-code">BUF</span><span class="d-rec">4-4-2</span><span class="d-pts">10</span><span class="d-dif">-9</span><span class="d-l10 ">4-4-2</span><span class="d-stk">L1</span></div></section><section class="div"><h3>Metropolitan</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="d-code">CAR</span><span class="d-rec">8-2-2</span><span class="d-pts">18</span><span class="d-dif">+14</span><span class="d-l10 up">8-1-1</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="NYR" role="img" aria-label="NY Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span><span class="d-code">NYR</span><span class="d-rec">7-4-1</span><span class="d-pts">15</span><span class="d-dif">+8</span><span class="d-l10 up">6-3-1</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="NYI" role="img" aria-label="NY Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="d-code">NYI</span><span class="d-rec">5-3-2</span><span class="d-pts">12</span><span class="d-dif">+6</span><span class="d-l10 ">5-3-2</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="d-code">NJD</span><span class="d-rec">6-4-0</span><span class="d-pts">12</span><span class="d-dif">+2</span><span class="d-l10 ">6-4-0</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="WSH" role="img" aria-label="Washington"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="d-code">WSH</span><span class="d-rec">5-4-0</span><span class="d-pts">10</span><span class="d-dif">+1</span><span class="d-l10 ">5-4-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="d-code">PIT</span><span class="d-rec">4-6-1</span><span class="d-pts">9</span><span class="d-dif">-1</span><span class="d-l10 dn">3-6-1</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span><span class="d-code">PHI</span><span class="d-rec">3-6-3</span><span class="d-pts">9</span><span class="d-dif">-17</span><span class="d-l10 ">3-5-2</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span><span class="d-code">CBJ</span><span class="d-rec">3-5-0</span><span class="d-pts">6</span><span class="d-dif">-9</span><span class="d-l10 ">3-5-0</span><span class="d-stk">L2</span></div></section><section class="div"><h3>Central</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="UTA" role="img" aria-label="Utah"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="d-code">UTA</span><span class="d-rec">7-4-0</span><span class="d-pts">14</span><span class="d-dif">+5</span><span class="d-l10 ">6-4-0</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span><span class="d-code">MIN</span><span class="d-rec">6-3-2</span><span class="d-pts">14</span><span class="d-dif">+5</span><span class="d-l10 ">5-3-2</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="d-code">DAL</span><span class="d-rec">6-3-1</span><span class="d-pts">13</span><span class="d-dif">+9</span><span class="d-l10 up">6-3-1</span><span class="d-stk">W4</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span><span class="d-code">COL</span><span class="d-rec">6-4-1</span><span class="d-pts">13</span><span class="d-dif">+13</span><span class="d-l10 ">5-4-1</span><span class="d-stk">W1</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="STL" role="img" aria-label="St. Louis"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="d-code">STL</span><span class="d-rec">5-4-1</span><span class="d-pts">11</span><span class="d-dif">+4</span><span class="d-l10 ">5-4-1</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="d-code">WPG</span><span class="d-rec">4-3-3</span><span class="d-pts">11</span><span class="d-dif">-3</span><span class="d-l10 ">4-3-3</span><span class="d-stk">OT1</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="NSH" role="img" aria-label="Nashville"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="d-code">NSH</span><span class="d-rec">3-3-3</span><span class="d-pts">9</span><span class="d-dif">-7</span><span class="d-l10 ">3-3-3</span><span class="d-stk">L1</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="d-code">CHI</span><span class="d-rec">3-7-0</span><span class="d-pts">6</span><span class="d-dif">-18</span><span class="d-l10 dn">3-7-0</span><span class="d-stk">L2</span></div></section><section class="div"><h3>Pacific</h3><div class="drow head" aria-hidden="true"><span class="d-rk"></span><span></span><span class="d-code"></span><span class="d-rec">Record</span><span class="d-pts">Pts</span><span class="d-dif">Diff</span><span class="d-l10">Last 10</span><span class="d-stk">Streak</span></div><div class="drow"><span class="d-rk">1</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="d-code">EDM</span><span class="d-rec">8-1-1</span><span class="d-pts">17</span><span class="d-dif">+15</span><span class="d-l10 up">8-1-1</span><span class="d-stk">W3</span></div><div class="drow"><span class="d-rk">2</span><span class="club sm" data-code="VGK" role="img" aria-label="Vegas"><img src="/logos/nhl/VGK.svg" alt="" loading="lazy"></span><span class="d-code">VGK</span><span class="d-rec">8-4-0</span><span class="d-pts">16</span><span class="d-dif">+10</span><span class="d-l10 up">7-3-0</span><span class="d-stk">L2</span></div><div class="drow"><span class="d-rk">3</span><span class="club sm" data-code="SEA" role="img" aria-label="Seattle"><img src="/logos/nhl/SEA.svg" alt="" loading="lazy"></span><span class="d-code">SEA</span><span class="d-rec">7-3-1</span><span class="d-pts">15</span><span class="d-dif">+7</span><span class="d-l10 up">6-3-1</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">4</span><span class="club sm" data-code="SJS" role="img" aria-label="San Jose"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="d-code">SJS</span><span class="d-rec">6-4-1</span><span class="d-pts">13</span><span class="d-dif">-4</span><span class="d-l10 ">5-4-1</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">5</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="d-code">ANA</span><span class="d-rec">4-6-0</span><span class="d-pts">8</span><span class="d-dif">-6</span><span class="d-l10 ">4-6-0</span><span class="d-stk">L5</span></div><div class="drow"><span class="d-rk">6</span><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span><span class="d-code">LAK</span><span class="d-rec">2-4-2</span><span class="d-pts">6</span><span class="d-dif">-9</span><span class="d-l10 ">2-4-2</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">7</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="d-code">CGY</span><span class="d-rec">3-6-0</span><span class="d-pts">6</span><span class="d-dif">-19</span><span class="d-l10 dn">3-6-0</span><span class="d-stk">W2</span></div><div class="drow"><span class="d-rk">8</span><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="d-code">VAN</span><span class="d-rec">2-9-1</span><span class="d-pts">5</span><span class="d-dif">-21</span><span class="d-l10 dn">1-8-1</span><span class="d-stk">L3</span></div></section></div><!-- /DIVISIONS -->
 </section>
 
 <section class="wrap sec" id="trending">
@@ -527,7 +550,7 @@
     <h2>Trending</h2>
     <p class="lbl">Who is playing well now, which is not who is good</p>
   </div>
-  <!-- TRENDING --><div class="trend"><div class="tcol"><h3 class="up">Trending up</h3><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="d-code">EDM</span><span class="t-nm">Edmonton</span><span class="t-l10">8-1-1 in last 10</span><span class="t-dif">+15 goals</span><span class="d-stk">W3</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="d-code">CAR</span><span class="t-nm">Carolina</span><span class="t-l10">8-1-1 in last 10</span><span class="t-dif">+18 goals</span><span class="d-stk">OT1</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="d-code">BOS</span><span class="t-nm">Boston</span><span class="t-l10">7-2-1 in last 10</span><span class="t-dif">+17 goals</span><span class="d-stk">W1</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="d-code">TBL</span><span class="t-nm">Tampa Bay</span><span class="t-l10">7-2-0 in last 10</span><span class="t-dif">+8 goals</span><span class="d-stk">W3</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="d-code">DAL</span><span class="t-nm">Dallas</span><span class="t-l10">6-3-1 in last 10</span><span class="t-dif">+9 goals</span><span class="d-stk">W4</span></div></div><div class="tcol"><h3 class="dn">Trending down</h3><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="d-code">VAN</span><span class="t-nm">Vancouver</span><span class="t-l10">1-8-1 in last 10</span><span class="t-dif">-20 goals</span><span class="d-stk">L3</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="d-code">CHI</span><span class="t-nm">Chicago</span><span class="t-l10">3-6-0 in last 10</span><span class="t-dif">-15 goals</span><span class="d-stk">L1</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="d-code">CGY</span><span class="t-nm">Calgary</span><span class="t-l10">3-6-0 in last 10</span><span class="t-dif">-19 goals</span><span class="d-stk">W2</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span><span class="d-code">CBJ</span><span class="t-nm">Columbus</span><span class="t-l10">3-5-0 in last 10</span><span class="t-dif">-9 goals</span><span class="d-stk">L2</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="d-code">ANA</span><span class="t-nm">Anaheim</span><span class="t-l10">4-6-0 in last 10</span><span class="t-dif">-6 goals</span><span class="d-stk">L5</span></div></div></div><p class="method">Recent form only, not the season table: last-ten points percentage, adjusted for goal difference over those ten games and the current streak. A club can sit high in its division and still show here as cold.</p><!-- /TRENDING -->
+  <!-- TRENDING --><div class="trend"><div class="tcol"><h3 class="up">Trending up</h3><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="d-code">EDM</span><span class="t-nm">Edmonton</span><span class="t-l10">8-1-1 in last 10</span><span class="t-dif">+15 goals</span><span class="d-stk">W3</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="d-code">CAR</span><span class="t-nm">Carolina</span><span class="t-l10">8-1-1 in last 10</span><span class="t-dif">+18 goals</span><span class="d-stk">OT1</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="d-code">BOS</span><span class="t-nm">Boston</span><span class="t-l10">7-2-1 in last 10</span><span class="t-dif">+17 goals</span><span class="d-stk">W1</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="d-code">DAL</span><span class="t-nm">Dallas</span><span class="t-l10">6-3-1 in last 10</span><span class="t-dif">+9 goals</span><span class="d-stk">W4</span></div><div class="trow hot"><span class="t-ar">&uarr;</span><span class="club sm" data-code="VGK" role="img" aria-label="Vegas"><img src="/logos/nhl/VGK.svg" alt="" loading="lazy"></span><span class="d-code">VGK</span><span class="t-nm">Vegas</span><span class="t-l10">7-3-0 in last 10</span><span class="t-dif">+8 goals</span><span class="d-stk">L2</span></div></div><div class="tcol"><h3 class="dn">Trending down</h3><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="d-code">VAN</span><span class="t-nm">Vancouver</span><span class="t-l10">1-8-1 in last 10</span><span class="t-dif">-20 goals</span><span class="d-stk">L3</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="d-code">CHI</span><span class="t-nm">Chicago</span><span class="t-l10">3-7-0 in last 10</span><span class="t-dif">-18 goals</span><span class="d-stk">L2</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="d-code">CGY</span><span class="t-nm">Calgary</span><span class="t-l10">3-6-0 in last 10</span><span class="t-dif">-19 goals</span><span class="d-stk">W2</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span><span class="d-code">CBJ</span><span class="t-nm">Columbus</span><span class="t-l10">3-5-0 in last 10</span><span class="t-dif">-9 goals</span><span class="d-stk">L2</span></div><div class="trow cold"><span class="t-ar">&darr;</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="d-code">ANA</span><span class="t-nm">Anaheim</span><span class="t-l10">4-6-0 in last 10</span><span class="t-dif">-6 goals</span><span class="d-stk">L5</span></div></div></div><p class="method">Recent form only, not the season table: last-ten points percentage, adjusted for goal difference over those ten games and the current streak. A club can sit high in its division and still show here as cold.</p><!-- /TRENDING -->
 </section>
 
 <section class="wrap sec" id="shots">
@@ -555,28 +578,28 @@
         <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">C. Caufield</span>
           <span class="p-pm">RW &middot; @ CHI</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:50%" title="3 shots"></i><i class="hit" style="height:50%" title="3 shots"></i><i class="miss" style="height:17%" title="1 shots"></i><i class="hit" style="height:100%" title="6 shots"></i><i class="hit" style="height:100%" title="6 shots"></i><i class="hit" style="height:83%" title="5 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:83%" title="5 shots"></i><i class="hit" style="height:50%" title="3 shots"></i></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:50%" title="3 shots"></i><i class="hit" style="height:50%" title="3 shots"></i><i class="miss" style="height:17%" title="1 shots"></i><i class="hit" style="height:100%" title="6 shots"></i><i class="hit" style="height:100%" title="6 shots"></i><i class="hit" style="height:83%" title="5 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:83%" title="5 shots"></i><i class="hit" style="height:50%" title="3 shots"></i><i class="hit" style="height:67%" title="4 shots"></i></span>
         <span class="p-line"><b>3.5</b><small>line</small></span>
         <span class="p-hits up"><b>3/5</b><small>last 5</small></span>
-        <span class="p-hits "><b>4/9</b><small>last 10</small></span>
-        <span class="p-hits "><b>1/2</b><small>vs CHI</small></span>
-        <span class="p-rate ">3.8<small>L5 avg</small></span>
+        <span class="p-hits "><b>5/10</b><small>last 10</small></span>
+        <span class="p-hits up"><b>2/3</b><small>vs CHI</small></span>
+        <span class="p-rate ">3.4<small>L5 avg</small></span>
         <span class="p-rate up">1.13<small>opp factor</small></span>
-        <span class="p-proj">3.8<small>projected</small></span>
+        <span class="p-proj">3.7<small>projected</small></span>
       </div>
       <div class="prow">
         <span class="d-rk">3</span>
         <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
           <span class="p-pn">C. Bedard</span>
           <span class="p-pm">C &middot; vs MTL</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i></span>
         <span class="p-line"><b>2.5</b><small>line</small></span>
-        <span class="p-hits up"><b>2/3</b><small>last 5</small></span>
-        <span class="p-hits up"><b>2/3</b><small>last 10</small></span>
-        <span class="p-hits dn"><b>0/1</b><small>vs MTL</small></span>
-        <span class="p-rate ">2.7<small>L5 avg</small></span>
+        <span class="p-hits "><b>2/4</b><small>last 5</small></span>
+        <span class="p-hits "><b>2/4</b><small>last 10</small></span>
+        <span class="p-hits dn"><b>0/2</b><small>vs MTL</small></span>
+        <span class="p-rate ">2.2<small>L5 avg</small></span>
         <span class="p-rate up">1.09<small>opp factor</small></span>
-        <span class="p-proj">3.5<small>projected</small></span>
+        <span class="p-proj">3.4<small>projected</small></span>
       </div>
       <div class="prow">
         <span class="d-rk">4</span>
@@ -594,20 +617,6 @@
       </div>
       <div class="prow">
         <span class="d-rk">5</span>
-        <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
-          <span class="p-pn">A. Frondell</span>
-          <span class="p-pm">C &middot; vs MTL</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:20%" title="1 shots"></i></span>
-        <span class="p-line"><b>2.5</b><small>line</small></span>
-        <span class="p-hits dn"><b>2/5</b><small>last 5</small></span>
-        <span class="p-hits dn"><b>3/9</b><small>last 10</small></span>
-        <span class="p-hits "><b>first look</b><small>vs MTL</small></span>
-        <span class="p-rate ">2.0<small>L5 avg</small></span>
-        <span class="p-rate up">1.09<small>opp factor</small></span>
-        <span class="p-proj">2.9<small>projected</small></span>
-      </div>
-      <div class="prow">
-        <span class="d-rk">6</span>
         <span class="p-who"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">N. Kucherov</span>
           <span class="p-pm">RW &middot; @ COL</span></span>
@@ -621,7 +630,7 @@
         <span class="p-proj">2.8<small>projected</small></span>
       </div>
       <div class="prow">
-        <span class="d-rk">7</span>
+        <span class="d-rk">6</span>
         <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">N. Suzuki</span>
           <span class="p-pm">C &middot; @ CHI</span></span>
@@ -635,21 +644,49 @@
         <span class="p-proj">2.8<small>projected</small></span>
       </div>
       <div class="prow">
+        <span class="d-rk">7</span>
+        <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
+          <span class="p-pn">A. Frondell</span>
+          <span class="p-pm">C &middot; vs MTL</span></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i></span>
+        <span class="p-line"><b>2.5</b><small>line</small></span>
+        <span class="p-hits dn"><b>1/5</b><small>last 5</small></span>
+        <span class="p-hits dn"><b>3/10</b><small>last 10</small></span>
+        <span class="p-hits dn"><b>0/1</b><small>vs MTL</small></span>
+        <span class="p-rate ">1.6<small>L5 avg</small></span>
+        <span class="p-rate up">1.09<small>opp factor</small></span>
+        <span class="p-proj">2.8<small>projected</small></span>
+      </div>
+      <div class="prow">
         <span class="d-rk">8</span>
         <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">J. Slafkovský</span>
           <span class="p-pm">LW &middot; @ CHI</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i></span>
         <span class="p-line"><b>2.5</b><small>line</small></span>
         <span class="p-hits up"><b>3/5</b><small>last 5</small></span>
-        <span class="p-hits "><b>4/9</b><small>last 10</small></span>
-        <span class="p-hits "><b>1/2</b><small>vs CHI</small></span>
-        <span class="p-rate ">2.8<small>L5 avg</small></span>
+        <span class="p-hits "><b>5/10</b><small>last 10</small></span>
+        <span class="p-hits up"><b>2/3</b><small>vs CHI</small></span>
+        <span class="p-rate dn">2.4<small>L5 avg</small></span>
         <span class="p-rate up">1.13<small>opp factor</small></span>
-        <span class="p-proj">2.7<small>projected</small></span>
+        <span class="p-proj">2.6<small>projected</small></span>
       </div>
       <div class="prow">
         <span class="d-rk">9</span>
+        <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
+          <span class="p-pn">P. Kane</span>
+          <span class="p-pm">RW &middot; vs MTL</span></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i></span>
+        <span class="p-line"><b>2.5</b><small>line</small></span>
+        <span class="p-hits up"><b>3/5</b><small>last 5</small></span>
+        <span class="p-hits dn"><b>4/10</b><small>last 10</small></span>
+        <span class="p-hits "><b>2/4</b><small>vs MTL</small></span>
+        <span class="p-rate up">2.6<small>L5 avg</small></span>
+        <span class="p-rate up">1.09<small>opp factor</small></span>
+        <span class="p-proj">2.6<small>projected</small></span>
+      </div>
+      <div class="prow">
+        <span class="d-rk">10</span>
         <span class="p-who"><span class="club sm" data-code="COL" role="img" aria-label="Colorado"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">N. Kadri</span>
           <span class="p-pm">C &middot; vs TBL</span></span>
@@ -660,20 +697,6 @@
         <span class="p-hits up"><b>1/1</b><small>vs TBL</small></span>
         <span class="p-rate dn">2.4<small>L5 avg</small></span>
         <span class="p-rate dn">0.93<small>opp factor</small></span>
-        <span class="p-proj">2.5<small>projected</small></span>
-      </div>
-      <div class="prow">
-        <span class="d-rk">10</span>
-        <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
-          <span class="p-pn">P. Kane</span>
-          <span class="p-pm">RW &middot; vs MTL</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i></span>
-        <span class="p-line"><b>2.5</b><small>line</small></span>
-        <span class="p-hits dn"><b>2/5</b><small>last 5</small></span>
-        <span class="p-hits dn"><b>3/9</b><small>last 10</small></span>
-        <span class="p-hits "><b>1/3</b><small>vs MTL</small></span>
-        <span class="p-rate ">2.0<small>L5 avg</small></span>
-        <span class="p-rate up">1.09<small>opp factor</small></span>
         <span class="p-proj">2.5<small>projected</small></span>
       </div>
       <div class="prow">
@@ -695,12 +718,12 @@
         <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">N. Dobson</span>
           <span class="p-pm">D &middot; @ CHI</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:80%" title="4 shots"></i></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:100%" title="5 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
         <span class="p-line"><b>1.5</b><small>line</small></span>
-        <span class="p-hits up"><b>4/5</b><small>last 5</small></span>
-        <span class="p-hits up"><b>6/9</b><small>last 10</small></span>
-        <span class="p-hits up"><b>2/2</b><small>vs CHI</small></span>
-        <span class="p-rate up">3.0<small>L5 avg</small></span>
+        <span class="p-hits up"><b>5/5</b><small>last 5</small></span>
+        <span class="p-hits up"><b>7/10</b><small>last 10</small></span>
+        <span class="p-hits up"><b>3/3</b><small>vs CHI</small></span>
+        <span class="p-rate up">3.2<small>L5 avg</small></span>
         <span class="p-rate up">1.13<small>opp factor</small></span>
         <span class="p-proj">2.4<small>projected</small></span>
       </div>
@@ -735,19 +758,33 @@
       <div class="prow">
         <span class="d-rk">15</span>
         <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
-          <span class="p-pn">F. Nazar</span>
-          <span class="p-pm">C &middot; vs MTL</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
+          <span class="p-pn">R. Kantserov</span>
+          <span class="p-pm">RW &middot; vs MTL</span></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:80%" title="4 shots"></i></span>
         <span class="p-line"><b>1.5</b><small>line</small></span>
-        <span class="p-hits up"><b>4/5</b><small>last 5</small></span>
-        <span class="p-hits up"><b>5/7</b><small>last 10</small></span>
-        <span class="p-hits up"><b>2/2</b><small>vs MTL</small></span>
-        <span class="p-rate ">2.2<small>L5 avg</small></span>
+        <span class="p-hits up"><b>3/5</b><small>last 5</small></span>
+        <span class="p-hits "><b>5/10</b><small>last 10</small></span>
+        <span class="p-hits up"><b>1/1</b><small>vs MTL</small></span>
+        <span class="p-rate up">2.2<small>L5 avg</small></span>
         <span class="p-rate up">1.09<small>opp factor</small></span>
-        <span class="p-proj">2.3<small>projected</small></span>
+        <span class="p-proj">2.2<small>projected</small></span>
       </div>
       <div class="prow">
         <span class="d-rk">16</span>
+        <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
+          <span class="p-pn">F. Nazar</span>
+          <span class="p-pm">C &middot; vs MTL</span></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i></span>
+        <span class="p-line"><b>1.5</b><small>line</small></span>
+        <span class="p-hits up"><b>3/5</b><small>last 5</small></span>
+        <span class="p-hits up"><b>5/8</b><small>last 10</small></span>
+        <span class="p-hits up"><b>2/3</b><small>vs MTL</small></span>
+        <span class="p-rate ">1.8<small>L5 avg</small></span>
+        <span class="p-rate up">1.09<small>opp factor</small></span>
+        <span class="p-proj">2.2<small>projected</small></span>
+      </div>
+      <div class="prow">
+        <span class="d-rk">17</span>
         <span class="p-who"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">J. Carlson</span>
           <span class="p-pm">D &middot; @ COL</span></span>
@@ -759,20 +796,6 @@
         <span class="p-rate dn">2.6<small>L5 avg</small></span>
         <span class="p-rate dn">0.91<small>opp factor</small></span>
         <span class="p-proj">2.2<small>projected</small></span>
-      </div>
-      <div class="prow">
-        <span class="d-rk">17</span>
-        <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
-          <span class="p-pn">L. Hutson</span>
-          <span class="p-pm">D &middot; @ CHI</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
-        <span class="p-line"><b>1.5</b><small>line</small></span>
-        <span class="p-hits up"><b>5/5</b><small>last 5</small></span>
-        <span class="p-hits up"><b>8/9</b><small>last 10</small></span>
-        <span class="p-hits dn"><b>0/2</b><small>vs CHI</small></span>
-        <span class="p-rate ">2.4<small>L5 avg</small></span>
-        <span class="p-rate up">1.13<small>opp factor</small></span>
-        <span class="p-proj">2.0<small>projected</small></span>
       </div>
       <div class="prow">
         <span class="d-rk">18</span>
@@ -790,6 +813,20 @@
       </div>
       <div class="prow">
         <span class="d-rk">19</span>
+        <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
+          <span class="p-pn">L. Hutson</span>
+          <span class="p-pm">D &middot; @ CHI</span></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i></span>
+        <span class="p-line"><b>1.5</b><small>line</small></span>
+        <span class="p-hits up"><b>4/5</b><small>last 5</small></span>
+        <span class="p-hits up"><b>8/10</b><small>last 10</small></span>
+        <span class="p-hits dn"><b>0/3</b><small>vs CHI</small></span>
+        <span class="p-rate ">2.0<small>L5 avg</small></span>
+        <span class="p-rate up">1.13<small>opp factor</small></span>
+        <span class="p-proj">1.9<small>projected</small></span>
+      </div>
+      <div class="prow">
+        <span class="d-rk">20</span>
         <span class="p-who"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">B. Point</span>
           <span class="p-pm">C &middot; @ COL</span></span>
@@ -803,32 +840,18 @@
         <span class="p-proj">1.8<small>projected</small></span>
       </div>
       <div class="prow">
-        <span class="d-rk">20</span>
+        <span class="d-rk">21</span>
         <span class="p-who"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>
           <span class="p-pn">J. Anderson</span>
           <span class="p-pm">RW &middot; @ CHI</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:60%" title="3 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:80%" title="4 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="hit" style="height:60%" title="3 shots"></i></span>
         <span class="p-line"><b>1.5</b><small>line</small></span>
-        <span class="p-hits up"><b>4/5</b><small>last 5</small></span>
-        <span class="p-hits up"><b>7/9</b><small>last 10</small></span>
-        <span class="p-hits dn"><b>0/2</b><small>vs CHI</small></span>
-        <span class="p-rate dn">1.8<small>L5 avg</small></span>
+        <span class="p-hits up"><b>5/5</b><small>last 5</small></span>
+        <span class="p-hits up"><b>8/10</b><small>last 10</small></span>
+        <span class="p-hits "><b>1/3</b><small>vs CHI</small></span>
+        <span class="p-rate ">2.4<small>L5 avg</small></span>
         <span class="p-rate up">1.13<small>opp factor</small></span>
-        <span class="p-proj">1.7<small>projected</small></span>
-      </div>
-      <div class="prow">
-        <span class="d-rk">21</span>
-        <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
-          <span class="p-pn">O. Moore</span>
-          <span class="p-pm">C &middot; vs MTL</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="hit" style="height:60%" title="3 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
-        <span class="p-line"><b>0.5</b><small>line</small></span>
-        <span class="p-hits up"><b>4/5</b><small>last 5</small></span>
-        <span class="p-hits up"><b>7/9</b><small>last 10</small></span>
-        <span class="p-hits dn"><b>0/1</b><small>vs MTL</small></span>
-        <span class="p-rate ">1.6<small>L5 avg</small></span>
-        <span class="p-rate up">1.09<small>opp factor</small></span>
-        <span class="p-proj">1.3<small>projected</small></span>
+        <span class="p-proj">1.8<small>projected</small></span>
       </div>
       <div class="prow">
         <span class="d-rk">22</span>
@@ -863,11 +886,11 @@
         <span class="p-who"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>
           <span class="p-pn">J. Greenway</span>
           <span class="p-pm">LW &middot; vs MTL</span></span>
-        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:100%" title="5 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:20%" title="1 shots"></i></span>
+        <span class="p-spark" role="img" aria-label="shots on goal by game, oldest first"><i class="hit" style="height:100%" title="5 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:40%" title="2 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:12%" title="0 shots"></i><i class="miss" style="height:20%" title="1 shots"></i><i class="miss" style="height:40%" title="2 shots"></i></span>
         <span class="p-line"><b>0.5</b><small>line</small></span>
         <span class="p-hits up"><b>3/5</b><small>last 5</small></span>
-        <span class="p-hits up"><b>7/9</b><small>last 10</small></span>
-        <span class="p-hits dn"><b>0/2</b><small>vs MTL</small></span>
+        <span class="p-hits up"><b>8/10</b><small>last 10</small></span>
+        <span class="p-hits "><b>1/3</b><small>vs MTL</small></span>
         <span class="p-rate dn">1.0<small>L5 avg</small></span>
         <span class="p-rate up">1.09<small>opp factor</small></span>
         <span class="p-proj">1.1<small>projected</small></span>
@@ -879,7 +902,7 @@
     <h2>Market lines</h2>
     <p class="lbl">Kalshi NHL points, live</p>
   </div>
-  <!-- MARKET --><div class="market"><div class="mrow head" aria-hidden="true"><span class="m-nm">Skater</span><span class="m-ln">Market</span><span class="m-px">Yes</span></div><div class="mrow"><span class="m-nm">T.J. Hughes</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Zachary Bolduc</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Josh Anderson</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Jaden Schwartz</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Charle-Edouard D&#x27;Astous</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Alex Newhook</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Nikita Kucherov</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Jake Guentzel</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">John Carlson</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Gage Goncalves</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Brayden Point</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Brandon Hagel</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Anthony Cirelli</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Nathan MacKinnon</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Nazem Kadri</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Martin Necas</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Gabriel Landeskog</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Devon Toews</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Cale Makar</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Brock Nelson</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Artturi Lehkonen</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Oliver Kapanen</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Noah Dobson</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div><div class="mrow"><span class="m-nm">Lane Hutson</span><span class="m-ln">0.5+ points</span><span class="m-px">&ndash;</span></div></div><p class="method">34 skaters priced. The price is the last trade, or the midpoint where there is none yet.</p><!-- /MARKET -->
+  <!-- MARKET --><p class="log-empty">Kalshi posts these late morning on game day. Nothing listed yet for this slate.</p><!-- /MARKET -->
 </section>
 
 <footer class="foot-slim">
