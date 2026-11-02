@@ -231,6 +231,13 @@
 .brief-when{text-transform:none;letter-spacing:0;font-size:15px;font-weight:500;color:var(--muted)}
 .brief .brief-note{border-top-color:var(--rule)}
 .chart-key i{border-radius:0}
+
+/* This week / All weeks: the results filter's look, as links between pages */
+.tabs{display:flex;gap:24px}
+.tab{min-height:44px;display:flex;align-items:center;font-weight:500;font-size:15px;
+  color:var(--muted);text-decoration:none}
+.tab:hover{color:var(--ink)}
+.tab[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
 </style>
 </head>
 <body>
@@ -445,7 +452,10 @@
 <section class="wrap sec" id="brief">
   <div class="sec-head">
     <h2>Week in review</h2>
-    <p class="lbl">Written from the results below</p>
+    <nav class="tabs" aria-label="Week in review">
+      <a class="tab" href="/nhl/#brief" aria-current="page">This week</a>
+      <a class="tab" href="/nhl/weeks/">All weeks</a>
+    </nav>
   </div>
   <!-- BRIEF --><div class="brief"><p class="brief-when">Oct 26 to Nov 1</p><p><b>28-12 across 40 positions</b>, +65.0% on capital. The Favorites Tracker went 17-7, the Fade Bot 7-4 and the Daily Analyzer 4-1.</p><p>11 of those 40 got past regulation, going 5-6. A game that reaches overtime has already slipped out of the model's hands: the read was on sixty minutes and what follows is close to a coin flip.</p><p>Season to date the Fade Bot is <b>7-12 once a game passes regulation</b> and 24-6 when it does not. Those overtimes are near enough a coin flip, and the coin has not been landing this way by design.</p><p class="brief-note"><b>Where this stands.</b> The Fade Bot finished 2025-26 at 93-28, but the tracker only came online for the back half of that season, so there is no full-season record behind it. This season is the first being gathered from opening night, which is the point of publishing it. Every system here is paper traded, the figures are unaudited, and the model is still being developed in the open. Expect the numbers to move.</p></div><!-- /BRIEF -->
 </section>
