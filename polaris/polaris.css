@@ -1,0 +1,152 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Polaris on the shared light system (Nov 2026). Linked after the page's own
+   <style>, so it overrules those rules without touching the markup. The
+   publishers only rewrite their marked sections, so this link survives them.
+
+   Polaris moves onto the shared light system. The player cards and shot maps
+   are dark artwork, and on a light page they read as what they are: plates,
+   like photographs in a program. The glow, the halo rings, the tracked-caps
+   eyebrows with leading rules and the pills go. Teal goes too: ink carries
+   emphasis, and green means live, as it does on every other page.
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root{
+  --ink:#F1F3F5;            /* the page's ground (Polaris names its ground "ink") */
+  --panel:#FFFFFF;--strip:#FFFFFF;
+  --line:#CDD3DA;--hair:#DCE1E6;
+  --teal:#0A0D12;--teal-hover:#262C35;--teal-dim:#0A0D12;--teal-faint:#CDD3DA;
+  --white:#0A0D12;--soft:#0A0D12;--body:#3E4651;--muted:#5A6370;--faint:#8A939E;
+  --live:#12804A;--plate:#0A0D12;
+  --score:'Big Shoulders Display','Host Grotesk',system-ui,sans-serif;
+}
+:focus-visible{outline-color:#0A0D12}
+
+/* ── nav ───────────────────────────────────────────────────────────────── */
+.pn-top a{font-size:16px}
+.pn-links{gap:0 24px}
+.pn-sub{background:rgba(241,243,245,.96);backdrop-filter:none;border-top:1px solid var(--line);
+  border-bottom:2px solid #0A0D12}
+.nav-links a:hover{color:#0A0D12;text-decoration:underline;text-underline-offset:4px}
+.season{border:0;border-radius:0;padding:0;color:var(--muted);font-weight:500}
+.mobile-toggle{border-radius:3px}
+
+/* ── labels: sentence case, no leading rule ────────────────────────────── */
+.eyebrow,.section-label{display:block;font-size:15px;font-weight:500;letter-spacing:0;
+  text-transform:none;color:var(--muted)}
+.eyebrow:before,.section-label:before{content:none}
+.section-title{font-size:clamp(28px,3.4vw,44px);margin-top:8px}
+
+/* ── hero ──────────────────────────────────────────────────────────────── */
+h1{font-size:clamp(56px,7vw,96px);margin:10px 0 14px}
+.hero-subline{font-size:15px;font-weight:500;letter-spacing:0;text-transform:none}
+.primary-link,.secondary-link,.postgame-link{border-radius:3px}
+.primary-link{background:#0A0D12;color:#FFFFFF}
+.primary-link:hover{background:#262C35}
+.secondary-link,.postgame-link{box-shadow:none;padding:0;text-decoration:underline;
+  text-underline-offset:5px;text-decoration-thickness:1.5px}
+.secondary-link:hover,.postgame-link:hover{box-shadow:none;color:#0A0D12;
+  text-decoration-thickness:2.5px}
+.hero-rings{display:none}
+.hero-card{min-height:0}
+.hero-card img{border-radius:3px;border:0;box-shadow:none}
+
+/* The four-up status strip: a scoreboard line, not a rounded box. */
+.opener{background:none;border:0;border-radius:0;border-top:2px solid #0A0D12;
+  border-bottom:1px solid var(--line)}
+.opener div{border-right:1px solid var(--line);padding:16px 20px 18px}
+.opener div:first-child{padding-left:0}
+.opener span,.opener small{font-size:14px;font-weight:500;letter-spacing:0;text-transform:none}
+.opener div:first-child span{color:var(--muted)}
+.opener strong{font-family:var(--score);font-weight:700;font-size:32px;letter-spacing:0;line-height:1.05}
+.opener .state-live span,.opener .state-live strong{color:var(--live)}
+
+/* ── sections ──────────────────────────────────────────────────────────── */
+.brief,.roster,.cards-section,.postgame,.skater-season-section,.goalie-season-section,.method{
+  border-top:0}
+section.content,.brief-inner,.roster-inner{padding-top:clamp(56px,6vw,88px);padding-bottom:0}
+footer{margin-top:clamp(72px,8vw,120px)}
+
+/* ── brief ─────────────────────────────────────────────────────────────── */
+.brief-metrics{gap:0}
+.brief-metrics div{background:none;border:0;border-radius:0;border-top:1px solid var(--line);
+  padding:14px 0}
+.brief-metrics div:last-child{border-bottom:1px solid var(--line)}
+.brief-metrics span{font-size:14px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--muted)}
+.brief-metrics strong{font-family:var(--score);font-weight:700;letter-spacing:0}
+
+/* ── roster ────────────────────────────────────────────────────────────── */
+.roster-summary{border-left:0;padding-left:0}
+.roster-summary strong{font-family:var(--score);font-weight:700;letter-spacing:0}
+.roster-group header{font-size:15px;font-weight:600;letter-spacing:0;text-transform:none;
+  border-bottom:2px solid #0A0D12}
+.roster-number{font-family:var(--score);font-size:16px}
+.roster-name small{letter-spacing:0}
+.coverage{font-size:12px;font-weight:500;letter-spacing:0;text-transform:none}
+.coverage.live{color:var(--live)}
+.coverage.context{color:var(--body)}
+
+/* ── archive ───────────────────────────────────────────────────────────── */
+.filters{border-radius:3px}
+.filters button.active{background:#0A0D12;color:#FFFFFF}
+.filters button:hover{color:#0A0D12;text-decoration:underline;text-underline-offset:4px}
+.filters button.active:hover{color:#FFFFFF;text-decoration:none}
+.evidence-summary strong{font-size:15px;font-weight:600;letter-spacing:0;text-transform:none}
+.evidence-summary .cleared strong{color:var(--live)}
+.evidence-summary .pending strong{color:#8A6D2B}
+.evidence-summary time{font-size:13px;letter-spacing:0;text-transform:none}
+
+/* Every card is generated artwork: a plate with square-ish corners, no frame. */
+.player-card img,.performance-card img,.performance-empty-art,.skater-season-card img,
+.goalie-season-card img{border-radius:3px;border:0;background:var(--plate)}
+.player-card:hover img,.performance-card:hover img,.skater-season-card:hover img,
+.goalie-season-card:hover img{outline:2px solid #0A0D12;outline-offset:3px}
+.player-card span,.player-card b,.card-evidence em,.performance-card small,
+.skater-season-card small,.goalie-season-card small,.current-card-status,
+.performance-empty-art span{letter-spacing:0;text-transform:none}
+.player-card span{font-size:15px;color:#0A0D12}
+.player-card b{font-size:14px;font-weight:500;color:var(--muted)}
+.card-evidence em{font-size:13px;font-weight:500}
+.card-evidence em:first-child{color:var(--live)}
+.performance-card small,.skater-season-card small,.goalie-season-card small{font-size:14px}
+.current-card-status{font-size:14px;font-weight:500}
+.performance-empty-art span{color:#A9B1BB}
+
+/* ── postgame ──────────────────────────────────────────────────────────── */
+.pass{border:0;border-radius:0;padding:0;font-size:15px;font-weight:500;color:var(--live)}
+.map-frame{border:0;border-radius:3px;background:var(--plate)}
+.module{border-top-color:var(--line)}
+.deployment-row h3{font-size:15px;font-weight:600;letter-spacing:0;text-transform:none;
+  color:#0A0D12;border-bottom:2px solid #0A0D12}
+
+/* ── method: the three layers really are a sequence, so they keep numbers ── */
+.method-grid{border:0;border-radius:0;background:none;border-top:2px solid #0A0D12}
+.method-grid article{padding:24px 28px 8px 0;border-right:0}
+.method-grid article+article{padding-left:28px;border-left:1px solid var(--line)}
+.method-grid span{font-family:var(--score);font-size:28px;font-weight:700;letter-spacing:0;
+  color:#0A0D12}
+.attribution{border-top-color:var(--line)}
+
+/* ── footer ────────────────────────────────────────────────────────────── */
+footer{background:transparent;border-top:2px solid #0A0D12}
+footer a{color:#0A0D12}
+
+/* ── card modal stays dark: it is a lightbox for dark artwork ──────────── */
+.modal{background:rgba(10,13,18,.94)}
+.modal img{border-radius:3px}
+.modal-close{background:#11161D;color:#E9EDF1;border-color:#3A414B;border-radius:3px}
+.modal-close:hover{border-color:#E9EDF1;color:#FFFFFF}
+
+@media(max-width:1000px){.nav-links{background:#F1F3F5;border-bottom:2px solid #0A0D12}}
+@media(max-width:900px){
+  .method-grid article,.method-grid article+article{padding:20px 0;border-left:0;
+    border-bottom:1px solid var(--line)}
+}
+@media(max-width:600px){
+  .opener div{border-right:0;padding-left:0}
+}
+
+/* Alignment: the section bar's inner row lines up with the page's text edge,
+   and the nav's (Beta) is set the same size as on every other page. */
+.pn-sub-inner{max-width:calc(var(--wrap) - 64px)}
+.pn-top .beta{font-size:.8em}
+.hero{padding-bottom:0}

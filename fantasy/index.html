@@ -9,11 +9,12 @@
 <meta property="og:description" content="Which NHL clubs have the best fantasy week, by games played and opponent strength.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lafatacorp.com/fantasy/">
-<meta property="og:image" content="https://lafatacorp.com/og-image.png">
+<meta property="og:image" content="https://lafatacorp.com/og-image-2026-11.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 <style>
 /* ── dark week header, the same board the tracker uses ───────────────────── */
@@ -229,6 +230,16 @@
   .prow .p-who{grid-column:1/-1}
 }
 
+
+/* the contents list is not a sequence, so it loses its numbers */
+.toc{list-style:none;counter-reset:none}
+.toc li::before{content:none !important;display:none !important}
+.counts{display:block !important;font-size:17px;color:var(--muted-dark);max-width:44ch}
+.counts div{display:inline}
+.counts b{display:inline;font:inherit;color:var(--white);font-weight:600;letter-spacing:0}
+.counts span{display:inline;text-transform:lowercase;margin:0 0 0 .3em;color:inherit;font-size:inherit}
+.counts div:not(:last-child)::after{content:", "}
+.counts div:last-child::after{content:"."}
 </style>
 </head>
 <body>
@@ -241,8 +252,7 @@
 <a href="/fantasy/" aria-current="page">Fantasy <span class="beta">(Beta)</span></a>
 <a href="/polaris/">Polaris <span class="beta">(Beta)</span></a>
 <a href="/media/">Media</a>
-<a href="/#writing">Writing</a>
-<a href="/#about">About</a>
+<a href="/about/">About</a>
 <a href="mailto:Lafatacorp@gmail.com">Contact</a>
 </nav>
 </header>
@@ -251,7 +261,7 @@
   <div class="wrap">
     <div class="board-status">
       <p class="now">NHL Fantasy <span class="beta">(Beta)</span><span class="sep">/</span><span class="wk"><!-- WEEK -->Week 5 &middot; Oct 26 to Nov 1<!-- /WEEK --></span></p>
-      <p class="upd"><i></i>Updated <!-- UPDATED -->Nov 1, 2026 at 11:32 AM<!-- /UPDATED --> CT</p>
+      <p class="upd">Updated <!-- UPDATED -->Nov 1, 2026 at 11:32 AM<!-- /UPDATED --> CT</p>
     </div>
     <div class="board-grid">
       <div>
