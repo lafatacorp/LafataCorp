@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Tue \u00b7 Nov 3 \u00b7 6:00 PM CT",
     "game_id": "2026020243",
-    "game_state": "FUT",
+    "game_state": "PRE",
     "home": "WSH",
     "home_score": null,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-03T16:04:52.453841+00:00",
+  "updated_at": "2026-11-03T23:34:39.720267+00:00",
   "version": 1
 }
