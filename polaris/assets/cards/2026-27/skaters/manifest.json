@@ -2,83 +2,91 @@
   "artifact": "Polaris_Skater_Season_Cards_v1",
   "cards": [
     {
-      "games_played": 14,
-      "image": "mikko_rantanen_social.png",
-      "image_sha256": "02353f2ec88c7852f7b0f4d718bd029d25e1eb9d037fecaa8de7433527ee1da4",
-      "player_id": 8478420,
-      "player_name": "Mikko Rantanen",
-      "position": "R"
-    },
-    {
-      "games_played": 14,
+      "games_played": 15,
       "image": "jason_robertson_social.png",
-      "image_sha256": "5e236855e5804fcfb687a4f957dc463840b1e7e964dd3c94d37d228900ac7966",
+      "image_sha256": "25f427d698f62c7c638807f6fe7f7806971af1d5e7833d068202a8d16adc17b4",
       "player_id": 8480027,
       "player_name": "Jason Robertson",
       "position": "L"
     },
     {
-      "games_played": 12,
-      "image": "wyatt_johnston_social.png",
-      "image_sha256": "ea5092d0cbb6430e552d4b6a63883d8c7f16b272a6a2cd3a3b3990d5bde24ea5",
-      "player_id": 8482740,
-      "player_name": "Wyatt Johnston",
-      "position": "C"
+      "games_played": 15,
+      "image": "mikko_rantanen_social.png",
+      "image_sha256": "ed1d9a2da5c63e8864d5899a1fe0b127f0fd291ab105d808a0793145322e4c8e",
+      "player_id": 8478420,
+      "player_name": "Mikko Rantanen",
+      "position": "R"
     },
     {
-      "games_played": 14,
+      "games_played": 15,
       "image": "roope_hintz_social.png",
-      "image_sha256": "9350da3a27a1b888968d899c7a7d9db735852da4158ff97afab4e7df451f3ce0",
+      "image_sha256": "0c356b26ec601443308f56a1489191e9a81bd0405bc74826d2599c7d8f7ba43f",
       "player_id": 8478449,
       "player_name": "Roope Hintz",
       "position": "C"
     },
     {
-      "games_played": 14,
-      "image": "tyler_seguin_social.png",
-      "image_sha256": "9f8af2cd1b7b355ffa6eda07145e31a134f61c6ca671a978ac12fbc4fca7b5f9",
-      "player_id": 8475794,
-      "player_name": "Tyler Seguin",
+      "games_played": 13,
+      "image": "wyatt_johnston_social.png",
+      "image_sha256": "e2dec31f5ff5db0a37d348c592c553a26ba899e35c2e0546d63817127a446613",
+      "player_id": 8482740,
+      "player_name": "Wyatt Johnston",
       "position": "C"
     },
     {
-      "games_played": 14,
+      "games_played": 15,
       "image": "arttu_hyry_social.png",
-      "image_sha256": "721680b323affc8ddf84808862aa8c2f182d146df78720a0ec247df0ac80fb49",
+      "image_sha256": "a4e9228ccdb4fbc0ed9cc0b344ef4b506383e461e42872fbcb71d361451a9215",
       "player_id": 8484938,
       "player_name": "Arttu Hyry",
       "position": "R"
     },
     {
-      "games_played": 14,
+      "games_played": 15,
       "image": "jamie_benn_social.png",
-      "image_sha256": "299766be0c89c86455bd9a2ac018dcbe9dffcab1f4261f31a453183957b791bd",
+      "image_sha256": "fdf2b12b2007ca6f6c40b0c692da871270709d096b807f101ccc8c714bfc1eb2",
       "player_id": 8473994,
       "player_name": "Jamie Benn",
       "position": "L"
     },
     {
-      "games_played": 12,
-      "image": "sam_steel_social.png",
-      "image_sha256": "0d46d0a069ac1bd5c6f42dfd57d7d5e649da843eb180d10e6ece47fc985065e5",
-      "player_id": 8479351,
-      "player_name": "Sam Steel",
+      "games_played": 15,
+      "image": "tyler_seguin_social.png",
+      "image_sha256": "5ab4db3ae78968473ed6e710476085b0f4a4d2fa0af38ad275c9a23f61e0d88d",
+      "player_id": 8475794,
+      "player_name": "Tyler Seguin",
       "position": "C"
     },
     {
-      "games_played": 10,
+      "games_played": 11,
       "image": "joel_kiviranta_social.png",
-      "image_sha256": "0229e01d9d479c7c37f2408898b3938a180d54f62381614ba693335a2d8200a9",
+      "image_sha256": "f6631744fa4b441c7c2f290626d40a78bca765417ea03498f8b460a08c73d320",
       "player_id": 8481641,
       "player_name": "Joel Kiviranta",
       "position": "L"
     },
     {
-      "games_played": 14,
+      "games_played": 13,
+      "image": "sam_steel_social.png",
+      "image_sha256": "17fb89773cf76877a39b68cdd259f5c3931dc2aeb7ffa42f35b1de6f828ac347",
+      "player_id": 8479351,
+      "player_name": "Sam Steel",
+      "position": "C"
+    },
+    {
+      "games_played": 15,
       "image": "justin_hryckowian_social.png",
-      "image_sha256": "e66eac5957251e7e19ed5fb1c5e6dc73c743335e0999ccaf9230bed3854b2b0e",
+      "image_sha256": "067cc4733eeb136c6c65aeb879f2f9307f9cc34aee8b093e9c727e14ae36de50",
       "player_id": 8484829,
       "player_name": "Justin Hryckowian",
+      "position": "C"
+    },
+    {
+      "games_played": 11,
+      "image": "radek_faksa_social.png",
+      "image_sha256": "0e8a8d5c45b90804711d04b8431f8ebbf307c1b42158d55ff2164bfa71f0ed8c",
+      "player_id": 8476889,
+      "player_name": "Radek Faksa",
       "position": "C"
     },
     {
@@ -98,17 +106,9 @@
       "position": "C"
     },
     {
-      "games_played": 10,
-      "image": "radek_faksa_social.png",
-      "image_sha256": "41f6b01b9df06e7d9dec336211b1adda2d875733161b78196550a5f91fd10937",
-      "player_id": 8476889,
-      "player_name": "Radek Faksa",
-      "position": "C"
-    },
-    {
-      "games_played": 1,
+      "games_played": 2,
       "image": "david_perron_social.png",
-      "image_sha256": "effdf22b0f994a6f83b79de40dee0e8d42a772a8a2091db3534c347caa3afeac",
+      "image_sha256": "bc7e66ad37a7152444ec0e29e2dd643ef417620139bd18290cb18d309005c216",
       "player_id": 8474102,
       "player_name": "David Perron",
       "position": "L"
@@ -130,51 +130,51 @@
       "position": "R"
     },
     {
-      "games_played": 14,
+      "games_played": 15,
       "image": "miro_heiskanen_social.png",
-      "image_sha256": "81d3d64dd1ff96da37d9c377ef4dd4dacff7db710f5dccbf75a3ead674d81267",
+      "image_sha256": "1e1ad2860efe15dd6cb6ea3623f3c31ebc38cf9f42ca636efe62146c65f0914f",
       "player_id": 8480036,
       "player_name": "Miro Heiskanen",
       "position": "D"
     },
     {
-      "games_played": 14,
+      "games_played": 15,
       "image": "thomas_harley_social.png",
-      "image_sha256": "ad84721a92ad0ed5bcca33882b87a87e9964dd7a3293061196ac4337b6578a03",
+      "image_sha256": "0fe2df33193d90aa72d8e3cfb33d21a7028951c7b2b7e86ab043e5aab7860304",
       "player_id": 8481581,
       "player_name": "Thomas Harley",
       "position": "D"
     },
     {
-      "games_played": 14,
+      "games_played": 15,
       "image": "nils_lundkvist_social.png",
-      "image_sha256": "1633e0ac17bf4bd3422d5dba85c9b1f89ab044e732379e2d491c28cb3e2ec84c",
+      "image_sha256": "7c38bd11de7dfc4a8a2df93b016e87676cfeb6cf2d26480d4f401a40f3b12d3e",
       "player_id": 8480878,
       "player_name": "Nils Lundkvist",
       "position": "D"
     },
     {
-      "games_played": 14,
-      "image": "lian_bichsel_social.png",
-      "image_sha256": "626a560979e882fe1f74f7a6ece1726851448cf202d4d45ce6fa180c1ab2ddb5",
-      "player_id": 8483425,
-      "player_name": "Lian Bichsel",
-      "position": "D"
-    },
-    {
-      "games_played": 14,
+      "games_played": 15,
       "image": "tyler_myers_social.png",
-      "image_sha256": "9fcc3885e87992d7fcab1c057e530c3f23e601737e2261fedfc9d9c069dcb142",
+      "image_sha256": "fbde052c263b645e90550b80dd559835dc96961b787fc1b3b4529d9f56148fc6",
       "player_id": 8474574,
       "player_name": "Tyler Myers",
       "position": "D"
     },
     {
-      "games_played": 9,
+      "games_played": 10,
       "image": "esa_lindell_social.png",
-      "image_sha256": "8423f66fefa7978a4ee5a329fa2cc52da2c650642aef939d8f97ac1a54bcff12",
+      "image_sha256": "ad94f61119e8e8e72ed58d5ca5b66b97e955a1a86858aeafdeb0b3f93889ba6c",
       "player_id": 8476902,
       "player_name": "Esa Lindell",
+      "position": "D"
+    },
+    {
+      "games_played": 15,
+      "image": "lian_bichsel_social.png",
+      "image_sha256": "73b2d6a69f4a33fe9db8ad71888a5cc1c77e4c2389007103902b6974b61df1f3",
+      "player_id": 8483425,
+      "player_name": "Lian Bichsel",
       "position": "D"
     },
     {
@@ -194,10 +194,10 @@
       "position": "D"
     }
   ],
-  "generated_at": "2026-11-04T02:37:04.703556+00:00",
+  "generated_at": "2026-11-04T03:15:17.571508+00:00",
   "public_scope": "DESCRIPTIVE_RESULTS_ONLY",
   "season": "20262027",
-  "source_contract_sha256": "a287b3b7d294caa70353da3c49dc4af0e6865127cb0256f4ebba539281c5689b",
+  "source_contract_sha256": "62c1184b492888daa8c163831dc93d8177ee4f4d37d94004940634d015862dd6",
   "status": "PASS_GOVERNED_RENDER",
   "version": "skater_season_card_renderer_v1_20261016"
 }
