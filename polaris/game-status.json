@@ -3,15 +3,15 @@
   "focus": {
     "away": "DAL",
     "away_score": 4,
-    "away_sog": 13,
-    "detail": "2nd \u00b7 12:26",
+    "away_sog": 17,
+    "detail": "2nd \u00b7 06:21",
     "game_id": "2026020243",
     "game_state": "LIVE",
     "home": "WSH",
-    "home_score": 0,
-    "home_sog": 8,
+    "home_score": 1,
+    "home_sog": 11,
     "matchup": "DAL at WSH",
-    "score": "DAL 4 - WSH 0",
+    "score": "DAL 4 - WSH 1",
     "start_label": "Tue \u00b7 Nov 3 \u00b7 6:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-04T01:18:38.553977+00:00",
+  "updated_at": "2026-11-04T01:27:18.628053+00:00",
   "version": 1
 }
