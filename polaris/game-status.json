@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 3,
-    "away_sog": 9,
-    "detail": "2nd \u00b7 14:32",
+    "away_score": 4,
+    "away_sog": 13,
+    "detail": "2nd \u00b7 12:26",
     "game_id": "2026020243",
     "game_state": "LIVE",
     "home": "WSH",
     "home_score": 0,
-    "home_sog": 7,
+    "home_sog": 8,
     "matchup": "DAL at WSH",
-    "score": "DAL 3 - WSH 0",
+    "score": "DAL 4 - WSH 0",
     "start_label": "Tue \u00b7 Nov 3 \u00b7 6:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-04T01:10:01.276623+00:00",
+  "updated_at": "2026-11-04T01:18:38.553977+00:00",
   "version": 1
 }
