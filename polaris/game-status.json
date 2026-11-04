@@ -3,8 +3,8 @@
   "focus": {
     "away": "DAL",
     "away_score": 1,
-    "away_sog": 5,
-    "detail": "1st \u00b7 14:32",
+    "away_sog": 6,
+    "detail": "1st \u00b7 06:11",
     "game_id": "2026020243",
     "game_state": "LIVE",
     "home": "WSH",
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-04T00:44:02.885002+00:00",
+  "updated_at": "2026-11-04T00:52:42.910289+00:00",
   "version": 1
 }
