@@ -4,14 +4,14 @@
     "away": "DAL",
     "away_score": 6,
     "away_sog": 23,
-    "detail": "3rd \u00b7 05:36",
+    "detail": "3rd \u00b7 00:43",
     "game_id": "2026020243",
-    "game_state": "LIVE",
+    "game_state": "CRIT",
     "home": "WSH",
-    "home_score": 4,
-    "home_sog": 20,
+    "home_score": 5,
+    "home_sog": 25,
     "matchup": "DAL at WSH",
-    "score": "DAL 6 - WSH 4",
+    "score": "DAL 6 - WSH 5",
     "start_label": "Tue \u00b7 Nov 3 \u00b7 6:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-04T02:28:48.693153+00:00",
+  "updated_at": "2026-11-04T02:37:34.906455+00:00",
   "version": 1
 }
