@@ -5,11 +5,11 @@
       "goalie_id": 8479979,
       "goalie_name": "Jake Oettinger",
       "image": "jake_oettinger_social.png",
-      "image_sha256": "ae3a8841a01f36f9396dceaced1a5d2cdecd603c0dbfa91d609a415ce7b76899",
+      "image_sha256": "b0b5ca5321160f30cfe95d1473069180fb1a338697c399de14acdb54a3c2d79a",
       "interpretation": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
       "outcome_variance_status": "WITHIN_HISTORICALLY_CALIBRATED_90_BAND",
       "persistence_status": "PERSISTENCE_NOT_ACTIONABLE_FOR_TALENT",
-      "sample_label": "SMALL_SAMPLE"
+      "sample_label": "MODERATE_SAMPLE"
     },
     {
       "goalie_id": 8479193,
@@ -22,11 +22,11 @@
       "sample_label": "VERY_SMALL_SAMPLE"
     }
   ],
-  "generated_at": "2026-11-04T02:36:50.036714+00:00",
+  "generated_at": "2026-11-04T02:45:53.170371+00:00",
   "public_scope": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
   "season": "20262027",
-  "source_results_contract_sha256": "1bf8bfd4679b79b809df866f04a38ac6d2f8bff23553484fdb8a7cc8b48bfc6d",
-  "source_uncertainty_contract_sha256": "f2f7a3349325a2033aca34be417944bfe5299309c812ef9f1084ef66ff29dba5",
+  "source_results_contract_sha256": "938f1e6e372142e03aea586690d149f88fc854c7279b67cf4268a3d56dd408c2",
+  "source_uncertainty_contract_sha256": "bf3ee35a43bf2c7cb13fded4385be82d4dd0a2db9f799245950f9dc0c1428723",
   "status": "PASS_GOVERNED_RENDER",
   "version": "goalie_season_card_renderer_v3_20261016"
 }
