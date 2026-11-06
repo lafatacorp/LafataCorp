@@ -3,17 +3,17 @@
   "focus": {
     "away": "DAL",
     "away_score": 1,
-    "away_sog": 28,
-    "detail": "Shootout \u00b7 00:00",
+    "away_sog": null,
+    "detail": "Final",
     "game_id": "2026020258",
-    "game_state": "CRIT",
+    "game_state": "FINAL",
     "home": "CBJ",
-    "home_score": 1,
-    "home_sog": 30,
+    "home_score": 2,
+    "home_sog": null,
     "matchup": "DAL at CBJ",
-    "score": "DAL 1 - CBJ 1",
+    "score": "DAL 1 - CBJ 2",
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
-    "state_label": "Live now"
+    "state_label": "Latest result"
   },
   "next": {
     "away": "SJS",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T02:51:15.039731+00:00",
+  "updated_at": "2026-11-06T03:00:37.477429+00:00",
   "version": 1
 }
