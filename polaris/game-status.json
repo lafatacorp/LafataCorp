@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020258",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "CBJ",
     "home_score": 2,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T03:00:37.477429+00:00",
+  "updated_at": "2026-11-06T03:39:54.192470+00:00",
   "version": 1
 }
