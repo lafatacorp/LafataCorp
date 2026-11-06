@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 0,
-    "away_sog": 19,
-    "detail": "3rd \u00b7 15:22",
+    "away_score": 1,
+    "away_sog": 23,
+    "detail": "3rd \u00b7 12:11",
     "game_id": "2026020258",
     "game_state": "LIVE",
     "home": "CBJ",
     "home_score": 0,
     "home_sog": 20,
     "matchup": "DAL at CBJ",
-    "score": "DAL 0 - CBJ 0",
+    "score": "DAL 1 - CBJ 0",
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T02:05:02.768372+00:00",
+  "updated_at": "2026-11-06T02:14:17.115236+00:00",
   "version": 1
 }
