@@ -3,13 +3,13 @@
   "focus": {
     "away": "DAL",
     "away_score": 1,
-    "away_sog": 25,
-    "detail": "Overtime \u00b7 05:00",
+    "away_sog": 28,
+    "detail": "Shootout \u00b7 00:00",
     "game_id": "2026020258",
     "game_state": "CRIT",
     "home": "CBJ",
     "home_score": 1,
-    "home_sog": 29,
+    "home_sog": 30,
     "matchup": "DAL at CBJ",
     "score": "DAL 1 - CBJ 1",
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T02:41:51.977856+00:00",
+  "updated_at": "2026-11-06T02:51:15.039731+00:00",
   "version": 1
 }
