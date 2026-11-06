@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 0,
     "away_sog": 7,
-    "detail": "1st \u00b7 03:01",
+    "detail": "1st \u00b7 10:50",
     "game_id": "2026020258",
     "game_state": "LIVE",
     "home": "CBJ",
     "home_score": 0,
-    "home_sog": 8,
+    "home_sog": 10,
     "matchup": "DAL at CBJ",
     "score": "DAL 0 - CBJ 0",
     "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T00:41:53.087843+00:00",
+  "updated_at": "2026-11-06T00:50:53.671145+00:00",
   "version": 1
 }
