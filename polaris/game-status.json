@@ -3,8 +3,8 @@
   "focus": {
     "away": "DAL",
     "away_score": 0,
-    "away_sog": 13,
-    "detail": "2nd \u00b7 10:44",
+    "away_sog": 17,
+    "detail": "2nd \u00b7 06:36",
     "game_id": "2026020258",
     "game_state": "LIVE",
     "home": "CBJ",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T01:18:19.144131+00:00",
+  "updated_at": "2026-11-06T01:27:21.949286+00:00",
   "version": 1
 }
