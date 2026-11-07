@@ -1,21 +1,6 @@
 {
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
-    "away": "DAL",
-    "away_score": 1,
-    "away_sog": null,
-    "detail": "Final",
-    "game_id": "2026020258",
-    "game_state": "OFF",
-    "home": "CBJ",
-    "home_score": 2,
-    "home_sog": null,
-    "matchup": "DAL at CBJ",
-    "score": "DAL 1 - CBJ 2",
-    "start_label": "Thu \u00b7 Nov 5 \u00b7 6:00 PM CT",
-    "state_label": "Latest result"
-  },
-  "next": {
     "away": "SJS",
     "away_score": null,
     "away_sog": null,
@@ -28,8 +13,23 @@
     "matchup": "SJS at DAL",
     "score": "SJS at DAL",
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
+    "state_label": "Today's game"
+  },
+  "next": {
+    "away": "WPG",
+    "away_score": null,
+    "away_sog": null,
+    "detail": "Thu \u00b7 Nov 12 \u00b7 7:00 PM CT",
+    "game_id": "2026020306",
+    "game_state": "FUT",
+    "home": "DAL",
+    "home_score": null,
+    "home_sog": null,
+    "matchup": "WPG at DAL",
+    "score": "WPG at DAL",
+    "start_label": "Thu \u00b7 Nov 12 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-06T03:39:54.192470+00:00",
+  "updated_at": "2026-11-07T16:05:16.839454+00:00",
   "version": 1
 }
