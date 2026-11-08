@@ -3,17 +3,17 @@
   "focus": {
     "away": "SJS",
     "away_score": 3,
-    "away_sog": 21,
-    "detail": "3rd \u00b7 04:36",
+    "away_sog": null,
+    "detail": "Final",
     "game_id": "2026020272",
-    "game_state": "CRIT",
+    "game_state": "FINAL",
     "home": "DAL",
     "home_score": 4,
-    "home_sog": 29,
+    "home_sog": null,
     "matchup": "SJS at DAL",
     "score": "SJS 3 - DAL 4",
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
-    "state_label": "Live now"
+    "state_label": "Latest result"
   },
   "next": {
     "away": "WPG",
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 12 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-08T03:33:26.752824+00:00",
+  "updated_at": "2026-11-08T03:42:37.469342+00:00",
   "version": 1
 }
