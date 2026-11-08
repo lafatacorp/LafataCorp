@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "SJS",
-    "away_score": 1,
-    "away_sog": 11,
-    "detail": "2nd \u00b7 18:04",
+    "away_score": 2,
+    "away_sog": 15,
+    "detail": "2nd \u00b7 13:55",
     "game_id": "2026020272",
     "game_state": "LIVE",
     "home": "DAL",
     "home_score": 3,
-    "home_sog": 16,
+    "home_sog": 15,
     "matchup": "SJS at DAL",
-    "score": "SJS 1 - DAL 3",
+    "score": "SJS 2 - DAL 3",
     "start_label": "Sat \u00b7 Nov 7 \u00b7 7:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 12 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-08T02:10:53.331530+00:00",
+  "updated_at": "2026-11-08T02:19:52.209512+00:00",
   "version": 1
 }
