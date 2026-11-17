@@ -220,6 +220,7 @@
   max-width:56ch;display:grid;gap:8px}
 .sys-key li{font-size:14px;color:var(--muted-dark);line-height:1.45}
 .sys-key b{color:var(--white);font-weight:600;margin-right:.4em}
+.sys-key .was{margin-right:.4em}
 .standings td.st-bank{color:var(--muted-dark);font-size:14px}
 .st-note{margin:12px 0 0;font-size:13px;color:var(--muted-dark);max-width:52ch}
 /* Favorites Tracker: the question, then the figures that answer it. */
@@ -287,16 +288,16 @@
   <div class="wrap">
     <div class="board-status">
       <p class="now">NHL Tracker <span class="beta">(Beta)</span><span class="sep">/</span><span class="date"><!-- PICKS_DATE -->November 16, 2026<!-- /PICKS_DATE --></span></p>
-      <p class="upd">Updated <!-- UPDATED -->Nov 16, 2026 at 11:47 PM<!-- /UPDATED --> CT</p>
+      <p class="upd">Updated <!-- UPDATED -->Nov 17, 2026 at 12:03 AM<!-- /UPDATED --> CT</p>
     </div>
     <div class="board-grid">
       <div><!-- HEADLINE --><p class="pod-k">Play of the day</p>
-<h1>No play of the day.</h1><p class="pod-src">From the Daily Analyzer, our model. It only takes a side when its win probability beats the market's by 5 points or more.</p><p class="board-dek">Nothing came close. The largest edge on the slate was 0.0 points, against the 5 the model needs.</p>
+<h1>No play of the day.</h1><p class="pod-src">From The LafataCorp Model. It only takes a side when its win probability beats the market's by 5 points or more.</p><p class="board-dek">Nothing came close. The largest edge on the slate was 0.0 points, against the 5 the model needs.</p>
 <div class="counts"><div><b>2</b><span>Games screened</span></div><div><b>0</b><span>Plays</span></div><div><b>0</b><span>On the radar</span></div></div>
-<ul class="sys-key" aria-label="The three systems"><li><b>Daily Analyzer</b><span>The model. Selective. This is the play of the day.</span></li><li><b>Favorites Tracker</b><span>A baseline experiment that bets every favorite to test whether that alone makes money. Not a model pick.</span></li><li><b>Fade Bot</b><span>In-game one-goal leads. Settled results only.</span></li></ul><!-- /HEADLINE --></div>
+<ul class="sys-key" aria-label="The three systems"><li><b>The LafataCorp Model</b><span class="was">(formerly Daily Analyzer)</span><span>Our model. Selective. This is the play of the day.</span></li><li><b>Favorites Tracker</b><span>A baseline experiment that bets every favorite to test whether that alone makes money. Not a model pick.</span></li><li><b>Lead Hold</b><span class="was">(formerly Fade Bot)</span><span>An in-game system that backs a team protecting a one-goal lead. The question it tests: do those leads hold often enough to beat the price over a full season, instead of chasing long-shot comebacks?</span></li></ul><!-- /HEADLINE --></div>
       <div>
         <p class="board-label">2026-27 standings, paper traded</p>
-        <!-- STRIP --><table class="standings"><thead><tr><th scope="col">System</th><th scope="col">W&ndash;L</th><th scope="col">Win</th><th scope="col">ROI</th><th scope="col">Streak</th><th scope="col">Bankroll</th></tr></thead><tbody><tr><th scope="row"><span class="st-name">Favorites Tracker</span><span class="st-kind">Pre-game, every favorite</span></th><td class="st-rec">127&ndash;62</td><td>67.2%</td><td class="st-ret up">+7.2%</td><td>L1</td><td class="st-bank up">+104.6%</td></tr><tr><th scope="row"><span class="st-name">Daily Analyzer</span><span class="st-kind">Pre-game</span></th><td class="st-rec">16&ndash;7</td><td>69.6%</td><td class="st-ret up">+12.4%</td><td>W2</td><td class="st-bank up">+5.7%</td></tr><tr><th scope="row"><span class="st-name">Fade Bot</span><span class="st-kind">In-game, record only</span></th><td class="st-rec">46&ndash;25</td><td>64.8%</td><td class="st-ret dn">-16.9%</td><td>W4</td><td class="st-bank dn">-26.8%</td></tr></tbody></table><p class="st-note">ROI is profit per unit staked. Bankroll is the change on the bankroll each system started the season with.</p><!-- /STRIP -->
+        <!-- STRIP --><table class="standings"><thead><tr><th scope="col">System</th><th scope="col">W&ndash;L</th><th scope="col">Win</th><th scope="col">ROI</th><th scope="col">Streak</th><th scope="col">Bankroll</th></tr></thead><tbody><tr><th scope="row"><span class="st-name">Favorites Tracker</span><span class="st-kind">Pre-game, every favorite</span></th><td class="st-rec">127&ndash;62</td><td>67.2%</td><td class="st-ret up">+7.2%</td><td>L1</td><td class="st-bank up">+104.6%</td></tr><tr><th scope="row"><span class="st-name">The LafataCorp Model</span><span class="st-kind">Pre-game</span></th><td class="st-rec">16&ndash;7</td><td>69.6%</td><td class="st-ret up">+12.4%</td><td>W2</td><td class="st-bank up">+5.7%</td></tr><tr><th scope="row"><span class="st-name">Lead Hold</span><span class="st-kind">In-game, record only</span></th><td class="st-rec">46&ndash;25</td><td>64.8%</td><td class="st-ret dn">-16.9%</td><td>W4</td><td class="st-bank dn">-26.8%</td></tr></tbody></table><p class="st-note">ROI is profit per unit staked. Bankroll is the change on the bankroll each system started the season with.</p><!-- /STRIP -->
       </div>
     </div>
   </div>
@@ -325,7 +326,7 @@
     <h2>Return on capital</h2>
     <p class="lbl">2026-27 season to date, as a percentage of each system's season-start bankroll</p>
   </div>
-  <!-- CHART --><div class="chart-key"><span><i style="background:#8A6D2B"></i>Favorites Tracker</span><span><i style="background:#0A0D12"></i>Daily Analyzer</span><span><i style="background:#4A6B8A"></i>Fade Bot</span></div><div class="chart-body"><svg viewBox="-60 -18 1180 338" role="img" aria-label="Cumulative return on capital by system, Sep 29 to Nov 16"><line x1="0" y1="279.6" x2="1000" y2="279.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="284.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-40%</text><line x1="0" y1="252.1" x2="1000" y2="252.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="257.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-20%</text><line x1="0" y1="224.6" x2="1000" y2="224.6" stroke="#3E4651" stroke-width="1" /><text x="-10" y="229.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">0%</text><line x1="0" y1="197.1" x2="1000" y2="197.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="202.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+20%</text><line x1="0" y1="169.6" x2="1000" y2="169.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="174.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+40%</text><line x1="0" y1="142.1" x2="1000" y2="142.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="147.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+60%</text><line x1="0" y1="114.6" x2="1000" y2="114.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="119.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+80%</text><line x1="0" y1="87.1" x2="1000" y2="87.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="92.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+100%</text><line x1="0" y1="59.6" x2="1000" y2="59.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="64.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+120%</text><line x1="0" y1="32.2" x2="1000" y2="32.2" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="37.2" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+140%</text><line x1="0" y1="4.7" x2="1000" y2="4.7" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="9.7" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+160%</text><polyline points="0.0,231.0 21.3,229.9 42.6,217.7 63.8,247.2 85.1,223.1 106.4,212.5 127.7,211.9 148.9,198.1 170.2,203.1 191.5,187.0 212.8,195.6 234.0,185.2 255.3,186.3 276.6,199.2 297.9,206.5 319.1,178.2 340.4,172.2 361.7,140.1 383.0,144.6 404.3,141.7 425.5,150.2 446.8,161.7 468.1,157.7 489.4,149.6 510.6,144.1 531.9,135.2 553.2,157.7 574.5,142.3 595.7,124.4 617.0,116.2 638.3,122.1 659.6,104.9 680.9,111.9 702.1,117.9 723.4,113.8 744.7,101.2 766.0,78.5 787.2,77.7 808.5,44.7 829.8,40.0 851.1,43.9 872.3,39.7 893.6,34.6 914.9,39.8 936.2,45.8 957.4,72.2 978.7,69.4 1000.0,80.8" fill="none" stroke="#8A6D2B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="80.8" r="4.5" fill="#8A6D2B"/><polyline points="21.3,224.1 42.6,224.1 63.8,224.1 85.1,223.0 106.4,223.0 127.7,223.0 148.9,223.0 170.2,223.0 191.5,223.0 212.8,223.0 234.0,223.0 255.3,223.0 276.6,223.0 297.9,223.0 319.1,223.0 340.4,223.0 361.7,223.0 383.0,223.0 404.3,223.0 425.5,223.0 446.8,223.0 468.1,225.8 489.4,225.8 510.6,225.8 531.9,225.8 553.2,228.5 574.5,227.0 595.7,225.4 617.0,225.4 638.3,225.4 659.6,221.8 680.9,218.5 702.1,215.7 723.4,221.5 744.7,221.5 766.0,217.2 787.2,217.2 808.5,219.0 829.8,217.0 851.1,217.0 872.3,217.0 893.6,217.0 914.9,218.8 936.2,218.8 957.4,218.8 978.7,216.8 1000.0,216.8" fill="none" stroke="#0A0D12" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="216.8" r="4.5" fill="#0A0D12"/><polyline points="0.0,222.5 21.3,222.5 42.6,229.2 63.8,225.8 85.1,229.9 106.4,225.9 127.7,225.9 148.9,220.4 170.2,220.4 191.5,220.4 212.8,219.5 234.0,223.7 255.3,223.7 276.6,223.9 297.9,226.7 319.1,241.3 340.4,243.5 361.7,246.9 383.0,246.9 404.3,250.3 425.5,252.0 446.8,251.1 468.1,250.3 489.4,249.6 510.6,257.3 531.9,257.3 553.2,257.3 574.5,257.2 595.7,260.1 617.0,257.0 638.3,256.8 659.6,259.9 680.9,259.9 702.1,259.9 723.4,257.1 744.7,257.1 766.0,260.8 787.2,260.8 808.5,258.3 829.8,258.3 851.1,265.4 872.3,265.3 893.6,264.6 914.9,264.1 936.2,264.1 957.4,261.4 978.7,261.4 1000.0,261.4" fill="none" stroke="#4A6B8A" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="261.4" r="4.5" fill="#4A6B8A"/><text x="1014.0" y="86.8" fill="#12804A" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">+104.6%</text><text x="1014.0" y="222.8" fill="#12804A" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">+5.7%</text><text x="1014.0" y="267.4" fill="#C8261B" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">-26.8%</text></svg></div><div class="chart-xaxis"><span>Sep 29</span><span>Oct 24</span><span>Nov 16</span></div><!-- /CHART -->
+  <!-- CHART --><div class="chart-key"><span><i style="background:#8A6D2B"></i>Favorites Tracker</span><span><i style="background:#0A0D12"></i>The LafataCorp Model</span><span><i style="background:#4A6B8A"></i>Lead Hold</span></div><div class="chart-body"><svg viewBox="-60 -18 1180 338" role="img" aria-label="Cumulative return on capital by system, Sep 29 to Nov 16"><line x1="0" y1="279.6" x2="1000" y2="279.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="284.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-40%</text><line x1="0" y1="252.1" x2="1000" y2="252.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="257.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">-20%</text><line x1="0" y1="224.6" x2="1000" y2="224.6" stroke="#3E4651" stroke-width="1" /><text x="-10" y="229.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">0%</text><line x1="0" y1="197.1" x2="1000" y2="197.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="202.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+20%</text><line x1="0" y1="169.6" x2="1000" y2="169.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="174.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+40%</text><line x1="0" y1="142.1" x2="1000" y2="142.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="147.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+60%</text><line x1="0" y1="114.6" x2="1000" y2="114.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="119.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+80%</text><line x1="0" y1="87.1" x2="1000" y2="87.1" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="92.1" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+100%</text><line x1="0" y1="59.6" x2="1000" y2="59.6" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="64.6" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+120%</text><line x1="0" y1="32.2" x2="1000" y2="32.2" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="37.2" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+140%</text><line x1="0" y1="4.7" x2="1000" y2="4.7" stroke="#CDD3DA" stroke-width="1" stroke-dasharray="3 5" /><text x="-10" y="9.7" text-anchor="end" fill="#3E4651" font-family="Host Grotesk, sans-serif" font-size="15">+160%</text><polyline points="0.0,231.0 21.3,229.9 42.6,217.7 63.8,247.2 85.1,223.1 106.4,212.5 127.7,211.9 148.9,198.1 170.2,203.1 191.5,187.0 212.8,195.6 234.0,185.2 255.3,186.3 276.6,199.2 297.9,206.5 319.1,178.2 340.4,172.2 361.7,140.1 383.0,144.6 404.3,141.7 425.5,150.2 446.8,161.7 468.1,157.7 489.4,149.6 510.6,144.1 531.9,135.2 553.2,157.7 574.5,142.3 595.7,124.4 617.0,116.2 638.3,122.1 659.6,104.9 680.9,111.9 702.1,117.9 723.4,113.8 744.7,101.2 766.0,78.5 787.2,77.7 808.5,44.7 829.8,40.0 851.1,43.9 872.3,39.7 893.6,34.6 914.9,39.8 936.2,45.8 957.4,72.2 978.7,69.4 1000.0,80.8" fill="none" stroke="#8A6D2B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="80.8" r="4.5" fill="#8A6D2B"/><polyline points="21.3,224.1 42.6,224.1 63.8,224.1 85.1,223.0 106.4,223.0 127.7,223.0 148.9,223.0 170.2,223.0 191.5,223.0 212.8,223.0 234.0,223.0 255.3,223.0 276.6,223.0 297.9,223.0 319.1,223.0 340.4,223.0 361.7,223.0 383.0,223.0 404.3,223.0 425.5,223.0 446.8,223.0 468.1,225.8 489.4,225.8 510.6,225.8 531.9,225.8 553.2,228.5 574.5,227.0 595.7,225.4 617.0,225.4 638.3,225.4 659.6,221.8 680.9,218.5 702.1,215.7 723.4,221.5 744.7,221.5 766.0,217.2 787.2,217.2 808.5,219.0 829.8,217.0 851.1,217.0 872.3,217.0 893.6,217.0 914.9,218.8 936.2,218.8 957.4,218.8 978.7,216.8 1000.0,216.8" fill="none" stroke="#0A0D12" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="216.8" r="4.5" fill="#0A0D12"/><polyline points="0.0,222.5 21.3,222.5 42.6,229.2 63.8,225.8 85.1,229.9 106.4,225.9 127.7,225.9 148.9,220.4 170.2,220.4 191.5,220.4 212.8,219.5 234.0,223.7 255.3,223.7 276.6,223.9 297.9,226.7 319.1,241.3 340.4,243.5 361.7,246.9 383.0,246.9 404.3,250.3 425.5,252.0 446.8,251.1 468.1,250.3 489.4,249.6 510.6,257.3 531.9,257.3 553.2,257.3 574.5,257.2 595.7,260.1 617.0,257.0 638.3,256.8 659.6,259.9 680.9,259.9 702.1,259.9 723.4,257.1 744.7,257.1 766.0,260.8 787.2,260.8 808.5,258.3 829.8,258.3 851.1,265.4 872.3,265.3 893.6,264.6 914.9,264.1 936.2,264.1 957.4,261.4 978.7,261.4 1000.0,261.4" fill="none" stroke="#4A6B8A" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1000.0" cy="261.4" r="4.5" fill="#4A6B8A"/><text x="1014.0" y="86.8" fill="#12804A" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">+104.6%</text><text x="1014.0" y="222.8" fill="#12804A" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">+5.7%</text><text x="1014.0" y="267.4" fill="#C8261B" font-family="Host Grotesk, sans-serif" font-size="19" font-weight="700" style="font-variant-numeric:tabular-nums">-26.8%</text></svg></div><div class="chart-xaxis"><span>Sep 29</span><span>Oct 24</span><span>Nov 16</span></div><!-- /CHART -->
 </section>
 
 <section class="wrap sec" id="brief">
@@ -336,7 +337,7 @@
       <a class="tab" href="/nhl/weeks/">All weeks</a>
     </nav>
   </div>
-  <!-- BRIEF --><div class="brief"><p class="brief-when">Nov 10 to Nov 16</p><p><b>26-16 across 42 positions</b>. The Favorites Tracker went 14-12 (-26.8%), the Fade Bot 8-2 (+2.9%) and the Daily Analyzer 4-2 (+0.1%).</p><p>9 of those 42 got past regulation, going 5-4. A game that reaches overtime has already slipped out of the model's hands: the read was on sixty minutes and what follows is close to a coin flip.</p><p>Season to date the Fade Bot is <b>9-17 once a game passes regulation</b> and 37-8 when it does not. Those overtimes are near enough a coin flip, and the coin has not been landing this way by design.</p><p class="brief-note"><b>Where this stands.</b> The Fade Bot finished 2025-26 at 93-28, but the tracker only came online for the back half of that season, so there is no full-season record behind it. This season is the first being gathered from opening night, which is the point of publishing it. Every system here is paper traded, the figures are unaudited, and the model is still being developed in the open. Expect the numbers to move.</p></div><!-- /BRIEF -->
+  <!-- BRIEF --><div class="brief"><p class="brief-when">Nov 10 to Nov 16</p><p><b>26-16 across 42 positions</b>. The Favorites Tracker went 14-12 (-26.8%), Lead Hold 8-2 (+2.9%) and The LafataCorp Model 4-2 (+0.1%).</p><p>9 of those 42 got past regulation, going 5-4. A game that reaches overtime has already slipped out of the model's hands: the read was on sixty minutes and what follows is close to a coin flip.</p><p>Season to date Lead Hold is <b>9-17 once a game passes regulation</b> and 37-8 when it does not. Those overtimes are near enough a coin flip, and the coin has not been landing this way by design.</p><p class="brief-note"><b>Where this stands.</b> Lead Hold finished 2025-26 at 93-28, but the tracker only came online for the back half of that season, so there is no full-season record behind it. This season is the first being gathered from opening night, which is the point of publishing it. Every system here is paper traded, the figures are unaudited, and the model is still being developed in the open. Expect the numbers to move.</p></div><!-- /BRIEF -->
 </section>
 
 <section class="wrap sec">
@@ -345,8 +346,8 @@
     <div class="filters" role="group" aria-label="Filter results">
       <button type="button" class="flt" data-sys="all" aria-selected="true">All</button>
       <button type="button" class="flt" data-sys="FV" aria-selected="false">Favorites</button>
-      <button type="button" class="flt" data-sys="DA" aria-selected="false">Daily Analyzer</button>
-      <button type="button" class="flt" data-sys="FB" aria-selected="false">Fade Bot</button>
+      <button type="button" class="flt" data-sys="DA" aria-selected="false">The LafataCorp Model</button>
+      <button type="button" class="flt" data-sys="FB" aria-selected="false">Lead Hold</button>
     </div>
   </div>
   <!-- RESULTS --><div class="scroller"><table class="tbl"><thead><tr><th scope="col">Date</th><th scope="col">Matchup</th><th scope="col">System</th><th scope="col">Position</th><th scope="col" class="r">Odds</th><th scope="col" class="r">Final</th><th scope="col">Result</th><th scope="col" class="r">Return</th></tr></thead><tbody>
@@ -363,7 +364,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 15</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">&minus;138</td>
         <td data-label="Final" class="r">5&ndash;2</td>
@@ -423,7 +424,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">&minus;143</td>
         <td data-label="Final" class="r">1&ndash;0</td>
@@ -433,7 +434,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota Wild"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS ML</span></td>
         <td data-label="Odds" class="r">+104</td>
         <td data-label="Final" class="r">6&ndash;2</td>
@@ -443,7 +444,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SEA" role="img" aria-label="Seattle Kraken"><img src="/logos/nhl/SEA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR ML</span></td>
         <td data-label="Odds" class="r">&minus;354</td>
         <td data-label="Final" class="r">1&ndash;5</td>
@@ -453,7 +454,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span>CGY hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;178</td>
         <td data-label="Final" class="r">3&ndash;2</td>
@@ -463,7 +464,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span>DET hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;317</td>
         <td data-label="Final" class="r">0&ndash;2</td>
@@ -473,7 +474,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;233</td>
         <td data-label="Final" class="r">4&ndash;1</td>
@@ -483,7 +484,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;355</td>
         <td data-label="Final" class="r">5&ndash;4</td>
@@ -583,7 +584,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 12</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS ML</span></td>
         <td data-label="Odds" class="r">&minus;117</td>
         <td data-label="Final" class="r">5&ndash;2</td>
@@ -593,7 +594,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 12</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="SEA" role="img" aria-label="Seattle Kraken"><img src="/logos/nhl/SEA.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR ML</span></td>
         <td data-label="Odds" class="r">&minus;270</td>
         <td data-label="Final" class="r">4&ndash;1</td>
@@ -603,7 +604,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 12</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;213</td>
         <td data-label="Final" class="r">5&ndash;2</td>
@@ -613,7 +614,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 12</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span>DET hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;335</td>
         <td data-label="Final" class="r">4&ndash;5</td>
@@ -623,7 +624,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 12</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span>NJD hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;809</td>
         <td data-label="Final" class="r">2&ndash;5</td>
@@ -683,7 +684,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 11</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span>PIT hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;669</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -693,7 +694,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 11</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;355</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -733,7 +734,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 10</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;669</td>
         <td data-label="Final" class="r">6&ndash;3</td>
@@ -773,7 +774,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 9</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;117</td>
         <td data-label="Final" class="r">3&ndash;2</td>
@@ -783,7 +784,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 9</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;285</td>
         <td data-label="Final" class="r">1&ndash;3</td>
@@ -813,7 +814,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 8</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS ML</span></td>
         <td data-label="Odds" class="r">&minus;138</td>
         <td data-label="Final" class="r">1&ndash;4</td>
@@ -853,7 +854,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 7</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota Wild"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota Wild"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span>MIN ML</span></td>
         <td data-label="Odds" class="r">+132</td>
         <td data-label="Final" class="r">4&ndash;3</td>
@@ -863,7 +864,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 7</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span>DAL ML</span></td>
         <td data-label="Odds" class="r">&minus;284</td>
         <td data-label="Final" class="r">3&ndash;4</td>
@@ -873,7 +874,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 7</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span>PIT hold, 2nd</span></td>
         <td data-label="Odds" class="r">+104</td>
         <td data-label="Final" class="r">5&ndash;2</td>
@@ -883,7 +884,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 7</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;186</td>
         <td data-label="Final" class="r">5&ndash;4</td>
@@ -983,7 +984,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS ML</span></td>
         <td data-label="Odds" class="r">&minus;104</td>
         <td data-label="Final" class="r">6&ndash;2</td>
@@ -993,7 +994,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR ML</span></td>
         <td data-label="Odds" class="r">&minus;170</td>
         <td data-label="Final" class="r">5&ndash;3</td>
@@ -1003,7 +1004,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;117</td>
         <td data-label="Final" class="r">5&ndash;4</td>
@@ -1013,7 +1014,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CBJ" role="img" aria-label="Columbus Blue Jackets"><img src="/logos/nhl/CBJ.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span>DAL hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;567</td>
         <td data-label="Final" class="r">1&ndash;2</td>
@@ -1023,7 +1024,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span>UTA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;223</td>
         <td data-label="Final" class="r">4&ndash;5</td>
@@ -1033,7 +1034,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span>PHI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;178</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -1043,7 +1044,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 5</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;223</td>
         <td data-label="Final" class="r">6&ndash;2</td>
@@ -1153,7 +1154,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 3</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR ML</span></td>
         <td data-label="Odds" class="r">&minus;185</td>
         <td data-label="Final" class="r">1&ndash;4</td>
@@ -1163,7 +1164,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 3</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">+138</td>
         <td data-label="Final" class="r">3&ndash;4</td>
@@ -1173,7 +1174,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 3</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;317</td>
         <td data-label="Final" class="r">5&ndash;4</td>
@@ -1183,7 +1184,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 3</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span>NSH hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;170</td>
         <td data-label="Final" class="r">1&ndash;4</td>
@@ -1193,7 +1194,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Nov 3</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span>UTA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;335</td>
         <td data-label="Final" class="r">3&ndash;2</td>
@@ -1263,7 +1264,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 2</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="VGK" role="img" aria-label="Vegas Golden Knights"><img src="/logos/nhl/VGK.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS ML</span></td>
         <td data-label="Odds" class="r">&minus;100</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -1293,7 +1294,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Nov 1</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">+117</td>
         <td data-label="Final" class="r">4&ndash;1</td>
@@ -1323,7 +1324,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 31</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS ML</span></td>
         <td data-label="Odds" class="r">&minus;222</td>
         <td data-label="Final" class="r">4&ndash;5</td>
@@ -1333,7 +1334,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 31</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">&minus;117</td>
         <td data-label="Final" class="r">4&ndash;0</td>
@@ -1343,7 +1344,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 31</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;317</td>
         <td data-label="Final" class="r">4&ndash;5</td>
@@ -1353,7 +1354,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 31</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span>DET hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;488</td>
         <td data-label="Final" class="r">5&ndash;4</td>
@@ -1363,7 +1364,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 30</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span>FLA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;426</td>
         <td data-label="Final" class="r">2&ndash;5</td>
@@ -1373,7 +1374,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 29</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota Wild"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;156</td>
         <td data-label="Final" class="r">4&ndash;3</td>
@@ -1383,7 +1384,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 29</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span>UTA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;257</td>
         <td data-label="Final" class="r">4&ndash;3</td>
@@ -1393,7 +1394,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 28</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">&minus;170</td>
         <td data-label="Final" class="r">0&ndash;4</td>
@@ -1403,7 +1404,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 28</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NJD" role="img" aria-label="New Jersey Devils"><img src="/logos/nhl/NJD.svg" alt="" loading="lazy"></span>NJD hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;163</td>
         <td data-label="Final" class="r">2&ndash;5</td>
@@ -1413,7 +1414,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 28</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;809</td>
         <td data-label="Final" class="r">2&ndash;5</td>
@@ -1423,7 +1424,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 27</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR ML</span></td>
         <td data-label="Odds" class="r">&minus;170</td>
         <td data-label="Final" class="r">1&ndash;2</td>
@@ -1433,7 +1434,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 27</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span>BUF hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;317</td>
         <td data-label="Final" class="r">0&ndash;2</td>
@@ -1443,7 +1444,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 27</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;257</td>
         <td data-label="Final" class="r">4&ndash;3</td>
@@ -1453,7 +1454,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 27</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span>LAK hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;245</td>
         <td data-label="Final" class="r">1&ndash;2</td>
@@ -1463,7 +1464,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 27</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>MTL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;233</td>
         <td data-label="Final" class="r">2&ndash;0</td>
@@ -1473,7 +1474,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 26</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span>EDM ML</span></td>
         <td data-label="Odds" class="r">&minus;163</td>
         <td data-label="Final" class="r">4&ndash;3</td>
@@ -1483,7 +1484,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 24</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span>CGY hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;186</td>
         <td data-label="Final" class="r">1&ndash;4</td>
@@ -1493,7 +1494,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 24</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="UTA" role="img" aria-label="Utah Mammoth"><img src="/logos/nhl/UTA.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span>TBL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;104</td>
         <td data-label="Final" class="r">4&ndash;5</td>
@@ -1503,7 +1504,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 24</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span>NSH hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;213</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -1513,7 +1514,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 23</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="MTL" role="img" aria-label="Montreal Canadiens"><img src="/logos/nhl/MTL.svg" alt="" loading="lazy"></span>MTL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;355</td>
         <td data-label="Final" class="r">4&ndash;1</td>
@@ -1523,7 +1524,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 22</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="EDM" role="img" aria-label="Edmonton Oilers"><img src="/logos/nhl/EDM.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR ML</span></td>
         <td data-label="Odds" class="r">&minus;117</td>
         <td data-label="Final" class="r">5&ndash;6</td>
@@ -1533,7 +1534,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 22</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="MIN" role="img" aria-label="Minnesota Wild"><img src="/logos/nhl/MIN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span>CGY hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;300</td>
         <td data-label="Final" class="r">1&ndash;2</td>
@@ -1543,7 +1544,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 21</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span>OTT hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;245</td>
         <td data-label="Final" class="r">1&ndash;5</td>
@@ -1553,7 +1554,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 20</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span>BOS hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;317</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -1563,7 +1564,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 20</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span>STL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;300</td>
         <td data-label="Final" class="r">1&ndash;2</td>
@@ -1573,7 +1574,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 19</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span>SJS hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;170</td>
         <td data-label="Final" class="r">1&ndash;3</td>
@@ -1583,7 +1584,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 17</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="PHI" role="img" aria-label="Philadelphia Flyers"><img src="/logos/nhl/PHI.svg" alt="" loading="lazy"></span>PHI hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;488</td>
         <td data-label="Final" class="r">1&ndash;3</td>
@@ -1593,7 +1594,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 17</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span>NSH hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;233</td>
         <td data-label="Final" class="r">2&ndash;5</td>
@@ -1603,7 +1604,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 17</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="DET" role="img" aria-label="Detroit Red Wings"><img src="/logos/nhl/DET.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="SJS" role="img" aria-label="San Jose Sharks"><img src="/logos/nhl/SJS.svg" alt="" loading="lazy"></span>SJS hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;194</td>
         <td data-label="Final" class="r">3&ndash;4</td>
@@ -1613,7 +1614,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 17</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span>CAR hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;733</td>
         <td data-label="Final" class="r">3&ndash;2</td>
@@ -1623,7 +1624,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 16</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BOS" role="img" aria-label="Boston Bruins"><img src="/logos/nhl/BOS.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;257</td>
         <td data-label="Final" class="r">4&ndash;2</td>
@@ -1633,7 +1634,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 16</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="PIT" role="img" aria-label="Pittsburgh Penguins"><img src="/logos/nhl/PIT.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;426</td>
         <td data-label="Final" class="r">2&ndash;5</td>
@@ -1643,7 +1644,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 15</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="BUF" role="img" aria-label="Buffalo Sabres"><img src="/logos/nhl/BUF.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span>TOR hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;108</td>
         <td data-label="Final" class="r">5&ndash;4</td>
@@ -1653,7 +1654,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 15</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="FLA" role="img" aria-label="Florida Panthers"><img src="/logos/nhl/FLA.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="VAN" role="img" aria-label="Vancouver Canucks"><img src="/logos/nhl/VAN.svg" alt="" loading="lazy"></span>VAN hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;376</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -1663,7 +1664,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 15</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WPG" role="img" aria-label="Winnipeg Jets"><img src="/logos/nhl/WPG.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="CHI" role="img" aria-label="Chicago Blackhawks"><img src="/logos/nhl/CHI.svg" alt="" loading="lazy"></span>CHI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;233</td>
         <td data-label="Final" class="r">3&ndash;4</td>
@@ -1673,7 +1674,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 15</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYI" role="img" aria-label="New York Islanders"><img src="/logos/nhl/NYI.svg" alt="" loading="lazy"></span>NYI hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;186</td>
         <td data-label="Final" class="r">1&ndash;2</td>
@@ -1683,7 +1684,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 14</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="DAL" role="img" aria-label="Dallas Stars"><img src="/logos/nhl/DAL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;317</td>
         <td data-label="Final" class="r">3&ndash;2</td>
@@ -1693,7 +1694,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 13</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span>STL hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;285</td>
         <td data-label="Final" class="r">7&ndash;2</td>
@@ -1703,7 +1704,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 13</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TBL" role="img" aria-label="Tampa Bay Lightning"><img src="/logos/nhl/TBL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span>NYR hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;178</td>
         <td data-label="Final" class="r">1&ndash;4</td>
@@ -1713,7 +1714,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 13</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CAR" role="img" aria-label="Carolina Hurricanes"><img src="/logos/nhl/CAR.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;178</td>
         <td data-label="Final" class="r">2&ndash;4</td>
@@ -1723,7 +1724,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 10</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="CGY" role="img" aria-label="Calgary Flames"><img src="/logos/nhl/CGY.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="ANA" role="img" aria-label="Anaheim Ducks"><img src="/logos/nhl/ANA.svg" alt="" loading="lazy"></span>ANA hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;245</td>
         <td data-label="Final" class="r">4&ndash;2</td>
@@ -1733,7 +1734,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 10</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="TOR" role="img" aria-label="Toronto Maple Leafs"><img src="/logos/nhl/TOR.svg" alt="" loading="lazy"></span>TOR hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;300</td>
         <td data-label="Final" class="r">6&ndash;3</td>
@@ -1743,7 +1744,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 10</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="OTT" role="img" aria-label="Ottawa Senators"><img src="/logos/nhl/OTT.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="NSH" role="img" aria-label="Nashville Predators"><img src="/logos/nhl/NSH.svg" alt="" loading="lazy"></span>NSH hold, 2nd</span></td>
         <td data-label="Odds" class="r">&minus;170</td>
         <td data-label="Final" class="r">2&ndash;3</td>
@@ -1753,7 +1754,7 @@
       <tr data-sys="FB">
         <td data-label="Date">Oct 9</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="NYR" role="img" aria-label="New York Rangers"><img src="/logos/nhl/NYR.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Fade Bot</td>
+        <td data-label="System">Lead Hold</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="WSH" role="img" aria-label="Washington Capitals"><img src="/logos/nhl/WSH.svg" alt="" loading="lazy"></span>WSH hold, 3rd</span></td>
         <td data-label="Odds" class="r">&minus;733</td>
         <td data-label="Final" class="r">1&ndash;3</td>
@@ -1763,7 +1764,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Oct 3</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="STL" role="img" aria-label="St. Louis Blues"><img src="/logos/nhl/STL.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL ML</span></td>
         <td data-label="Odds" class="r">&minus;270</td>
         <td data-label="Final" class="r">1&ndash;6</td>
@@ -1773,7 +1774,7 @@
       <tr data-sys="DA">
         <td data-label="Date">Sep 30</td>
         <td data-label="Matchup"><span class="pair"><span class="club sm" data-code="LAK" role="img" aria-label="Los Angeles Kings"><img src="/logos/nhl/LAK.svg" alt="" loading="lazy"></span><span class="at">at</span><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span></span></td>
-        <td data-label="System">Daily Analyzer</td>
+        <td data-label="System">The LafataCorp Model</td>
         <td data-label="Position"><span class="pair"><span class="club sm" data-code="COL" role="img" aria-label="Colorado Avalanche"><img src="/logos/nhl/COL.svg" alt="" loading="lazy"></span>COL ML</span></td>
         <td data-label="Odds" class="r">&minus;185</td>
         <td data-label="Final" class="r">4&ndash;8</td>
@@ -1809,7 +1810,7 @@
     </article>
 
     <article class="rec">
-      <div class="rec-top"><h3>Fade Bot V2</h3><span class="meta">NHL in-game, paper, 121 trades</span></div>
+      <div class="rec-top"><h3>Lead Hold</h3><span class="meta">NHL in-game, paper, 121 trades</span></div>
       <div class="rec-main">
         <div class="rec-big">93-28</div>
         <div class="rec-side">
@@ -1819,11 +1820,11 @@
       </div>
       <div class="split" role="img" aria-label="93 won, 28 lost"><span class="w" style="width:76.86%"></span><span class="l" style="flex:1"></span></div>
       <div class="split-k"><span>93 won</span><span>28 lost</span></div>
-      <p>Backs the team protecting a one-goal lead, entering on a live clock in a window a few minutes wide. Picks are never published, only results. V3 is in development: it adds a two-minute cooldown after every goal, so an entry is never priced off a market still repricing the goal it just saw.</p>
+      <p>It enters only when the pressure on the leading team and the time remaining fall in a range with a documented hold rate, and stakes less as the price gets steeper. It went 93-28 over the back half of 2025-26, the first stretch it was tracked. 2026-27 is its first full season.</p>
     </article>
 
     <article class="rec">
-      <div class="rec-top"><h3>Daily Analyzer V2</h3><span class="meta">NHL pre-game, paper, 181 bets</span></div>
+      <div class="rec-top"><h3>The LafataCorp Model</h3><span class="meta">NHL pre-game, paper, 181 bets</span></div>
       <div class="rec-main">
         <div class="rec-big">107-74</div>
         <div class="rec-side">
