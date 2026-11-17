@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kalshi system -- LafataCorp</title>
-<meta name="description" content="A retired automated strategy across Kalshi event markets. Up 88.7% on deposited capital before the market changed under it.">
+<meta name="description" content="A retired automated strategy across Kalshi event markets. Up 88.7% on deposited capital before fees, then the market changed under it.">
 <meta property="og:title" content="Kalshi system -- LafataCorp">
-<meta property="og:description" content="A retired strategy: up 88.7% on deposited capital before the market changed under it.">
+<meta property="og:description" content="A retired strategy: up 88.7% on deposited capital before fees, then the market changed under it.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lafatacorp.com/kalshi/">
 <meta property="og:image" content="https://lafatacorp.com/og-image-2026-11.png">
@@ -85,7 +85,7 @@
     <p class="lbl">Retired</p>
   </div>
   <div class="k-head">
-    <h1>Up <!-- HEADROI -->88.7%<!-- /HEADROI -->. Then the market changed.</h1>
+    <h1>Up <!-- HEADROI -->88.7%<!-- /HEADROI --> before fees. Then the market changed.</h1>
     <p>An automated strategy across Kalshi event markets. When its best market went quiet and its sizing drifted, Cam switched it off instead of trading through it. The strategy is retired.</p>
   </div>
 </section>
@@ -93,22 +93,23 @@
 <section class="wrap" style="padding-top:96px">
   <h2 class="k-period">The original strategy <span><!-- DATERANGE -->March 17 to June 22, 2026<!-- /DATERANGE --></span></h2>
   <div class="facts">
-    <div class="fact"><span class="lbl">Return on deposited capital</span><span class="v up"><!-- ROI -->+88.7%<!-- /ROI --></span></div>
+    <div class="fact"><span class="lbl">Return on deposited capital, before fees</span><span class="v up"><!-- ROI -->+88.7%<!-- /ROI --></span></div>
     <div class="fact"><span class="lbl">Trades won-lost</span><span class="v"><!-- RECORD -->350-119<!-- /RECORD --></span></div>
     <div class="fact"><span class="lbl">Trades</span><span class="v"><!-- TRADES -->469<!-- /TRADES --></span></div>
-    <div class="fact"><span class="lbl">Currency win rate</span><span class="v"><!-- CURRENCYWR -->90.3%<!-- /CURRENCYWR --></span></div>
+    <div class="fact"><span class="lbl">Return per amount staked, before fees</span><span class="v"><!-- STAKEROI -->+2.0%<!-- /STAKEROI --></span></div>
   </div>
-  <p class="lbl k-sub">Won <!-- WINRATE -->74.6%<!-- /WINRATE --> of trades. Currency contracts went <!-- CURRENCYREC -->28-3<!-- /CURRENCYREC -->. Return per amount staked: <!-- STAKEROI -->+2.0%<!-- /STAKEROI -->.</p>
+  <p class="lbl k-sub">Won <!-- WINRATE -->74.6%<!-- /WINRATE --> of trades. Currency contracts went <!-- CURRENCYREC -->28-3<!-- /CURRENCYREC --> across <!-- CURRENCYN -->31<!-- /CURRENCYN --> trades (<!-- CURRENCYWR -->90.3%<!-- /CURRENCYWR -->) and made <!-- CURSHARE -->130%<!-- /CURSHARE --> of the net profit. The other <!-- RESTTRADES -->438<!-- /RESTTRADES --> trades lost money together.</p>
 
   <h2 class="k-period" style="margin-top:72px">After the pause <span><!-- POSTRANGE -->June 26 to September 17, 2026<!-- /POSTRANGE --></span></h2>
-  <p class="k-post">A smaller index book kept running after the original strategy was switched off: <!-- POSTTRADES -->62<!-- /POSTTRADES --> trades (<!-- POSTMIX -->47 S&amp;P 500, 14 Nasdaq, 1 currency<!-- /POSTMIX -->), won-lost <!-- POSTRECORD -->38-24<!-- /POSTRECORD --> (<!-- POSTWINRATE -->61.3%<!-- /POSTWINRATE -->), for <!-- POSTROI -->-9.0%<!-- /POSTROI --> on deposited capital and <!-- POSTSTAKEROI -->-10.2%<!-- /POSTSTAKEROI --> per amount staked. It is reported apart because it is not the strategy above, and it is not where the edge was.</p>
+  <p class="k-post">A smaller index book kept running after the original strategy was switched off: <!-- POSTTRADES -->62<!-- /POSTTRADES --> trades (<!-- POSTMIX -->47 S&amp;P 500, 14 Nasdaq, 1 currency<!-- /POSTMIX -->), won-lost <!-- POSTRECORD -->38-24<!-- /POSTRECORD --> (<!-- POSTWINRATE -->61.3%<!-- /POSTWINRATE -->), for <!-- POSTROI -->-9.0%<!-- /POSTROI --> on deposited capital and <!-- POSTSTAKEROI -->-10.2%<!-- /POSTSTAKEROI --> per amount staked, both before fees. It is reported apart because it is not the strategy above, and it is not where the edge was.</p>
 
   <dl class="k-defs">
     <div><dt>Return on deposited capital</dt><dd>Net profit divided by the total deposited into the account. It is not divided by the amount staked, which was many times larger, so the return per amount staked is shown beside it.</dd></div>
     <div><dt>Trades won-lost</dt><dd>A trade is won when it closed at a profit, whether it was held to settlement or sold before it.</dd></div>
     <div><dt>Currency contracts</dt><dd>Kalshi markets on where an exchange rate, such as EUR/USD or USD/JPY, sits at a set time.</dd></div>
-    <div><dt>Currency win rate</dt><dd>The share of currency trades in the original strategy that closed at a profit.</dd></div>
-    <div><dt>Fees</dt><dd>Not included. Every figure on this page is before Kalshi trading fees, which the trade ledger does not record.</dd></div>
+    <div><dt>Return per amount staked</dt><dd>Net profit divided by the total amount put into trades. The deposited capital was staked many times over, which is why this is far smaller than the return on deposited capital.</dd></div>
+    <div><dt>Currency share of profit</dt><dd>Currency trades' profit as a share of the original strategy's whole net profit. Above 100% means every other trade, taken together, lost money.</dd></div>
+    <div><dt>Fees</dt><dd>Not included yet. Every figure on this page is before Kalshi trading fees, which the trade ledger does not record. A net figure, from the account statements, will replace the headline once it is computed.</dd></div>
   </dl>
 </section>
 
@@ -118,7 +119,7 @@
     <li class="step">
       <p class="lbl">Early run</p>
       <h3>Currency contracts carry the book</h3>
-      <p class="body">Most of the edge, traded with tight position sizing.</p>
+      <p class="body">Currency trades made more than all of the profit, traded with tight position sizing.</p>
     </li>
     <li class="step">
       <p class="lbl">Late April</p>
