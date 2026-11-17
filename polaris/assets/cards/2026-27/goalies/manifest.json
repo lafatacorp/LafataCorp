@@ -5,7 +5,7 @@
       "goalie_id": 8479979,
       "goalie_name": "Jake Oettinger",
       "image": "jake_oettinger_social.png",
-      "image_sha256": "63cc01659ab3308f4e8f64f5d49951ad3bd4ae486a02ccc4e4b2624c8d5dd067",
+      "image_sha256": "611f5f1a931a4699a0276b2aea0bb360da533c7bca6e75ca159fa325290a33f1",
       "interpretation": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
       "outcome_variance_status": "WITHIN_HISTORICALLY_CALIBRATED_90_BAND",
       "persistence_status": "PERSISTENCE_NOT_ACTIONABLE_FOR_TALENT",
@@ -15,18 +15,18 @@
       "goalie_id": 8479193,
       "goalie_name": "Casey DeSmith",
       "image": "casey_desmith_social.png",
-      "image_sha256": "bd410e265a25327dcb7d487d7cd8da6b7226b1b99bf94d88d663f88de0f732f7",
+      "image_sha256": "80537448b12fcf8fe587129002378a6537476399d5ad21559e468ae894e97b8f",
       "interpretation": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
       "outcome_variance_status": "WITHIN_HISTORICALLY_CALIBRATED_90_BAND",
       "persistence_status": "PERSISTENCE_NOT_ACTIONABLE_FOR_TALENT",
       "sample_label": "SMALL_SAMPLE"
     }
   ],
-  "generated_at": "2026-11-09T16:05:15.069962+00:00",
+  "generated_at": "2026-11-17T16:04:23.670785+00:00",
   "public_scope": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
   "season": "20262027",
-  "source_results_contract_sha256": "1b7332b168473948c07ea5e41d9b3e8adcccc6944d6429128c5bb1c530656f65",
-  "source_uncertainty_contract_sha256": "70a48c19bd7bc12b850635cd9b171133d153a359d3cf09c912f6782440a088a0",
+  "source_results_contract_sha256": "a4b0c2d0bfb15e745c01c4863ee57bae8ceb881a2962aa890a9153653824edd5",
+  "source_uncertainty_contract_sha256": "c9cc50760f613b38fb88a8639a8b15580fc140f3dd24bac47ad7dcd3659980e5",
   "status": "PASS_GOVERNED_RENDER",
   "version": "goalie_season_card_renderer_v3_20261016"
 }
