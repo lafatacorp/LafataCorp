@@ -68,6 +68,30 @@
   font-size:20px;font-weight:600;letter-spacing:-.01em}
 .bio p{max-width:62ch;margin:18px 0 0}
 .bio .contact{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px}
+/* ── in their words ──────────────────────────────────────────────────────── */
+.quotes{margin-top:clamp(88px,10vw,140px)}
+.quotes>h2{margin:0;padding-bottom:10px;border-bottom:2px solid var(--ink);font-size:20px;
+  font-weight:600;letter-spacing:-.01em}
+.q-group+.q-group{margin-top:56px}
+.q-group h3{margin:28px 0 0;font-size:15px;font-weight:500;color:var(--muted)}
+.quotes ul{list-style:none;margin:0;padding:0}
+.quotes figure{margin:0}
+.quotes blockquote{margin:0}
+.quotes blockquote p{margin:0}
+.quotes figcaption{display:flex;align-items:center;gap:12px;margin-top:14px}
+.quotes figcaption img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
+.q-who{display:flex;flex-direction:column;font-size:15px}
+.q-who span{color:var(--muted)}
+.q-src{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.quotes audio{margin-top:12px;width:100%;max-width:340px}
+/* On air: short lines, set in a row like a ticker of call-outs. */
+.q-air-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));
+  gap:0 40px}
+.q-air-list li{padding:22px 0;border-bottom:1px solid var(--rule)}
+.q-air blockquote p{font-size:22px;line-height:1.3;letter-spacing:-.015em;font-weight:500}
+/* In writing: longer passages, one per row, set as reading text. */
+.q-written-list li{padding:28px 0;border-bottom:1px solid var(--rule);max-width:72ch}
+.q-written blockquote p{font-size:19px;line-height:1.55;color:var(--ink)}
 /* ── footer ──────────────────────────────────────────────────────────────── */
 .foot{margin-top:140px;background:var(--ink);color:var(--on-dark)}
 .foot .wrap{padding-top:88px;padding-bottom:40px}
@@ -93,7 +117,7 @@
 <a href="/nhl/">NHL Tracker <span class="beta">(Beta)</span></a>
 <a href="/fantasy/">Fantasy <span class="beta">(Beta)</span></a>
 <a href="/polaris/">Polaris <span class="beta">(Beta)</span></a>
-<a href="/media/">Media</a>
+<!-- NAVMEDIA --><!-- /NAVMEDIA -->
 <a href="/about/" aria-current="page">About</a>
 <a href="mailto:Lafatacorp@gmail.com">Contact</a>
 </nav>
@@ -143,6 +167,10 @@
     </div>
   </article>
 </main>
+
+<!-- In their words: rendered from data/quotes.json by tools/build_content.py.
+     Only entries with "published": true appear. -->
+<div class="wrap"><!-- QUOTES --><!-- /QUOTES --></div>
 
 <footer class="foot">
   <div class="wrap">

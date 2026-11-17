@@ -26,7 +26,7 @@
   letter-spacing:-.04em;max-width:14ch;text-wrap:balance}
 .m-head p{margin:0;font-size:19px;color:var(--muted);max-width:46ch}
 
-/* One row per outlet. Clips drop in underneath each as they are cut. */
+/* One row per outlet, each linked to the outlet itself. */
 .outlets{margin-top:clamp(56px,7vw,88px)}
 .outlet{display:grid;grid-template-columns:auto minmax(0,1.2fr) minmax(0,1fr) auto;
   gap:20px 28px;align-items:center;padding:26px 0;border-top:1px solid var(--rule)}
@@ -44,13 +44,26 @@
   .outlet .kind{grid-row:1;grid-column:2;align-self:start}
 }
 
-/* The empty state is the honest one until there are clips to show. */
-.soon{margin-top:clamp(56px,7vw,88px);padding:clamp(28px,4vw,44px);
-  background:var(--card);border-radius:20px;max-width:72ch}
-.soon h2{margin:0;font-size:clamp(22px,2.4vw,28px);font-weight:400;letter-spacing:-.025em;
-  line-height:1.25}
-.soon p{margin:14px 0 0;color:var(--muted)}
-.soon .btn{margin-top:26px}
+/* The whole row is the outlet's link once it has one. */
+.outlet{position:relative}
+.out-link{color:inherit;text-decoration:none}
+.out-link::after{content:"";position:absolute;inset:0}
+.outlet:has(.out-link):hover h2{text-decoration:underline;text-underline-offset:5px;
+  text-decoration-thickness:1.5px}
+
+/* Clips: rendered from data/clips.json by tools/build_content.py. */
+.clips{margin-top:clamp(56px,7vw,88px)}
+.clips h2{margin:0 0 8px;font-size:20px;font-weight:600;padding-bottom:10px;
+  border-bottom:2px solid var(--ink)}
+.clip-list{list-style:none;margin:0;padding:0}
+.clip{display:grid;grid-template-columns:120px minmax(0,1fr) auto minmax(0,300px);gap:8px 24px;
+  align-items:center;padding:18px 0;border-bottom:1px solid var(--rule)}
+.clip time,.clip-kind{font-size:14px;color:var(--muted)}
+.clip h3{margin:0;font-size:18px;font-weight:500}
+.clip p{margin:2px 0 0;font-size:15px;color:var(--muted)}
+.clip audio{width:100%}
+.clip-go{font-weight:500}
+@media (max-width:760px){.clip{grid-template-columns:1fr auto}.clip-play{grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -62,7 +75,7 @@
 <a href="/nhl/">NHL Tracker <span class="beta">(Beta)</span></a>
 <a href="/fantasy/">Fantasy <span class="beta">(Beta)</span></a>
 <a href="/polaris/">Polaris <span class="beta">(Beta)</span></a>
-<a href="/media/" aria-current="page">Media</a>
+<!-- NAVMEDIA --><!-- /NAVMEDIA -->
 <a href="/about/">About</a>
 <a href="mailto:Lafatacorp@gmail.com">Contact</a>
 </nav>
@@ -75,37 +88,33 @@
   </div>
   <div class="m-head">
     <h1>Hockey, out loud.</h1>
-    <p>Where to hear and watch the work. Clips are being cut and will land here as they go up.</p>
+    <p>Where to hear and watch the work.</p>
   </div>
 
   <div class="outlets">
     <article class="outlet">
-      <span class="mark"><img src="/ticket-logo.png" alt="" width="2000" height="1406"></span>
-      <div><h2>96.7/1310 The Ticket</h2><p class="role">KTCK Sportsradio, Dallas</p></div>
+      <span class="mark"><img src="/ticket-logo.png" alt="96.7/1310 The Ticket logo" width="2000" height="1406"></span>
+      <div><h2><a class="out-link" href="https://www.theticket.com/" target="_blank" rel="noopener">96.7/1310 The Ticket</a></h2><p class="role">KTCK Sportsradio, Dallas</p></div>
       <p class="what">Hockey and Dallas sports on the air.</p>
       <span class="kind">Radio</span>
     </article>
 
     <article class="outlet">
-      <span class="mark"><img src="/ponyup-logo.png" alt="" width="400" height="283" loading="lazy"></span>
-      <div><h2>Pony Up Productions</h2><p class="role">SMU student podcast</p></div>
+      <span class="mark"><img src="/ponyup-logo.png" alt="Pony Up Productions logo" width="400" height="283" loading="lazy"></span>
+      <div><h2><a class="out-link" href="https://www.youtube.com/@PonyUpProductions" target="_blank" rel="noopener">Pony Up Productions</a></h2><p class="role">SMU student podcast</p></div>
       <p class="what">Long-form conversation, produced at SMU.</p>
       <span class="kind">Podcast</span>
     </article>
 
     <article class="outlet">
-      <span class="mark"><img src="/smutv-logo.png" alt="" width="700" height="700" loading="lazy"></span>
+      <span class="mark"><img src="/smutv-logo.png" alt="SMUTV logo" width="700" height="700" loading="lazy"></span>
       <div><h2>SMUTV</h2><p class="role">SMU student television</p></div>
       <p class="what">On-camera sports coverage and studio work.</p>
       <span class="kind">Television</span>
     </article>
   </div>
 
-  <div class="soon">
-    <h2>Clips are on the way.</h2>
-    <p>Radio segments, podcast episodes and video are being pulled together. This page will fill in outlet by outlet rather than waiting for all of it at once.</p>
-    <a class="btn btn-dark" href="mailto:Lafatacorp@gmail.com">Get in touch</a>
-  </div>
+  <!-- CLIPS --><!-- /CLIPS -->
 </section>
 
 <footer class="foot-slim" style="margin-top:clamp(88px,10vw,140px)">

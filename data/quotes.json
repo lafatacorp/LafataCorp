@@ -1,0 +1,24 @@
+[
+  {
+    "group": "on_air",
+    "quote": "REPLACE with a short line said on air about Cam.",
+    "name": "REPLACE with the speaker's name",
+    "title": "REPLACE with their role, e.g. host",
+    "photo": "",
+    "source": "REPLACE with the show name",
+    "date": "",
+    "audio": "",
+    "published": false
+  },
+  {
+    "group": "written",
+    "quote": "REPLACE with a longer written quote.",
+    "name": "REPLACE with the writer's name",
+    "title": "REPLACE with their title",
+    "photo": "",
+    "source": "REPLACE with where it was written",
+    "date": "",
+    "audio": "",
+    "published": false
+  }
+]
