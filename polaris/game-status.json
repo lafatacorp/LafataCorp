@@ -4,12 +4,12 @@
     "away": "DAL",
     "away_score": 0,
     "away_sog": 9,
-    "detail": "2nd \u00b7 11:36",
+    "detail": "2nd \u00b7 07:58",
     "game_id": "2026020342",
     "game_state": "LIVE",
     "home": "VGK",
     "home_score": 1,
-    "home_sog": 9,
+    "home_sog": 10,
     "matchup": "DAL at VGK",
     "score": "DAL 0 - VGK 1",
     "start_label": "Tue \u00b7 Nov 17 \u00b7 9:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 19 \u00b7 9:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-18T04:24:02.942070+00:00",
+  "updated_at": "2026-11-18T04:33:03.023546+00:00",
   "version": 1
 }
