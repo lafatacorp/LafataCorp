@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 1,
+    "away_score": 2,
     "away_sog": 18,
-    "detail": "3rd \u00b7 05:03",
+    "detail": "3rd \u00b7 01:18",
     "game_id": "2026020342",
-    "game_state": "LIVE",
+    "game_state": "CRIT",
     "home": "VGK",
     "home_score": 3,
-    "home_sog": 24,
+    "home_sog": 25,
     "matchup": "DAL at VGK",
-    "score": "DAL 1 - VGK 3",
+    "score": "DAL 2 - VGK 3",
     "start_label": "Tue \u00b7 Nov 17 \u00b7 9:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Thu \u00b7 Nov 19 \u00b7 9:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-18T05:35:40.883987+00:00",
+  "updated_at": "2026-11-18T05:44:36.033634+00:00",
   "version": 1
 }
