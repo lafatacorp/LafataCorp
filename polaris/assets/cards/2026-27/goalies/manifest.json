@@ -22,11 +22,11 @@
       "sample_label": "SMALL_SAMPLE"
     }
   ],
-  "generated_at": "2026-11-18T02:09:50.048668+00:00",
+  "generated_at": "2026-11-18T02:20:18.460484+00:00",
   "public_scope": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
   "season": "20262027",
   "source_results_contract_sha256": "a4b0c2d0bfb15e745c01c4863ee57bae8ceb881a2962aa890a9153653824edd5",
-  "source_uncertainty_contract_sha256": "409e4451290f73f97ad16d6fdb0b3475d71b1c0a4269876d03b4fe8cd448ea45",
+  "source_uncertainty_contract_sha256": "3ecd93800455d8bc2079fd8c472717962ab913196c23c18baca5f3edc4f9f922",
   "status": "PASS_GOVERNED_RENDER",
   "version": "goalie_season_card_renderer_v3_20261016"
 }
