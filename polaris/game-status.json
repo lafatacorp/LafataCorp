@@ -2,21 +2,6 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 4,
-    "away_sog": null,
-    "detail": "Final",
-    "game_id": "2026020342",
-    "game_state": "OFF",
-    "home": "VGK",
-    "home_score": 3,
-    "home_sog": null,
-    "matchup": "DAL at VGK",
-    "score": "DAL 4 - VGK 3",
-    "start_label": "Tue \u00b7 Nov 17 \u00b7 9:00 PM CT",
-    "state_label": "Latest result"
-  },
-  "next": {
-    "away": "DAL",
     "away_score": null,
     "away_sog": null,
     "detail": "Thu \u00b7 Nov 19 \u00b7 9:00 PM CT",
@@ -28,8 +13,23 @@
     "matchup": "DAL at VGK",
     "score": "DAL at VGK",
     "start_label": "Thu \u00b7 Nov 19 \u00b7 9:00 PM CT",
+    "state_label": "Today's game"
+  },
+  "next": {
+    "away": "PIT",
+    "away_score": null,
+    "away_sog": null,
+    "detail": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
+    "game_id": "2026020376",
+    "game_state": "FUT",
+    "home": "DAL",
+    "home_score": null,
+    "home_sog": null,
+    "matchup": "PIT at DAL",
+    "score": "PIT at DAL",
+    "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-18T16:04:53.523836+00:00",
+  "updated_at": "2026-11-19T16:05:15.593299+00:00",
   "version": 1
 }
