@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020358",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "VGK",
     "home_score": 3,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-20T05:53:59.646708+00:00",
+  "updated_at": "2026-11-20T06:21:51.452352+00:00",
   "version": 1
 }
