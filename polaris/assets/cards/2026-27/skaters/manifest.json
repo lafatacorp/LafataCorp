@@ -4,7 +4,7 @@
     {
       "games_played": 22,
       "image": "mikko_rantanen_social.png",
-      "image_sha256": "cf5a98a5aad6cbe7e569e02bffc7104506c1b2008654164b0906cb02b059feea",
+      "image_sha256": "1e8a57d02c57b9e676c893790755ce29be0a94293fb4c11d58e576c0e898466f",
       "player_id": 8478420,
       "player_name": "Mikko Rantanen",
       "position": "R"
@@ -84,7 +84,7 @@
     {
       "games_played": 18,
       "image": "radek_faksa_social.png",
-      "image_sha256": "1ed71b335d42e7ecc2d554ba96d8e2f6f5cf1a519bc88ffbf3ea75107b3b7ad3",
+      "image_sha256": "e65f7fdf5b8e451c38164f33cc45b04a1e6f559d0507e96dd7ef17e976e98792",
       "player_id": 8476889,
       "player_name": "Radek Faksa",
       "position": "C"
@@ -140,7 +140,7 @@
     {
       "games_played": 17,
       "image": "miro_heiskanen_social.png",
-      "image_sha256": "387d0cfd2fb9640bb3aa2251c33c360fe170750fb4890058763e0e0eb08b42a8",
+      "image_sha256": "4c27ae2cb55ccbb331abbd79f8bb4a66bf283deaaf104320b0dd1a3ab725374d",
       "player_id": 8480036,
       "player_name": "Miro Heiskanen",
       "position": "D"
@@ -164,7 +164,7 @@
     {
       "games_played": 17,
       "image": "esa_lindell_social.png",
-      "image_sha256": "98fbf143822bdcbb7b76633ab1370586d8a58bfb0ce74900ebda7288a78bd63c",
+      "image_sha256": "63ee5113d42d177fc4f659c8d67ee7bd1e456eb9816cf1e8ec72d6bf5c3e1a5c",
       "player_id": 8476902,
       "player_name": "Esa Lindell",
       "position": "D"
@@ -202,10 +202,10 @@
       "position": "D"
     }
   ],
-  "generated_at": "2026-11-20T06:31:44.114869+00:00",
+  "generated_at": "2026-11-20T06:41:05.323472+00:00",
   "public_scope": "DESCRIPTIVE_RESULTS_ONLY",
   "season": "20262027",
-  "source_contract_sha256": "d9ab4681b305e1573b0ca96865588d34d6302da6c61ffc99bb09051d7893a2dc",
+  "source_contract_sha256": "7268a3c11d39acab0bc86351ccbef08b8ff0465f405b165c64b4adb2f3b87aae",
   "status": "PASS_GOVERNED_RENDER",
   "version": "skater_season_card_renderer_v1_20261016"
 }
