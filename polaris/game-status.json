@@ -3,13 +3,13 @@
   "focus": {
     "away": "DAL",
     "away_score": 2,
-    "away_sog": 10,
-    "detail": "2nd \u00b7 08:52",
+    "away_sog": 11,
+    "detail": "2nd \u00b7 04:53",
     "game_id": "2026020358",
     "game_state": "LIVE",
     "home": "VGK",
     "home_score": 2,
-    "home_sog": 18,
+    "home_sog": 19,
     "matchup": "DAL at VGK",
     "score": "DAL 2 - VGK 2",
     "start_label": "Thu \u00b7 Nov 19 \u00b7 9:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-20T04:21:51.197519+00:00",
+  "updated_at": "2026-11-20T04:31:10.982038+00:00",
   "version": 1
 }
