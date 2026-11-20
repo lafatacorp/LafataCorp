@@ -3,8 +3,8 @@
   "focus": {
     "away": "DAL",
     "away_score": 2,
-    "away_sog": 16,
-    "detail": "3rd \u00b7 09:10",
+    "away_sog": 19,
+    "detail": "3rd \u00b7 05:25",
     "game_id": "2026020358",
     "game_state": "LIVE",
     "home": "VGK",
@@ -30,6 +30,6 @@
     "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-20T05:17:33.882765+00:00",
+  "updated_at": "2026-11-20T05:26:41.115349+00:00",
   "version": 1
 }
