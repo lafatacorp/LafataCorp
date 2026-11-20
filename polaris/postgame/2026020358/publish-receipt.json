@@ -1,0 +1,21 @@
+{
+  "artifact": "Polaris_Public_Postgame_Receipt",
+  "card_count": 19,
+  "game_id": "2026020358",
+  "gates": {
+    "all_package_gates_passed": true,
+    "game_in_season_aggregate": true,
+    "manifest_game_matches": true,
+    "package_has_cards": true,
+    "package_passed": true,
+    "production_mode": true,
+    "season_aggregate_passed": true,
+    "source_package_did_not_publish": true
+  },
+  "generated_at": "2026-11-20T06:51:18.050286+00:00",
+  "package_manifest_sha256": "823e1bbc8f07caa69f0e0fc9b3b99268816d68f6d02062cb697208d285bd55eb",
+  "season_aggregate_sha256": "cf23715e45e559d2a42e2f95ffc941bbfa9b566842e7115942f1f9c3db7476ad",
+  "shot_map_sha256": "a1e208c8397b4d085d615c16ffb9fb2582352de4b2c94c2b4c3086fb49a9dbc6",
+  "status": "PASS_PUBLICATION_GATES",
+  "version": 1
+}
