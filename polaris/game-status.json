@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Thu \u00b7 Nov 19 \u00b7 9:00 PM CT",
     "game_id": "2026020358",
-    "game_state": "FUT",
+    "game_state": "PRE",
     "home": "VGK",
     "home_score": null,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-19T16:05:15.593299+00:00",
+  "updated_at": "2026-11-20T02:36:57.451070+00:00",
   "version": 1
 }
