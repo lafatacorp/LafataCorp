@@ -2,89 +2,89 @@
   "artifact": "Polaris_Skater_Season_Cards_v1",
   "cards": [
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "mikko_rantanen_social.png",
-      "image_sha256": "e126b44870bbe6d75950685726602bc9567f6a7555152b8d9da76c4fe6281d4a",
+      "image_sha256": "cf5a98a5aad6cbe7e569e02bffc7104506c1b2008654164b0906cb02b059feea",
       "player_id": 8478420,
       "player_name": "Mikko Rantanen",
       "position": "R"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "jason_robertson_social.png",
-      "image_sha256": "26705b76d83c6758d912b6e01093836e5bf742b1ede6e77d226125011f7b7447",
+      "image_sha256": "85263f52c2ff359830c1a6316c775f0d899f93f732ceadf4227e149012a15357",
       "player_id": 8480027,
       "player_name": "Jason Robertson",
       "position": "L"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "roope_hintz_social.png",
-      "image_sha256": "eed2b309a877faceeb2068189b8a183b32dac820567129af8462b7105c558ccb",
+      "image_sha256": "7b288d420b088e5504103e3a9725918a9bcdb32faac60bd70a43939945c04710",
       "player_id": 8478449,
       "player_name": "Roope Hintz",
       "position": "C"
     },
     {
-      "games_played": 19,
+      "games_played": 20,
       "image": "wyatt_johnston_social.png",
-      "image_sha256": "81ae2bbf0d14d3cf2f31e58a5b9c35d8070ea16597ad0c1df2021a3007e32fec",
+      "image_sha256": "8bd97648a1ec4f60b8802dc528b659eef835d9df5aecbcf2af88bb9020ae6dcd",
       "player_id": 8482740,
       "player_name": "Wyatt Johnston",
       "position": "C"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "jamie_benn_social.png",
-      "image_sha256": "6fff7cb7442785477103dd97af49486ab72d74c4eeecd1b83d52b2b473e9e19c",
+      "image_sha256": "cf4f25767467adb32111b7841ef5e869e958a8b2ec14a662164827d35ec38f41",
       "player_id": 8473994,
       "player_name": "Jamie Benn",
       "position": "L"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "arttu_hyry_social.png",
-      "image_sha256": "2a228139fe43c89b9f9b5c652217942b8785d1d651768f619adef00517abd0e5",
+      "image_sha256": "69268f608c3e63af0b4f840b7fc94fa6cfff700e1118bc661143b68b189d998e",
       "player_id": 8484938,
       "player_name": "Arttu Hyry",
       "position": "R"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "tyler_seguin_social.png",
-      "image_sha256": "e16758b35f6142da29140372d8f4fb29ee945c90fdb737c99ee85059d3b31552",
+      "image_sha256": "d043e12415afa79e34cdee2436ea13ba6a8c9f6b588d0499a60695adaaab26a5",
       "player_id": 8475794,
       "player_name": "Tyler Seguin",
       "position": "C"
     },
     {
-      "games_played": 15,
+      "games_played": 16,
       "image": "joel_kiviranta_social.png",
-      "image_sha256": "625b539fc2ec2935548b85275664bcbeb3a5e0509830a912245ff78362768b32",
+      "image_sha256": "9d40766317953aa2987fb99b30f7123acdd2350d5a06ec7acaa99f1946330183",
       "player_id": 8481641,
       "player_name": "Joel Kiviranta",
       "position": "L"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "justin_hryckowian_social.png",
-      "image_sha256": "4f9ca733ac7b0fc12bbc0c734e46ce8f467dd3362b7a35611f078673006a64f1",
+      "image_sha256": "eab474a8846c41a0df81e6713546a1e3880ce41c55db3680a1cd501b22480919",
       "player_id": 8484829,
       "player_name": "Justin Hryckowian",
       "position": "C"
     },
     {
-      "games_played": 18,
+      "games_played": 19,
       "image": "sam_steel_social.png",
-      "image_sha256": "2a0ec7fa5c3aa87aa4f0f2add904dbfb3ea2260eed655a48097e52ccce6d1a92",
+      "image_sha256": "d57d712ff2d804148fb3eaf4233807892067a95ea45c1b230efd8bcef938151d",
       "player_id": 8479351,
       "player_name": "Sam Steel",
       "position": "C"
     },
     {
-      "games_played": 17,
+      "games_played": 18,
       "image": "radek_faksa_social.png",
-      "image_sha256": "f2b94784a04592db5feea72a7c8014a55f2803d13df03121402129ed5d0a3620",
+      "image_sha256": "1ed71b335d42e7ecc2d554ba96d8e2f6f5cf1a519bc88ffbf3ea75107b3b7ad3",
       "player_id": 8476889,
       "player_name": "Radek Faksa",
       "position": "C"
@@ -98,9 +98,9 @@
       "position": "C"
     },
     {
-      "games_played": 8,
+      "games_played": 9,
       "image": "david_perron_social.png",
-      "image_sha256": "89cb0b4886a27674b73f50c5bac2ccb61c617a1a8c67f1fb3dbf724b3a0dded0",
+      "image_sha256": "f608103b2ae6e164767ac5a62c5d33c269d1e864134556a112e37a58ac4dffd7",
       "player_id": 8474102,
       "player_name": "David Perron",
       "position": "L"
@@ -130,25 +130,25 @@
       "position": "R"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "thomas_harley_social.png",
-      "image_sha256": "29fba1eea5cab3c4e9e35f24d4e3f461120ff0ba30c057b0d4052b1e3fcd7ff4",
+      "image_sha256": "42ffb12ea7ebd78252f9964aa7e38983040b0677472a2663ce67f766ac788082",
       "player_id": 8481581,
       "player_name": "Thomas Harley",
       "position": "D"
     },
     {
-      "games_played": 16,
+      "games_played": 17,
       "image": "miro_heiskanen_social.png",
-      "image_sha256": "0a95fc46079d96eb0f37b73a6d0363432db08c85c4641be5adf16226d6ee04f1",
+      "image_sha256": "387d0cfd2fb9640bb3aa2251c33c360fe170750fb4890058763e0e0eb08b42a8",
       "player_id": 8480036,
       "player_name": "Miro Heiskanen",
       "position": "D"
     },
     {
-      "games_played": 21,
+      "games_played": 22,
       "image": "nils_lundkvist_social.png",
-      "image_sha256": "0579e02c3a5b78694bcf41ec38e0ed901c9a84302cdeca4ed4cdac996adeff68",
+      "image_sha256": "12f8b7e854fb6ffa266052417c46db1fc4729e55a0bd248f3494baeb6349009a",
       "player_id": 8480878,
       "player_name": "Nils Lundkvist",
       "position": "D"
@@ -162,9 +162,9 @@
       "position": "D"
     },
     {
-      "games_played": 16,
+      "games_played": 17,
       "image": "esa_lindell_social.png",
-      "image_sha256": "07cf7ce9aff1924802b40392117788d91422e46d2c036ec80c70e2c8c0b5942f",
+      "image_sha256": "98fbf143822bdcbb7b76633ab1370586d8a58bfb0ce74900ebda7288a78bd63c",
       "player_id": 8476902,
       "player_name": "Esa Lindell",
       "position": "D"
@@ -178,9 +178,9 @@
       "position": "D"
     },
     {
-      "games_played": 3,
+      "games_played": 4,
       "image": "kyle_burroughs_social.png",
-      "image_sha256": "7c5701454a1cba6c80e7fa8991f9a575539b9e0e50efa8fbafbb26a0cff440d2",
+      "image_sha256": "7de993ed0b0260af4ab669b2ed292a4ac2c70ac707ccac7736ba5498c9ab4995",
       "player_id": 8477335,
       "player_name": "Kyle Burroughs",
       "position": "D"
@@ -194,18 +194,18 @@
       "position": "D"
     },
     {
-      "games_played": 7,
+      "games_played": 8,
       "image": "trey_taylor_social.png",
-      "image_sha256": "9880c3fa6d8661954d753abb41c7854d4b5fa47aead8ec9f4fbf55f150083967",
+      "image_sha256": "cfc124c43bd4c717c3e5adb62353f7378d629a7590484154a0df020f0969b282",
       "player_id": 8485468,
       "player_name": "Trey Taylor",
       "position": "D"
     }
   ],
-  "generated_at": "2026-11-20T05:53:29.818973+00:00",
+  "generated_at": "2026-11-20T06:31:44.114869+00:00",
   "public_scope": "DESCRIPTIVE_RESULTS_ONLY",
   "season": "20262027",
-  "source_contract_sha256": "55e9ab9844dc781b8aaadd6f083fc4ab99123644a4c93fa5ce53b27f2453b6fe",
+  "source_contract_sha256": "d9ab4681b305e1573b0ca96865588d34d6302da6c61ffc99bb09051d7893a2dc",
   "status": "PASS_GOVERNED_RENDER",
   "version": "skater_season_card_renderer_v1_20261016"
 }
