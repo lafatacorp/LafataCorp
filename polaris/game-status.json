@@ -3,13 +3,13 @@
   "focus": {
     "away": "PIT",
     "away_score": 0,
-    "away_sog": 13,
-    "detail": "2nd \u00b7 16:02",
+    "away_sog": 15,
+    "detail": "2nd \u00b7 11:35",
     "game_id": "2026020376",
     "game_state": "LIVE",
     "home": "DAL",
     "home_score": 0,
-    "home_sog": 12,
+    "home_sog": 13,
     "matchup": "PIT at DAL",
     "score": "PIT 0 - DAL 0",
     "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Wed \u00b7 Nov 25 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-23T01:07:37.801836+00:00",
+  "updated_at": "2026-11-23T01:16:31.406743+00:00",
   "version": 1
 }
