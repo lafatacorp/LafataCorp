@@ -3,17 +3,17 @@
   "focus": {
     "away": "PIT",
     "away_score": 0,
-    "away_sog": 32,
-    "detail": "3rd \u00b7 00:57",
+    "away_sog": null,
+    "detail": "Final",
     "game_id": "2026020376",
-    "game_state": "CRIT",
+    "game_state": "FINAL",
     "home": "DAL",
     "home_score": 1,
-    "home_sog": 23,
+    "home_sog": null,
     "matchup": "PIT at DAL",
     "score": "PIT 0 - DAL 1",
     "start_label": "Sun \u00b7 Nov 22 \u00b7 6:00 PM CT",
-    "state_label": "Live now"
+    "state_label": "Latest result"
   },
   "next": {
     "away": "NSH",
@@ -30,6 +30,6 @@
     "start_label": "Wed \u00b7 Nov 25 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-23T02:29:39.667421+00:00",
+  "updated_at": "2026-11-23T02:38:36.161818+00:00",
   "version": 1
 }
