@@ -4,7 +4,7 @@
     "away": "PIT",
     "away_score": 0,
     "away_sog": 12,
-    "detail": "1st \u00b7 10:32",
+    "detail": "1st \u00b7 01:34",
     "game_id": "2026020376",
     "game_state": "LIVE",
     "home": "DAL",
@@ -30,6 +30,6 @@
     "start_label": "Wed \u00b7 Nov 25 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-23T00:49:45.167994+00:00",
+  "updated_at": "2026-11-23T00:58:39.566967+00:00",
   "version": 1
 }
