@@ -3,13 +3,13 @@
   "focus": {
     "away": "NSH",
     "away_score": 1,
-    "away_sog": 20,
-    "detail": "2nd \u00b7 00:29",
+    "away_sog": 22,
+    "detail": "3rd \u00b7 16:42",
     "game_id": "2026020395",
     "game_state": "LIVE",
     "home": "DAL",
     "home_score": 0,
-    "home_sog": 10,
+    "home_sog": 15,
     "matchup": "NSH at DAL",
     "score": "NSH 1 - DAL 0",
     "start_label": "Wed \u00b7 Nov 25 \u00b7 7:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-26T02:49:39.094095+00:00",
+  "updated_at": "2026-11-26T02:58:31.583401+00:00",
   "version": 1
 }
