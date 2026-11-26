@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020395",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "DAL",
     "home_score": 1,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-26T03:34:10.955125+00:00",
+  "updated_at": "2026-11-26T04:12:40.905622+00:00",
   "version": 1
 }
