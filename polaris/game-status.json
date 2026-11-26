@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "NSH",
-    "away_score": 1,
-    "away_sog": 25,
-    "detail": "3rd \u00b7 07:23",
+    "away_score": 2,
+    "away_sog": 27,
+    "detail": "3rd \u00b7 01:20",
     "game_id": "2026020395",
-    "game_state": "LIVE",
+    "game_state": "CRIT",
     "home": "DAL",
     "home_score": 0,
-    "home_sog": 18,
+    "home_sog": 19,
     "matchup": "NSH at DAL",
-    "score": "NSH 1 - DAL 0",
+    "score": "NSH 2 - DAL 0",
     "start_label": "Wed \u00b7 Nov 25 \u00b7 7:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-26T03:16:18.020400+00:00",
+  "updated_at": "2026-11-26T03:25:16.922312+00:00",
   "version": 1
 }
