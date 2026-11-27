@@ -3,13 +3,13 @@
   "focus": {
     "away": "DAL",
     "away_score": 0,
-    "away_sog": 5,
-    "detail": "1st \u00b7 03:35",
+    "away_sog": 6,
+    "detail": "1st \u00b7 15:21",
     "game_id": "2026020403",
     "game_state": "LIVE",
     "home": "STL",
     "home_score": 2,
-    "home_sog": 5,
+    "home_sog": 6,
     "matchup": "DAL at STL",
     "score": "DAL 0 - STL 2",
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 28 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-27T19:39:47.272722+00:00",
+  "updated_at": "2026-11-27T19:48:46.025659+00:00",
   "version": 1
 }
