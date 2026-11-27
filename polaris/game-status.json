@@ -6,7 +6,7 @@
     "away_sog": null,
     "detail": "Final",
     "game_id": "2026020403",
-    "game_state": "FINAL",
+    "game_state": "OFF",
     "home": "STL",
     "home_score": 5,
     "home_sog": null,
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 28 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-27T21:37:55.649119+00:00",
+  "updated_at": "2026-11-27T22:07:26.122831+00:00",
   "version": 1
 }
