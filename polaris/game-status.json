@@ -2,16 +2,16 @@
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
     "away": "DAL",
-    "away_score": 0,
-    "away_sog": 12,
-    "detail": "2nd \u00b7 12:19",
+    "away_score": 2,
+    "away_sog": 18,
+    "detail": "2nd \u00b7 09:02",
     "game_id": "2026020403",
     "game_state": "LIVE",
     "home": "STL",
     "home_score": 2,
     "home_sog": 7,
     "matchup": "DAL at STL",
-    "score": "DAL 0 - STL 2",
+    "score": "DAL 2 - STL 2",
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
     "state_label": "Live now"
   },
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 28 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-27T20:16:23.249539+00:00",
+  "updated_at": "2026-11-27T20:25:17.374638+00:00",
   "version": 1
 }
