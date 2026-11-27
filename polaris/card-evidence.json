@@ -46,7 +46,7 @@
     "shot_generation_accumulation_integrity": true,
     "special_teams_accumulation_integrity": true
   },
-  "generated_at": "2026-11-26T16:05:06.594718+00:00",
+  "generated_at": "2026-11-27T18:20:34.496265+00:00",
   "model_evidence": {
     "finishing": "HOLD_ALL_POSITION_LANES",
     "goalie_results": "PASS_PUBLIC_DESCRIPTIVE_RESULTS",
@@ -277,7 +277,7 @@
   "source_hashes": {
     "archive": "2c707b160845c452d3921377adae731a8a7c9ed47a892e064186e6844516c1ea",
     "archive_receipt": "2139453acb7f8bc2954cfef5f8da1de06ade3aab51e4028ec8c82c82164a18e2",
-    "forward_accumulation": "de41bac25b17e664c796597faddff4b8038bb2a5d4883507525a79290ffe57c9",
+    "forward_accumulation": "118d8f8c53261e0c99b8cb1fa33d3811d65266dd96f0aa856fb022b418a95683",
     "goalie_descriptive_results": "0c316c0e511e1acd7d9426a5c35f5eaa542b9b640d56180c8f317a57335c87a6",
     "offense_chain": "c4d922d23ed34f09763cdebe22623b3a9c2a5e32ce3dc587b6722de48db7cd47",
     "shot_generation_accumulation": "79dfeeea9d5cc15881904665abbe86ee5fd02b36562987b8e24b780cb5723caa",
