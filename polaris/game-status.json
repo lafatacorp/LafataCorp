@@ -3,17 +3,17 @@
   "focus": {
     "away": "DAL",
     "away_score": 3,
-    "away_sog": 24,
-    "detail": "3rd \u00b7 05:00",
+    "away_sog": null,
+    "detail": "Final",
     "game_id": "2026020403",
-    "game_state": "CRIT",
+    "game_state": "FINAL",
     "home": "STL",
-    "home_score": 4,
-    "home_sog": 18,
+    "home_score": 5,
+    "home_sog": null,
     "matchup": "DAL at STL",
-    "score": "DAL 3 - STL 4",
+    "score": "DAL 3 - STL 5",
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
-    "state_label": "Live now"
+    "state_label": "Latest result"
   },
   "next": {
     "away": "UTA",
@@ -30,6 +30,6 @@
     "start_label": "Sat \u00b7 Nov 28 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-27T21:28:47.853507+00:00",
+  "updated_at": "2026-11-27T21:37:55.649119+00:00",
   "version": 1
 }
