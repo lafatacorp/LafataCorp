@@ -1,21 +1,6 @@
 {
   "artifact": "Polaris_Dallas_Game_Status",
   "focus": {
-    "away": "NSH",
-    "away_score": 3,
-    "away_sog": null,
-    "detail": "Final",
-    "game_id": "2026020395",
-    "game_state": "OFF",
-    "home": "DAL",
-    "home_score": 1,
-    "home_sog": null,
-    "matchup": "NSH at DAL",
-    "score": "NSH 3 - DAL 1",
-    "start_label": "Wed \u00b7 Nov 25 \u00b7 7:00 PM CT",
-    "state_label": "Latest result"
-  },
-  "next": {
     "away": "DAL",
     "away_score": null,
     "away_sog": null,
@@ -28,8 +13,23 @@
     "matchup": "DAL at STL",
     "score": "DAL at STL",
     "start_label": "Fri \u00b7 Nov 27 \u00b7 1:00 PM CT",
+    "state_label": "Today's game"
+  },
+  "next": {
+    "away": "UTA",
+    "away_score": null,
+    "away_sog": null,
+    "detail": "Sat \u00b7 Nov 28 \u00b7 7:00 PM CT",
+    "game_id": "2026020424",
+    "game_state": "FUT",
+    "home": "DAL",
+    "home_score": null,
+    "home_sog": null,
+    "matchup": "UTA at DAL",
+    "score": "UTA at DAL",
+    "start_label": "Sat \u00b7 Nov 28 \u00b7 7:00 PM CT",
     "state_label": "Next game"
   },
-  "updated_at": "2026-11-26T04:12:40.905622+00:00",
+  "updated_at": "2026-11-27T16:04:56.109609+00:00",
   "version": 1
 }
