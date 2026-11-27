@@ -15,18 +15,18 @@
       "goalie_id": 8479193,
       "goalie_name": "Casey DeSmith",
       "image": "casey_desmith_social.png",
-      "image_sha256": "80537448b12fcf8fe587129002378a6537476399d5ad21559e468ae894e97b8f",
+      "image_sha256": "247aad83a022dbab19482c2cd98d00d3ca6b3211d3cedc7e275834eae4759053",
       "interpretation": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
       "outcome_variance_status": "WITHIN_HISTORICALLY_CALIBRATED_90_BAND",
       "persistence_status": "PERSISTENCE_NOT_ACTIONABLE_FOR_TALENT",
       "sample_label": "SMALL_SAMPLE"
     }
   ],
-  "generated_at": "2026-11-27T21:37:19.293186+00:00",
+  "generated_at": "2026-11-27T21:46:46.841140+00:00",
   "public_scope": "DESCRIPTIVE_OUTCOME_VARIANCE_ONLY",
   "season": "20262027",
-  "source_results_contract_sha256": "850ff81ec691764df567a46d3834b24bace7406c22129aee0d4b959cb22b2207",
-  "source_uncertainty_contract_sha256": "3cd099b2b7f7f7648d5515e54bdbb62a81b78e0f3dcc0a433504b9c62faaf25b",
+  "source_results_contract_sha256": "93340659f9b24dbe1d8a108fcf7a60a7328f89a3a018f371e13a19ea59490a4c",
+  "source_uncertainty_contract_sha256": "76a27d00a5fad5e70435159821ab378fcc793cd9edb9d943188cded34f3cd820",
   "status": "PASS_GOVERNED_RENDER",
   "version": "goalie_season_card_renderer_v3_20261016"
 }
